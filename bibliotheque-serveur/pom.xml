@@ -12,7 +12,7 @@
 
     <properties>
 
-        <projectName>Escalade</projectName>
+        <projectName>Bibliotheque</projectName>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -21,11 +21,16 @@
         <spring.version>5.0.6.RELEASE</spring.version>
         <struts.version>2.5.14.1</struts.version>
         <jaxb-api.version>2.3.1</jaxb-api.version>
-
     </properties>
 
-    <dependencies>
-    </dependencies>
+    <modules>
+        <module>bibliotheque-serveur-batch</module>
+        <module>bibliotheque-serveur-webapp</module>
+        <module>bibliotheque-serveur-business</module>
+        <module>bibliotheque-serveur-consumer</module>
+        <module>bibliotheque-serveur-model</module>
+        <module>bibliotheque-serveur-technical</module>
+    </modules>
 
     <!-- =============================================================== -->
     <!-- Gestion des dépendances -->
@@ -239,16 +244,6 @@
 
         </dependencies>
     </dependencyManagement>
-
-
-    <modules>
-        <module>bibliotheque-serveur-batch</module>
-        <module>bibliotheque-serveur-webapp</module>
-        <module>bibliotheque-serveur-business</module>
-        <module>bibliotheque-serveur-consumer</module>
-        <module>bibliotheque-serveur-model</module>
-        <module>bibliotheque-serveur-technical</module>
-    </modules>
 
     <build>
         <!-- ===== Gestion des plugins ===== -->

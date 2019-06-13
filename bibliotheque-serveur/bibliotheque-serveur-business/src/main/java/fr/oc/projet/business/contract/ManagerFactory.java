@@ -1,9 +1,9 @@
 package fr.oc.projet.business.contract;
 
-import fr.oc.projet.business.contract.manager.bibliotheque.*;
-import fr.oc.projet.business.contract.manager.utilisateur.CompteManager;
-import fr.oc.projet.business.contract.manager.utilisateur.NiveauAccesManager;
-import fr.oc.projet.business.contract.manager.utilisateur.ReservationManager;
+import fr.oc.projet.business.contract.manager.*;
+import fr.oc.projet.business.contract.manager.CompteManager;
+import fr.oc.projet.business.contract.manager.NiveauAccesManager;
+import fr.oc.projet.business.contract.manager.ReservationManager;
 
 public interface ManagerFactory {
 

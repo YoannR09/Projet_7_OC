@@ -13,8 +13,9 @@
   <packaging>war</packaging>
   <name>bibliotheque-serveur-webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
 
+
+  <dependencies>
     <dependency>
       <groupId>fr.oc.projet</groupId>
       <artifactId>bibliotheque-serveur-business</artifactId>

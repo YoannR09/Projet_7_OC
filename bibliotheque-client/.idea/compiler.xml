@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bibliotheque-client-business" />
+        <module name="bibliotheque-client-consumer" />
+        <module name="bibliotheque-client-model" />
+        <module name="bibliotheque-client-technical" />
+        <module name="bibliotheque-client-webapp" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

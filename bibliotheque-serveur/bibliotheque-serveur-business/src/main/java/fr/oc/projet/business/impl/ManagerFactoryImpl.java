@@ -1,10 +1,10 @@
 package fr.oc.projet.business.impl;
 
 import fr.oc.projet.business.contract.ManagerFactory;
-import fr.oc.projet.business.contract.manager.bibliotheque.*;
-import fr.oc.projet.business.contract.manager.utilisateur.CompteManager;
-import fr.oc.projet.business.contract.manager.utilisateur.NiveauAccesManager;
-import fr.oc.projet.business.contract.manager.utilisateur.ReservationManager;
+import fr.oc.projet.business.contract.manager.*;
+import fr.oc.projet.business.contract.manager.CompteManager;
+import fr.oc.projet.business.contract.manager.NiveauAccesManager;
+import fr.oc.projet.business.contract.manager.ReservationManager;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -17,8 +17,6 @@ public class ManagerFactoryImpl implements ManagerFactory {
     @Inject
     private CompteManager compteManager;
     @Inject
-    private BibliothequeManager bibliothequeManager;
-    @Inject
     private CategorieManager categorieManager;
     @Inject
     private ImageManager imageManager;
@@ -28,6 +26,8 @@ public class ManagerFactoryImpl implements ManagerFactory {
     private ReservationManager reservationManager;
     @Inject
     private StockManager stockManager;
+    @Inject
+    private BibliothequeManager bibliothequeManager;
 
     @Override
     public NiveauAccesManager getNiveauAccesManager() {

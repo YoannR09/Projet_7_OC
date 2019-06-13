@@ -9,10 +9,11 @@ public class Livre {
     private         String              nom;
     private         String              resume;
     private         String              auteur;
+    private         String              editeur;
     private         String              langue;
     private         String              isbn;
     private         Date                dateDeCreation;
-    private         List<Categorie>     categorieList;
+    private         Categorie           categorie;
     private         Image               image;
 
 
@@ -67,12 +68,12 @@ public class Livre {
         this.dateDeCreation = dateDeCreation;
     }
 
-    public List<Categorie> getCategorieList() {
-        return categorieList;
+    public Categorie getCategorie() {
+        return categorie;
     }
 
-    public void setCategorieList(List<Categorie> categorieList) {
-        this.categorieList = categorieList;
+    public void setCategorie(Categorie categorie) {
+        this.categorie = categorie;
     }
 
     public Image getImage() {
@@ -89,5 +90,13 @@ public class Livre {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getEditeur() {
+        return editeur;
+    }
+
+    public void setEditeur(String editeur) {
+        this.editeur = editeur;
     }
 }
