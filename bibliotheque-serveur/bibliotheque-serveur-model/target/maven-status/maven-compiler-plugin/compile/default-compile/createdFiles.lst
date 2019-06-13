@@ -1,4 +1,3 @@
-fr\oc\projet\model\App.class
 fr\oc\projet\model\beans\bibliotheque\Stock.class
 fr\oc\projet\model\beans\utilisateur\Compte.class
 fr\oc\projet\model\beans\utilisateur\NiveauAcces.class
