@@ -11,7 +11,7 @@ public class Livre {
     private         String              editeur;
     private         String              langue;
     private         String              isbn;
-    private Date dateDeCreation;
+    private         Date                dateDeCreation;
     private         Categorie           categorie;
     private         Image               image;
 

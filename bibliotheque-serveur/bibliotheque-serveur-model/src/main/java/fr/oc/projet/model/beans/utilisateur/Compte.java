@@ -1,16 +1,19 @@
 package fr.oc.projet.model.beans.utilisateur;
 
+import fr.oc.projet.model.beans.bibliotheque.Bibliotheque;
+
 public class Compte {
 
-    private Integer id;
-    private String pseudo;
-    private String nom;
-    private String prenom;
-    private String email;
-    private String numero;
-    private String motDePasse;
-    private String adresse;
-    private NiveauAcces niveauAcces;
+    private         Integer             id;
+    private         String              pseudo;
+    private         String              nom;
+    private         String              prenom;
+    private         String              email;
+    private         String              numero;
+    private         String              motDePasse;
+    private         String              adresse;
+    private         NiveauAcces         niveauAcces;
+    private         Bibliotheque        bibliotheque;
 
     public Compte() {
     }
@@ -86,5 +89,13 @@ public class Compte {
 
     public void setAdresse(String adresse) {
         this.adresse = adresse;
+    }
+
+    public Bibliotheque getBibliotheque() {
+        return bibliotheque;
+    }
+
+    public void setBibliotheque(Bibliotheque bibliotheque) {
+        this.bibliotheque = bibliotheque;
     }
 }

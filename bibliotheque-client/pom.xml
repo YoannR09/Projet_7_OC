@@ -31,7 +31,7 @@
 
             <dependency>
                 <groupId>fr.oc.projet</groupId>
-                <artifactId>bibliotheque-client--business</artifactId>
+                <artifactId>bibliotheque-client-business</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -53,11 +53,14 @@
                 <version>${project.version}</version>
             </dependency>
 
+
             <dependency>
                 <groupId>fr.oc.projet</groupId>
                 <artifactId>bibliotheque-client-webapp</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
+
 
             <!-- ===== Bibliothèques tierces ===== -->
 

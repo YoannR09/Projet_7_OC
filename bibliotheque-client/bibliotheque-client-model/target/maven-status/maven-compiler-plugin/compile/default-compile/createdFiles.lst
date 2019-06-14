@@ -1,1 +1,2 @@
-fr\oc\projet\model\App.class
+fr\oc\projet\model\beans\bibliotheque\Stock.class
+fr\oc\projet\model\beans\utilisateur\Pret.class

@@ -23,13 +23,14 @@ public class LivreRM implements RowMapper<Livre> {
         Livre livre = new Livre();
         livre.setId(resultSet.getInt("id"));
         livre.setAuteur(resultSet.getString("auteur"));
+        livre.setEditeur(resultSet.getString("editeur"));
         livre.setResume(resultSet.getString("resume"));
         livre.setDateDeCreation(resultSet.getDate("date_de_creation"));
         livre.setIsbn(resultSet.getString("isbn"));
         livre.setNom(resultSet.getString("nom"));
         livre.setLangue(resultSet.getString("langue"));
         livre.setImage(imageDao.getImage(resultSet.getInt("image_id")));
-        // livre.setCategorieList(categorieDao.getCategorie(resultSet.get));
-        return null;
+        livre.setCategorie(categorieDao.getCategorie(resultSet.getInt("categorie_id")));
+        return livre;
     }
 }
