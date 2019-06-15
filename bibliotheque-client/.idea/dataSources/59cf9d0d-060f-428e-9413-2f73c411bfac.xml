@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="bibliotheque@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.14">
+    <root id="1">
+      <ServerVersion>11.0</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="bibliotheque">
+      <ObjectId>16629</ObjectId>
+      <StateNumber>579</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>519</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Relations>sequence|table|16630|16632|1
+sequence|table|16641|16643|1
+sequence|table|16652|16654|1
+sequence|table|16663|16665|1
+sequence|table|16674|16676|1
+sequence|table|16693|16695|1
+</Relations>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>13012</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>567</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="4" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="5" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="13" parent="2" name="information_schema">
+      <ObjectId>12716</ObjectId>
+      <StateNumber>366</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="14" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>359</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="15" parent="2" name="pg_temp_1">
+      <ObjectId>11804</ObjectId>
+      <StateNumber>121</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="16" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <StateNumber>1</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="17" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11805</ObjectId>
+      <StateNumber>121</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="18" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>360</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionTimestamp>2019-06-15.09:33:20.386</IntrospectionTimestamp>
+      <IntrospectionStateNumber>580</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="19" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="25" parent="2" name="plpgsql">
+      <ObjectId>12998</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>519</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="26" parent="18" name="bibliotheque_id_seq">
+      <ObjectId>16674</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="27" parent="18" name="categorie_id_seq">
+      <ObjectId>16652</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="28" parent="18" name="image_id_seq">
+      <ObjectId>16641</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="29" parent="18" name="livre_id_seq">
+      <ObjectId>16663</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="30" parent="18" name="niveau_acces_id_seq">
+      <ObjectId>16630</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="31" parent="18" name="stock_id_seq">
+      <ObjectId>16693</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="32" parent="18" name="bibliotheque">
+      <ObjectId>16676</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+    </table>
+    <table id="33" parent="18" name="categorie">
+      <ObjectId>16654</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+    </table>
+    <table id="34" parent="18" name="compte">
+      <ObjectId>16685</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+    </table>
+    <table id="35" parent="18" name="image">
+      <ObjectId>16643</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+    </table>
+    <table id="36" parent="18" name="livre">
+      <ObjectId>16665</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+    </table>
+    <table id="37" parent="18" name="niveau_acces">
+      <ObjectId>16632</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+    </table>
+    <table id="38" parent="18" name="pret">
+      <ObjectId>16701</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+    </table>
+    <table id="39" parent="18" name="stock">
+      <ObjectId>16695</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+    </table>
+    <column id="40" parent="32" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <DefaultExpression>nextval(&apos;bibliotheque_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="41" parent="32" name="nom">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="42" parent="32" name="adresse">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="43" parent="32" name="bibliotheque_pk">
+      <ObjectId>16683</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="44" parent="32" name="bibliotheque_pk">
+      <ObjectId>16684</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>bibliotheque_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="45" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <DefaultExpression>nextval(&apos;categorie_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="46" parent="33" name="nom">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="47" parent="33" name="categorie_pk">
+      <ObjectId>16661</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="48" parent="33" name="categorie_pk">
+      <ObjectId>16662</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>categorie_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="50" parent="34" name="pseudo">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="51" parent="34" name="email">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="52" parent="34" name="nom">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="53" parent="34" name="prenom">
+      <Position>5</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="54" parent="34" name="numero">
+      <Position>6</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="55" parent="34" name="adresse">
+      <Position>7</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="56" parent="34" name="mot_de_passe">
+      <Position>8</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="57" parent="34" name="niveau_acces_id">
+      <Position>9</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="58" parent="34" name="bibliotheque_id">
+      <Position>10</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="59" parent="34" name="compte_pk">
+      <ObjectId>16691</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="60" parent="34" name="compte_pk">
+      <ObjectId>16692</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>compte_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="61" parent="34" name="niveau_acces_compte_fk">
+      <ObjectId>16706</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>niveau_acces_id</ColNames>
+      <RefTableId>16632</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>niveau_acces</RefTableName>
+      <RefKeyName>niveau_acces_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="62" parent="34" name="bibliotheque_compte_fk">
+      <ObjectId>16731</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>bibliotheque_id</ColNames>
+      <RefTableId>16676</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>bibliotheque</RefTableName>
+      <RefKeyName>bibliotheque_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="63" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <DefaultExpression>nextval(&apos;image_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="64" parent="35" name="url">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="65" parent="35" name="description">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="66" parent="35" name="image_pk">
+      <ObjectId>16650</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="67" parent="35" name="image_pk">
+      <ObjectId>16651</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>image_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="68" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <DefaultExpression>nextval(&apos;livre_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="69" parent="36" name="nom">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="70" parent="36" name="auteur">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="71" parent="36" name="editeur">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="72" parent="36" name="date_de_creation">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="73" parent="36" name="langue">
+      <Position>6</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="74" parent="36" name="resume">
+      <Position>7</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="75" parent="36" name="isbn">
+      <Position>8</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="76" parent="36" name="genre_id">
+      <Position>9</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="77" parent="36" name="image_id">
+      <Position>10</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="78" parent="36" name="livre_pk">
+      <ObjectId>16672</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="79" parent="36" name="livre_pk">
+      <ObjectId>16673</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>livre_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="80" parent="36" name="categorie_livre_fk">
+      <ObjectId>16716</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>genre_id</ColNames>
+      <RefTableId>16654</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>categorie</RefTableName>
+      <RefKeyName>categorie_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="81" parent="36" name="image_livre_fk">
+      <ObjectId>16711</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>image_id</ColNames>
+      <RefTableId>16643</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>image</RefTableName>
+      <RefKeyName>image_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="82" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <DefaultExpression>nextval(&apos;niveau_acces_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="83" parent="37" name="niveau">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="84" parent="37" name="labelle">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="85" parent="37" name="niveau_acces_pk">
+      <ObjectId>16639</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="86" parent="37" name="niveau_acces_pk">
+      <ObjectId>16640</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>niveau_acces_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="87" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="88" parent="38" name="date_emprunt">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="89" parent="38" name="date_resiliation_prevue">
+      <Position>3</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="90" parent="38" name="prolonge">
+      <Position>4</Position>
+      <DataType>boolean|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="91" parent="38" name="compte_id">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="92" parent="38" name="inventaire_id">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="93" parent="38" name="pret_pk">
+      <ObjectId>16704</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="94" parent="38" name="pret_pk">
+      <ObjectId>16705</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>pret_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="95" parent="38" name="compte_reservation_fk">
+      <ObjectId>16736</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>compte_id</ColNames>
+      <RefTableId>16685</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>compte</RefTableName>
+      <RefKeyName>compte_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="96" parent="38" name="inventaire_pret_fk">
+      <ObjectId>16741</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>inventaire_id</ColNames>
+      <RefTableId>16695</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>stock</RefTableName>
+      <RefKeyName>stock_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="97" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <DefaultExpression>nextval(&apos;stock_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="98" parent="39" name="numero_interne">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="99" parent="39" name="bibliotheque_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="100" parent="39" name="livre_id">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="101" parent="39" name="stock_pk">
+      <ObjectId>16699</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="102" parent="39" name="stock_pk">
+      <ObjectId>16700</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>stock_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="103" parent="39" name="bibliotheque_stock_fk">
+      <ObjectId>16726</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>bibliotheque_id</ColNames>
+      <RefTableId>16676</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>bibliotheque</RefTableName>
+      <RefKeyName>bibliotheque_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="104" parent="39" name="livre_stock_fk">
+      <ObjectId>16721</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>livre_id</ColNames>
+      <RefTableId>16665</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>livre</RefTableName>
+      <RefKeyName>livre_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
