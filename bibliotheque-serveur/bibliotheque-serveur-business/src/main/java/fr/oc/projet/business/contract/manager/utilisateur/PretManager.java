@@ -9,4 +9,6 @@ public interface PretManager {
     Pret getPret(Integer pId);
 
     List<Pret> getListPret();
+
+    List<Pret> getListPretLivre(Integer livreId);
 }

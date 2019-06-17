@@ -29,7 +29,7 @@ public class LivreRM implements RowMapper<Livre> {
         livre.setIsbn(resultSet.getString("isbn"));
         livre.setNom(resultSet.getString("nom"));
         livre.setLangue(resultSet.getString("langue"));
-        livre.setIllustration(illustrationDao.getIllustration(resultSet.getInt("image_id")));
+        livre.setIllustration(illustrationDao.getIllustration(resultSet.getInt("illustration_id")));
         livre.setCategorie(categorieDao.getCategorie(resultSet.getInt("categorie_id")));
         return livre;
     }

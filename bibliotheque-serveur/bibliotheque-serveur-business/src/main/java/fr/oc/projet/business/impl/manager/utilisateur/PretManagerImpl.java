@@ -20,4 +20,9 @@ public class PretManagerImpl extends AbstractManagerImpl implements PretManager 
     public List<Pret> getListPret() {
         return getDaoFactory().getPretDao().getListPret();
     }
+
+    @Override
+    public List<Pret> getListPretLivre(Integer livreId) {
+        return getDaoFactory().getPretDao().getListPretLivre(livreId);
+    }
 }

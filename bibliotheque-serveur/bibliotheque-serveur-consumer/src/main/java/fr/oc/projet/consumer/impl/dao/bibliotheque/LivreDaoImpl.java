@@ -25,6 +25,47 @@ public class LivreDaoImpl extends AbstractDaoImpl implements LivreDao {
     }
 
     @Override
+    public Livre getLivreTitreAuteurISBN(String titre, String auteur, String isbn) {
+        String vSQL = "SELECT * FROM livre WHERE nom LIKE "+"'"+titre+"'" +
+               " AND auteur LIKE "+"'"+auteur+"'" +
+                " AND isbn LIKE "+"'"+isbn+"'" +
+                " LIMIT 1" ;
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        Livre livre = vJdbcTemplate.queryForObject(vSQL,livreRM);
+        return livre;
+    }
+
+    @Override
+    public Livre getLivreTitreAuteur(String titre, String auteur) {
+        return null;
+    }
+
+    @Override
+    public Livre getLivreAuteurISBN(String auteur, String isbn) {
+        return null;
+    }
+
+    @Override
+    public Livre getLivreTitreISBN(String titre, String isbn) {
+        return null;
+    }
+
+    @Override
+    public Livre getLivreTitre(String titre) {
+        return null;
+    }
+
+    @Override
+    public Livre getLivreAuteur(String auteur) {
+        return null;
+    }
+
+    @Override
+    public Livre getLivreISBN(String isbn) {
+        return null;
+    }
+
+    @Override
     public List<Livre> getListLivre() {
         String vSQL = "SELECT * FROM livre ";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());

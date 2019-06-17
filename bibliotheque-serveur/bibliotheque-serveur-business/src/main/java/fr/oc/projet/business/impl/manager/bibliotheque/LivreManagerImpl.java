@@ -15,6 +15,41 @@ public class LivreManagerImpl extends AbstractManagerImpl implements LivreManage
     }
 
     @Override
+    public Livre getLivreTitreAuteurISBN(String titre, String auteur, String isbn) {
+        return getDaoFactory().getLivreDao().getLivreTitreAuteurISBN(titre,auteur,isbn);
+    }
+
+    @Override
+    public Livre getLivreTitreAuteur(String titre, String auteur) {
+        return getDaoFactory().getLivreDao().getLivreTitreAuteur(titre,auteur);
+    }
+
+    @Override
+    public Livre getLivreAuteurISBN(String auteur, String isbn) {
+        return getDaoFactory().getLivreDao().getLivreAuteurISBN(auteur,isbn);
+    }
+
+    @Override
+    public Livre getLivreTitreISBN(String titre, String isbn) {
+        return getDaoFactory().getLivreDao().getLivreTitreISBN(titre,isbn);
+    }
+
+    @Override
+    public Livre getLivreTitre(String titre) {
+        return getDaoFactory().getLivreDao().getLivreTitre(titre);
+    }
+
+    @Override
+    public Livre getLivreAuteur(String auteur) {
+        return getDaoFactory().getLivreDao().getLivreAuteur(auteur);
+    }
+
+    @Override
+    public Livre getLivreISBN(String isbn) {
+        return getDaoFactory().getLivreDao().getLivreISBN(isbn);
+    }
+
+    @Override
     public List<Livre> getListLivre() {
         return getDaoFactory().getLivreDao().getListLivre();
     }

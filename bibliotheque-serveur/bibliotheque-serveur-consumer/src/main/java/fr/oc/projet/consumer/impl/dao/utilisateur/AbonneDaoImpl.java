@@ -37,7 +37,7 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
 
     @Override
     public Abonne getAbonnePseudo(String pseudo) {
-        String vSQL = "SELECT * FROM abonne WHERE pseudo = '"+pseudo+"'";
+        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE '"+pseudo+"'";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         Abonne abonne = vJdbcTemplate.queryForObject(vSQL, abonneRM);
         return abonne;

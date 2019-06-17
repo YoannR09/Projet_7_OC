@@ -10,4 +10,6 @@ public interface PretDao {
 
     List<Pret> getListPret();
 
+    List<Pret> getListPretLivre(Integer livreId);
+
 }

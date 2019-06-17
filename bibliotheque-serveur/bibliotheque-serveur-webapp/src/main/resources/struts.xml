@@ -10,5 +10,18 @@
         <action name="index">
             <result>/index.jsp</result>
         </action>
+
+        <action name="consulterPret"
+                class="fr.oc.projet.webapp.action.ConsulterPretAction"
+                method="doConsulterPret">
+            <result name="success">/jsp/consulter/consulterPret.jsp</result>
+        </action>
+
+        <action name="recherchePret"
+                class="fr.oc.projet.webapp.action.ConsulterPretAction"
+                method="doListPretRecherche">
+            <result name="success">/jsp/consulter/consulterPret.jsp</result>
+        </action>
+
     </package>
 </struts>

@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <s:a action="" class="nav-link">Consulter les prêts</s:a>
+                <s:a action="consulterPret" class="nav-link">Consulter les prêts</s:a>
             </li>
             <li class="nav-item">
                 <s:a action="" class="nav-link">Ajouter un prêt</s:a>
