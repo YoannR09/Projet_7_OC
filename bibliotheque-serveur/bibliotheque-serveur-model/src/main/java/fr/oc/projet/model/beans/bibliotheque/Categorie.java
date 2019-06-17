@@ -4,6 +4,7 @@ public class Categorie {
 
     private String nom;
     private Integer id;
+    private String description;
 
     public Categorie() {
     }
@@ -22,6 +23,14 @@ public class Categorie {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
 

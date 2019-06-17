@@ -3,7 +3,6 @@ package fr.oc.projet.consumer.impl.dao.bibliotheque;
 import fr.oc.projet.consumer.contract.dao.bibliotheque.LivreDao;
 import fr.oc.projet.consumer.impl.dao.AbstractDaoImpl;
 import fr.oc.projet.consumer.rowmapper.bibliotheque.LivreRM;
-import fr.oc.projet.model.beans.bibliotheque.Image;
 import fr.oc.projet.model.beans.bibliotheque.Livre;
 import org.springframework.jdbc.core.JdbcTemplate;
 

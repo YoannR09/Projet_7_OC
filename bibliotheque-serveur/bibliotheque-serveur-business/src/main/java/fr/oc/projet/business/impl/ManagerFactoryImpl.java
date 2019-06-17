@@ -2,9 +2,8 @@ package fr.oc.projet.business.impl;
 
 import fr.oc.projet.business.contract.ManagerFactory;
 import fr.oc.projet.business.contract.manager.bibliotheque.*;
-import fr.oc.projet.business.contract.manager.utilisateur.CompteManager;
-import fr.oc.projet.business.contract.manager.utilisateur.NiveauAccesManager;
-import fr.oc.projet.business.contract.manager.utilisateur.PretManager;
+import fr.oc.projet.business.contract.manager.utilisateur.*;
+import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -13,30 +12,34 @@ import javax.inject.Named;
 public class ManagerFactoryImpl implements ManagerFactory {
 
     @Inject
-    private NiveauAccesManager niveauAccesManager;
+    private RoleManager roleManager;
     @Inject
-    private CompteManager compteManager;
+    private AbonneManager abonneManager;
     @Inject
     private CategorieManager categorieManager;
     @Inject
-    private ImageManager imageManager;
+    private IllustrationManager illustrationManager;
     @Inject
     private LivreManager livreManager;
     @Inject
     private PretManager pretManager;
     @Inject
-    private StockManager stockManager;
-    @Inject
     private BibliothequeManager bibliothequeManager;
+    @Inject
+    private AdresseManager adresseManager;
+    @Inject
+    private LivreUniqueManager livreUniqueManager;
+    @Inject
+    private EmployeManager employeManager;
 
     @Override
-    public NiveauAccesManager getNiveauAccesManager() {
-        return this.niveauAccesManager;
+    public RoleManager getRoleManager() {
+        return this.roleManager;
     }
 
     @Override
-    public CompteManager getCompteManager() {
-        return this.compteManager;
+    public AbonneManager getAbonneManager() {
+        return this.abonneManager;
     }
 
     @Override
@@ -50,8 +53,8 @@ public class ManagerFactoryImpl implements ManagerFactory {
     }
 
     @Override
-    public ImageManager getImageManager() {
-        return this.imageManager;
+    public IllustrationManager getIllustrationManager() {
+        return this.illustrationManager;
     }
 
     @Override
@@ -65,7 +68,18 @@ public class ManagerFactoryImpl implements ManagerFactory {
     }
 
     @Override
-    public StockManager getStockManager() {
-        return this.stockManager;
+    public AdresseManager getAdresseManager() {
+        return this.adresseManager;
     }
+
+    @Override
+    public LivreUniqueManager getLivreUniqueManager() {
+        return this.livreUniqueManager;
+    }
+
+    @Override
+    public EmployeManager getEmployeManager() {
+        return this.employeManager;
+    }
+
 }

@@ -13,7 +13,7 @@ public class Livre {
     private         String              isbn;
     private         Date                dateDeCreation;
     private         Categorie           categorie;
-    private         Image               image;
+    private         Illustration        illustration;
 
 
     public Livre() {
@@ -75,12 +75,12 @@ public class Livre {
         this.categorie = categorie;
     }
 
-    public Image getImage() {
-        return image;
+    public Illustration getIllustration() {
+        return illustration;
     }
 
-    public void setImage(Image image) {
-        this.image = image;
+    public void setIllustration(Illustration illustration) {
+        this.illustration = illustration;
     }
 
     public Integer getId() {
@@ -98,5 +98,4 @@ public class Livre {
     public void setEditeur(String editeur) {
         this.editeur = editeur;
     }
-
 }

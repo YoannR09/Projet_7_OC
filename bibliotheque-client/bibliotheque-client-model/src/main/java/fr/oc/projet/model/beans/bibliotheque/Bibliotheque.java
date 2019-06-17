@@ -5,6 +5,7 @@ public class Bibliotheque {
     private Integer id;
     private String nom;
     private String adresse;
+    private String numeroSiret;
 
     public Bibliotheque() {
     }
@@ -33,4 +34,11 @@ public class Bibliotheque {
         this.adresse = adresse;
     }
 
+    public String getNumeroSiret() {
+        return numeroSiret;
+    }
+
+    public void setNumeroSiret(String numeroSiret) {
+        this.numeroSiret = numeroSiret;
+    }
 }

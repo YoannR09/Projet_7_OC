@@ -1,25 +1,28 @@
 package fr.oc.projet.consumer.contract;
 
 import fr.oc.projet.consumer.contract.dao.bibliotheque.*;
-import fr.oc.projet.consumer.contract.dao.utilisateur.CompteDao;
-import fr.oc.projet.consumer.contract.dao.utilisateur.NiveauAccesDao;
-import fr.oc.projet.consumer.contract.dao.utilisateur.PretDao;
+import fr.oc.projet.consumer.contract.dao.utilisateur.*;
 
 public interface DAOFactory {
 
-    NiveauAccesDao getNiveauAccesDao();
+    RoleDao getRoleDao();
 
-    CompteDao getCompteDao();
+    AbonneDao getAbonneDao();
 
     BibliothequeDao getBibliotheque();
 
     CategorieDao getCategorieDao();
 
-    ImageDao getImageDao();
+    IllustrationDao getIllustrationDao();
 
     LivreDao getLivreDao();
 
     PretDao getPretDao();
 
-    StockDao getStockDao();
+    AdresseDao getAdresseDao();
+
+    LivreUniqueDao getLivreUniqueDao();
+
+    EmployeDao getEmployeDao();
+
 }

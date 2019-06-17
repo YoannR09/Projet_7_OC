@@ -1,26 +1,28 @@
 package fr.oc.projet.business.contract;
 
 import fr.oc.projet.business.contract.manager.bibliotheque.*;
-import fr.oc.projet.business.contract.manager.utilisateur.CompteManager;
-import fr.oc.projet.business.contract.manager.utilisateur.NiveauAccesManager;
-import fr.oc.projet.business.contract.manager.utilisateur.PretManager;
+import fr.oc.projet.business.contract.manager.utilisateur.*;
 
 public interface ManagerFactory {
 
-    NiveauAccesManager getNiveauAccesManager();
+    RoleManager getRoleManager();
 
-    CompteManager getCompteManager();
+    AbonneManager getAbonneManager();
 
     BibliothequeManager getBibliothequeManager();
 
     CategorieManager getCategorieManager();
 
-    ImageManager getImageManager();
+    IllustrationManager getIllustrationManager();
 
     LivreManager getLivreManager();
 
     PretManager getPretManager();
 
-    StockManager getStockManager();
+    AdresseManager getAdresseManager();
+
+    LivreUniqueManager getLivreUniqueManager();
+
+    EmployeManager getEmployeManager();
 }
 

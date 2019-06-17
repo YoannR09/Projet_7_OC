@@ -2,9 +2,7 @@ package fr.oc.projet.consumer.impl;
 
 import fr.oc.projet.consumer.contract.DAOFactory;
 import fr.oc.projet.consumer.contract.dao.bibliotheque.*;
-import fr.oc.projet.consumer.contract.dao.utilisateur.CompteDao;
-import fr.oc.projet.consumer.contract.dao.utilisateur.NiveauAccesDao;
-import fr.oc.projet.consumer.contract.dao.utilisateur.PretDao;
+import fr.oc.projet.consumer.contract.dao.utilisateur.*;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -13,32 +11,36 @@ import javax.inject.Named;
 public class DAOFactoryImpl implements DAOFactory {
 
     @Inject
-    private NiveauAccesDao niveauAccesDao;
+    private RoleDao roleDao;
     @Inject
-    private CompteDao compteDao;
+    private AbonneDao abonneDao;
     @Inject
     private BibliothequeDao bibliothequeDao;
     @Inject
     private CategorieDao categorieDao;
     @Inject
-    private ImageDao imageDao;
+    private IllustrationDao illustrationDao;
     @Inject
     private LivreDao livreDao;
     @Inject
     private PretDao pretDao;
     @Inject
-    private StockDao stockDao;
+    private AdresseDao adresseDao;
+    @Inject
+    private LivreUniqueDao livreUniqueDao;
+    @Inject
+    private EmployeDao employeDao;
 
 
 
     @Override
-    public NiveauAccesDao getNiveauAccesDao() {
-        return this.niveauAccesDao;
+    public RoleDao getRoleDao() {
+        return this.roleDao;
     }
 
     @Override
-    public CompteDao getCompteDao() {
-        return this.compteDao;
+    public AbonneDao getAbonneDao() {
+        return this.abonneDao;
     }
 
     @Override
@@ -52,8 +54,8 @@ public class DAOFactoryImpl implements DAOFactory {
     }
 
     @Override
-    public ImageDao getImageDao() {
-        return this.imageDao;
+    public IllustrationDao getIllustrationDao() {
+        return this.illustrationDao;
     }
 
     @Override
@@ -67,7 +69,17 @@ public class DAOFactoryImpl implements DAOFactory {
     }
 
     @Override
-    public StockDao getStockDao() {
-        return this.stockDao;
+    public AdresseDao getAdresseDao() {
+        return this.adresseDao;
+    }
+
+    @Override
+    public LivreUniqueDao getLivreUniqueDao() {
+        return this.livreUniqueDao;
+    }
+
+    @Override
+    public EmployeDao getEmployeDao() {
+        return this.employeDao;
     }
 }

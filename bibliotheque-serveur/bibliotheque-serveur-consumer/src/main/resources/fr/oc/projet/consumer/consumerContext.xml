@@ -18,7 +18,7 @@
 
 
 
-    <!-- Prend en compte la configuration des injections (@Inject...) -->
+    <!-- Prend en abonne la configuration des injections (@Inject...) -->
 
     <context:annotation-config/>
 

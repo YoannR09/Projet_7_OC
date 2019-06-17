@@ -1,6 +1,6 @@
 package fr.oc.projet.model.beans.utilisateur;
 
-import fr.oc.projet.model.beans.bibliotheque.Livre;
+import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
 
 import java.util.Date;
 
@@ -8,10 +8,10 @@ public class Pret {
 
     private         Integer         id;
     private         Date            dateEmprunt;
-    private         Date            dateResiliationPrevue;
+    private         Date            dateRestitution;
     private         Boolean         prolonge;
-    private         Livre           livre;
-    private         Compte          compte;
+    private         LivreUnique     livreUnique;
+    private         Abonne          abonne;
 
     public Pret() {
     }
@@ -32,12 +32,12 @@ public class Pret {
         this.dateEmprunt = dateEmprunt;
     }
 
-    public Date getDateResiliationPrevue() {
-        return dateResiliationPrevue;
+    public Date getDateRestitution() {
+        return dateRestitution;
     }
 
-    public void setDateResiliationPrevue(Date dateResiliationPrevue) {
-        this.dateResiliationPrevue = dateResiliationPrevue;
+    public void setDateRestitution(Date dateRestitution) {
+        this.dateRestitution = dateRestitution;
     }
 
     public Boolean getProlonge() {
@@ -48,19 +48,19 @@ public class Pret {
         this.prolonge = prolonge;
     }
 
-    public Livre getLivre() {
-        return livre;
+    public LivreUnique getLivreUnique() {
+        return livreUnique;
     }
 
-    public void setLivre(Livre livre) {
-        this.livre = livre;
+    public void setLivreUnique(LivreUnique livreUnique) {
+        this.livreUnique = livreUnique;
     }
 
-    public Compte getCompte() {
-        return compte;
+    public Abonne getAbonne() {
+        return abonne;
     }
 
-    public void setCompte(Compte compte) {
-        this.compte = compte;
+    public void setAbonne(Abonne abonne) {
+        this.abonne = abonne;
     }
 }
