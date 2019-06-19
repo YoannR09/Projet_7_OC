@@ -37,31 +37,60 @@ public class ConsulterPretAction extends ActionSupport {
     public String doListPretRecherche(){
 
         if(!isbn.equals("") || !auteur.equals("") || !titre.equals("")){
-            if(!isbn.equals("") &&  !auteur.equals("") &&  !titre.equals("")){  // Recherche via livre avec chaques input
+            if(!isbn.equals("") &&  !auteur.equals("") &&  !titre.equals("")){  // Recherche via isbn titre et auteur
                 livre = managerFactory.getLivreManager().getLivreTitreAuteurISBN(titre,auteur,isbn);
-            }else if (!isbn.equals("") &&  !auteur.equals("")  && titre.equals("")){  // Recherche via livre avec les inputs isbn et editeur
-
-
-            }else if (!auteur.equals("") &&  !titre.equals("") && isbn.equals("")){  // Recherche via livre avec les inputs titre et editeur
-
-
-            }else if(!isbn.equals("") &&  !titre.equals("") && auteur.equals("")){ // Recherche via livre avec les inputs titre et isbn
-
-
-            }else if (!isbn.equals("") && titre.equals("") && auteur.equals("")){  // Recherche via isbn seulement
-
-
-            } else if (!auteur.equals("") && titre.equals("") && isbn.equals("")){ // Recherche via auteur seulement
-
-
-            }else if (!titre.equals("") && auteur.equals("") && isbn.equals("")){ // Recherche via titre seulement
-
-
+            }else if (!isbn.equals("") &&  !auteur.equals("")  && titre.equals("")){  // Recherche via isbn et editeur
+                livre = managerFactory.getLivreManager().getLivreAuteurISBN(auteur,isbn);
+            }else if (!auteur.equals("") &&  !titre.equals("") && isbn.equals("")){  // Recherche via titre et editeur
+                livre = managerFactory.getLivreManager().getLivreTitreAuteur(titre,auteur);
+            }else if(!isbn.equals("") &&  !titre.equals("") && auteur.equals("")){ // Recherche via titre et isbn
+                livre = managerFactory.getLivreManager().getLivreTitreISBN(titre,isbn);
+            }else if (!isbn.equals("") && titre.equals("") && auteur.equals("")){  // Recherche via isbn
+                livre = managerFactory.getLivreManager().getLivreISBN(isbn);
+            } else if (!auteur.equals("") && titre.equals("") && isbn.equals("")){ // Recherche via auteur
+                livre = managerFactory.getLivreManager().getLivreAuteur(auteur);
+            }else if (!titre.equals("") && auteur.equals("") && isbn.equals("")){ // Recherche via titre
+                livre = managerFactory.getLivreManager().getLivreTitre(titre);
             }
-            pretList = managerFactory.getPretManager().getListPretLivre(livre.getId());
+            if(livre != null) {
+                pretList = managerFactory.getPretManager().getListPretLivre(livre.getId());
+            }
         }
         if(!pseudo.equals("") || !email.equals("") || !nom.equals("") || !prenom.equals("")){
-
+            if(!pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via pseudo email nom et prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNomPrenom(pseudo,email,nom,prenom);
+            }else if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && prenom.equals("")){ // Recherche via pseudo email et nom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNom(pseudo,email,nom);
+            }else if (!pseudo.equals("") && !email.equals("") && !prenom.equals("") && nom.equals("")){ // Recherche via pseudo email et prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailPrenom(pseudo,email,prenom);
+            }else if (!pseudo.equals("") && !nom.equals("") && !prenom.equals("") && email.equals("")){ // Recherche via pseudo nom et prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoNomPrenom(pseudo,nom,prenom);
+            }else if (pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via email nom et prenom
+                abonne = managerFactory.getAbonneManager().getAbonneEmailNomPrenom(email,nom,prenom);
+            }else if (!pseudo.equals("") && !email.equals("") && prenom.equals("") && nom.equals("") ){ // Recherche via pseudo et email
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmail(pseudo,email);
+            }else if (!nom.equals("") && !prenom.equals("") && pseudo.equals("") && email.equals("")){  // Recherche via nom et prenom
+                abonne = managerFactory.getAbonneManager().getAbonneNomPrenom(nom,prenom);
+            }else if (!pseudo.equals("") && !prenom.equals("") && email.equals("") && nom.equals("")){  // Recherche via pseudo et prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoPrenom(pseudo,prenom);
+            }else if(!email.equals("") && !nom.equals("") && pseudo.equals("") && prenom.equals("")){   // Recherche via email et nom
+                abonne = managerFactory.getAbonneManager().getAbonneEmailNom(email,nom);
+            }else if(!email.equals("") && !prenom.equals("") && nom.equals("") && pseudo.equals("")){   // Recherche via email et prenom
+                abonne = managerFactory.getAbonneManager().getAbonneEmailPrenom(email,prenom);
+            }else if(!pseudo.equals("") && !nom.equals("") && email.equals("") && prenom.equals("")){   // Recherche via pseudo et nom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoNom(pseudo,nom);
+            }else if(!pseudo.equals("") && nom.equals("") && email.equals("") && prenom.equals("")){    // Recherche via pseudo
+                abonne = managerFactory.getAbonneManager().getAbonnePseudo(pseudo);
+            }else if(!email.equals("") && nom.equals("") && pseudo.equals("") && prenom.equals("")){    // Recherche via email
+                abonne = managerFactory.getAbonneManager().getAbonneEmail(email);
+            }else if (!nom.equals("") && pseudo.equals("") && prenom.equals("") && email.equals("")){   // Recherche via nom
+                abonne = managerFactory.getAbonneManager().getAbonneNom(nom);
+            }else if (!prenom.equals("") && pseudo.equals("") && nom.equals("") && email.equals("")){   // Recherche via prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePrenom(prenom);
+            }
+            if(abonne!= null) {
+                pretList = managerFactory.getPretManager().getListPretAbonne(abonne.getId());
+            }
         }
 
         return ActionSupport.SUCCESS;

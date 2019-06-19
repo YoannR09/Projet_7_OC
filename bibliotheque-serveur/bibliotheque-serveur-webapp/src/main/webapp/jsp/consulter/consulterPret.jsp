@@ -33,8 +33,8 @@
         }
         #textCodeISBN,#textEditeur,#textTitre,#textEmail,#textNom,#textPrenom,#textPseudo
         {
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
         #selectBibliotheque
         {
@@ -43,12 +43,11 @@
         }
         #btnRecherche
         {
-            margin-left: 10px;
             margin-right: 10px;
         }
         #formulaire
         {
-            width:70%;
+            width:80%;
         }
         #cadrePret
         {
@@ -82,7 +81,7 @@
                 <input id="textNom" name="nom" type="text" class="form-control" placeholder="Nom" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <input id="textPrenom" name="prenom" type="text" class="form-control" placeholder="Prénom" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                    <select id="selectBibliotheque" name="select" class="form-control col-5">
+                    <select id="selectBibliotheque" name="select" class="form-control ">
                         <option>Toutes les bibliothèques</option>
                         <option>Bibliothèque de la gare</option>
                         <option>Bibliotheque centre ville</option>

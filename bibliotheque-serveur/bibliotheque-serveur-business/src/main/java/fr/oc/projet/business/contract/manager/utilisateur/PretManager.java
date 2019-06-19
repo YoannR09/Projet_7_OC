@@ -11,4 +11,6 @@ public interface PretManager {
     List<Pret> getListPret();
 
     List<Pret> getListPretLivre(Integer livreId);
+
+    List<Pret> getListPretAbonne(Integer abonneId);
 }

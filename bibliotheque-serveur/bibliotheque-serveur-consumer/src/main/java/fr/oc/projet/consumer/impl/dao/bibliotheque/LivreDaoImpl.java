@@ -4,6 +4,7 @@ import fr.oc.projet.consumer.contract.dao.bibliotheque.LivreDao;
 import fr.oc.projet.consumer.impl.dao.AbstractDaoImpl;
 import fr.oc.projet.consumer.rowmapper.bibliotheque.LivreRM;
 import fr.oc.projet.model.beans.bibliotheque.Livre;
+import fr.oc.projet.model.beans.utilisateur.Abonne;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.inject.Inject;
@@ -31,38 +32,104 @@ public class LivreDaoImpl extends AbstractDaoImpl implements LivreDao {
                 " AND isbn LIKE "+"'"+isbn+"'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        Livre livre = vJdbcTemplate.queryForObject(vSQL,livreRM);
-        return livre;
+        List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
+        if (vList.size() != 0) {
+            Livre livre = vList.get(0);
+            return livre;
+        }else {
+            return null;
+        }
+
     }
 
     @Override
     public Livre getLivreTitreAuteur(String titre, String auteur) {
-        return null;
+        String vSQL = "SELECT * FROM livre WHERE nom LIKE "+"'"+titre+"'" +
+                " AND auteur LIKE "+"'"+auteur+"'" +
+                " LIMIT 1" ;
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
+        if (vList.size() != 0) {
+            Livre livre = vList.get(0);
+            return livre;
+        }else {
+            return null;
+        }
     }
 
     @Override
     public Livre getLivreAuteurISBN(String auteur, String isbn) {
-        return null;
+        String vSQL = "SELECT * FROM livre WHERE " +
+                " auteur LIKE "+"'"+auteur+"'" +
+                " AND isbn LIKE "+"'"+isbn+"'" +
+                " LIMIT 1" ;
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
+        if (vList.size() != 0) {
+            Livre livre = vList.get(0);
+            return livre;
+        }else {
+            return null;
+        }
     }
 
     @Override
     public Livre getLivreTitreISBN(String titre, String isbn) {
-        return null;
+        String vSQL = "SELECT * FROM livre WHERE nom LIKE "+"'"+titre+"'" +
+                " AND isbn LIKE "+"'"+isbn+"'" +
+                " LIMIT 1" ;
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
+        if (vList.size() != 0) {
+            Livre livre = vList.get(0);
+            return livre;
+        }else {
+            return null;
+        }
     }
 
     @Override
     public Livre getLivreTitre(String titre) {
-        return null;
+        String vSQL = "SELECT * FROM livre WHERE nom LIKE "+"'"+titre+"'" +
+                " LIMIT 1" ;
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
+        if (vList.size() != 0) {
+            Livre livre = vList.get(0);
+            return livre;
+        }else {
+            return null;
+        }
     }
 
     @Override
     public Livre getLivreAuteur(String auteur) {
-        return null;
+        String vSQL = "SELECT * FROM livre WHERE "+
+                " auteur LIKE "+"'"+auteur+"'" +
+                " LIMIT 1" ;
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
+        if (vList.size() != 0) {
+            Livre livre = vList.get(0);
+            return livre;
+        }else {
+            return null;
+        }
     }
 
     @Override
     public Livre getLivreISBN(String isbn) {
-        return null;
+        String vSQL = "SELECT * FROM livre WHERE "+
+                " isbn LIKE "+"'"+isbn+"'" +
+                " LIMIT 1" ;
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
+        if (vList.size() != 0) {
+            Livre livre = vList.get(0);
+            return livre;
+        }else {
+            return null;
+        }
     }
 
     @Override
