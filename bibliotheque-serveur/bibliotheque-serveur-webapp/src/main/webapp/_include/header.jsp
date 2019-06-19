@@ -19,7 +19,7 @@
                 <s:a action="consulterPret" class="nav-link">Consulter les prêts</s:a>
             </li>
             <li class="nav-item">
-                <s:a action="" class="nav-link">Ajouter un prêt</s:a>
+                <s:a action="ajouterPret" class="nav-link">Ajouter un prêt</s:a>
             </li>
         </ul>
     </div>

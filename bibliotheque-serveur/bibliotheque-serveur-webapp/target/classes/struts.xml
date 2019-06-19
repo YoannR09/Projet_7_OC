@@ -8,31 +8,47 @@
         <default-action-ref name="index" />
         <!-- Action "index" -->
         <action name="index">
-            <result>/index.jsp</result>
+            <result>/WEB-INF/jsp/index.jsp</result>
         </action>
 
         <action name="consulterPret"
                 class="fr.oc.projet.webapp.action.ConsulterPretAction"
                 method="doConsulterPret">
-            <result name="success">/jsp/consulter/consulterPret.jsp</result>
+            <result name="success">WEB-INF/jsp/consulter/consulterPret.jsp</result>
         </action>
 
         <action name="recherchePret"
                 class="fr.oc.projet.webapp.action.ConsulterPretAction"
                 method="doListPretRecherche">
-            <result name="success">/jsp/consulter/consulterPret.jsp</result>
+            <result name="success">WEB-INF/jsp/consulter/consulterPret.jsp</result>
         </action>
 
         <action name="prolongationPret"
                 class="fr.oc.projet.webapp.action.ConsulterPretAction"
                 method="doProlongattionPret">
-            <result name="success">/jsp/consulter/consulterPret.jsp</result>
+            <result name="success">WEB-INF/jsp/consulter/consulterPret.jsp</result>
         </action>
 
         <action name="deletePret"
                 class="fr.oc.projet.webapp.action.ConsulterPretAction"
                 method="doDeletePret">
-            <result name="success">/jsp/consulter/consulterPret.jsp</result>
+            <result name="success">WEB-INF/jsp/consulter/consulterPret.jsp</result>
+        </action>
+
+        <action name="ajouterPret">
+            <result>WEB-INF/jsp/ajouter/ajouterPret.jsp</result>
+        </action>
+
+        <action name="selectionnerAbonne"
+                class="fr.oc.projet.webapp.action.AjouterPretAction"
+                method="doSelectionAbonne">
+            <result name="success">WEB-INF/jsp/ajouter/selectionnerAbonne.jsp</result>
+        </action>
+
+        <action name="rechercheLivre"
+                class="fr.oc.projet.webapp.action.AjouterPretAction"
+                method="doListLivre">
+            <result name="success">WEB-INF/jsp/ajouter/ajouterPret.jsp</result>
         </action>
 
     </package>
