@@ -29,5 +29,11 @@
             <result name="success">/jsp/consulter/consulterPret.jsp</result>
         </action>
 
+        <action name="deletePret"
+                class="fr.oc.projet.webapp.action.ConsulterPretAction"
+                method="doDeletePret">
+            <result name="success">/jsp/consulter/consulterPret.jsp</result>
+        </action>
+
     </package>
 </struts>

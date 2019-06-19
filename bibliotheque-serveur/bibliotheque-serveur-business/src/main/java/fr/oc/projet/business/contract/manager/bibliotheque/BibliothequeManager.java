@@ -7,6 +7,7 @@ import java.util.List;
 public interface BibliothequeManager {
 
     Bibliotheque getBibliotheque(Integer pId);
+    Bibliotheque getBibliothequeNom(String nom);
     List<Bibliotheque> getListBibliotheque();
 
 }

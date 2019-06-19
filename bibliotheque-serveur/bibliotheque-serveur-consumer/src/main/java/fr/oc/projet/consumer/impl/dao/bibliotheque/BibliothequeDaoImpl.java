@@ -28,6 +28,17 @@ public class BibliothequeDaoImpl extends AbstractDaoImpl implements Bibliotheque
     }
 
     @Override
+    public Bibliotheque getBibliothequeNom(String nom) {
+        String vSQL = "SELECT * FROM bibliotheque WHERE nom = "+"'"+nom+"'";
+
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+
+        Bibliotheque bibliotheque = vJdbcTemplate.queryForObject(vSQL,bibliothequeRM);
+
+        return bibliotheque;
+    }
+
+    @Override
     public List<Bibliotheque> getListBibliotheque() {
         String vSQL = "SELECT * FROM bibliotheque ";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());

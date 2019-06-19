@@ -32,6 +32,16 @@ public class PretManagerImpl extends AbstractManagerImpl implements PretManager 
     }
 
     @Override
+    public List<Pret> getListPretLivreBibliotheque(Integer livreId, Integer bibliothequeId) {
+        return getDaoFactory().getPretDao().getListPretLivreBibliotheque(livreId,bibliothequeId);
+    }
+
+    @Override
+    public List<Pret> getListPretAbonneBibliotheque(Integer abonneId, Integer bibliothequeId) {
+        return getDaoFactory().getPretDao().getListPretAbonneBibliotheque(abonneId,bibliothequeId);
+    }
+
+    @Override
     public void updateProlongation(Pret pret) {
         getDaoFactory().getPretDao().updateProlongation(pret);
     }
@@ -39,5 +49,10 @@ public class PretManagerImpl extends AbstractManagerImpl implements PretManager 
     @Override
     public void updateDateRestitution(Pret pret) {
         getDaoFactory().getPretDao().updateDateRestitution(pret);
+    }
+
+    @Override
+    public void deletePret(Integer idPret) {
+        getDaoFactory().getPretDao().deletePret(idPret);
     }
 }

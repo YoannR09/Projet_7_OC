@@ -17,6 +17,11 @@ public class BibliothequeManagerImpl extends AbstractManagerImpl implements Bibl
     }
 
     @Override
+    public Bibliotheque getBibliothequeNom(String nom) {
+        return getDaoFactory().getBibliotheque().getBibliothequeNom(nom);
+    }
+
+    @Override
     public List<Bibliotheque> getListBibliotheque() {
         return getDaoFactory().getBibliotheque().getListBibliotheque();
     }

@@ -7,9 +7,8 @@ import fr.oc.projet.model.beans.utilisateur.Abonne;
 import fr.oc.projet.model.beans.utilisateur.Pret;
 
 import javax.inject.Inject;
-import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -29,7 +28,9 @@ public class ConsulterPretAction extends ActionSupport {
     private         Abonne          abonne;
     private         Livre           livre;
     private         Integer         pretId;
+    private         Integer         bibliothequeId;
     private         Pret            pret;
+    private         String          recherche;
 
     @Inject
     private ManagerFactory managerFactory;
@@ -40,7 +41,6 @@ public class ConsulterPretAction extends ActionSupport {
      * @return
      */
     public String doListPretRecherche(){
-
         if(!isbn.equals("") || !auteur.equals("") || !titre.equals("")){
             if(!isbn.equals("") &&  !auteur.equals("") &&  !titre.equals("")){  // Recherche via isbn titre et auteur
                 livre = managerFactory.getLivreManager().getLivreTitreAuteurISBN(titre,auteur,isbn);
@@ -58,8 +58,9 @@ public class ConsulterPretAction extends ActionSupport {
                 livre = managerFactory.getLivreManager().getLivreTitre(titre);
             }
             if(livre != null) {
-                pretList = managerFactory.getPretManager().getListPretLivre(livre.getId());
+               pretList = rechercheViaBibliothequeLivre(bibliotheque,livre);
             }
+            recherche = "livre";
         }
         if(!pseudo.equals("") || !email.equals("") || !nom.equals("") || !prenom.equals("")){
             if(!pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via pseudo email nom et prenom
@@ -94,13 +95,19 @@ public class ConsulterPretAction extends ActionSupport {
                 abonne = managerFactory.getAbonneManager().getAbonnePrenom(prenom);
             }
             if(abonne!= null) {
-                pretList = managerFactory.getPretManager().getListPretAbonne(abonne.getId());
+               pretList = rechercheViaBibliothequeAbonne(bibliotheque,abonne);
             }
+            recherche = "abonne";
         }
-
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Méthode pour prolonger la date de resitution du prêt en cours
+     * On ajoute 28 jours à la période d'emprunt
+     * Ce prêt ne pourra plus être prolongé.
+     * @return
+     */
     public String doProlongattionPret(){
 
         pret = managerFactory.getPretManager().getPret(pretId);
@@ -111,8 +118,62 @@ public class ConsulterPretAction extends ActionSupport {
         managerFactory.getPretManager().updateDateRestitution(pret);
         pret.setProlonge(true);
         managerFactory.getPretManager().updateProlongation(pret);
-
+        if(recherche.equals("livre")){
+            pretList = rechercheViaBibliothequeLivre(bibliotheque,pret.getLivreUnique().getLivre());
+        }else if (recherche.equals("abonne")){
+            pretList = rechercheViaBibliothequeAbonne(bibliotheque,pret.getAbonne());
+        }
         return ActionSupport.SUCCESS;
+    }
+
+    public String doDeletePret(){
+
+        pret = managerFactory.getPretManager().getPret(pretId);
+        managerFactory.getPretManager().deletePret(pretId);
+        if(recherche.equals("livre")){
+            pretList = rechercheViaBibliothequeLivre(bibliotheque,pret.getLivreUnique().getLivre());
+        }else {
+            pretList = rechercheViaBibliothequeAbonne(bibliotheque,pret.getAbonne());
+        }
+        return ActionSupport.SUCCESS;
+    }
+
+    /**
+     * Méthode pour rechercher une liste de prêts
+     * Si le nom de bibliotheque est "Toutes les bibliothèques"
+     * Alors on cherche dans toutes les bibliotèques
+     * @param bibliotheque
+     * @return
+     */
+    public List<Pret> rechercheViaBibliothequeAbonne(String bibliotheque,Abonne abonne){
+
+        List<Pret> vList;
+        if(!bibliotheque.equals("Toutes les bibliothèques")){
+            bibliothequeId = managerFactory.getBibliothequeManager().getBibliothequeNom(bibliotheque).getId();
+            vList = managerFactory.getPretManager().getListPretAbonneBibliotheque(abonne.getId(),bibliothequeId);
+        }else {
+            vList = managerFactory.getPretManager().getListPretAbonne(abonne.getId());
+        }
+        return vList;
+    }
+
+    /**
+     * Méthode pour rechercher une liste de prêts
+     * Si le nom de bibliotheque est "Toutes les bibliothèques"
+     * Alors on cherche dans toutes les bibliotèques
+     * @param bibliotheque
+     * @return
+     */
+    public List<Pret> rechercheViaBibliothequeLivre(String bibliotheque,Livre livre){
+
+        List<Pret> vList = new ArrayList<>();
+        if(!bibliotheque.equals("Toutes les bibliothèques")){
+            bibliothequeId = managerFactory.getBibliothequeManager().getBibliothequeNom(bibliotheque).getId();
+            vList = managerFactory.getPretManager().getListPretLivreBibliotheque(livre.getId(),bibliothequeId);
+        }else {
+            vList = managerFactory.getPretManager().getListPretLivre(livre.getId());
+        }
+        return vList;
     }
 
     public String doConsulterPret(){
@@ -215,5 +276,21 @@ public class ConsulterPretAction extends ActionSupport {
 
     public void setPretId(Integer pretId) {
         this.pretId = pretId;
+    }
+
+    public Pret getPret() {
+        return pret;
+    }
+
+    public void setPret(Pret pret) {
+        this.pret = pret;
+    }
+
+    public String getRecherche() {
+        return recherche;
+    }
+
+    public void setRecherche(String recherche) {
+        this.recherche = recherche;
     }
 }

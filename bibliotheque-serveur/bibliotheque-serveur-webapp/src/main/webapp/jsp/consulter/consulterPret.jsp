@@ -95,11 +95,11 @@
                 <div class="col-auto" style="margin: 7px">
                     <div class="input-group mb-2">
                         <div class="form-check form-check-inline">
-                            <input id="btnAbonne" class="form-check-input" type="radio" name="inlineRadioOptions"  value="option1">
+                            <input id="btnAbonne" class="form-check-input" type="radio" name="recherche"  value="option1">
                             <label   class="form-check-label" for="btnAbonne">Abonnées</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input  id="btnLivre" class="form-check-input" type="radio" name="inlineRadioOptions" value="option2" checked>
+                            <input  id="btnLivre" class="form-check-input" type="radio" name="recherche" value="option2" checked>
                             <label class="form-check-label" for="btnLivre">Livres</label>
                         </div>
                     </div>
@@ -112,9 +112,9 @@
                 <input id="textNom" name="nom" type="text" class="form-control" placeholder="Nom" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <input id="textPrenom" name="prenom" type="text" class="form-control" placeholder="Prénom" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                    <select id="selectBibliotheque" name="select" class="form-control ">
+                    <select id="selectBibliotheque" name="bibliotheque" class="form-control ">
                         <option>Toutes les bibliothèques</option>
-                        <option>Bibliothèque de la gare</option>
+                        <option>Bibliotheque de la gare</option>
                         <option>Bibliotheque centre ville</option>
                         <option>Bibliotheque du port marchand</option>
                     </select>
@@ -153,12 +153,20 @@
                     <td><s:property value="dateEmprunt"/></td>
                     <td><s:property value="dateRestitution"/></td>
                     <s:if test="prolonge">
-                        <td id="tdBtnRenouv"><button type="button" class="btn btn-info" style="font-size:0.6em;" disabled> <i class="fas fa-redo-alt"></i></button></td>
+                        <td id="tdBtnRenouv"><button type="button" class="btn btn-info" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
                     </s:if>
                     <s:else>
-                        <td id="tdBtnRenouv"><s:a action="prolongationPret" class="btn btn-info" style="font-size:0.6em;"><s:param name="pretId" value="id" /><i class="fas fa-redo-alt"></i></i></s:a></td>
+                        <td id="tdBtnRenouv"><s:a action="prolongationPret" class="btn btn-info" style="font-size:0.6em;">
+                            <s:param name="pretId" value="id" />
+                            <s:param name="recherche" value="recherche" />
+                            <s:param name="bibliotheque" value="bibliotheque" />
+                            <i class="fas fa-redo-alt"></i></i></s:a></td>
                     </s:else>
-                    <td id="tdBtnSuppr"><s:a action="" class="btn btn-danger" style="font-size:0.6em;"><s:param name="pretId" value="id" /><i class="fas fa-times"></i></s:a></td>
+                    <td id="tdBtnSuppr"><s:a action="deletePret" class="btn btn-danger" style="font-size:0.6em;">
+                        <s:param name="pretId" value="id" />
+                        <s:param name="recherche" value="recherche" />
+                        <s:param name="bibliotheque" value="bibliotheque" />
+                        <i class="fas fa-times"></i></s:a></td>
                 </tr>
                 </s:iterator>
             </tbody>

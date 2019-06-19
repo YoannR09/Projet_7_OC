@@ -51,6 +51,26 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
     }
 
     @Override
+    public List<Pret> getListPretLivreBibliotheque(Integer livreId, Integer bibliothequeId) {
+        String vSQL = "SELECT * FROM pret,livre_unique WHERE livre_unique.livre_id = "+livreId +" " +
+                " AND livre_unique_id = livre_unique.id" +
+                " AND bibliotheque_id = "+bibliothequeId;
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Pret> vList = vJdbcTemplate.query(vSQL,pretRM);
+        return vList;
+    }
+
+    @Override
+    public List<Pret> getListPretAbonneBibliotheque(Integer abonneId, Integer bibliothequeId) {
+        String vSQL = "SELECT * FROM pret,livre_unique WHERE abonne_id = "+abonneId +" " +
+                " AND livre_unique.id = livre_unique_id" +
+                " AND bibliotheque_id = " +bibliothequeId;
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Pret> vList = vJdbcTemplate.query(vSQL,pretRM);
+        return vList;
+    }
+
+    @Override
     public void updateProlongation(Pret pret) {
 
         String vSQL = "UPDATE pret SET prolonge = ? WHERE id = ?";
@@ -72,6 +92,17 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
         };
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams);
+    }
+
+    @Override
+    public void deletePret(Integer idPret) {
+
+        String vSQL = "DELETE FROM pret WHERE id = "+idPret;
+
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+
+        vJdbcTemplate.update(vSQL);
+
     }
 
 }

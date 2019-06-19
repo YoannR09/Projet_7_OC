@@ -14,7 +14,13 @@ public interface PretManager {
 
     List<Pret> getListPretAbonne(Integer abonneId);
 
+    List<Pret> getListPretLivreBibliotheque(Integer livreId,Integer bibliothequeId);
+
+    List<Pret> getListPretAbonneBibliotheque(Integer abonneId,Integer bibliothequeId);
+
     void updateProlongation(Pret pret);
 
     void updateDateRestitution(Pret pret);
+
+    void deletePret(Integer idPret);
 }
