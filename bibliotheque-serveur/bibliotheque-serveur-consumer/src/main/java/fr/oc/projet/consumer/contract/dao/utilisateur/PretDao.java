@@ -14,4 +14,8 @@ public interface PretDao {
 
     List<Pret> getListPretAbonne(Integer abonneId);
 
+    void updateProlongation(Pret pret);
+
+    void updateDateRestitution(Pret pret);
+
 }

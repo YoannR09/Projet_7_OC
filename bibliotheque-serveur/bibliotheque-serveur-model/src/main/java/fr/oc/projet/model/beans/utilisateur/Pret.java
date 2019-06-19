@@ -1,5 +1,6 @@
 package fr.oc.projet.model.beans.utilisateur;
 
+import fr.oc.projet.model.beans.bibliotheque.Livre;
 import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
 
 import java.util.Date;
@@ -63,4 +64,5 @@ public class Pret {
     public void setAbonne(Abonne abonne) {
         this.abonne = abonne;
     }
+
 }

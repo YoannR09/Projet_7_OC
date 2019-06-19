@@ -23,5 +23,11 @@
             <result name="success">/jsp/consulter/consulterPret.jsp</result>
         </action>
 
+        <action name="prolongationPret"
+                class="fr.oc.projet.webapp.action.ConsulterPretAction"
+                method="doProlongattionPret">
+            <result name="success">/jsp/consulter/consulterPret.jsp</result>
+        </action>
+
     </package>
 </struts>

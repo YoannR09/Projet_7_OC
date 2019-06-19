@@ -1,5 +1,6 @@
 package fr.oc.projet.consumer.rowmapper.utilisateur;
 
+import fr.oc.projet.consumer.contract.dao.bibliotheque.LivreDao;
 import fr.oc.projet.consumer.contract.dao.bibliotheque.LivreUniqueDao;
 import fr.oc.projet.consumer.contract.dao.utilisateur.AbonneDao;
 import fr.oc.projet.model.beans.utilisateur.Pret;
@@ -17,6 +18,8 @@ public class PretRM implements RowMapper<Pret> {
     private AbonneDao abonneDao;
     @Inject
     private LivreUniqueDao livreUniqueDao;
+    @Inject
+    private LivreDao livreDao;
 
 
     @Override

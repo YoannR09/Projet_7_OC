@@ -30,4 +30,14 @@ public class PretManagerImpl extends AbstractManagerImpl implements PretManager 
     public List<Pret> getListPretAbonne(Integer abonneId) {
         return getDaoFactory().getPretDao().getListPretAbonne(abonneId);
     }
+
+    @Override
+    public void updateProlongation(Pret pret) {
+        getDaoFactory().getPretDao().updateProlongation(pret);
+    }
+
+    @Override
+    public void updateDateRestitution(Pret pret) {
+        getDaoFactory().getPretDao().updateDateRestitution(pret);
+    }
 }

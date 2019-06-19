@@ -5,7 +5,7 @@ import java.util.Date;
 public class Livre {
 
     private         Integer             id;
-    private         String              nom;
+    private         String              titre;
     private         String              resume;
     private         String              auteur;
     private         String              editeur;
@@ -19,12 +19,12 @@ public class Livre {
     public Livre() {
     }
 
-    public String getNom() {
-        return nom;
+    public String getTitre() {
+        return titre;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setTitre(String titre) {
+        this.titre = titre;
     }
 
     public String getResume() {

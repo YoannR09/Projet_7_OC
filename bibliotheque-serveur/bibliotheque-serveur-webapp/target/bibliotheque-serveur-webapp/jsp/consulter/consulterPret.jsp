@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%--
   Created by IntelliJ IDEA.
   User: El-ra
@@ -6,11 +7,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <!DOCTYPE html>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <%@ include file="/_include/head.jsp"%>
     <style type="text/css">
+        *
+        {
+            font-family: "Microsoft YaHei UI Light";
+        }
         #bloc
         {
             margin: 20px;
@@ -45,13 +49,36 @@
         {
             margin-right: 10px;
         }
-        #formulaire
-        {
-            width:80%;
-        }
         #cadrePret
         {
+            margin-top: 50px;
+        }
+        #bottom
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+        #labelRecherche
+        {
+            float: left;
+            font-size: 1.3em;
+            margin: 10px;
+            font-weight: bold;
+        }
+        #tableau
+        {
+            border: 1px gray solid;
+        }
+        tr,td
+        {
+            text-align: center;
+        }
 
+        #tdBtnRenouv,#tdBtnSuppr, #thBtnRenouv,#thBtnSuppr
+        {
+            border-left: 1px solid darkgray;
+            border-right: 1px solid darkgray;
+            background-color: whitesmoke;
         }
     </style>
 </head>
@@ -64,13 +91,17 @@
     <div id="barreDeRecherche" class="bg-light">
         <s:form id="formulaire" action="recherchePret" >
             <div class="input-group">
-                <div class="col-auto">
+                <label class="form-check-label" style="margin: 7px">Rechercher via : </label>
+                <div class="col-auto" style="margin: 7px">
                     <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text bg-light">Rechercher via</div>
+                        <div class="form-check form-check-inline">
+                            <input id="btnAbonne" class="form-check-input" type="radio" name="inlineRadioOptions"  value="option1">
+                            <label   class="form-check-label" for="btnAbonne">Abonnées</label>
                         </div>
-                        <button id="btnAbonne" type="button" class="btn btn-outline-secondary">Abonnées</button>
-                        <button id="btnLivre" type="button" class="btn btn-outline-secondary">Livres</button>
+                        <div class="form-check form-check-inline">
+                            <input  id="btnLivre" class="form-check-input" type="radio" name="inlineRadioOptions" value="option2" checked>
+                            <label class="form-check-label" for="btnLivre">Livres</label>
+                        </div>
                     </div>
                 </div>
                 <input id="textTitre" name="titre" type="text" class="form-control" placeholder="Titre" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -89,19 +120,51 @@
                     </select>
                 </div>
                 <div>
-                    <button type="submit" value="Rechercher" id="btnRecherche" class="btn btn-outline-secondary">Rechercher</button>
+                    <button type="submit" value="Rechercher" id="btnRecherche" class="btn btn-outline-info">Rechercher</button>
                 </div>
             </div>
         </s:form>
     </div>
-    <div id="cadrePret">
-        <s:iterator value="pretList">
-            <s:property value="dateEmprunt"/>
-             <s:property value="dateRestitution"/>
-            <s:property value="prolonge"/>
-            <s:property value="abonne.pseudo"/>
-            <s:property value="livre.titre"/>
-        </s:iterator>
+    <div id="bottom">
+    <div id="cadrePret" class="col-9" >
+        <label class="form-check-label" id="labelRecherche"> Ma recherche de prêts en cours</label>
+        <table class="table" id="tableau">
+            <thead>
+            <tr>
+                <th scope="col">Pseudo</th>
+                <th scope="col">Titre du livre</th>
+                <th scope="col">ISBN</th>
+                <th scope="col">Numéro interne</th>
+                <th scope="col">Bibliothèque</th>
+                <th scope="col">Date d'emprunt</th>
+                <th scope="col">Date de réstitution</th>
+                <th scope="col" id="thBtnRenouv">Renouveler</th>
+                <th scope="col" id="thBtnSuppr">Effacer</th>
+            </tr>
+            </thead>
+            <tbody>
+                <s:iterator value="pretList">
+                <tr>
+                    <td><s:property value="abonne.pseudo"/></td>
+                    <td> <s:property value="livreUnique.livre.titre"/></td>
+                    <td><s:property value="livreUnique.livre.isbn"/></td>
+                    <td><s:property value="livreUnique.numeroInterne"/></td>
+                    <td><s:property value="livreUnique.bibliotheque.nom"/></td>
+                    <td><s:property value="dateEmprunt"/></td>
+                    <td><s:property value="dateRestitution"/></td>
+                    <s:if test="prolonge">
+                        <td id="tdBtnRenouv"><button type="button" class="btn btn-info" style="font-size:0.6em;" disabled> <i class="fas fa-redo-alt"></i></button></td>
+                    </s:if>
+                    <s:else>
+                        <td id="tdBtnRenouv"><s:a action="prolongationPret" class="btn btn-info" style="font-size:0.6em;"><s:param name="pretId" value="id" /><i class="fas fa-redo-alt"></i></i></s:a></td>
+                    </s:else>
+                    <td id="tdBtnSuppr"><s:a action="" class="btn btn-danger" style="font-size:0.6em;"><s:param name="pretId" value="id" /><i class="fas fa-times"></i></s:a></td>
+                </tr>
+                </s:iterator>
+            </tbody>
+        </table>
+
+    </div>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

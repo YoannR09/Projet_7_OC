@@ -5,9 +5,11 @@ import fr.oc.projet.consumer.impl.dao.AbstractDaoImpl;
 import fr.oc.projet.consumer.rowmapper.utilisateur.PretRM;
 import fr.oc.projet.model.beans.utilisateur.Pret;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.SqlParameterValue;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.sql.Types;
 import java.util.List;
 
 @Named
@@ -47,4 +49,29 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
         List<Pret> vList = vJdbcTemplate.query(vSQL,pretRM);
         return vList;
     }
+
+    @Override
+    public void updateProlongation(Pret pret) {
+
+        String vSQL = "UPDATE pret SET prolonge = ? WHERE id = ?";
+        Object[] vParams = {
+                new SqlParameterValue(Types.BOOLEAN, pret.getProlonge()),
+                new SqlParameterValue(Types.INTEGER, pret.getId()),
+        };
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        vJdbcTemplate.update(vSQL, vParams);
+    }
+
+    @Override
+    public void updateDateRestitution(Pret pret) {
+
+        String vSQL = "UPDATE pret SET date_restitution = ? WHERE id = ?";
+        Object[] vParams = {
+                new SqlParameterValue(Types.DATE, pret.getDateRestitution()),
+                new SqlParameterValue(Types.INTEGER, pret.getId()),
+        };
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        vJdbcTemplate.update(vSQL, vParams);
+    }
+
 }

@@ -7,6 +7,9 @@ import fr.oc.projet.model.beans.utilisateur.Abonne;
 import fr.oc.projet.model.beans.utilisateur.Pret;
 
 import javax.inject.Inject;
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -25,6 +28,8 @@ public class ConsulterPretAction extends ActionSupport {
     private         List<Pret>      pretList;
     private         Abonne          abonne;
     private         Livre           livre;
+    private         Integer         pretId;
+    private         Pret            pret;
 
     @Inject
     private ManagerFactory managerFactory;
@@ -92,6 +97,20 @@ public class ConsulterPretAction extends ActionSupport {
                 pretList = managerFactory.getPretManager().getListPretAbonne(abonne.getId());
             }
         }
+
+        return ActionSupport.SUCCESS;
+    }
+
+    public String doProlongattionPret(){
+
+        pret = managerFactory.getPretManager().getPret(pretId);
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(pret.getDateRestitution());
+        cal.add(Calendar.DATE,28);
+        pret.setDateRestitution(cal.getTime());
+        managerFactory.getPretManager().updateDateRestitution(pret);
+        pret.setProlonge(true);
+        managerFactory.getPretManager().updateProlongation(pret);
 
         return ActionSupport.SUCCESS;
     }
@@ -188,5 +207,13 @@ public class ConsulterPretAction extends ActionSupport {
 
     public void setLivre(Livre livre) {
         this.livre = livre;
+    }
+
+    public Integer getPretId() {
+        return pretId;
+    }
+
+    public void setPretId(Integer pretId) {
+        this.pretId = pretId;
     }
 }
