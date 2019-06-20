@@ -27,7 +27,7 @@ public class LivreRM implements RowMapper<Livre> {
         livre.setResume(resultSet.getString("resume"));
         livre.setDateDeCreation(resultSet.getDate("date_de_creation"));
         livre.setIsbn(resultSet.getString("isbn"));
-        livre.setTitre(resultSet.getString("nom"));
+        livre.setTitre(resultSet.getString("titre"));
         livre.setLangue(resultSet.getString("langue"));
         livre.setIllustration(illustrationDao.getIllustration(resultSet.getInt("illustration_id")));
         livre.setCategorie(categorieDao.getCategorie(resultSet.getInt("categorie_id")));

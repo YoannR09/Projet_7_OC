@@ -6,6 +6,8 @@ import fr.oc.projet.consumer.rowmapper.utilisateur.PretRM;
 import fr.oc.projet.model.beans.utilisateur.Pret;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.SqlParameterValue;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -98,11 +100,21 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
     public void deletePret(Integer idPret) {
 
         String vSQL = "DELETE FROM pret WHERE id = "+idPret;
-
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-
         vJdbcTemplate.update(vSQL);
-
     }
 
+    @Override
+    public void addPret(Pret pret) {
+            String vSQL = "INSERT INTO pret (date_emprunt, date_restitution, prolonge, abonne_id, livre_unique_id)" +
+                    " VALUES (:dateEmprunt, :dateRestitution, :prolongation, :abonneId, :livreUniqueId)";
+            NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+            BeanPropertySqlParameterSource vParams = new BeanPropertySqlParameterSource(pret);
+            vParams.registerSqlType("dateEmprunt", Types.DATE);
+            vParams.registerSqlType("motRestitution", Types.DATE);
+            vParams.registerSqlType("prolongation", Types.BOOLEAN);
+            vParams.registerSqlType("abonneId", Types.INTEGER);
+            vParams.registerSqlType("livreUniqueId", Types.INTEGER);
+            vJdbcTemplate.update(vSQL, vParams);
+    }
 }

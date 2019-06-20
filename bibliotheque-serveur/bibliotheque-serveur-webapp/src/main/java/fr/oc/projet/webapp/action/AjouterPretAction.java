@@ -4,20 +4,30 @@ import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.business.contract.ManagerFactory;
 import fr.oc.projet.model.beans.bibliotheque.Livre;
 import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
+import fr.oc.projet.model.beans.utilisateur.Abonne;
+import fr.oc.projet.model.beans.utilisateur.Pret;
 
 import javax.inject.Inject;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class AjouterPretAction extends ActionSupport {
 
-    private String isbn;
-    private String auteur;
-    private String titre;
-    private String bibliotheque;
-    private Integer bibliothequeId;
-    private Integer livreId;
-    private Livre livre;
-    private List<LivreUnique> livreUniqueList;
+    private         String              isbn;
+    private         String              auteur;
+    private         String              titre;
+    private         String              bibliotheque;
+    private         String              email;
+    private         String              pseudo;
+    private         String              nom;
+    private         String              prenom;
+    private         Integer             bibliothequeId;
+    private         Integer             livreUniqueId;
+    private         Integer             abonneId;
+    private         Livre               livre;
+    private         Abonne              abonne;
+    private         List<LivreUnique>   livreUniqueList;
 
     @Inject
     ManagerFactory managerFactory;
@@ -62,7 +72,64 @@ public class AjouterPretAction extends ActionSupport {
         }
 
         public String doSelectionAbonne(){
-        
+
+
+        return ActionSupport.SUCCESS;
+        }
+
+        public String doAbonne(){
+
+            if(!pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via pseudo email nom et prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNomPrenom(pseudo,email,nom,prenom);
+            }else if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && prenom.equals("")){ // Recherche via pseudo email et nom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNom(pseudo,email,nom);
+            }else if (!pseudo.equals("") && !email.equals("") && !prenom.equals("") && nom.equals("")){ // Recherche via pseudo email et prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailPrenom(pseudo,email,prenom);
+            }else if (!pseudo.equals("") && !nom.equals("") && !prenom.equals("") && email.equals("")){ // Recherche via pseudo nom et prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoNomPrenom(pseudo,nom,prenom);
+            }else if (pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via email nom et prenom
+                abonne = managerFactory.getAbonneManager().getAbonneEmailNomPrenom(email,nom,prenom);
+            }else if (!pseudo.equals("") && !email.equals("") && prenom.equals("") && nom.equals("") ){ // Recherche via pseudo et email
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmail(pseudo,email);
+            }else if (!nom.equals("") && !prenom.equals("") && pseudo.equals("") && email.equals("")){  // Recherche via nom et prenom
+                abonne = managerFactory.getAbonneManager().getAbonneNomPrenom(nom,prenom);
+            }else if (!pseudo.equals("") && !prenom.equals("") && email.equals("") && nom.equals("")){  // Recherche via pseudo et prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoPrenom(pseudo,prenom);
+            }else if(!email.equals("") && !nom.equals("") && pseudo.equals("") && prenom.equals("")){   // Recherche via email et nom
+                abonne = managerFactory.getAbonneManager().getAbonneEmailNom(email,nom);
+            }else if(!email.equals("") && !prenom.equals("") && nom.equals("") && pseudo.equals("")){   // Recherche via email et prenom
+                abonne = managerFactory.getAbonneManager().getAbonneEmailPrenom(email,prenom);
+            }else if(!pseudo.equals("") && !nom.equals("") && email.equals("") && prenom.equals("")){   // Recherche via pseudo et nom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoNom(pseudo,nom);
+            }else if(!pseudo.equals("") && nom.equals("") && email.equals("") && prenom.equals("")){    // Recherche via pseudo
+                abonne = managerFactory.getAbonneManager().getAbonnePseudo(pseudo);
+            }else if(!email.equals("") && nom.equals("") && pseudo.equals("") && prenom.equals("")){    // Recherche via email
+                abonne = managerFactory.getAbonneManager().getAbonneEmail(email);
+            }else if (!nom.equals("") && pseudo.equals("") && prenom.equals("") && email.equals("")){   // Recherche via nom
+                abonne = managerFactory.getAbonneManager().getAbonneNom(nom);
+            }else if (!prenom.equals("") && pseudo.equals("") && nom.equals("") && email.equals("")){   // Recherche via prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePrenom(prenom);
+            }
+
+        return ActionSupport.SUCCESS;
+        }
+
+        public String doAjouterPret(){
+
+        Pret pret = new Pret();
+
+        pret.setDateEmprunt(new Date());
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(pret.getDateEmprunt());
+        cal.add(Calendar.DATE,28);
+        pret.setDateRestitution(cal.getTime());
+        pret.setProlonge(false);
+        pret.setLivreUniqueId(livreUniqueId);
+        pret.setAbonneId(abonneId);
+
+        managerFactory.getPretManager().addPret(pret);
+
+        return ActionSupport.SUCCESS;
         }
 
 
@@ -122,12 +189,60 @@ public class AjouterPretAction extends ActionSupport {
         this.livreUniqueList = livreUniqueList;
     }
 
-    public Integer getLivreId() {
-        return livreId;
+    public Integer getLivreUniqueId() {
+        return livreUniqueId;
     }
 
-    public void setLivreId(Integer livreId) {
-        this.livreId = livreId;
+    public void setLivreUniqueId(Integer livreUniqueId) {
+        this.livreUniqueId = livreUniqueId;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPseudo() {
+        return pseudo;
+    }
+
+    public void setPseudo(String pseudo) {
+        this.pseudo = pseudo;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public Abonne getAbonne() {
+        return abonne;
+    }
+
+    public void setAbonne(Abonne abonne) {
+        this.abonne = abonne;
+    }
+
+    public Integer getAbonneId() {
+        return abonneId;
+    }
+
+    public void setAbonneId(Integer abonneId) {
+        this.abonneId = abonneId;
     }
 }
 

@@ -2,6 +2,8 @@ package fr.oc.projet.consumer.contract.dao.utilisateur;
 
 import fr.oc.projet.model.beans.utilisateur.Abonne;
 
+import java.util.List;
+
 public interface AbonneDao {
 
     Abonne getAbonne(Integer pId);
@@ -36,10 +38,11 @@ public interface AbonneDao {
 
     Abonne getAbonnePseudoNom(String pseudo,String nom);
 
-
     void addAbonne(Abonne abonne);
 
     void updateMpd(Abonne abonne);
 
     void updateMail(Abonne abonne);
+
+    List<Abonne> getListAbonne();
 }

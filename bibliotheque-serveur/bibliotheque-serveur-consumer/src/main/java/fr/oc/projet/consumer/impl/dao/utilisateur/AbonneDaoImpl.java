@@ -4,6 +4,7 @@ import fr.oc.projet.consumer.contract.dao.utilisateur.AbonneDao;
 import fr.oc.projet.consumer.impl.dao.AbstractDaoImpl;
 import fr.oc.projet.consumer.rowmapper.utilisateur.AbonneRM;
 import fr.oc.projet.model.beans.utilisateur.Abonne;
+import fr.oc.projet.model.beans.utilisateur.Employe;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.SqlParameterValue;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
@@ -26,7 +27,6 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
 
     @Inject
     private AbonneRM abonneRM;
-
 
     @Override
     public Abonne getAbonne(Integer pId) {
@@ -305,5 +305,13 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
         };
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams);
+    }
+
+    @Override
+    public List<Abonne> getListAbonne() {
+        String vSQL = "SELECT * FROM abonne ";
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Abonne> vList = vJdbcTemplate.query(vSQL,abonneRM);
+        return vList;
     }
 }

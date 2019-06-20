@@ -13,6 +13,8 @@ public class Pret {
     private         Boolean         prolonge;
     private         LivreUnique     livreUnique;
     private         Abonne          abonne;
+    private         Integer         abonneId;
+    private         Integer         livreUniqueId;
 
     public Pret() {
     }
@@ -65,4 +67,19 @@ public class Pret {
         this.abonne = abonne;
     }
 
+    public Integer getAbonneId() {
+        return abonneId;
+    }
+
+    public void setAbonneId(Integer abonneId) {
+        this.abonneId = abonneId;
+    }
+
+    public Integer getLivreUniqueId() {
+        return livreUniqueId;
+    }
+
+    public void setLivreUniqueId(Integer livreUniqueId) {
+        this.livreUniqueId = livreUniqueId;
+    }
 }

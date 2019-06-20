@@ -293,4 +293,12 @@ public class ConsulterPretAction extends ActionSupport {
     public void setRecherche(String recherche) {
         this.recherche = recherche;
     }
+
+    public Integer getBibliothequeId() {
+        return bibliothequeId;
+    }
+
+    public void setBibliothequeId(Integer bibliothequeId) {
+        this.bibliothequeId = bibliothequeId;
+    }
 }

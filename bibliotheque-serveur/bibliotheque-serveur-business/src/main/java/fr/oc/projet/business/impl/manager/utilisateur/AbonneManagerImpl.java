@@ -5,6 +5,7 @@ import fr.oc.projet.business.impl.manager.AbstractManagerImpl;
 import fr.oc.projet.model.beans.utilisateur.Abonne;
 
 import javax.inject.Named;
+import java.util.List;
 
 @Named
 public class AbonneManagerImpl extends AbstractManagerImpl implements AbonneManager {
@@ -87,6 +88,11 @@ public class AbonneManagerImpl extends AbstractManagerImpl implements AbonneMana
     @Override
     public Abonne getAbonnePseudoNom(String pseudo, String nom) {
         return getDaoFactory().getAbonneDao().getAbonnePseudoNom(pseudo,nom);
+    }
+
+    @Override
+    public List<Abonne> getListAbonne() {
+        return getDaoFactory().getAbonneDao().getListAbonne();
     }
 
     @Override

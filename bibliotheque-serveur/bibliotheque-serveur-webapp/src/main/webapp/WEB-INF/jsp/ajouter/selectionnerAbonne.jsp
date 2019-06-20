@@ -15,12 +15,6 @@
         {
             font-family: "Microsoft YaHei UI Light";
         }
-        #bloc
-        {
-            margin: 20px;
-            text-align: center;
-        }
-
         em
         {
             color : white;
@@ -40,11 +34,7 @@
             margin-left: 5px;
             margin-right: 5px;
         }
-        #selectBibliotheque
-        {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
+
         #btnRecherche
         {
             margin-right: 10px;
@@ -73,13 +63,6 @@
         {
             text-align: center;
         }
-
-        #tdBtnRenouv,#tdBtnSuppr, #thBtnRenouv,#thBtnSuppr
-        {
-            border-left: 1px solid darkgray;
-            border-right: 1px solid darkgray;
-            background-color: whitesmoke;
-        }
     </style>
 </head>
 <body>
@@ -89,8 +72,9 @@
 <div id="page">
 
     <div id="barreDeRecherche" class="bg-light">
-        <s:form id="formulaire" action="recherchePret" >
+        <s:form id="formulaire" action="rechercheAbonne" >
             <div class="input-group">
+                <input id="textLivreUnique" name="livreUniqueId" type="text" class="form-control" value="<s:property value="livreUniqueId"/>" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <input id="textEmail" name="email" type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <input id="textPseudo" name="pseudo" type="text" class="form-control" placeholder="Pseudo" aria-label="Recipient's username" aria-describedby="basic-addon2" >
                 <input id="textNom" name="nom" type="text" class="form-control" placeholder="Nom" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -103,7 +87,7 @@
     </div>
     <div id="bottom">
         <div id="cadrePret" class="col-9" >
-            <label class="form-check-label" id="labelRecherche"> Ma recherche de prêts en cours</label>
+            <label class="form-check-label" id="labelRecherche"> Ma recherche d'abonnés </label>
             <table class="table" id="tableau">
                 <thead>
                 <tr>
@@ -114,18 +98,26 @@
                 </tr>
                 </thead>
                 <tbody>
-                <s:iterator value="pretList">
+                <s:iterator value="abonne">
                     <tr>
-                        <td><s:property value="abonne.pseudo"/></td>
-                        <td id="tdBtnRenouv"><button type="button" class="btn btn-info" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
+                        <td><s:property value="email"/></td>
+                        <td><s:property value="pseudo"/></td>
+                        <td><s:property value="nom"/></td>
+                        <td><s:property value="prenom"/></td>
+                        <td id="tdBtnSelectionner"><s:a action="addPretLivreUnique" class="btn btn-info" style="font-size:0.6em;"><i class="fas fa-arrow-alt-circle-right"></i><s:param name="livreUniqueId" value="livreUniqueId"/><s:param name="abonneId" value="id"/> </s:a></td>
                     </tr>
                 </s:iterator>
                 </tbody>
             </table>
-
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        $('#textLivreUnique').hide();
+    });
+</script>
 </body>
 </html>
 

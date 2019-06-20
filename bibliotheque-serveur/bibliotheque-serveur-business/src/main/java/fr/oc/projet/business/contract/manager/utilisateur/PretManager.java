@@ -23,4 +23,6 @@ public interface PretManager {
     void updateDateRestitution(Pret pret);
 
     void deletePret(Integer idPret);
+
+    void addPret(Pret pret);
 }

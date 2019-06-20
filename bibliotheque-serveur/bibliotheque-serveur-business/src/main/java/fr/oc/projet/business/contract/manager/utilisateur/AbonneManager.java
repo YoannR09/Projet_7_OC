@@ -2,6 +2,8 @@ package fr.oc.projet.business.contract.manager.utilisateur;
 
 import fr.oc.projet.model.beans.utilisateur.Abonne;
 
+import java.util.List;
+
 public interface AbonneManager {
     Abonne getAbonne(Integer pId);
 
@@ -34,6 +36,8 @@ public interface AbonneManager {
     Abonne getAbonneEmailPrenom(String email,String prenom);
 
     Abonne getAbonnePseudoNom(String pseudo,String nom);
+
+    List<Abonne> getListAbonne();
 
     void addAbonne(Abonne abonne);
 

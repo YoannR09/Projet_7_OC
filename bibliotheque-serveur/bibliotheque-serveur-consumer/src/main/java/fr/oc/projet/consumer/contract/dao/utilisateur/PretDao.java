@@ -24,4 +24,6 @@ public interface PretDao {
 
     void deletePret(Integer idPret);
 
+    void addPret(Pret pret);
+
 }

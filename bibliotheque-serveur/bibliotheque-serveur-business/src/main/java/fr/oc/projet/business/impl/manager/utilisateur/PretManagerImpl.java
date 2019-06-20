@@ -55,4 +55,9 @@ public class PretManagerImpl extends AbstractManagerImpl implements PretManager 
     public void deletePret(Integer idPret) {
         getDaoFactory().getPretDao().deletePret(idPret);
     }
+
+    @Override
+    public void addPret(Pret pret) {
+        getDaoFactory().getPretDao().addPret(pret);
+    }
 }

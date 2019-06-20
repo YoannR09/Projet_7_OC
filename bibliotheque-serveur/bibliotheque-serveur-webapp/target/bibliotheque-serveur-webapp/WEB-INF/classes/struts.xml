@@ -51,5 +51,17 @@
             <result name="success">WEB-INF/jsp/ajouter/ajouterPret.jsp</result>
         </action>
 
+        <action name="rechercheAbonne"
+                class="fr.oc.projet.webapp.action.AjouterPretAction"
+                method="doAbonne">
+            <result name="success">WEB-INF/jsp/ajouter/selectionnerAbonne.jsp</result>
+        </action>
+
+        <action name="addPretLivreUnique"
+                class="fr.oc.projet.webapp.action.AjouterPretAction"
+                method="doAjouterPret">
+            <result name="success">WEB-INF/jsp/index.jsp</result>
+        </action>
+
     </package>
 </struts>

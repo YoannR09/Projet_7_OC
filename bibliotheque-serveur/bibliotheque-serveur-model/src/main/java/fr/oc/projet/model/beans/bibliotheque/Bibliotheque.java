@@ -1,10 +1,12 @@
 package fr.oc.projet.model.beans.bibliotheque;
 
+import fr.oc.projet.model.beans.utilisateur.Adresse;
+
 public class Bibliotheque {
 
     private Integer id;
     private String nom;
-    private String adresse;
+    private Adresse adresse;
     private String numeroSiret;
 
     public Bibliotheque() {
@@ -26,11 +28,11 @@ public class Bibliotheque {
         this.nom = nom;
     }
 
-    public String getAdresse() {
+    public Adresse getAdresse() {
         return adresse;
     }
 
-    public void setAdresse(String adresse) {
+    public void setAdresse(Adresse adresse) {
         this.adresse = adresse;
     }
 

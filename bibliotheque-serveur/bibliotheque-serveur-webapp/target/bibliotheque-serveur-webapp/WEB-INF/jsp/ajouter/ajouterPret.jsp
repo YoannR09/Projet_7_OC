@@ -132,7 +132,7 @@
                         <td><s:property value="numeroInterne"/></td>
                         <td><s:property value="bibliotheque.nom"/></td>
                         <s:if test="disponible">
-                            <td id="tdBtnRenouv"><s:a action="selectionnerAbonne" class="btn btn-info" style="font-size:0.6em;"><i class="fas fa-arrow-alt-circle-right"></i><s:param name="livreId" value="livre.id"/> </s:a></td>
+                            <td id="tdBtnRenouv"><s:a action="selectionnerAbonne" class="btn btn-info" style="font-size:0.6em;"><i class="fas fa-arrow-alt-circle-right"></i><s:param name="livreUniqueId" value="id"/></s:a></td>
                         </s:if>
                         <s:else>
                             <td id="tdBtnRenouv">Indisponible</td>
