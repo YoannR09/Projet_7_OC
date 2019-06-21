@@ -27,7 +27,7 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
 
     @Override
     public List<LivreUnique> getListLivreUniqueTitreAuteurISBN(String titre, String auteur, String isbn) {
-        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.nom LIKE "+"'"+titre+"'" +
+        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'"+titre+"'" +
                 " AND auteur LIKE "+"'"+auteur+"'" +
                 " AND isbn LIKE "+"'"+isbn+"'" +
                 " AND livre.id = livre_unique.livre_id" ;
@@ -38,7 +38,7 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
 
     @Override
     public List<LivreUnique> getListLivreUniqueTitreAuteur(String titre, String auteur) {
-        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.nom LIKE "+"'"+titre+"'" +
+        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'"+titre+"'" +
                 " AND auteur LIKE "+"'"+auteur+"'" +
                 " AND livre.id = livre_unique.livre_id" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
@@ -59,7 +59,7 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
 
     @Override
     public List<LivreUnique> getListLivreUniqueTitreISBN(String titre, String isbn) {
-        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.nom LIKE "+"'"+titre+"'" +
+        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'"+titre+"'" +
                 " AND isbn LIKE "+"'"+isbn+"'" +
                 " AND livre.id = livre_unique.livre_id" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
@@ -69,7 +69,7 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
 
     @Override
     public List<LivreUnique> getListLivreUniqueTitre(String titre) {
-        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.nom LIKE "+"'"+titre+"'" +
+        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'"+titre+"'" +
                 " AND livre.id = livre_unique.livre_id" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
@@ -98,7 +98,7 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
 
     @Override
     public List<LivreUnique> getListLivreUniqueTitreAuteurISBNBibliotheque(String titre, String auteur, String isbn, Integer bibliothequeId) {
-        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.nom LIKE "+"'"+titre+"'" +
+        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'"+titre+"'" +
                 " AND auteur LIKE "+"'"+auteur+"'" +
                 " AND isbn LIKE "+"'"+isbn+"'" +
                 " AND livre.id = livre_unique.livre_id " +
@@ -110,7 +110,7 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
 
     @Override
     public List<LivreUnique> getListLivreUniqueTitreAuteurBibliotheque(String titre, String auteur,  Integer bibliothequeId) {
-        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.nom LIKE "+"'"+titre+"'" +
+        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'"+titre+"'" +
                 " AND auteur LIKE "+"'"+auteur+"'" +
                 " AND livre.id = livre_unique.livre_id " +
                 " AND bibliotheque_id = "+ bibliothequeId;
@@ -133,7 +133,7 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
 
     @Override
     public List<LivreUnique> getListLivreUniqueTitreISBNBibliotheque(String titre, String isbn, Integer bibliothequeId) {
-        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.nom LIKE "+"'"+titre+"'" +
+        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'"+titre+"'" +
                 " AND isbn LIKE "+"'"+isbn+"'" +
                 " AND livre.id = livre_unique.livre_id " +
                 " AND bibliotheque_id = "+ bibliothequeId;
@@ -144,7 +144,7 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
 
     @Override
     public List<LivreUnique> getListLivreUniqueTitreBibliotheque(String titre, Integer bibliothequeId) {
-        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.nom LIKE "+"'"+titre+"'" +
+        String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'"+titre+"'" +
                 " AND livre.id = livre_unique.livre_id " +
                 " AND bibliotheque_id = "+ bibliothequeId;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());

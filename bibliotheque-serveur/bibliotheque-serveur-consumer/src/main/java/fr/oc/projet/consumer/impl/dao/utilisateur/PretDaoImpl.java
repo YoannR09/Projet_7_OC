@@ -38,7 +38,8 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
 
     @Override
     public List<Pret> getListPretLivre(Integer livreId) {
-        String vSQL = "SELECT * FROM pret,livre_unique WHERE livre_unique.id = "+livreId;
+        String vSQL = "SELECT * FROM pret,livre_unique WHERE livre_unique.id = "+livreId +"" +
+                " AND livre_unique_id = livre_unique.id ";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Pret> vList = vJdbcTemplate.query(vSQL,pretRM);
         return vList;
@@ -77,7 +78,7 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
 
         String vSQL = "UPDATE pret SET prolonge = ? WHERE id = ?";
         Object[] vParams = {
-                new SqlParameterValue(Types.BOOLEAN, pret.getProlonge()),
+                new SqlParameterValue(Types.BOOLEAN, pret.getProlongation()),
                 new SqlParameterValue(Types.INTEGER, pret.getId()),
         };
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
@@ -106,7 +107,7 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
 
     @Override
     public void addPret(Pret pret) {
-            String vSQL = "INSERT INTO pret (date_emprunt, date_restitution, prolonge, abonne_id, livre_unique_id)" +
+            String vSQL = "INSERT INTO pret (date_emprunt, date_restitution, prolongation, abonne_id, livre_unique_id)" +
                     " VALUES (:dateEmprunt, :dateRestitution, :prolongation, :abonneId, :livreUniqueId)";
             NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
             BeanPropertySqlParameterSource vParams = new BeanPropertySqlParameterSource(pret);

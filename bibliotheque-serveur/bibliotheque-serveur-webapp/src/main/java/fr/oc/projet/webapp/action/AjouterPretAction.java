@@ -123,7 +123,7 @@ public class AjouterPretAction extends ActionSupport {
         cal.setTime(pret.getDateEmprunt());
         cal.add(Calendar.DATE,28);
         pret.setDateRestitution(cal.getTime());
-        pret.setProlonge(false);
+        pret.setProlongation(false);
         pret.setLivreUniqueId(livreUniqueId);
         pret.setAbonneId(abonneId);
 

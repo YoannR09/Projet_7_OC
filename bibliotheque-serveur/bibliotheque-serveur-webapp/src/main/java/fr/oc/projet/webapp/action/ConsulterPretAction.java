@@ -116,7 +116,7 @@ public class ConsulterPretAction extends ActionSupport {
         cal.add(Calendar.DATE,28);
         pret.setDateRestitution(cal.getTime());
         managerFactory.getPretManager().updateDateRestitution(pret);
-        pret.setProlonge(true);
+        pret.setProlongation(true);
         managerFactory.getPretManager().updateProlongation(pret);
         if(recherche.equals("livre")){
             pretList = rechercheViaBibliothequeLivre(bibliotheque,pret.getLivreUnique().getLivre());

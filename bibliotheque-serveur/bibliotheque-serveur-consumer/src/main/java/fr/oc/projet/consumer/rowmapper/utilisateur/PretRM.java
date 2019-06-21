@@ -25,7 +25,7 @@ public class PretRM implements RowMapper<Pret> {
         pret.setId(resultSet.getInt("id"));
         pret.setDateEmprunt(resultSet.getDate("date_emprunt"));
         pret.setDateRestitution(resultSet.getDate("date_restitution"));
-        pret.setProlonge(resultSet.getBoolean("prolongation"));
+        pret.setProlongation(resultSet.getBoolean("prolongation"));
         pret.setAbonne(abonneDao.getAbonne(resultSet.getInt("abonne_id")));
         pret.setLivreUnique(livreUniqueDao.getLivreUnique(resultSet.getInt("livre_unique_id")));
         return pret;
