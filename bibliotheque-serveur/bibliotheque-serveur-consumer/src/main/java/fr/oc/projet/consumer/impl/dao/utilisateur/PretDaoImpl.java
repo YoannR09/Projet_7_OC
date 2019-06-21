@@ -38,7 +38,7 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
 
     @Override
     public List<Pret> getListPretLivre(Integer livreId) {
-        String vSQL = "SELECT * FROM pret,livre_unique WHERE livre_unique.id = "+livreId +"" +
+        String vSQL = "SELECT * FROM pret,livre_unique WHERE livre_unique.livre_id = "+livreId +"" +
                 " AND livre_unique_id = livre_unique.id ";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Pret> vList = vJdbcTemplate.query(vSQL,pretRM);
