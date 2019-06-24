@@ -27,9 +27,9 @@ public class LivreDaoImpl extends AbstractDaoImpl implements LivreDao {
 
     @Override
     public Livre getLivreTitreAuteurISBN(String titre, String auteur, String isbn) {
-        String vSQL = "SELECT * FROM livre WHERE titre LIKE "+"'"+titre+"'" +
-               " AND auteur LIKE "+"'"+auteur+"'" +
-                " AND isbn LIKE "+"'"+isbn+"'" +
+        String vSQL = "SELECT * FROM livre WHERE titre LIKE "+"'%"+titre+"%'" +
+               " AND auteur LIKE "+"'%"+auteur+"%'" +
+                " AND isbn LIKE "+"'%"+isbn+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
@@ -44,8 +44,8 @@ public class LivreDaoImpl extends AbstractDaoImpl implements LivreDao {
 
     @Override
     public Livre getLivreTitreAuteur(String titre, String auteur) {
-        String vSQL = "SELECT * FROM livre WHERE titre LIKE "+"'"+titre+"'" +
-                " AND auteur LIKE "+"'"+auteur+"'" +
+        String vSQL = "SELECT * FROM livre WHERE titre LIKE "+"'%"+titre+"%'" +
+                " AND auteur LIKE "+"'%"+auteur+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
@@ -60,8 +60,8 @@ public class LivreDaoImpl extends AbstractDaoImpl implements LivreDao {
     @Override
     public Livre getLivreAuteurISBN(String auteur, String isbn) {
         String vSQL = "SELECT * FROM livre WHERE " +
-                " auteur LIKE "+"'"+auteur+"'" +
-                " AND isbn LIKE "+"'"+isbn+"'" +
+                " auteur LIKE "+"'%"+auteur+"%'" +
+                " AND isbn LIKE "+"'%"+isbn+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
@@ -75,8 +75,8 @@ public class LivreDaoImpl extends AbstractDaoImpl implements LivreDao {
 
     @Override
     public Livre getLivreTitreISBN(String titre, String isbn) {
-        String vSQL = "SELECT * FROM livre WHERE titre LIKE "+"'"+titre+"'" +
-                " AND isbn LIKE "+"'"+isbn+"'" +
+        String vSQL = "SELECT * FROM livre WHERE titre LIKE "+"'%"+titre+"%'" +
+                " AND isbn LIKE "+"'%"+isbn+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
@@ -90,7 +90,7 @@ public class LivreDaoImpl extends AbstractDaoImpl implements LivreDao {
 
     @Override
     public Livre getLivreTitre(String titre) {
-        String vSQL = "SELECT * FROM livre WHERE titre LIKE "+"'"+titre+"'" +
+        String vSQL = "SELECT * FROM livre WHERE titre LIKE "+"'%"+titre+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
@@ -105,7 +105,7 @@ public class LivreDaoImpl extends AbstractDaoImpl implements LivreDao {
     @Override
     public Livre getLivreAuteur(String auteur) {
         String vSQL = "SELECT * FROM livre WHERE "+
-                " auteur LIKE "+"'"+auteur+"'" +
+                " auteur LIKE "+"'%"+auteur+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);
@@ -120,7 +120,7 @@ public class LivreDaoImpl extends AbstractDaoImpl implements LivreDao {
     @Override
     public Livre getLivreISBN(String isbn) {
         String vSQL = "SELECT * FROM livre WHERE "+
-                " isbn LIKE "+"'"+isbn+"'" +
+                " isbn LIKE "+"'%"+isbn+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Livre> vList = vJdbcTemplate.query(vSQL, livreRM);

@@ -38,7 +38,7 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
 
     @Override
     public Abonne getAbonnePseudo(String pseudo) {
-        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE '"+pseudo+"'";
+        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE '%"+pseudo+"%'";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
         if (vList.size() != 0) {
@@ -53,7 +53,7 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
     @Override
     public Abonne getAbonneEmail(String email) {
         String vSQL = "SELECT * FROM abonne WHERE " +
-                " email LIKE "+"'"+email+"'" +
+                " email LIKE "+"'%"+email+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -68,7 +68,7 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
     @Override
     public Abonne getAbonneNom(String nom) {
         String vSQL = "SELECT * FROM abonne WHERE " +
-                " nom LIKE "+"'"+nom+"'" +
+                " nom LIKE "+"'%"+nom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -97,10 +97,10 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
 
     @Override
     public Abonne getAbonnePseudoEmailNomPrenom(String pseudo, String email, String nom, String prenom) {
-        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'"+pseudo+"'" +
-                " AND email LIKE "+"'"+email+"'" +
-                " AND nom LIKE "+"'"+nom+"'" +
-                " AND prenom LIKE "+"'"+prenom+"'" +
+        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'%"+pseudo+"%'" +
+                " AND email LIKE "+"'%"+email+"%'" +
+                " AND nom LIKE "+"'%"+nom+"%'" +
+                " AND prenom LIKE "+"'%"+prenom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -114,9 +114,9 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
 
     @Override
     public Abonne getAbonnePseudoEmailNom(String pseudo, String email, String nom) {
-        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'"+pseudo+"'" +
-                " AND email LIKE "+"'"+email+"'" +
-                " AND nom LIKE "+"'"+nom+"'" +
+        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'%"+pseudo+"%'" +
+                " AND email LIKE "+"'%"+email+"%'" +
+                " AND nom LIKE "+"'%"+nom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -130,9 +130,9 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
 
     @Override
     public Abonne getAbonnePseudoEmailPrenom(String pseudo, String email, String prenom) {
-        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'"+pseudo+"'" +
-                " AND email LIKE "+"'"+email+"'" +
-                " AND prenom LIKE "+"'"+prenom+"'" +
+        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'%"+pseudo+"%'" +
+                " AND email LIKE "+"'%"+email+"%'" +
+                " AND prenom LIKE "+"'%"+prenom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -146,9 +146,9 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
 
     @Override
     public Abonne getAbonnePseudoNomPrenom(String pseudo, String nom, String prenom) {
-        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'"+pseudo+"'" +
-                " AND nom LIKE "+"'"+nom+"'" +
-                " AND prenom LIKE "+"'"+prenom+"'" +
+        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'%"+pseudo+"%'" +
+                " AND nom LIKE "+"'%"+nom+"%'" +
+                " AND prenom LIKE "+"'%"+prenom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -163,9 +163,9 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
     @Override
     public Abonne getAbonneEmailNomPrenom(String email, String nom, String prenom) {
         String vSQL = "SELECT * FROM abonne WHERE "+
-                " email LIKE "+"'"+email+"'" +
-                " AND nom LIKE "+"'"+nom+"'" +
-                " AND prenom LIKE "+"'"+prenom+"'" +
+                " email LIKE "+"'%"+email+"%'" +
+                " AND nom LIKE "+"'%"+nom+"%'" +
+                " AND prenom LIKE "+"'%"+prenom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -179,8 +179,8 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
 
     @Override
     public Abonne getAbonnePseudoEmail(String pseudo, String email) {
-        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'"+pseudo+"'" +
-                " AND email LIKE "+"'"+email+"'" +
+        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'%"+pseudo+"%'" +
+                " AND email LIKE "+"'%"+email+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -195,8 +195,8 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
     @Override
     public Abonne getAbonneNomPrenom(String nom, String prenom) {
         String vSQL = "SELECT * FROM abonne WHERE "+
-                "  nom LIKE "+"'"+nom+"'" +
-                " AND prenom LIKE "+"'"+prenom+"'" +
+                "  nom LIKE "+"'%"+nom+"%'" +
+                " AND prenom LIKE "+"'%"+prenom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -210,8 +210,8 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
 
     @Override
     public Abonne getAbonnePseudoPrenom(String pseudo, String prenom) {
-        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'"+pseudo+"'" +
-                " AND prenom LIKE "+"'"+prenom+"'" +
+        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'%"+pseudo+"%'" +
+                " AND prenom LIKE "+"'%"+prenom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -226,8 +226,8 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
     @Override
     public Abonne getAbonneEmailNom(String email, String nom) {
         String vSQL = "SELECT * FROM abonne WHERE " +
-                " email LIKE "+"'"+email+"'" +
-                " AND nom LIKE "+"'"+nom+"'" +
+                " email LIKE "+"'%"+email+"%'" +
+                " AND nom LIKE "+"'%"+nom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -242,8 +242,8 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
     @Override
     public Abonne getAbonneEmailPrenom(String email, String prenom) {
         String vSQL = "SELECT * FROM abonne WHERE " +
-                " email LIKE "+"'"+email+"'" +
-                " AND prenom LIKE "+"'"+prenom+"'" +
+                " email LIKE "+"'%"+email+"%'" +
+                " AND prenom LIKE "+"'%"+prenom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);
@@ -257,8 +257,8 @@ public class AbonneDaoImpl extends AbstractDaoImpl implements AbonneDao {
 
     @Override
     public Abonne getAbonnePseudoNom(String pseudo, String nom) {
-        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'"+pseudo+"'" +
-                " AND nom LIKE "+"'"+nom+"'" +
+        String vSQL = "SELECT * FROM abonne WHERE pseudo LIKE "+"'%"+pseudo+"%'" +
+                " AND nom LIKE "+"'%"+nom+"%'" +
                 " LIMIT 1" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Abonne> vList = vJdbcTemplate.query(vSQL, abonneRM);

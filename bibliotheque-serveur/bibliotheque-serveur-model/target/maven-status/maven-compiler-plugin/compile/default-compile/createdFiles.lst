@@ -1,8 +1,3 @@
-fr\oc\projet\model\beans\bibliotheque\Stock.class
-fr\oc\projet\model\beans\utilisateur\Compte.class
-fr\oc\projet\model\beans\utilisateur\NiveauAcces.class
-fr\oc\projet\model\beans\bibliotheque\Bibliotheque.class
 fr\oc\projet\model\beans\bibliotheque\Livre.class
 fr\oc\projet\model\beans\bibliotheque\Categorie.class
-fr\oc\projet\model\beans\utilisateur\Reservation.class
-fr\oc\projet\model\beans\bibliotheque\Image.class
+fr\oc\projet\model\beans\bibliotheque\Bibliotheque.class

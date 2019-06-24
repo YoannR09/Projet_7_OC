@@ -1,8 +1,10 @@
 C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\bibliotheque\Categorie.java
-C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\bibliotheque\Stock.java
-C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\utilisateur\Compte.java
-C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\utilisateur\NiveauAcces.java
+C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\utilisateur\Abonne.java
 C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\bibliotheque\Bibliotheque.java
-C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\bibliotheque\Image.java
+C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\utilisateur\Role.java
 C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\bibliotheque\Livre.java
-C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\utilisateur\Reservation.java
+C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\utilisateur\Adresse.java
+C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\utilisateur\Pret.java
+C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\bibliotheque\Illustration.java
+C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\bibliotheque\LivreUnique.java
+C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\utilisateur\Employe.java
