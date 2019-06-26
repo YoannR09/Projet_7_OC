@@ -38,7 +38,7 @@
 
 
 
-    <bean id="dataSourceTicket" class="org.springframework.jndi.JndiObjectFactoryBean">
+    <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
 
         <property name="jndiName" value="java:comp/env/jdbc/DB_TICKET"/>
 

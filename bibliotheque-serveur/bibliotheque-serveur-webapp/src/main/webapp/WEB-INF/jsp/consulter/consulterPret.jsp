@@ -139,7 +139,6 @@
                 <th scope="col">Date d'emprunt</th>
                 <th scope="col">Date de réstitution</th>
                 <th scope="col" id="thBtnRenouv">Renouveler</th>
-                <th scope="col" id="thBtnSuppr">Effacer</th>
             </tr>
             </thead>
             <tbody>
@@ -162,11 +161,6 @@
                             <s:param name="bibliotheque" value="bibliotheque" />
                             <i class="fas fa-redo-alt"></i></i></s:a></td>
                     </s:else>
-                    <td id="tdBtnSuppr"><s:a action="deletePret" class="btn btn-danger" style="font-size:0.6em;">
-                        <s:param name="pretId" value="id" />
-                        <s:param name="recherche" value="recherche" />
-                        <s:param name="bibliotheque" value="bibliotheque" />
-                        <i class="fas fa-times"></i></s:a></td>
                 </tr>
                 </s:iterator>
             </tbody>

@@ -126,17 +126,6 @@ public class ConsulterPretAction extends ActionSupport {
         return ActionSupport.SUCCESS;
     }
 
-    public String doDeletePret(){
-
-        pret = managerFactory.getPretManager().getPret(pretId);
-        managerFactory.getPretManager().deletePret(pretId);
-        if(recherche.equals("livre")){
-            pretList = rechercheViaBibliothequeLivre(bibliotheque,pret.getLivreUnique().getLivre());
-        }else {
-            pretList = rechercheViaBibliothequeAbonne(bibliotheque,pret.getAbonne());
-        }
-        return ActionSupport.SUCCESS;
-    }
 
     /**
      * Méthode pour rechercher une liste de prêts

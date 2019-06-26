@@ -29,14 +29,19 @@
             <result name="success">WEB-INF/jsp/consulter/consulterPret.jsp</result>
         </action>
 
-        <action name="deletePret"
-                class="fr.oc.projet.webapp.action.ConsulterPretAction"
-                method="doDeletePret">
-            <result name="success">WEB-INF/jsp/consulter/consulterPret.jsp</result>
+        <action name="rechercheRestituerLivre"
+                class="fr.oc.projet.webapp.action.RestituerAction"
+                method="doRechercheRestituerPret">
+            <result name="success">WEB-INF/jsp/restituer/restituerPret.jsp</result>
         </action>
 
         <action name="ajouterPret">
             <result>WEB-INF/jsp/ajouter/ajouterPret.jsp</result>
+        </action>
+
+
+        <action name="restituerPret">
+            <result>WEB-INF/jsp/restituer/restituerPret.jsp</result>
         </action>
 
         <action name="selectionnerAbonne"

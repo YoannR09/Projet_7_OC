@@ -6,23 +6,23 @@ import fr.oc.projet.model.beans.utilisateur.Abonne;
 import fr.oc.projet.model.beans.utilisateur.Pret;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.TimerTask;
 
+@Named
 public class ActionMailTask extends TimerTask {
 
     @Inject
     ManagerFactory managerFactory;
 
-    @Inject
-    EnvoyerMail envoyerMail;
+    public EnvoyerMail envoyerMail;
 
 
     @Override
     public void run() {
-
         List<Abonne> vList = managerFactory.getAbonneManager().getListAbonne();
         for(Abonne abonne:vList){
             List<Pret> listPret = managerFactory.getPretManager().getListPretAbonne(abonne.getId());

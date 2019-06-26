@@ -42,6 +42,36 @@ public class PretManagerImpl extends AbstractManagerImpl implements PretManager 
     }
 
     @Override
+    public List<Pret> getListPretLivreISBNNumInterne(String isbn, String numInterne) {
+        return getDaoFactory().getPretDao().getListPretLivreISBNNumInterne(isbn,numInterne);
+    }
+
+    @Override
+    public List<Pret> getListPretLivreISBNNumInterneBibliotheque(String isbn, String numInterne, Integer bibliothequeId) {
+        return getDaoFactory().getPretDao().getListPretLivreISBNNumInterneBibliotheque(isbn,numInterne,bibliothequeId);
+    }
+
+    @Override
+    public List<Pret> getListPretLivreISBN(String isbn) {
+        return getDaoFactory().getPretDao().getListPretLivreISBN(isbn);
+    }
+
+    @Override
+    public List<Pret> getListPretLivreNumInterne(String numInterne) {
+        return getDaoFactory().getPretDao().getListPretLivreNumInterne(numInterne);
+    }
+
+    @Override
+    public List<Pret> getListPretLivreISBNBibliotheque(String isbn, Integer bibliothequeId) {
+        return getDaoFactory().getPretDao().getListPretLivreISBNBibliotheque(isbn,bibliothequeId);
+    }
+
+    @Override
+    public List<Pret> getListPretLivreNumInterneBibliotheque(String numInterne, Integer bibliothequeId) {
+        return getDaoFactory().getPretDao().getListPretLivreNumInterneBibliotheque(numInterne,bibliothequeId);
+    }
+
+    @Override
     public void updateProlongation(Pret pret) {
         getDaoFactory().getPretDao().updateProlongation(pret);
     }

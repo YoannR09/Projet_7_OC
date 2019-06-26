@@ -18,6 +18,18 @@ public interface PretManager {
 
     List<Pret> getListPretAbonneBibliotheque(Integer abonneId,Integer bibliothequeId);
 
+    List<Pret> getListPretLivreISBNNumInterne(String isbn,String numInterne);
+
+    List<Pret> getListPretLivreISBNNumInterneBibliotheque(String isbn,String numInterne,Integer bibliothequeId);
+
+    List<Pret> getListPretLivreISBN(String isbn);
+
+    List<Pret> getListPretLivreNumInterne(String numInterne);
+
+    List<Pret> getListPretLivreISBNBibliotheque(String isbn,Integer bibliothequeId);
+
+    List<Pret> getListPretLivreNumInterneBibliotheque(String numInterne,Integer bibliothequeId);
+
     void updateProlongation(Pret pret);
 
     void updateDateRestitution(Pret pret);

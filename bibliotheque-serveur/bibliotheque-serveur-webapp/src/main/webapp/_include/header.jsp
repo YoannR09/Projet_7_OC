@@ -21,6 +21,9 @@
             <li class="nav-item">
                 <s:a action="ajouterPret" class="nav-link">Ajouter un prêt</s:a>
             </li>
+            <li class="nav-item">
+                <s:a action="restituerPret" class="nav-link">Restituer un prêt</s:a>
+            </li>
         </ul>
     </div>
 </nav>
