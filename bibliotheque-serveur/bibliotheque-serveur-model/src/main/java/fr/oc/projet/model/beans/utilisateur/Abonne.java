@@ -2,8 +2,6 @@ package fr.oc.projet.model.beans.utilisateur;
 
 import fr.oc.projet.model.beans.bibliotheque.Bibliotheque;
 
-import java.util.Date;
-
 public class Abonne {
 
     private         Integer             id;

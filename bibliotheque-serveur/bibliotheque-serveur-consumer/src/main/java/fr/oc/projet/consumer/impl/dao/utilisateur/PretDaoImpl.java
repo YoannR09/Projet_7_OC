@@ -143,7 +143,7 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
     @Override
     public void updateProlongation(Pret pret) {
 
-        String vSQL = "UPDATE pret SET prolonge = ? WHERE id = ?";
+        String vSQL = "UPDATE pret SET prolongation = ? WHERE id = ?";
         Object[] vParams = {
                 new SqlParameterValue(Types.BOOLEAN, pret.getProlongation()),
                 new SqlParameterValue(Types.INTEGER, pret.getId()),

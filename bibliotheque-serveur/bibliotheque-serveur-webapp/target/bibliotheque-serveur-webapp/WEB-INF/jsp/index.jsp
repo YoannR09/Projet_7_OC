@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <%@ include file="/_include/head.jsp"%>
+    <%@ include file="./_include/head.jsp"%>
     <style type="text/css">
         #bloc
         {
@@ -21,7 +21,7 @@
 </head>
 <body>
 <header>
-    <%@ include file="/_include/header.jsp"%>
+    <%@ include file="./_include/header.jsp"%>
 </header>
 
 </div>

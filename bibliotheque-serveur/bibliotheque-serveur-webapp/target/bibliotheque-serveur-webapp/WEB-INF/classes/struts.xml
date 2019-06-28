@@ -8,7 +8,7 @@
         <default-action-ref name="index" />
         <!-- Action "index" -->
         <action name="index">
-            <result>/WEB-INF/jsp/index.jsp</result>
+            <result>WEB-INF/jsp/index.jsp</result>
         </action>
 
         <action name="consulterPret"
