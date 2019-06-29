@@ -3,6 +3,7 @@ package fr.oc.projet.microservicelivre.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Date;
 
 @Entity
 public class Livre {
@@ -22,6 +23,8 @@ public class Livre {
     private String langue;
 
     private String resume;
+
+    private Date dateDeCreation;
 
     private int categorieId;
 
@@ -102,6 +105,14 @@ public class Livre {
         this.illustrationId = illustrationId;
     }
 
+    public Date getDateDeCreation() {
+        return dateDeCreation;
+    }
+
+    public void setDateDeCreation(Date dateDeCreation) {
+        this.dateDeCreation = dateDeCreation;
+    }
+
     @Override
     public String toString() {
         return "Livre{" +
@@ -112,6 +123,7 @@ public class Livre {
                 ", isbn='" + isbn + '\'' +
                 ", langue='" + langue + '\'' +
                 ", resume='" + resume + '\'' +
+                ", dateDeCreation=" + dateDeCreation +
                 ", categorieId=" + categorieId +
                 ", illustrationId=" + illustrationId +
                 '}';

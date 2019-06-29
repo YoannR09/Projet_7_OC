@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <s:a action="" class="nav-link">Livre</s:a>
+                <s:a action="catalogueLivre" class="nav-link">Livre</s:a>
             </li>
             <li class="nav-item">
                 <s:a action="" class="nav-link">Mes prêts</s:a>

@@ -41,21 +41,21 @@
         #labelRecherche
         {
             left: 10px;
-            font-size: 1.3em;
+            font-size: 1.5em;
             margin: 10px;
             font-weight: bold;
         }
         #cadreCategorie
         {
             width: 100%;
-            height: 850px;
+            height: 860px;
             border: darkgray 2px solid;
             text-align: center;
         }
         #cadreUnique
         {
             margin: 23px;
-            height: 370px;
+            height: 385px;
         }
 
         em
@@ -65,6 +65,11 @@
             background-color: gray;
             color: white;
             padding: auto;
+        }
+
+        #cadreUnique:hover
+        {
+            background-color: gray;
         }
 
     </style>
@@ -173,7 +178,7 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <p class="card-text" style="font-size: 0.7em;font-weight: bold"><s:property value="nom"/></p>
+                                <button type="button" class="btn btn-outline-info" style="font-size: 0.8em;font-weight: bold;width: 100%;height: 100%"><s:property value="nom"/></button>
                             </div>
                         </div>
                     </s:iterator>

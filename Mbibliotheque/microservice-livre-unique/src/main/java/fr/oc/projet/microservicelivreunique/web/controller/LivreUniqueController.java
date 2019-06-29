@@ -14,11 +14,11 @@ public class LivreUniqueController {
 
     @GetMapping(value = "/CountLivreUniqueBibliotheque/{livreId},{bibliothequeId}")
     public Integer countLivreUniqueBibliotheque(@PathVariable int livreId, @PathVariable int bibliothequeId){
-       return livreUniqueDao.countLivreUniqueByLivreIdAndBibliothequeId(livreId,bibliothequeId);
+       return livreUniqueDao.countLivreUniqueByLivreIdAndBibliothequeIdAndDisponibleIsTrue(livreId,bibliothequeId);
     }
 
     @GetMapping(value = "/CountLivreUnique/{livreId}")
     public Integer countLivreUnique(@PathVariable int livreId){
-        return livreUniqueDao.countLivreUniqueByLivreId(livreId);
+        return livreUniqueDao.countLivreUniqueByLivreIdAndDisponibleIsTrue(livreId);
     }
 }

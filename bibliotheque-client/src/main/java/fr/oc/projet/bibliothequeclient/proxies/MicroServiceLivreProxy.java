@@ -1,0 +1,44 @@
+package fr.oc.projet.bibliothequeclient.proxies;
+
+import fr.oc.projet.bibliothequeclient.beans.Livre;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import java.util.List;
+
+@FeignClient(name = "microservice-livre", url = "localhost:9094")
+public interface MicroServiceLivreProxy {
+
+    @GetMapping(value = "/Livre/{id}")
+    Livre getLivre(@PathVariable("id") int id);
+
+
+    @GetMapping(value = "/Livre/TitreAuteurISBN/{titre},{auteur},{isbn}")
+    List<Livre> findLivresByTitreAndAuteurAndIsbn(@PathVariable("titre") String titre, @PathVariable("auteur") String auteur, @PathVariable("isbn") String isbn );
+
+
+    @GetMapping(value = "/Livre/AuteurISBN/{auteur},{isbn}")
+    List<Livre> findLivresByAuteurContainingAndIsbnContaining(@PathVariable("auteur") String auteur, @PathVariable("isbn") String isbn);
+
+
+    @GetMapping(value = "/Livre/TitreISBN/{titre},{isbn}")
+    List<Livre> findLivresByTitreContainingAndIsbnContaining(@PathVariable("titre") String titre,@PathVariable("isbn") String isbn );
+
+
+    @GetMapping(value = "/Livre/TitreAuteurISBN/{titre},{auteur}")
+    List<Livre> findLivresByTitreContainingAndAuteurContaining(@PathVariable("titre") String titre,@PathVariable("auteur") String auteur);
+
+
+
+    @GetMapping(value = "/Livre/Titre/{titre}")
+     List<Livre> findLivresByTitreContaining(@PathVariable("titre") String titre);
+
+
+    @GetMapping(value = "/Livre/Auteur/{auteur}")
+    List<Livre> findLivresByAuteurContaining(@PathVariable("auteur") String auteur);
+
+    @GetMapping(value = "/Livre/ISBN/{isbn}")
+    List<Livre> findLivresByIsbnContaining(@PathVariable("isbn") String isbn);
+
+}
