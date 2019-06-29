@@ -2,25 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3c28bc8-ba6b-45f5-8691-7fb5163fd55c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionLivreAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreUniqueProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/catalogueLivre/detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/catalogueLivre/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/dao/LivreUniqueDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/dao/LivreUniqueDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/web/controller/LivreUniqueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/web/controller/LivreUniqueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-livre-unique/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-livre-unique/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/configuration/ConnectorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/interceptor/AuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservice-abonne/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-abonne/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/model/Livre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/model/Livre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/beans/Livre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/beans/Livre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/beans/LivreUnique.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/beans/LivreUnique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/resources/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/_include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/catalogueLivre/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/catalogueLivre/detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/_include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/consulter/consulterPret.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/consulter/consulterPret.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,18 +60,8 @@
               <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1471#1472#0" expanded="true" />
-                <element signature="e#1505#1506#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1602#1603#0" expanded="true" />
-                <element signature="e#1640#1641#0" expanded="true" />
-                <element signature="e#1677#1678#0" expanded="true" />
+                <element signature="e#1697#1698#0" expanded="true" />
                 <element signature="e#1734#1735#0" expanded="true" />
-                <element signature="e#1786#1787#0" expanded="true" />
-                <element signature="e#1886#1887#0" expanded="true" />
-                <element signature="e#1923#1924#0" expanded="true" />
-                <element signature="e#1981#1982#0" expanded="true" />
-                <element signature="e#2033#2034#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/web/controller/LivreController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+            <state relative-caret-position="510">
+              <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,7 +146,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="617" />
     <option name="width" value="1951" />
     <option name="height" value="1056" />
@@ -159,6 +157,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,8 +230,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,8 +239,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561806621658" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561816594121" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../microservice-categorie" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
@@ -279,18 +277,18 @@
       <option name="presentableId" value="Default" />
       <updated>1561540258808</updated>
       <workItem from="1561540265713" duration="5312000" />
-      <workItem from="1561739196654" duration="3800000" />
+      <workItem from="1561739196654" duration="4732000" />
+      <workItem from="1561816808216" duration="648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9112000" />
+    <option name="totallyTimeSpent" value="10692000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="617" y="0" width="1951" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="617" y="0" width="1951" height="1056" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17556848" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17715494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -366,6 +364,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/model/Illustration.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/model/Categorie.java" />
+    <entry file="file://$PROJECT_DIR$/../../../Projet_6_OC/escalade/escalade-webapp/src/main/java/fr/oc/projet/webapp/outils/ConnectorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -386,6 +394,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/web/controller/LivreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/MicroserviceLivreApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -400,34 +418,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/web/controller/LivreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/model/Livre.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
+            <element signature="e#1697#1698#0" expanded="true" />
             <element signature="e#1734#1735#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
-            <element signature="e#2033#2034#0" expanded="true" />
           </folding>
         </state>
       </provider>

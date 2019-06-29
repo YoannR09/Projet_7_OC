@@ -49,7 +49,7 @@
         {
             width: 100%;
             height: 860px;
-            border: darkgray 2px solid;
+            border: darkgray 1px solid;
             text-align: center;
         }
         #cadreUnique

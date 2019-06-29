@@ -8,7 +8,7 @@
 --%>
 <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:rgba(0,0,0,0.7);">
 
-    <s:a action="index" class="navbar-brand">Mon site d'escalade</s:a>
+    <s:a action="index" class="navbar-brand">Ma bibliothèque</s:a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -16,13 +16,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <s:a action="consulterPret" class="nav-link">Consulter les prêts</s:a>
+                <s:a action="consulterPret" class="nav-link">| Consulter les prêts |</s:a>
             </li>
             <li class="nav-item">
-                <s:a action="ajouterPret" class="nav-link">Ajouter un prêt</s:a>
+                <s:a action="ajouterPret" class="nav-link">| Ajouter un prêt |</s:a>
             </li>
             <li class="nav-item">
-                <s:a action="restituerPret" class="nav-link">Restituer un prêt</s:a>
+                <s:a action="restituerPret" class="nav-link">| Restituer un prêt |</s:a>
             </li>
         </ul>
     </div>

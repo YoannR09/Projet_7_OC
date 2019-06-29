@@ -8,7 +8,7 @@
 --%>
 <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:rgba(0,0,0,0.7);">
 
-    <s:a action="index" class="navbar-brand">Mon site d'escalade</s:a>
+    <s:a action="index" class="navbar-brand">Ma bibliothèque</s:a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -16,11 +16,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <s:a action="catalogueLivre" class="nav-link">Livre</s:a>
+                <s:a action="catalogueLivre" class="nav-link">| Livre |</s:a>
             </li>
             <li class="nav-item">
-                <s:a action="" class="nav-link">Mes prêts</s:a>
+                <s:a action="" class="nav-link">| Mes prêts |</s:a>
             </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0" style="color: white" >
+            <s:if test="#session.user">
+                <em id="pseudo"><s:property value="#session.user.pseudo" /></em>
+                <s:set var="pseudo" value="session.user.pseudo"/>
+                <s:a action="" class="nav-link">Deconnexion</s:a> /
+                <s:a action="" class="nav-link">Mon profil</s:a>
+            </s:if>
+            <s:else>
+                <s:a action="login" style="color:lightgray" class="nav-link">Connexion</s:a> /
+                <s:a action="" style="color:lightgray" class="nav-link">S'inscrire</s:a>
+            </s:else>
+
+        </form>
     </div>
 </nav>

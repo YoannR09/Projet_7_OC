@@ -65,6 +65,12 @@
             margin: 10px;
             font-weight: bold;
         }
+        #labelCount
+        {
+            float: right;
+            font-size: 1.1em;
+            margin: 10px;
+        }
         #tableau
         {
             border: 1px gray solid;
@@ -112,6 +118,7 @@
     <div id="bottom">
         <div id="cadrePret" class="col-9" >
             <label class="form-check-label" id="labelRecherche"> Ma recherche de livre disponible</label>
+            <label class="form-check-label" id="labelCount" style="margin: 7px">Nombre de résultats : <s:property value="countResultat"/></label>
             <table class="table" id="tableau">
                 <thead>
                 <tr>

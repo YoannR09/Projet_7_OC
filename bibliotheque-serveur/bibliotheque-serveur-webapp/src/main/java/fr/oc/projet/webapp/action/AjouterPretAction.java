@@ -25,6 +25,7 @@ public class AjouterPretAction extends ActionSupport {
     private         Integer             bibliothequeId;
     private         Integer             livreUniqueId;
     private         Integer             abonneId;
+    private         Integer             countResultat;
     private         Livre               livre;
     private         Abonne              abonne;
     private         List<LivreUnique>   livreUniqueList;
@@ -68,6 +69,7 @@ public class AjouterPretAction extends ActionSupport {
                     livreUniqueList = managerFactory.getLivreUniqueManager().getListLivreUniqueTitreBibliotheque(titre, bibliothequeId);
                 }
             }
+            countResultat = livreUniqueList.size();
             return ActionSupport.SUCCESS;
         }
 
@@ -131,6 +133,7 @@ public class AjouterPretAction extends ActionSupport {
 
         return ActionSupport.SUCCESS;
         }
+
 
 
     public String getIsbn() {
@@ -243,6 +246,14 @@ public class AjouterPretAction extends ActionSupport {
 
     public void setAbonneId(Integer abonneId) {
         this.abonneId = abonneId;
+    }
+
+    public Integer getCountResultat() {
+        return countResultat;
+    }
+
+    public void setCountResultat(Integer countResultat) {
+        this.countResultat = countResultat;
     }
 }
 

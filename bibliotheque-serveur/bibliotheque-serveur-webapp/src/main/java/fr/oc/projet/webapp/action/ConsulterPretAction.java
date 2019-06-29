@@ -29,6 +29,7 @@ public class ConsulterPretAction extends ActionSupport {
     private         Livre           livre;
     private         Integer         pretId;
     private         Integer         bibliothequeId;
+    private         Integer         countResultat;
     private         Pret            pret;
     private         String          recherche;
 
@@ -99,6 +100,7 @@ public class ConsulterPretAction extends ActionSupport {
             }
             recherche = "abonne";
         }
+        countResultat = pretList.size();
         return ActionSupport.SUCCESS;
     }
 
@@ -123,6 +125,7 @@ public class ConsulterPretAction extends ActionSupport {
         }else if (recherche.equals("abonne")){
             pretList = rechercheViaBibliothequeAbonne(bibliotheque,pret.getAbonne());
         }
+        countResultat = pretList.size();
         return ActionSupport.SUCCESS;
     }
 
@@ -169,6 +172,14 @@ public class ConsulterPretAction extends ActionSupport {
 
 
         return  ActionSupport.SUCCESS;
+    }
+
+    public Integer getCountResultat() {
+        return countResultat;
+    }
+
+    public void setCountResultat(Integer countResultat) {
+        this.countResultat = countResultat;
     }
 
     public String getIsbn() {
