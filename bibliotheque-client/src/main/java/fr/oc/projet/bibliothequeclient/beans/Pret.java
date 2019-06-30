@@ -8,9 +8,11 @@ public class Pret {
     private         Date            dateEmprunt;
     private         Date            dateRestitution;
     private         Boolean         prolongation;
+    private         Bibliotheque    bibliotheque;
     private         LivreUnique     livreUnique;
     private         Abonne          abonne;
     private         Integer         abonneId;
+    private         Livre           livre;
     private         Integer         livreUniqueId;
 
     public Pret() {
@@ -78,5 +80,21 @@ public class Pret {
 
     public void setLivreUniqueId(Integer livreUniqueId) {
         this.livreUniqueId = livreUniqueId;
+    }
+
+    public Livre getLivre() {
+        return livre;
+    }
+
+    public void setLivre(Livre livre) {
+        this.livre = livre;
+    }
+
+    public Bibliotheque getBibliotheque() {
+        return bibliotheque;
+    }
+
+    public void setBibliotheque(Bibliotheque bibliotheque) {
+        this.bibliotheque = bibliotheque;
     }
 }

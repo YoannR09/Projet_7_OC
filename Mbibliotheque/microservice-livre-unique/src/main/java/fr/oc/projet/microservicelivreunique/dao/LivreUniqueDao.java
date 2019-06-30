@@ -6,7 +6,11 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface LivreUniqueDao extends JpaRepository<LivreUnique,Integer> {
+    LivreUnique findById(int id);
+
     Integer countLivreUniqueByLivreIdAndBibliothequeIdAndDisponibleIsTrue(int livreId, int bibliothequeId);
 
     Integer countLivreUniqueByLivreIdAndDisponibleIsTrue(int livreId);
+
+
 }

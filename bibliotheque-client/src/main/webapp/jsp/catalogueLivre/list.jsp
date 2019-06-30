@@ -80,6 +80,12 @@
             border-right: 1px solid darkgray;
             background-color: whitesmoke;
         }
+        #labelCount
+        {
+            float: right;
+            font-size: 1.1em;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
@@ -91,10 +97,16 @@
     <div id="barreDeRecherche" class="bg-light">
         <s:form id="formulaire" action="doRechercheLivre" >
             <div class="input-group">
+                <select id="selectCategorie" name="categorieSelect" class="form-control " style="margin-right: 7px" >
+                    <option>Toutes les catégories</option>
+                    <s:iterator value="categorieList" status="list">
+                        <option><s:property value="nom"/></option>
+                    </s:iterator>
+                </select>
                 <input id="textTitre" name="titre" type="text" class="form-control" placeholder="Titre" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <input id="textEditeur" name="auteur" type="text" class="form-control" placeholder="Auteur" aria-label="Recipient's username" aria-describedby="basic-addon2" >
                 <input id="textCodeISBN" name="isbn" type="text" class="form-control" placeholder="Code ISBN" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="col-auto" style="margin: 7px">
+                <div class="col-auto" style="margin: 7px" id="checkBibliotheque">
                     <div class="input-group mb-2">
                         <div class="form-check form-check-inline">
                             <input id="btnAbonne" class="form-check-input" type="radio" name="recherche"  value="option1">
@@ -115,6 +127,9 @@
     <div id="bottom">
         <div id="cadrePret" class="col-9" >
             <label class="form-check-label" id="labelRecherche"> Ma recherche de livre disponible</label>
+            <s:if test="!livreList.empty">
+                <label class="form-check-label" id="labelCount" style="margin: 7px"><em style="color: darkgray">Nombre de résultats :</em> <s:property value="countResultat"/> / <em style="color: darkgray">Catégorie : </em><s:property value="categorieSelect"/> / <em style="color: darkgray ">Bibliothèque : </em><s:property value="bibliotheque"/> </label>
+            </s:if>
             <table class="table" id="tableau">
                 <thead>
                 <tr>
@@ -140,5 +155,16 @@
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+    $(function() {
+        if($('#pseudo').text() == ""){
+            $('#checkBibliotheque').hide();
+        }
+    });
+
+</script>
 </body>
 </html>

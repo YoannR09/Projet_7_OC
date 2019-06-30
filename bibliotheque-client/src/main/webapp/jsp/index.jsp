@@ -24,10 +24,6 @@
             font-family: "Microsoft YaHei UI Light";
         }
 
-        em
-        {
-            color : white;
-        }
         #cadrePret
         {
             margin-top: 50px;
@@ -56,15 +52,6 @@
         {
             margin: 23px;
             height: 385px;
-        }
-
-        em
-        {
-            margin-left: auto;
-            margin-right: auto;
-            background-color: gray;
-            color: white;
-            padding: auto;
         }
 
         #cadreUnique:hover
@@ -178,7 +165,7 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-outline-info" style="font-size: 0.8em;font-weight: bold;width: 100%;height: 100%"><s:property value="nom"/></button>
+                                <s:a action="" class="btn btn-outline-info" style="font-size: 0.8em;font-weight: bold;width: 100%;height: 100%"><s:property value="nom"/><s:param value="id" name="categorieId"/></s:a>
                             </div>
                         </div>
                     </s:iterator>

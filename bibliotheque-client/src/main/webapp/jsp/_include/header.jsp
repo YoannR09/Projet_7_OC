@@ -16,10 +16,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <s:a action="catalogueLivre" class="nav-link">| Livre |</s:a>
+                <s:a action="catalogueLivre" class="nav-link" style="font-size:1.3em">| Livre |</s:a>
             </li>
             <li class="nav-item">
-                <s:a action="" class="nav-link">| Mes prêts |</s:a>
+                <s:a action="doListPret" class="nav-link" style="font-size:1.3em">| Mes prêts |</s:a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" style="color: white" >

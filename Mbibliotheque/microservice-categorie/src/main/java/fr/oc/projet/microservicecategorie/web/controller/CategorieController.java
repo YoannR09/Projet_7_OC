@@ -20,6 +20,11 @@ public class CategorieController {
         return categorieDao.findById(id);
     }
 
+    @GetMapping(value = "/Categorie/Nom/{nom}")
+    public Categorie findByNom(@PathVariable String nom){
+        return categorieDao.findByNom(nom);
+    }
+
     @GetMapping(value = "/Categorie")
     public List<Categorie> getListCategorie(){
         return categorieDao.findAll();

@@ -12,5 +12,7 @@ public interface CategorieDao extends JpaRepository<Categorie,Integer> {
 
     Categorie findById(int id);
 
+    Categorie findByNom(String nom);
+
     List<Categorie> findAll();
 }

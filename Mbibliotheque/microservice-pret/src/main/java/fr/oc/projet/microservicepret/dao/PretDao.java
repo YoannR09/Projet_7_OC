@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface PretDao extends JpaRepository<Pret,Integer> {
 
-    List<Pret> findPretsByAbonneId(int abonneId);
+    List<Pret> findPretByAbonneId(int abonneId);
 }

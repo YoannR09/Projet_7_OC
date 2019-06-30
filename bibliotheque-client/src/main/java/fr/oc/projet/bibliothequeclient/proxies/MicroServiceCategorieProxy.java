@@ -13,6 +13,9 @@ public interface MicroServiceCategorieProxy {
     @GetMapping(value = "/Categorie/{id}")
     Categorie getCategorie(@PathVariable("id") int id);
 
+    @GetMapping(value = "/Categorie/Nom/{nom}")
+    Categorie findByNom(@PathVariable("nom") String nom);
+
     @GetMapping(value = "/Categorie")
     List<Categorie> getListCategorie();
 

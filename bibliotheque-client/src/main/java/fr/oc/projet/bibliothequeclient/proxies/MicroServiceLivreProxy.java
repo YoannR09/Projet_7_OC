@@ -41,4 +41,30 @@ public interface MicroServiceLivreProxy {
     @GetMapping(value = "/Livre/ISBN/{isbn}")
     List<Livre> findLivresByIsbnContaining(@PathVariable("isbn") String isbn);
 
+    @GetMapping(value = "/Livre/TitreAuteurISBNCategorie/{titre},{auteur},{isbn},{categorieId}")
+    List<Livre> findLivresByTitreAndAuteurAndIsbnAndCategorieId(@PathVariable("titre") String titre,@PathVariable("auteur") String auteur,@PathVariable("isbn") String isbn,@PathVariable("categorieId") int categorieId);
+
+    @GetMapping(value = "/Livre/AuteurISBNCategorie/{auteur},{isbn},{categorieId}")
+    List<Livre> findLivresByAuteurContainingAndIsbnContainingAndCategorieId(@PathVariable("auteur") String auteur, @PathVariable("isbn") String isbn,@PathVariable("categorieId") int categorieId);
+
+    @GetMapping(value = "/Livre/TitreISBNCategorie/{titre},{isbn},{categorieId}")
+    List<Livre> findLivresByTitreContainingAndIsbnContainingAndCategorieId(@PathVariable("titre") String titre,@PathVariable("isbn") String isbn,@PathVariable("categorieId") int categorieId );
+
+
+    @GetMapping(value = "/Livre/TitreAuteurISBNCategorie/{titre},{auteur},{categorieId}")
+    List<Livre> findLivresByTitreContainingAndAuteurContainingAndCategorieId(@PathVariable("titre") String titre,@PathVariable("auteur") String auteur,@PathVariable("categorieId") int categorieId);
+
+
+    @GetMapping(value = "/Livre/TitreCategorie/{titre},{categorieId}")
+    List<Livre> findLivresByTitreContainingAndCategorieId(@PathVariable("titre") String titre,@PathVariable("categorieId") int categorieId);
+
+
+    @GetMapping(value = "/Livre/AuteurCategorie/{auteur},{categorieId}")
+     List<Livre> findLivresByAuteurContainingAndCategorieId(@PathVariable("auteur") String auteur,@PathVariable("categorieId") int categorieId);
+
+
+    @GetMapping(value = "/Livre/ISBNCategorie/{isbn},{categorieId}")
+    List<Livre> findLivresByIsbnContainingAndCategorieId(@PathVariable("isbn") String isbn,@PathVariable("categorieId") int categorieId);
+
+
 }

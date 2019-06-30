@@ -57,7 +57,7 @@
             <result name="success">/jsp/index.jsp</result>
         </action>
 
-        <action name="catalogueLivre">
+        <action name="catalogueLivre" class="fr.oc.projet.bibliothequeclient.action.GestionLivreAction" method="doCatalogueLivre">
             <result>/jsp/catalogueLivre/list.jsp</result>
         </action>
 
@@ -69,6 +69,10 @@
             <result name="success">/jsp/catalogueLivre/list.jsp</result>
         </action>
 
+        <action name="doRechercheLivreCategorie" class="fr.oc.projet.bibliothequeclient.action.GestionLivreAction" method="doListLivre">
+            <result name="success">/jsp/catalogueLivre/list.jsp</result>
+        </action>
+
         <action name="login">
             <interceptor-ref name="store">
                 <param name="operationMode">STORE</param>
@@ -76,10 +80,19 @@
             <interceptor-ref name="defaultStack" />
             <result>/jsp/login/login.jsp</result>
         </action>
+
+        <action name="doLogin" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="doLogin">
+            <result name="success">/jsp/index.jsp</result>
+        </action>
     </package>
 
     <package name="private" extends="base">
     <default-interceptor-ref name="authenticatedStack" />
+
+        <action name="doListPret" class="fr.oc.projet.bibliothequeclient.action.GestionPretAction" method="doListPret">
+            <result name="success">/jsp/pret/list.jsp</result>
+        </action>
+
     </package>
 
 </struts>

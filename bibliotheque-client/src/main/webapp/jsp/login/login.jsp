@@ -69,14 +69,14 @@
             <label class="form-check-label" id="labelRecherche"> Connectez-vous à votre espace abonné </label>
             <div class="col-12 container bg-light" id="cadreLog">
                 <s:actionmessage/>
-                <s:form action="login">
+                <s:form action="doLogin">
                     <div class="form-group" style="margin: 20px;">
                         <label for="inputPseudo">Pseudo/Email</label>
                         <input name="identifiant" type="pseudo" class="form-control" id="inputPseudo" required>
                     </div>
                     <div class="form-group " style="margin: 20px">
                         <label for="inputPassword">Mot de passe</label>
-                        <input name="password" type="password" class="form-control" id="inputPassword" required>
+                        <input name="motDePasse" type="password" class="form-control" id="inputPassword" required>
                     </div>
                     <div style="display: flex;justify-content: space-between">
                         <s:a action="" class="btn btn-outline-info">S'inscrire</s:a>

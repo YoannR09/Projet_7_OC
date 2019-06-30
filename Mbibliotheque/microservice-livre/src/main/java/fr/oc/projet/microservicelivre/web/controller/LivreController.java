@@ -20,6 +20,10 @@ public class LivreController {
         return livreDao.findById(id);
     }
 
+    @GetMapping(value = "/Livre/Categorie/{categorieId}")
+    public List<Livre> findLivreByCategorieId(@PathVariable int categorieId){
+        return livreDao.findLivreByCategorieId(categorieId);
+    }
 
     @GetMapping(value = "/Livre/TitreAuteurISBN/{titre},{auteur},{isbn}")
     public List<Livre> findLivresByTitreAndAuteurAndIsbn(@PathVariable String titre,@PathVariable String auteur,@PathVariable String isbn ){
@@ -55,5 +59,41 @@ public class LivreController {
     @GetMapping(value = "/Livre/ISBN/{isbn}")
     public List<Livre> findLivresByIsbnContaining(@PathVariable String isbn){
         return livreDao.findLivresByIsbnContaining(isbn);
+    }
+
+    @GetMapping(value = "/Livre/TitreAuteurISBNCategorie/{titre},{auteur},{isbn},{categorieId}")
+    public List<Livre> findLivresByTitreAndAuteurAndIsbnAndCategorieId(@PathVariable String titre,@PathVariable String auteur,@PathVariable String isbn,@PathVariable int categorieId){
+        return livreDao.findLivresByTitreContainingAndAuteurContainingAndIsbnContainingAndCategorieId(titre,auteur,isbn,categorieId);
+    }
+
+    @GetMapping(value = "/Livre/AuteurISBNCategorie/{auteur},{isbn},{categorieId}")
+    public List<Livre> findLivresByAuteurContainingAndIsbnContainingAndCategorieId(@PathVariable String auteur, @PathVariable String isbn,@PathVariable int categorieId){
+        return livreDao.findLivresByAuteurContainingAndIsbnContainingAndCategorieId(auteur,isbn,categorieId);
+    }
+
+    @GetMapping(value = "/Livre/TitreISBNCategorie/{titre},{isbn},{categorieId}")
+    public List<Livre> findLivresByTitreContainingAndIsbnContainingAndCategorieId(@PathVariable String titre,@PathVariable String isbn,@PathVariable int categorieId ){
+        return livreDao.findLivresByTitreContainingAndIsbnContainingAndCategorieId(titre,isbn,categorieId);
+    }
+
+    @GetMapping(value = "/Livre/TitreAuteurISBNCategorie/{titre},{auteur},{categorieId}")
+    public List<Livre> findLivresByTitreContainingAndAuteurContainingAndCategorieId(@PathVariable String titre,@PathVariable String auteur,@PathVariable int categorieId){
+        return livreDao.findLivresByTitreContainingAndAuteurContainingAndCategorieId(titre,auteur,categorieId);
+    }
+
+
+    @GetMapping(value = "/Livre/TitreCategorie/{titre},{categorieId}")
+    public List<Livre> findLivresByTitreContainingAndCategorieId(@PathVariable String titre,@PathVariable int categorieId){
+        return livreDao.findLivresByTitreContainingAndCategorieId(titre,categorieId);
+    }
+
+    @GetMapping(value = "/Livre/AuteurCategorie/{auteur},{categorieId}")
+    public List<Livre> findLivresByAuteurContainingAndCategorieId(@PathVariable String auteur,@PathVariable int categorieId){
+        return livreDao.findLivresByAuteurContainingAndCategorieId(auteur,categorieId);
+    }
+
+    @GetMapping(value = "/Livre/ISBNCategorie/{isbn},{categorieId}")
+    public List<Livre> findLivresByIsbnContainingAndCategorieId(@PathVariable String isbn,@PathVariable int categorieId){
+        return livreDao.findLivresByIsbnContainingAndCategorieId(isbn,categorieId);
     }
 }

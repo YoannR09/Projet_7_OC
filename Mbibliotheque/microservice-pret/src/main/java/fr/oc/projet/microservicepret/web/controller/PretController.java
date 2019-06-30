@@ -17,6 +17,6 @@ public class PretController {
 
     @GetMapping(value = "/Pret/Abonne/{abonneId}")
     public List<Pret> getListPretAbonne(@PathVariable int abonneId){
-        return pretDao.findPretsByAbonneId(abonneId);
+        return pretDao.findPretByAbonneId(abonneId);
     }
 }

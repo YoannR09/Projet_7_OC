@@ -7,33 +7,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ba7665d-cdb8-4942-9b92-c5dd26b22a45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/configuration/ConnectorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/interceptor/AuthInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionPretAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServicePretProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/pret/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-bibliotheque/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-bibliotheque/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/src/main/java/fr/oc/projet/microservicecategorie/dao/CategorieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/src/main/java/fr/oc/projet/microservicecategorie/dao/CategorieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/src/main/java/fr/oc/projet/microservicecategorie/web/controller/CategorieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/src/main/java/fr/oc/projet/microservicecategorie/web/controller/CategorieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/dao/LivreUniqueDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/dao/LivreUniqueDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/web/controller/LivreUniqueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/web/controller/LivreUniqueController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/dao/LivreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/dao/LivreDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/web/controller/LivreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/web/controller/LivreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/dao/PretDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/dao/PretDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/web/controller/PretController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/web/controller/PretController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionLivreAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionLivreAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/beans/Abonne.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/beans/Abonne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/beans/Pret.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/beans/Pret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreUniqueProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreUniqueProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/resources/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/_include/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/catalogueLivre/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/catalogueLivre/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/catalogueLivre/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/catalogueLivre/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/login/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/_include/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/consulter/consulterPret.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/consulter/consulterPret.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -124,29 +127,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3128">
-              <caret line="250" column="39" selection-start-line="250" selection-start-column="39" selection-end-line="250" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#11581#11582#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="120" column="60" selection-start-line="120" selection-start-column="60" selection-end-line="120" selection-end-column="60" />
+            <state relative-caret-position="637">
+              <caret line="109" column="29" lean-forward="true" selection-start-line="104" selection-start-column="20" selection-end-line="109" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -192,8 +182,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/restituer/restituerPret.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2159">
-              <caret line="127" column="44" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="44" />
+            <state relative-caret-position="518">
+              <caret line="111" column="104" selection-start-line="111" selection-start-column="104" selection-end-line="111" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -210,8 +200,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2822">
-              <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
+            <state relative-caret-position="1089">
+              <caret line="137" column="49" lean-forward="true" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/abonne">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -349,7 +348,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1272" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
@@ -774,15 +773,16 @@
       <workItem from="1561533717406" duration="20993000" />
       <workItem from="1561707365990" duration="551000" />
       <workItem from="1561712151892" duration="14579000" />
-      <workItem from="1561816817414" duration="663000" />
+      <workItem from="1561816817414" duration="3267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152306000" />
+    <option name="totallyTimeSpent" value="154910000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14149444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -862,13 +862,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/bibliotheque/LivreDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="122" column="42" selection-start-line="122" selection-start-column="42" selection-end-line="122" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1192,13 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="120" column="60" selection-start-line="120" selection-start-column="60" selection-end-line="120" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2839">
@@ -1227,24 +1213,10 @@
       </provider>
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/restituer/restituerPret.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="127" column="44" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/illustration">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2822">
-          <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1259,6 +1231,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/abonne">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="137" column="49" lean-forward="true" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/restituer/restituerPret.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="111" column="104" selection-start-line="111" selection-start-column="104" selection-end-line="111" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="109" column="29" lean-forward="true" selection-start-line="104" selection-start-column="20" selection-end-line="109" selection-end-column="29" />
         </state>
       </provider>
     </entry>
