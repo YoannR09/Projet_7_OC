@@ -25,7 +25,7 @@
 
         <action name="prolongationPret"
                 class="fr.oc.projet.webapp.action.ConsulterPretAction"
-                method="doProlongattionPret">
+                method="doProlongationPret">
             <result name="success">WEB-INF/jsp/consulter/consulterPret.jsp</result>
         </action>
 
@@ -65,6 +65,12 @@
         <action name="addPretLivreUnique"
                 class="fr.oc.projet.webapp.action.AjouterPretAction"
                 method="doAjouterPret">
+            <result name="success">WEB-INF/jsp/index.jsp</result>
+        </action>
+
+        <action name="doRestitutionLivre"
+                class="fr.oc.projet.webapp.action.RestituerAction"
+                method="doRestitutionPret">
             <result name="success">WEB-INF/jsp/index.jsp</result>
         </action>
 

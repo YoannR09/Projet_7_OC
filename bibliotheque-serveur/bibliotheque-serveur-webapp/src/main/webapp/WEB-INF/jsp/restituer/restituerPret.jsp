@@ -109,10 +109,12 @@
     </div>
     <div id="bottom">
         <div id="cadrePret" class="col-9" >
-            <label class="form-check-label" id="labelRecherche"> Ma recherche de livre disponible</label>
+            <label class="form-check-label" id="labelRecherche"> Ma recherche de prêts en cours </label>
             <table class="table" id="tableau">
                 <thead>
                 <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
                     <th scope="col">ISBN</th>
                     <th scope="col">Numéro interne</th>
                     <th scope="col">Bibliothèque</th>
@@ -120,12 +122,14 @@
                 </tr>
                 </thead>
                 <tbody>
-                <s:iterator value="livreUniqueList">
+                <s:iterator value="pretList">
                     <tr>
-                        <td><s:property value="livre.isbn"/></td>
-                        <td><s:property value="numeroInterne"/></td>
-                        <td><s:property value="bibliotheque.nom"/></td>
-                        <td id="tdBtnRenouv"><s:a action="" class="btn btn-info" style="font-size:0.6em;"><i class="fas fa-arrow-alt-circle-right"></i><s:param name="livreUniqueId" value="id"/></s:a></td>
+                        <td><s:property value="abonne.nom"/></td>
+                        <td><s:property value="abonne.prenom"/></td>
+                        <td><s:property value="livreUnique.livre.isbn"/></td>
+                        <td><s:property value="livreUnique.numeroInterne"/></td>
+                        <td><s:property value="livreUnique.bibliotheque.nom"/></td>
+                        <td id="tdBtnRenouv"><s:a action="doRestitutionLivre" class="btn btn-info" style="font-size:0.6em;"><i class="fas fa-arrow-alt-circle-right"></i><s:param name="pretId" value="id"/></s:a></td>
                     </tr>
                 </s:iterator>
                 </tbody>

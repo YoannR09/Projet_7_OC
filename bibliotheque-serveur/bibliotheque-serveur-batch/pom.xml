@@ -1,108 +1,89 @@
-<?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>fr.oc.projet</groupId>
-    <artifactId>bibliotheque-serveur</artifactId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>
-  <groupId>fr.oc.projet</groupId>
-  <artifactId>bibliotheque-serveur-batch</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <name>bibliotheque-serveur-batch</name>
-  <url>http://maven.apache.org</url>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-  <dependencies>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.6.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>fr.oc.projet</groupId>
+	<artifactId>bibliotheque-serveur-batch</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>bibliotheque-serveur-batch</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>fr.oc.projet</groupId>
+			<artifactId>bibliotheque-serveur-business</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>fr.oc.projet</groupId>
+			<artifactId>bibliotheque-serveur-model</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 
 
-    <dependency>
-      <groupId>fr.oc.projet</groupId>
-      <artifactId>bibliotheque-serveur-business</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>fr.oc.projet</groupId>
+			<artifactId>bibliotheque-serveur-technical</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-batch</artifactId>
+		</dependency>
 
-    <dependency>
-      <groupId>fr.oc.projet</groupId>
-      <artifactId>bibliotheque-serveur-model</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<scope>compile</scope>
+		</dependency>
 
-    <dependency>
-      <groupId>fr.oc.projet</groupId>
-      <artifactId>bibliotheque-serveur-technical</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<scope>compile</scope>
+		</dependency>
 
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-dbcp2</artifactId>
-      <scope>compile</scope>
-    </dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+			<version>1.6.0</version>
+		</dependency>
 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <scope>compile</scope>
-    </dependency>
+	</dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
-
-    <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-    </dependency>
-      <dependency>
-          <groupId>javax.mail</groupId>
-          <artifactId>mail</artifactId>
-      </dependency>
-  </dependencies>
-
-
-  <build>
-
-    <plugins>
-
-      <!-- Création du JAR -->
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifest>
-              <mainClass>fr.oc.projet.batch.StartTimer</mainClass>
-              <addClasspath>true</addClasspath>
-              <classpathPrefix></classpathPrefix>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>
-
-      <!-- Création des archives de déploiement -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <configuration>
-          <descriptors>
-            <descriptor>src/assembly/archive-deploy.xml</descriptor>
-          </descriptors>
-        </configuration>
-        <executions>
-          <execution>
-            <id>assembly-archive-deploy</id>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-
-    </plugins>
-  </build>
 </project>

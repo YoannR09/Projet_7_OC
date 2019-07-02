@@ -75,8 +75,8 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
 
     @Override
     public List<Pret> getListPretLivreISBNNumInterne(String isbn, String numInterne) {
-        String vSQL = "SELECT * FROM pret,livre_unique,livre WHERE isbn LIKE "+"'"+isbn+"'" +
-                " AND livre_unique.numero_interne LIKE "+"'"+numInterne+"'"+
+        String vSQL = "SELECT * FROM pret,livre_unique,livre WHERE isbn LIKE "+"'%"+isbn+"%'" +
+                " AND livre_unique.numero_interne LIKE "+"'%"+numInterne+"%'"+
                 " AND livre_unique_id = livre_unique.id" +
                 " AND livre.id = livre_unique.livre_id";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
@@ -86,8 +86,8 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
 
     @Override
     public List<Pret> getListPretLivreISBNNumInterneBibliotheque(String isbn, String numInterne, Integer bibliothequeId) {
-            String vSQL = "SELECT * FROM pret,livre_unique,livre WHERE isbn LIKE "+"'"+isbn+"'" +
-                    " AND livre_unique.numero_interne LIKE "+"'"+numInterne+"'"+
+            String vSQL = "SELECT * FROM pret,livre_unique,livre WHERE isbn LIKE "+"'%"+isbn+"%'" +
+                    " AND livre_unique.numero_interne LIKE "+"'%"+numInterne+"%'"+
                     " AND livre_unique_id = livre_unique.id" +
                     " AND livre.id = livre_unique.livre_id" +
                     " AND bibliotheque_id = "+bibliothequeId;
@@ -98,7 +98,7 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
 
     @Override
     public List<Pret> getListPretLivreISBN(String isbn) {
-        String vSQL = "SELECT * FROM pret,livre_unique,livre WHERE isbn LIKE "+"'"+isbn+"'" +
+        String vSQL = "SELECT * FROM pret,livre_unique,livre WHERE isbn LIKE "+"'%"+isbn+"%'" +
                 " AND livre_unique_id = livre_unique.id" +
                 " AND livre.id = livre_unique.livre_id";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
@@ -109,7 +109,7 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
     @Override
     public List<Pret> getListPretLivreNumInterne(String numInterne) {
         String vSQL = "SELECT * FROM pret,livre_unique,livre WHERE "+
-                " livre_unique.numero_interne LIKE "+"'"+numInterne+"'"+
+                " livre_unique.numero_interne LIKE "+"'%"+numInterne+"%'"+
                 " AND livre_unique_id = livre_unique.id" +
                 " AND livre.id = livre_unique.livre_id";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
@@ -119,7 +119,7 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
 
     @Override
     public List<Pret> getListPretLivreISBNBibliotheque(String isbn, Integer bibliothequeId) {
-        String vSQL = "SELECT * FROM pret,livre_unique,livre WHERE isbn LIKE "+"'"+isbn+"'" +
+        String vSQL = "SELECT * FROM pret,livre_unique,livre WHERE isbn LIKE "+"'%"+isbn+"%'" +
                 " AND livre_unique_id = livre_unique.id" +
                 " AND livre.id = livre_unique.livre_id" +
                 " AND bibliotheque_id = "+bibliothequeId;
@@ -131,7 +131,7 @@ public class PretDaoImpl extends AbstractDaoImpl implements PretDao {
     @Override
     public List<Pret> getListPretLivreNumInterneBibliotheque(String numInterne, Integer bibliothequeId) {
         String vSQL = "SELECT * FROM pret,livre_unique,livre WHERE "+
-                " livre_unique.numero_interne LIKE "+"'"+numInterne+"'"+
+                " livre_unique.numero_interne LIKE "+"'%"+numInterne+"%'"+
                 " AND livre_unique_id = livre_unique.id" +
                 " AND livre.id = livre_unique.livre_id" +
                 " AND bibliotheque_id = "+bibliothequeId;

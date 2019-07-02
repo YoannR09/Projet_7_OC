@@ -44,14 +44,12 @@
         #cadreCategorie
         {
             width: 100%;
-            height: 860px;
             border: darkgray 1px solid;
             text-align: center;
         }
         #cadreUnique
         {
-            margin: 23px;
-            height: 385px;
+            margin: 10px;
         }
 
         #cadreUnique:hover
@@ -70,102 +68,104 @@
 
 <div id="page">
     <div id="bottom" >
-        <div id="cadrePret" class="col-9">
+        <div id="cadrePret" class=" col-xl-10 col-lg-12 col-md-12 col-sm-12">
             <label class="form-check-label" id="labelRecherche"> Nos  catégories </label>
             <div class="col-12 container bg-light" id="cadreCategorie">
-                <section class="row">
+                <section class="row "  style="display: flex;justify-content: space-around">
                     <s:iterator value="categorieList" status="list">
                         <div class="card col-2 text-white bg-dark" id="cadreUnique" style="padding-top: 10px">
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner" style="height: 100%">
                                     <s:if test="%{#list.count == 1}">
                                         <div class="carousel-item active" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre1.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre1.jpg"
                                                  alt="First slide">
                                         </div>
                                         <div class="carousel-item" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre2.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre2.jpg"
                                                  alt="Second slide">
                                         </div>
                                     </s:if>
                                     <s:elseif test="%{#list.count == 2}">
                                         <div class="carousel-item active" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre3.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre3.jpg"
                                                  alt="First slide">
                                         </div>
                                     </s:elseif>
                                     <s:elseif test="%{#list.count == 3}">
                                         <div class="carousel-item active" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre4.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre4.jpg"
                                                  alt="First slide">
                                         </div>
                                         <div class="carousel-item" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre5.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre5.jpg"
                                                  alt="Second slide">
                                         </div>
                                     </s:elseif>
                                     <s:elseif test="%{#list.count == 4}">
                                         <div class="carousel-item active" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre6.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre6.jpg"
                                                  alt="First slide">
                                         </div>
                                     </s:elseif>
                                     <s:elseif test="%{#list.count == 5}">
                                         <div class="carousel-item active" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre7.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre7.jpg"
                                                  alt="First slide">
                                         </div>
+                                    <section/>
+                                    <section class="row "  style="display: flex;justify-content: space-around">
                                     </s:elseif>
                                     <s:elseif test="%{#list.count == 6}">
                                         <div class="carousel-item active" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre8.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre8.jpg"
                                                  alt="First slide">
                                         </div>
                                     </s:elseif>
                                     <s:elseif test="%{#list.count == 7}">
                                         <div class="carousel-item active" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre9.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre9.jpg"
                                                  alt="First slide">
                                         </div>
                                         <div class="carousel-item" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre10.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre10.jpg"
                                                  alt="Second slide">
                                         </div>
                                     </s:elseif>
                                     <s:elseif test="%{#list.count == 8}">
                                         <div class="carousel-item active" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre11.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre11.jpg"
                                                  alt="First slide">
                                         </div>
                                     </s:elseif>
                                     <s:elseif test="%{#list.count == 9}">
                                         <div class="carousel-item active" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre12.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre12.jpg"
                                                  alt="First slide">
                                         </div>
                                         <div class="carousel-item" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre13.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre13.jpg"
                                                  alt="Second slide">
                                         </div>
                                         <div class="carousel-item" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre14.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre14.jpg"
                                                  alt="Third slide">
                                         </div>
                                     </s:elseif>
                                     <s:elseif test="%{#list.count == 10}">
                                         <div class="carousel-item active" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre15.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre15.jpg"
                                                  alt="First slide">
                                         </div>
                                         <div class="carousel-item" style="width: 100%;height: 100%">
-                                            <img class="d-block w-100" src="./image/livre16.jpg" style="height: 300px"
+                                            <img class="d-block w-100" src="./image/livre16.jpg"
                                                  alt="Second slide">
                                         </div>
                                     </s:elseif>
                                 </div>
                             </div>
-                            <div class="card-footer">
-                                <s:a action="" class="btn btn-outline-info" style="font-size: 0.8em;font-weight: bold;width: 100%;height: 100%"><s:property value="nom"/><s:param value="id" name="categorieId"/></s:a>
+                            <div style="width: 100%;margin-top: 10px">
+                                <s:a action="doRechercheLivreCategorie" class="btn btn-outline-info text-center" style="font-size: 0.8em;font-weight: bold;width: 100%;height: 50px;margin-bottom:10px"><s:property value="nom"/><s:param value="id" name="categorieId"/></s:a>
                             </div>
                         </div>
                     </s:iterator>

@@ -68,6 +68,7 @@
         #tableau
         {
             border: 1px gray solid;
+            margin: auto;
         }
         tr,td
         {
@@ -84,7 +85,7 @@
         {
             float: right;
             font-size: 1.1em;
-            margin: 10px;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -125,10 +126,10 @@
         </s:form>
     </div>
     <div id="bottom">
-        <div id="cadrePret" class="col-9" >
+        <div id="cadrePret" class=" col-xl-10 col-lg-12 col-md-12 col-sm-12" >
             <label class="form-check-label" id="labelRecherche"> Ma recherche de livre disponible</label>
             <s:if test="!livreList.empty">
-                <label class="form-check-label" id="labelCount" style="margin: 7px"><em style="color: darkgray">Nombre de résultats :</em> <s:property value="countResultat"/> / <em style="color: darkgray">Catégorie : </em><s:property value="categorieSelect"/> / <em style="color: darkgray ">Bibliothèque : </em><s:property value="bibliotheque"/> </label>
+                <label class="form-check-label" id="labelCount"><em style="color: darkgray">Nombre de résultats :</em> <s:property value="countResultat"/> / <em style="color: darkgray">Catégorie : </em><s:property value="categorieSelect"/> / <em style="color: darkgray ">Bibliothèque : </em><s:property value="bibliotheque"/> </label>
             </s:if>
             <table class="table" id="tableau">
                 <thead>

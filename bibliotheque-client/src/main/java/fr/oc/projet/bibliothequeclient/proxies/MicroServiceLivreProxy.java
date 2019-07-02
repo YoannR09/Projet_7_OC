@@ -13,6 +13,9 @@ public interface MicroServiceLivreProxy {
     @GetMapping(value = "/Livre/{id}")
     Livre getLivre(@PathVariable("id") int id);
 
+    @GetMapping(value = "/Livre/Categorie/{categorieId}")
+    List<Livre> findLivreByCategorieId(@PathVariable("categorieId") int categorieId);
+
 
     @GetMapping(value = "/Livre/TitreAuteurISBN/{titre},{auteur},{isbn}")
     List<Livre> findLivresByTitreAndAuteurAndIsbn(@PathVariable("titre") String titre, @PathVariable("auteur") String auteur, @PathVariable("isbn") String isbn );

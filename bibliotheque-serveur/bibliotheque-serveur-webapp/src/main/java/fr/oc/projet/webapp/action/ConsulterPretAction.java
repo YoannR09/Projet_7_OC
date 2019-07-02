@@ -110,7 +110,7 @@ public class ConsulterPretAction extends ActionSupport {
      * Ce prêt ne pourra plus être prolongé.
      * @return
      */
-    public String doProlongattionPret(){
+    public String doProlongationPret(){
 
         pret = managerFactory.getPretManager().getPret(pretId);
         Calendar cal = Calendar.getInstance();

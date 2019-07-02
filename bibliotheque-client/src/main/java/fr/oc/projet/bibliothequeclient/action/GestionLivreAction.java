@@ -39,6 +39,7 @@ public class GestionLivreAction extends ActionSupport {
     private String bibliotheque;
     private Integer livreId;
     private Integer countResultat;
+    private Integer categorieId;
     private List<Livre> livreList;
     private Livre livre;
     private Abonne abonne;
@@ -114,7 +115,13 @@ public class GestionLivreAction extends ActionSupport {
 
     public String doListLivreCategorie(){
 
-
+        livreList = microServiceLivreProxy.findLivreByCategorieId(categorieId);
+        for (Livre livre : livreList) {
+                livre.setNbreDispo(microServiceLivreUniqueProxy.countLivreUniqueDisponible(livre.getId()));
+        }
+        categorieSelect = microServiceCategorieProxy.getCategorie(categorieId).getNom();
+        bibliotheque = "Toutes les bibliothèques";
+        countResultat = livreList.size();
         categorieList = microServiceCategorieProxy.getListCategorie();
 
         return ActionSupport.SUCCESS;
@@ -256,5 +263,13 @@ public class GestionLivreAction extends ActionSupport {
 
     public void setAbonne(Abonne abonne) {
         this.abonne = abonne;
+    }
+
+    public Integer getCategorieId() {
+        return categorieId;
+    }
+
+    public void setCategorieId(Integer categorieId) {
+        this.categorieId = categorieId;
     }
 }

@@ -25,9 +25,6 @@ public class RestituerAction extends ActionSupport {
 
     public String doRechercheRestituerPret(){
 
-       // pret = managerFactory.getPretManager().getPret(pretId);
-       // managerFactory.getPretManager().deletePret(pretId);
-
         if(!bibliotheque.equals("Toutes les bibliothèques")) {
             bibliothequeId = managerFactory.getBibliothequeManager().getBibliothequeNom(bibliotheque).getId();
             if (!isbn.equals("") && !numeroInterne.equals("")){
@@ -46,6 +43,13 @@ public class RestituerAction extends ActionSupport {
                 pretList = managerFactory.getPretManager().getListPretLivreNumInterne(numeroInterne);
             }
         }
+        return ActionSupport.SUCCESS;
+    }
+
+    public String doRestitutionPret(){
+
+        managerFactory.getPretManager().deletePret(pretId);
+
         return ActionSupport.SUCCESS;
     }
 
@@ -113,4 +117,6 @@ public class RestituerAction extends ActionSupport {
     public void setLivreUniqueId(int livreUniqueId) {
         this.livreUniqueId = livreUniqueId;
     }
+
+
 }

@@ -8,6 +8,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/pom.xml" />
       </list>
     </option>
   </component>
