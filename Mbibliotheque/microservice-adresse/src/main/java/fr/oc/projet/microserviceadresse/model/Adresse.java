@@ -2,14 +2,15 @@ package fr.oc.projet.microserviceadresse.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Adresse {
 
     @Id
-    @GeneratedValue
-    private int id;
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Integer id;
 
     private String numero;
 
@@ -24,11 +25,11 @@ public class Adresse {
     public Adresse() {
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

@@ -23,7 +23,6 @@
         {
             font-family: "Microsoft YaHei UI Light";
         }
-
         #cadrePret
         {
             margin-top: 50px;

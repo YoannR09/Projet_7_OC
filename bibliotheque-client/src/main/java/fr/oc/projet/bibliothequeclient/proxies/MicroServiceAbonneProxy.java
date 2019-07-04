@@ -2,8 +2,7 @@ package fr.oc.projet.bibliothequeclient.proxies;
 
 import fr.oc.projet.bibliothequeclient.beans.Abonne;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.*;
 
 @FeignClient(value = "microservice-abonne", url = "localhost:9097")
 public interface MicroServiceAbonneProxy {
@@ -17,4 +16,12 @@ public interface MicroServiceAbonneProxy {
 
     @GetMapping(value = "/Abonne/Email/{email}")
     Abonne getAbonneEmail(@PathVariable("email") String email);
+
+    @PostMapping(value = "/Abonne")
+    void addAbonne(@RequestBody Abonne abonne);
+
+
+    @PutMapping(value = "/Abonne")
+    void updateAbonne(@RequestBody Abonne abonne);
+
 }

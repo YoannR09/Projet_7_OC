@@ -11,4 +11,5 @@ public interface AbonneDao extends JpaRepository<Abonne,Integer> {
     Abonne findByPseudo(String pseudo);
 
     Abonne findByEmail(String email);
+
 }

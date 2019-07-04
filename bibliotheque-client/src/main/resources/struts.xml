@@ -53,6 +53,15 @@
 
         <default-action-ref name="index" />
 
+        <action name="formInscription" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="pageIncription">
+            <result name="success">/jsp/login/inscription.jsp</result>
+        </action>
+
+        <action name="doInscription" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="doInscription">
+            <result name="success">/jsp/index.jsp</result>
+            <result name="error">/jsp/login/inscription.jsp</result>
+        </action>
+
         <action name="index" class="fr.oc.projet.bibliothequeclient.action.GestionIndexAction" method="execute">
             <result name="success">/jsp/index.jsp</result>
         </action>
@@ -93,6 +102,30 @@
             <result name="success">/jsp/pret/list.jsp</result>
         </action>
 
+        <action name="doProfil" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="doProfil">
+            <result name="success">/jsp/login/profil.jsp</result>
+        </action>
+
+        <action name="doChangeMdp" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="doChangeMdp">
+            <result name="success">/jsp/login/profil.jsp</result>
+        </action>
+
+        <action name="doChangeEmail" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="doChangeEmail">
+            <result name="success">/jsp/login/profil.jsp</result>
+        </action>
+
+        <action name="doChangeAdresse" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="doChangeAdresse">
+            <result name="success">/jsp/login/profil.jsp</result>
+        </action>
+
+
+        <action name="doChangeBibliotheque" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="doChangeBibliothequeFavorite">
+            <result name="success">/jsp/login/profil.jsp</result>
+        </action>
+
+        <action name="logout" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="doLogout">
+            <result name="success">/jsp/index.jsp</result>
+        </action>
     </package>
 
 </struts>

@@ -7,14 +7,23 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="dataSourceTicketConfiguration" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
-        <property name="location" value="file:${application.home}/conf/db-bibliotheque.properties"/>
+    <!-- chargement du fichier conf/config.properties -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>file:${application.home}/conf/config.properties</value>
+            </list>
+        </property>
+        <property name="ignoreUnresolvablePlaceholders" value="false"/>
     </bean>
-    <!-- Création de la datasource "dataSourceTicket" -->
-    <bean id="dataSourceTicket"
+    <bean id="dataSourceConfiguration" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="location" value="file:db-ticket.properties"/>
+    </bean>
+    <!-- Création de la datasource "dataSource" -->
+    <bean id="dataSource"
           class="org.apache.commons.dbcp2.BasicDataSourceFactory"
           factory-method="createDataSource"
           destroy-method="close">
-        <constructor-arg ref="dataSourceTicketConfiguration"/>
+        <constructor-arg ref="dataSourceConfiguration"/>
     </bean>
 </beans>

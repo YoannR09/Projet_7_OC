@@ -2,6 +2,7 @@ package fr.oc.projet.bibliothequeclient.beans;
 
 public class Adresse {
 
+    private Integer id;
     private String numero;
     private String rue;
     private String codePostal;
@@ -9,6 +10,14 @@ public class Adresse {
     private String pays;
 
     public Adresse() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNumero() {

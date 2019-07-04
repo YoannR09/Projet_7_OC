@@ -3,9 +3,7 @@ package fr.oc.projet.microserviceabonne.web.controller;
 import fr.oc.projet.microserviceabonne.dao.AbonneDao;
 import fr.oc.projet.microserviceabonne.model.Abonne;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class AbonneController {
@@ -28,5 +26,13 @@ public class AbonneController {
         return abonneDao.findByEmail(email);
     }
 
+    @PostMapping(value = "/Abonne")
+    public void addAbonne(@RequestBody Abonne abonne) {
+        abonneDao.save(abonne);
+    }
 
+    @PutMapping(value = "/Abonne")
+    public void updateAbonne(@RequestBody Abonne abonne) {
+        abonneDao.save(abonne);
+    }
 }

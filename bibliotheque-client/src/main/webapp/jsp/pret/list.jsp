@@ -80,6 +80,12 @@
             border-right: 1px solid darkgray;
             background-color: whitesmoke;
         }
+        #labelInfo
+        {
+            float: right;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -90,6 +96,9 @@
     <div id="bottom">
         <div id="cadrePret" class="col-9" >
             <label class="form-check-label" id="labelRecherche"> Mes prêts en cours</label>
+            <s:if test="pretList.empty">
+                <label class="form-check-label" id="labelInfo"><em style="color: darkgray">Aucun prêt en cours</em></label>
+            </s:if>
             <table class="table" id="tableau">
                 <thead>
                 <tr>

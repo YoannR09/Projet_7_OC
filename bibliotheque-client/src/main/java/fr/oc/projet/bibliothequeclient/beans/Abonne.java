@@ -7,7 +7,7 @@ public class Abonne {
     private         String              nom;
     private         String              prenom;
     private         String              email;
-    private         String              numero;
+    private         String              numeroTelephone;
     private         String              motDePasse;
     private         Integer             adresseId;
     private         Integer             roleId;
@@ -52,12 +52,12 @@ public class Abonne {
         this.email = email;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getNumeroTelephone() {
+        return numeroTelephone;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setNumeroTelephone(String numeroTelephone) {
+        this.numeroTelephone = numeroTelephone;
     }
 
     public String getMotDePasse() {

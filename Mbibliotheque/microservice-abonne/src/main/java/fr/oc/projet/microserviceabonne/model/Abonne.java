@@ -1,14 +1,18 @@
 package fr.oc.projet.microserviceabonne.model;
 
+import org.springframework.lang.Nullable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Null;
 
 @Entity
 public class Abonne {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
 
     private String pseudo;
@@ -23,11 +27,12 @@ public class Abonne {
 
     private String numeroTelephone;
 
-    private int adresseId;
 
-    private int roleId;
+    private Integer adresseId;
 
-    private int bibliothequeId;
+    private Integer roleId;
+
+    private Integer bibliothequeId;
 
     public Abonne() {
     }
@@ -88,27 +93,27 @@ public class Abonne {
         this.numeroTelephone = numeroTelephone;
     }
 
-    public int getAdresseId() {
+    public Integer getAdresseId() {
         return adresseId;
     }
 
-    public void setAdresseId(int adresseId) {
+    public void setAdresseId(Integer adresseId) {
         this.adresseId = adresseId;
     }
 
-    public int getRoleId() {
+    public Integer getRoleId() {
         return roleId;
     }
 
-    public void setRoleId(int roleId) {
+    public void setRoleId(Integer roleId) {
         this.roleId = roleId;
     }
 
-    public int getBibliothequeId() {
+    public Integer getBibliothequeId() {
         return bibliothequeId;
     }
 
-    public void setBibliothequeId(int bibliothequeId) {
+    public void setBibliothequeId(Integer bibliothequeId) {
         this.bibliothequeId = bibliothequeId;
     }
 

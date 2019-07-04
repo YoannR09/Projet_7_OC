@@ -84,7 +84,7 @@
         #labelCount
         {
             float: right;
-            font-size: 1.1em;
+            font-size: 0.8em;
             margin-top: 15px;
         }
     </style>
@@ -98,7 +98,7 @@
     <div id="barreDeRecherche" class="bg-light">
         <s:form id="formulaire" action="doRechercheLivre" >
             <div class="input-group">
-                <select id="selectCategorie" name="categorieSelect" class="form-control " style="margin-right: 7px" >
+                <select id="selectCategorie" name="categorieSelect" class="form-control " style="margin-right: 7px;margin-left: 10px" >
                     <option>Toutes les catégories</option>
                     <s:iterator value="categorieList" status="list">
                         <option><s:property value="nom"/></option>

@@ -5,6 +5,8 @@ import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
 import fr.oc.projet.model.beans.utilisateur.Abonne;
 import fr.oc.projet.model.beans.utilisateur.Pret;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -17,14 +19,15 @@ import java.util.List;
 @Named
 public class ScheduledTasks {
 
-    @Inject
-    ManagerFactory managerFactory;
-
-    @Inject
-    EnvoyerMail envoyerMail;
 
     @Scheduled(fixedRate = 86400000)
     public void run() {
+
+        ApplicationContext vApplicationContext
+                = new ClassPathXmlApplicationContext("classpath:/bootstrapContext.xml");
+
+        ManagerFactory managerFactory = vApplicationContext.getBean("managerFactoryImpl", ManagerFactory.class);
+
 
         List<Abonne> vList = managerFactory.getAbonneManager().getListAbonne();
         for(Abonne abonne:vList){
@@ -45,7 +48,7 @@ public class ScheduledTasks {
                         " Date d'emprunt dépassé sur les produits suivant : \n"
                         + listLivreNonRestitue+
                         " \n Merci de votre compréhension. Cordialement, l'équipe de la Bibliothèque";
-                envoyerMail.sendMessage(objet,contenu,abonne);
+
             }
         }
     }
