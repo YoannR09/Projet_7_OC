@@ -7,23 +7,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ba7665d-cdb8-4942-9b92-c5dd26b22a45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/bibliotheque-serveur-batch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/assembly/archive-deploy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/db-ticket.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/dao/PretDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/dao/PretDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/web/controller/PretController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/web/controller/PretController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionIndexAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionIndexAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionLivreAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionLivreAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionPretAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/beans/Pret.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/beans/Pret.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServicePretProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServicePretProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/resources/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/_include/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/login/inscription.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/login/inscription.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/pret/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/webapp/jsp/pret/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/scripts/batch-export-ticket-statut.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/BibliothequeServeurBatchApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/bootstrapContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/bootstrapContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/db-ticket.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/fr/oc/projet/batch/batchContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/fr/oc/projet/batch/batchContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/test/java/fr/oc/projet/batch/BibliothequeServeurBatchApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-business-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-business-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-model-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-technical-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-technical-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -125,24 +143,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console_3.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console.sql">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="228" column="35" selection-start-line="228" selection-start-column="35" selection-end-line="228" selection-end-column="35" />
+            <state relative-caret-position="341">
+              <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/pret">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/resources/log4j2.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,82 +176,63 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#784#1018#0" expanded="true" />
+                <element signature="e#1017#1018#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/BibliothequeServeurBatchApplication.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="239">
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/bibliotheque-serveur-batch.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+            <state relative-caret-position="357">
+              <caret line="33" selection-start-line="18" selection-start-column="3" selection-end-line="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/utilisateur/PretDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-975">
-              <caret line="67" column="73" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/bootstrapContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="250" column="39" selection-start-line="250" selection-start-column="39" selection-end-line="250" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#11581#11582#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/fr/oc/projet/batch/batchContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2294#2295#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="118" column="47" lean-forward="true" selection-start-line="115" selection-start-column="7" selection-end-line="118" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="20" column="165" selection-start-line="20" selection-start-column="165" selection-end-line="20" selection-end-column="165" />
             </state>
           </provider>
         </entry>
@@ -247,9 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouter.jsp" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/contract/dao/bibliotheque/LivreUniqueDao.java" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/contract/manager/bibliotheque/LivreUniqueManager.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/impl/manager/bibliotheque/LivreUniqueManagerImpl.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-model/src/main/java/fr/oc/projet/model/beans/bibliotheque/Bibliotheque.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/rowmapper/bibliotheque/BibliothequeRM.java" />
@@ -282,22 +286,25 @@
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/restituer/restituerPret.jsp" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/resources/struts.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/db-bibliotheque.properties" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/batchContext.xml" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/BatchApplication.java" />
         <option value="$PROJECT_DIR$/../README.md" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/bootstrapContext.xml" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/config.properties" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/scripts/batch-export-ticket-statut.sh" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/BibliothequeServeurBatchApplication.java" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/db-ticket.properties" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/pom.xml" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/fr/oc/projet/batch/batchContext.xml" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/AbstractDaoImpl.java" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console.sql" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-business/src/assembly/archive-deploy.xml" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-business/pom.xml" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/db-ticket.properties" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/bootstrapContext.xml" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/fr/oc/projet/batch/batchContext.xml" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/pom.xml" />
       </list>
     </option>
   </component>
@@ -354,7 +361,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="430" />
     <option name="width" value="2138" />
     <option name="height" value="1056" />
@@ -455,14 +462,6 @@
               <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
               <item name="bibliotheque-serveur-batch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
-              <item name="bibliotheque-serveur-batch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -489,22 +488,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
-              <item name="bibliotheque-serveur-batch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="batch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
-              <item name="bibliotheque-serveur-batch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
@@ -596,6 +579,24 @@
               <item name="impl" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-technical" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-technical" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-technical" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
@@ -710,8 +711,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562399638247" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562420379456" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ticket" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -728,16 +729,17 @@
       <recent name="fr.oc.projet.business.contract.manager.utilisateur" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-technical\src\main\resources" />
+      <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-batch\src\main" />
+      <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-batch\src\data" />
+      <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-business\src\assembly" />
       <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-batch\src\main\resources" />
-      <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-batch\src\data\conf" />
-      <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-batch\src" />
-      <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-model\src\main\java\fr\oc\projet\model\beans\bibliotheque" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-batch\src" />
       <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-batch\src\data" />
       <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-batch\src\main\resources\fr\oc\projet\batch" />
       <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-webapp\src\main\webapp\WEB-INF\jsp" />
-      <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-batch\src" />
       <recent name="C:\Users\El-ra\Documents\Projet_7_OC\bibliotheque-serveur\bibliotheque-serveur-webapp\src\main\webapp\WEB-INF" />
     </key>
   </component>
@@ -753,7 +755,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.19">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.oc.projet.batch.App" />
+      <module name="bibliotheque-serveur-batch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.oc.projet.batch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BibliothequeServeurBatchApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.oc.projet.batch.BibliothequeServeurBatchApplication" />
       <module name="bibliotheque-serveur-batch" />
@@ -869,9 +884,11 @@
       <item itemvalue="Tomcat Server.Tomcat 9.0.19" />
       <item itemvalue="Spring Boot.BibliothequeServeurBatchApplication" />
       <item itemvalue="Application.BibliothequeServeurBatchApplication" />
+      <item itemvalue="Application.App" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.BibliothequeServeurBatchApplication" />
         <item itemvalue="Application.StartTimer" />
       </list>
@@ -896,18 +913,18 @@
       <workItem from="1561707365990" duration="551000" />
       <workItem from="1561712151892" duration="14579000" />
       <workItem from="1561816817414" duration="4412000" />
-      <workItem from="1561987740687" duration="27941000" />
+      <workItem from="1561987740687" duration="34873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183996000" />
+    <option name="totallyTimeSpent" value="190928000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14427663" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14427663" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -917,14 +934,14 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.468039" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.468039" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="9" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -985,44 +1002,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/livre.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/illustration">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2329">
-          <caret line="137" column="49" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/contract/manager/utilisateur/PretManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -1086,13 +1065,6 @@
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/mvnw.cmd">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://SpringLocalModels/module=bibliotheque-serveur-batch">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1137,13 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="17" selection-start-line="18" selection-start-column="4" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1185,23 +1150,9 @@
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-50" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/resources/bootstrapContext.xml">
@@ -1213,13 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/db-ticket.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1237,20 +1181,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/bootstrapContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/fr/oc/projet/batch/batchContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -1312,16 +1242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
@@ -1347,7 +1267,7 @@
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="118" column="47" lean-forward="true" selection-start-line="115" selection-start-column="7" selection-end-line="118" selection-end-column="47" />
+          <caret line="118" column="47" selection-start-line="115" selection-start-column="7" selection-end-line="118" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1364,17 +1284,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+        <state relative-caret-position="467">
+          <caret line="234" selection-start-line="234" selection-end-line="234" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console.sql">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="228" column="35" selection-start-line="228" selection-start-column="35" selection-end-line="228" selection-end-column="35" />
+        <state relative-caret-position="221">
+          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/assembly/archive-deploy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/db-ticket.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/org/example/demo/ticket/batch/batchContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" selection-start-line="18" selection-start-column="3" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/bibliotheque-serveur-batch.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/bootstrapContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/fr/oc/projet/batch/batchContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="165" selection-start-line="20" selection-start-column="165" selection-end-line="20" selection-end-column="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#784#1018#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1432,11 +1451,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|bibliotheque-serveur-batch</last-edited>
+          <last-edited>bibliotheque-serveur-technical</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

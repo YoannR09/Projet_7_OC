@@ -17,7 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="bibliotheque-serveur-batch" options="-parameters" />
+      <module name="bibliotheque-serveur-batch" options="" />
     </option>
   </component>
 </project>

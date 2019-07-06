@@ -24,13 +24,14 @@
     </properties>
 
     <modules>
-        <module>bibliotheque-serveur-batch</module>
+  
         <module>bibliotheque-serveur-webapp</module>
         <module>bibliotheque-serveur-business</module>
         <module>bibliotheque-serveur-consumer</module>
         <module>bibliotheque-serveur-model</module>
         <module>bibliotheque-serveur-technical</module>
-    </modules>
+        <module>bibliotheque-serveur-batch</module>
+  </modules>
 
     <!-- =============================================================== -->
     <!-- Gestion des dépendances -->
@@ -38,6 +39,7 @@
     <dependencyManagement>
         <dependencies>
             <!-- ===== Modules ===== -->
+
             <dependency>
                 <groupId>fr.oc.projet</groupId>
                 <artifactId>bibliotheque-serveur-batch</artifactId>

@@ -1,18 +1,13 @@
 package fr.oc.projet.batch;
 
-
 import fr.oc.projet.model.beans.utilisateur.Abonne;
 
-import javax.inject.Named;
+
 import javax.mail.*;
-
 import javax.mail.internet.InternetAddress;
-
 import javax.mail.internet.MimeMessage;
-
 import java.util.Properties;
 
-@Named
 public class EnvoyerMail {
 
     public void sendMessage(String objet, String contenu, Abonne abonne) {
@@ -24,7 +19,6 @@ public class EnvoyerMail {
         prop.put("mail.smtp.auth", "true");
         prop.put("mail.smtp.starttls.enable", "true"); //TLS
         Session session = Session.getInstance(prop,
-
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
                         return new PasswordAuthentication(username, password);
