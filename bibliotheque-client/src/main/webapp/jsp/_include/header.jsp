@@ -19,7 +19,12 @@
                 <s:a action="catalogueLivre" class="nav-link" style="font-size:1.3em">| Livre |</s:a>
             </li>
             <li class="nav-item">
+                <s:if test="#session.user">
                 <s:a action="doListPret" class="nav-link" style="font-size:1.3em">| Mes prêts |</s:a>
+                </s:if>
+                <s:else>
+                    <s:a action="login" class="nav-link" style="font-size:1.3em">| Mes prêts |</s:a>
+                </s:else>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" style="color: white" >

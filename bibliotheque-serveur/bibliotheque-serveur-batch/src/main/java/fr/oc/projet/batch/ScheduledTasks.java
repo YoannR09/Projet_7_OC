@@ -34,7 +34,7 @@ public class ScheduledTasks {
             List<Pret> listPret = managerFactory.getPretManager().getListPretAbonne(abonne.getId());
             List<LivreUnique> listLivreUnique = new ArrayList<>();
             for(Pret pret:listPret){
-                if(pret.getDateRestitution().compareTo(new Date()) > 0){
+                if(pret.getDateRestitution().compareTo(new Date()) < 0){
                     listLivreUnique.add(pret.getLivreUnique());
                 }
             }

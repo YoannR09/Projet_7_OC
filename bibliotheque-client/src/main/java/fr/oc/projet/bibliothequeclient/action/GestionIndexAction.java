@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+/**
+ * Classe qui gère la page d'acceuil.
+ */
 @Component
 public class GestionIndexAction extends ActionSupport {
 
@@ -17,6 +20,11 @@ public class GestionIndexAction extends ActionSupport {
     @Autowired
     private MicroServiceCategorieProxy microServiceCategorieProxy;
 
+    /**
+     * Affichage de la page d'acceuil
+     * La liste des catégories s'affiche.
+     * @return
+     */
     public String execute(){
 
         categorieList = microServiceCategorieProxy.getListCategorie();

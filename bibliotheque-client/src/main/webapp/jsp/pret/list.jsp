@@ -124,9 +124,14 @@
                             <td id="tdBtnRenouv"><button type="button" class="btn btn-info" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
                         </s:if>
                         <s:else>
-                            <td id="tdBtnRenouv"><s:a action="prolongationPret" class="btn btn-info" style="font-size:0.6em;">
-                                <s:param name="pretId" value="id" />
-                                <i class="fas fa-redo-alt"></i></i></s:a></td>
+                            <s:if test="expire">
+                                <td id="tdBtnRenouv"><button type="button" class="btn btn-info" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
+                            </s:if>
+                            <s:else>
+                                <td id="tdBtnRenouv"><s:a action="doProlongationPret" class="btn btn-info" style="font-size:0.6em;">
+                                    <s:param name="pretId" value="id" />
+                                    <i class="fas fa-redo-alt"></i></i></s:a></td>
+                            </s:else>
                         </s:else>
                     </tr>
                 </s:iterator>

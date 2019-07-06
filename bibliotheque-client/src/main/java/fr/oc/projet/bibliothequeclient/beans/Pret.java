@@ -14,6 +14,7 @@ public class Pret {
     private         Integer         abonneId;
     private         Livre           livre;
     private         Integer         livreUniqueId;
+    private         Boolean         expire;
 
     public Pret() {
     }
@@ -96,5 +97,13 @@ public class Pret {
 
     public void setBibliotheque(Bibliotheque bibliotheque) {
         this.bibliotheque = bibliotheque;
+    }
+
+    public Boolean getExpire() {
+        return expire;
+    }
+
+    public void setExpire(Boolean expire) {
+        this.expire = expire;
     }
 }

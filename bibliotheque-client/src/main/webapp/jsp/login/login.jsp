@@ -40,8 +40,9 @@
         }
         #labelRecherche
         {
-            left: 10px;
-            font-size: 1.5em;
+            left: 10px;36
+        52
+            font-size: 1.2em;
             margin: 10px;
             font-weight: bold;
         }
@@ -50,6 +51,12 @@
             width: 100%;
             border: darkgray 1px solid;
             padding: 20px ;
+        }
+        #message
+        {
+            float: right;
+            font-size: 1.1em;
+            margin-top: 15px;
         }
 
 
@@ -67,21 +74,22 @@
     <div id="bottom" >
         <div id="cadreLogin" class="col-4">
             <label class="form-check-label" id="labelRecherche"> Connectez-vous à votre espace abonné </label>
+            <em id="message"><s:actionmessage/></em>
             <div class="col-12 container bg-light" id="cadreLog">
-                <s:actionmessage/>
                 <s:form action="doLogin">
                     <div class="form-group" style="margin: 20px;">
                         <label for="inputPseudo">Pseudo/Email</label>
-                        <input name="identifiant" type="pseudo" class="form-control" id="inputPseudo" required>
+                        <input name="identifiant" type="text" class="form-control" id="inputPseudo" required>
                     </div>
                     <div class="form-group " style="margin: 20px">
                         <label for="inputPassword">Mot de passe</label>
                         <input name="motDePasse" type="password" class="form-control" id="inputPassword" required>
                     </div>
                     <div style="display: flex;justify-content: space-between">
-                        <s:a action="" class="btn btn-outline-info">S'inscrire</s:a>
+                        <s:a action="formInscription" class="btn btn-outline-info">S'inscrire</s:a>
                         <button type="submit" class="btn btn-outline-info">Connexion</button>
                     </div>
+
                 </s:form>
             </div>
         </div>

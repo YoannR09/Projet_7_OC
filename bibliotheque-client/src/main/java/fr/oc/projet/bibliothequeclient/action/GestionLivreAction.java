@@ -14,6 +14,10 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Classe qui gère le catalogue de livre.
+ * Permet de faire des recherches de livres via plusieurs critères.
+ */
 @Component
 public class GestionLivreAction extends ActionSupport {
 
@@ -48,6 +52,12 @@ public class GestionLivreAction extends ActionSupport {
     private List<Categorie> categorieList;
     private HashMap<Livre,Integer> livreIntegerHashMap;
 
+    /**
+     * Méthode qui gère la recherche de livre
+     * On recherche un livre en fonction des informations rentrées
+     * par le visiteur.
+     * @return
+     */
     public String doListLivre(){
 
         if(!categorieSelect.equals("Toutes les catégories")){
@@ -55,7 +65,6 @@ public class GestionLivreAction extends ActionSupport {
         }else {
             categorie = null;
         }
-
         if(!titre.equals("") && !auteur.equals("") && !isbn.equals("") && categorie == null){
             livreList = microServiceLivreProxy.findLivresByTitreAndAuteurAndIsbn(titre,auteur,isbn);
         }else if (titre.equals("") && !auteur.equals("") && !isbn.equals("") && categorie == null){
@@ -84,28 +93,39 @@ public class GestionLivreAction extends ActionSupport {
             livreList = microServiceLivreProxy.findLivresByAuteurContainingAndCategorieId(auteur,categorie.getId());
         }else if (titre.equals("") && auteur.equals("") && !isbn.equals("") && categorie != null) {
             livreList = microServiceLivreProxy.findLivresByIsbnContainingAndCategorieId(isbn, categorie.getId());
+        }else if(titre.equals("") && auteur.equals("") && isbn.equals("") && categorie != null){
+            livreList = microServiceLivreProxy.findLivreByCategorieId(categorie.getId());
         }
-        for (Livre livre : livreList) {
-            if(recherche.equals("option2")) {
-                livre.setNbreDispo(microServiceLivreUniqueProxy.countLivreUniqueDisponible(livre.getId()));
-            }else {
+        if(livreList != null) {
+            for (Livre livre : livreList) {
+                if (recherche.equals("option2")) {
+                    livre.setNbreDispo(microServiceLivreUniqueProxy.countLivreUniqueDisponible(livre.getId()));
+                } else {
+                    pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
+                    abonne = microServiceAbonneProxy.getAbonnePseudo(pseudo);
+                    livre.setNbreDispo(microServiceLivreUniqueProxy.countLivreUniqueBibliothequeDisponible(livre.getId(), abonne.getBibliothequeId()));
+                }
+            }
+            if (recherche.equals("option2")) {
+                bibliotheque = "Toutes les bibliothèques";
+            } else {
                 pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
                 abonne = microServiceAbonneProxy.getAbonnePseudo(pseudo);
-                livre.setNbreDispo(microServiceLivreUniqueProxy.countLivreUniqueBibliothequeDisponible(livre.getId(),abonne.getBibliothequeId()));
+                bibliotheque = microServiceBibliothequeProxy.getBibliotheque(abonne.getBibliothequeId()).getNom();
             }
-        }
-        if(recherche.equals("option2")) {
-            bibliotheque = "Toutes les bibliothèques";
+            countResultat = livreList.size();
         }else {
-            pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
-            abonne = microServiceAbonneProxy.getAbonnePseudo(pseudo);
-            bibliotheque = microServiceBibliothequeProxy.getBibliotheque(abonne.getBibliothequeId()).getNom();
+            countResultat = 0;
         }
         categorieList = microServiceCategorieProxy.getListCategorie();
-        countResultat = livreList.size();
+
         return Action.SUCCESS;
     }
 
+    /**
+     * Méthode pour récupèrer la liste des catégories.
+     * @return
+     */
     public String doCatalogueLivre(){
 
         categorieList = microServiceCategorieProxy.getListCategorie();
@@ -113,6 +133,11 @@ public class GestionLivreAction extends ActionSupport {
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Méthode pour effcetuer une recherche de livre via une catègorie
+     * séléctionné depuis la page d'acceuil.
+     * @return
+     */
     public String doListLivreCategorie(){
 
         livreList = microServiceLivreProxy.findLivreByCategorieId(categorieId);
@@ -127,6 +152,10 @@ public class GestionLivreAction extends ActionSupport {
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Méthode pour afficher les détails d'un livre.
+     * @return
+     */
     public String doDetailLivre(){
 
         livre = microServiceLivreProxy.getLivre(livreId);

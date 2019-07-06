@@ -92,6 +92,7 @@
 
         <action name="doLogin" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="doLogin">
             <result name="success">/jsp/index.jsp</result>
+            <result name="error">/jsp/login/login.jsp</result>
         </action>
     </package>
 
@@ -125,6 +126,10 @@
 
         <action name="logout" class="fr.oc.projet.bibliothequeclient.action.LoginAction" method="doLogout">
             <result name="success">/jsp/index.jsp</result>
+        </action>
+
+        <action name="doProlongationPret" class="fr.oc.projet.bibliothequeclient.action.GestionPretAction" method="doProlongationPret">
+            <result name="success">/jsp/pret/list.jsp</result>
         </action>
     </package>
 

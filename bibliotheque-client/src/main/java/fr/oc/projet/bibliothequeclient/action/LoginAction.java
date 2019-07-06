@@ -17,6 +17,9 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Classe pour gérer les comptes des abonnées.
+ */
 @Component
 public class LoginAction extends ActionSupport implements SessionAware {
 
@@ -54,8 +57,14 @@ public class LoginAction extends ActionSupport implements SessionAware {
     private         String              pseudo;
     private         Abonne              abonne;
 
-
+    /**
+     * Méthode pour connecter l'abonné.
+     * @return
+     */
     public String doLogin() {
+
+        String vResult;
+
         if (identifiant != null) {
             abonne = microServiceAbonneProxy.getAbonnePseudo(identifiant);
             if (abonne == null) {
@@ -64,21 +73,27 @@ public class LoginAction extends ActionSupport implements SessionAware {
         }
         if (abonne == null) {
             this.addActionMessage("Identifiant invalide");
+            vResult = ActionSupport.ERROR;
         }
-        else
-        {
+        else {
             if (motDePasse.equals(abonne.getMotDePasse())) {
                 this.session.put("user", abonne);
                 this.session.put("pseudo", abonne.getPseudo());
                 this.session.put("role", abonne.getRole());
                 categorieList = microServiceCategorieProxy.getListCategorie();
+                vResult = ActionSupport.SUCCESS;
             } else {
-                this.addActionMessage("Identifiant invalide");
+                this.addActionMessage("Mot de passe invalide");
+                vResult = ActionSupport.ERROR;
             }
         }
-        return ActionSupport.SUCCESS;
+        return vResult;
     }
 
+    /**
+     * Méthode pour déconnecter l'abonné.
+     * @return
+     */
     public String doLogout(){
 
         this.session.remove("user");
@@ -89,7 +104,10 @@ public class LoginAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
-
+    /**
+     * Méthode pour afficher le profil de l'abonné
+     * @return
+     */
     public String doProfil(){
 
         pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
@@ -99,6 +117,10 @@ public class LoginAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Méthode pour changer le mot de passe de l'abonné.
+     * @return
+     */
     public String doChangeMdp(){
 
         pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
@@ -113,6 +135,10 @@ public class LoginAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Méthode pour changer l'adresse de l'abonné
+     * @return
+     */
     public String doChangeAdresse(){
 
         pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
@@ -143,20 +169,32 @@ public class LoginAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Méthode pour changer l'adresse électronique de l'abonné.
+     * @return
+     */
     public String doChangeEmail(){
 
         pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
         abonne = microServiceAbonneProxy.getAbonnePseudo(pseudo);
         if (newEmail.equals(newEmailVerif)){
-            abonne.setEmail(newEmail);
-            microServiceAbonneProxy.updateAbonne(abonne);
-            this.addActionMessage("Adresse électronique modifié");
+            if (microServiceAbonneProxy.getAbonneEmail(newEmail) == null) {
+                abonne.setEmail(newEmail);
+                microServiceAbonneProxy.updateAbonne(abonne);
+                this.addActionMessage("Adresse électronique modifié");
+            }else {
+                this.addActionMessage("Adresse électronique déjà utilisée");
+            }
         }
         profilInfo(abonne);
 
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Méthode pour modifié l'adresse favorite de l'abonné
+     * @return
+     */
     public String doChangeBibliothequeFavorite(){
 
         pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
@@ -172,6 +210,10 @@ public class LoginAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Méthode pour retoruner à la page les informations de l'abonne
+     * @param abonne
+     */
     public void profilInfo(Abonne abonne){
         if (abonne.getAdresseId() != null) {
             abonne.setAdresse(microServiceAdresseProxy.getAdresse(abonne.getAdresseId()));
@@ -185,6 +227,10 @@ public class LoginAction extends ActionSupport implements SessionAware {
         }
     }
 
+    /**
+     * Méthode pour afficher le formulaire d'inscription
+     * @return
+     */
     public String pageIncription(){
 
         bibliothequeList = microServiceBibliothequeProxy.findAll();
@@ -192,33 +238,49 @@ public class LoginAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Méthode qui gère l'inscription de l'utilsateur
+     * Si la vérification du mot de passe est bonne
+     * Ainsi que si le pseudo et l'adresse mail ne sont pas utilisés
+     * Le compte est crée dans la bdd
+     * @return
+     */
     public String doInscription(){
 
         String vResult;
 
         if(newMdp.equals(newMdpVerif)){
-            Abonne abonne = new Abonne();
-            abonne.setPseudo(pseudo);
-            abonne.setMotDePasse(newMdp);
-            abonne.setEmail(newEmail);
-            abonne.setNom(nom);
-            abonne.setPrenom(prenom);
-            abonne.setNumeroTelephone(numero);
-            abonne.setBibliothequeId(Integer.parseInt(bibliotheque));
-            abonne.setRoleId(1);
-            microServiceAbonneProxy.addAbonne(abonne);
-            categorieList = microServiceCategorieProxy.getListCategorie();
-            vResult = ActionSupport.SUCCESS;
+            if (microServiceAbonneProxy.getAbonneEmail(newEmail) == null) {
+                if (microServiceAbonneProxy.getAbonnePseudo(pseudo) == null) {
+                    Abonne abonne = new Abonne();
+                    abonne.setPseudo(pseudo);
+                    abonne.setMotDePasse(newMdp);
+                    abonne.setEmail(newEmail);
+                    abonne.setNom(nom);
+                    abonne.setPrenom(prenom);
+                    abonne.setNumeroTelephone(numero);
+                    abonne.setBibliothequeId(Integer.parseInt(bibliotheque));
+                    abonne.setRoleId(1);
+                    microServiceAbonneProxy.addAbonne(abonne);
+                    categorieList = microServiceCategorieProxy.getListCategorie();
+                    vResult = ActionSupport.SUCCESS;
+                }else {
+                    vResult = ActionSupport.ERROR;
+                    bibliothequeList = microServiceBibliothequeProxy.findAll();
+                    this.addActionMessage("Pseudo déjà utilisé");
+                }
+            }else {
+                vResult = ActionSupport.ERROR;
+                bibliothequeList = microServiceBibliothequeProxy.findAll();
+                this.addActionMessage("Adresse électronique déjà utilisée");
+            }
         }else {
             vResult = ActionSupport.ERROR;
             bibliothequeList = microServiceBibliothequeProxy.findAll();
             this.addActionMessage("Mot de passe non identique");
         }
-
         return vResult;
     }
-
-
 
 
     @Override
