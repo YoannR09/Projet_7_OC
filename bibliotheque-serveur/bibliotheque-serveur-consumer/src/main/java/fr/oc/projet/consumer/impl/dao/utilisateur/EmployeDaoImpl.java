@@ -27,6 +27,14 @@ public class EmployeDaoImpl extends AbstractDaoImpl implements EmployeDao {
     }
 
     @Override
+    public Employe getEmployeEmail(String email) {
+        String vSQL = "SELECT * FROM employe WHERE email ="+"'"+email+"'";
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        Employe employe = vJdbcTemplate.queryForObject(vSQL, employeRM);
+        return employe;
+    }
+
+    @Override
     public List<Employe> getListEmploye() {
         String vSQL = "SELECT * FROM employe ";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());

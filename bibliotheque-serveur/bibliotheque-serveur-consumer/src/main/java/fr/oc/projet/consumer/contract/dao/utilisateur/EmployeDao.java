@@ -8,5 +8,7 @@ public interface EmployeDao {
 
     Employe getEmploye(Integer pId);
 
+    Employe getEmployeEmail(String email);
+
     List<Employe> getListEmploye();
 }

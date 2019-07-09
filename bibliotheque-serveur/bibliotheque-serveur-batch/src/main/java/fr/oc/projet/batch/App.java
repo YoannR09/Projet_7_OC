@@ -27,7 +27,6 @@ public class App
 
         Timer timer;
         timer = new Timer();
-
         timer.scheduleAtFixedRate(new ScheduledTasks(managerFactory), 1000, 10000);
     }
 }

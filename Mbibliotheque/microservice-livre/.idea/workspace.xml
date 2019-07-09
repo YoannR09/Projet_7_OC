@@ -2,41 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3c28bc8-ba6b-45f5-8691-7fb5163fd55c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/bibliotheque-serveur-batch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/assembly/archive-deploy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/data/conf/db-ticket.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-technical/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/interceptor/AuthInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/data/conf/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/data/conf/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/data/scripts/batch-export-ticket-statut.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/BibliothequeServeurBatchApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/resources/bootstrapContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/resources/bootstrapContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/resources/db-ticket.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/resources/fr/oc/projet/batch/batchContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/resources/fr/oc/projet/batch/batchContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/test/java/fr/oc/projet/batch/BibliothequeServeurBatchApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-business-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-business-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-model-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-technical-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-technical-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/contract/manager/utilisateur/EmployeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/contract/manager/utilisateur/EmployeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/impl/manager/utilisateur/EmployeManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/impl/manager/utilisateur/EmployeManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/contract/dao/utilisateur/EmployeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/contract/dao/utilisateur/EmployeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/utilisateur/EmployeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/utilisateur/EmployeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/resources/struts.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -296,7 +272,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="617" y="0" width="1951" height="1056" extended-state="1" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17715494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

@@ -8,5 +8,7 @@ public interface EmployeManager {
 
     Employe getEmploye(Integer pId);
 
+    Employe getEmployeEmail(String email);
+
     List<Employe> getListEmploye();
 }

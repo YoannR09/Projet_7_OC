@@ -15,6 +15,11 @@ public class EmployeManagerImpl extends AbstractManagerImpl implements EmployeMa
     }
 
     @Override
+    public Employe getEmployeEmail(String email) {
+        return getDaoFactory().getEmployeDao().getEmployeEmail(email);
+    }
+
+    @Override
     public List<Employe> getListEmploye() {
         return getDaoFactory().getEmployeDao().getListEmploye();
     }
