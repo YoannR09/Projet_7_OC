@@ -25,5 +25,15 @@
                 <s:a action="restituerPret" class="nav-link">| Restituer un prêt |</s:a>
             </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0" style="color: white" >
+            <s:if test="#session.user">
+                <em id="email"><s:property value="#session.email" /></em>
+                <s:set var="email" value="session.email"/>
+                <s:a action="logout" class="nav-link text-info">Deconnexion</s:a>
+            </s:if>
+            <s:else>
+                <s:a action="login" style="color:lightgray" class="nav-link">Connexion</s:a>
+            </s:else>
+        </form>
     </div>
 </nav>

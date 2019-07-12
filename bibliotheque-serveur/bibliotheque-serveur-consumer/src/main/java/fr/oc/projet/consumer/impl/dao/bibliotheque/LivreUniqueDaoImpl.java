@@ -5,10 +5,13 @@ import fr.oc.projet.consumer.impl.dao.AbstractDaoImpl;
 import fr.oc.projet.consumer.rowmapper.bibliotheque.LivreUniqueRM;
 import fr.oc.projet.model.beans.bibliotheque.Livre;
 import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
+import fr.oc.projet.model.beans.utilisateur.Abonne;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.SqlParameterValue;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.sql.Types;
 import java.util.List;
 
 @Named
@@ -30,7 +33,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
         String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"%'"+titre+"%'" +
                 " AND auteur LIKE "+"'%"+auteur+"%'" +
                 " AND isbn LIKE "+"'%"+isbn+"%'" +
-                " AND livre.id = livre_unique.livre_id" ;
+                " AND livre.id = livre_unique.livre_id " +
+                " ORDER BY titre";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -40,7 +44,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
     public List<LivreUnique> getListLivreUniqueTitreAuteur(String titre, String auteur) {
         String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'%"+titre+"%'" +
                 " AND auteur LIKE "+"'%"+auteur+"%'" +
-                " AND livre.id = livre_unique.livre_id" ;
+                " AND livre.id = livre_unique.livre_id " +
+                " ORDER BY titre" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -51,7 +56,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
         String vSQL = "SELECT * FROM livre_unique,livre WHERE "+
                 " auteur LIKE "+"'%"+auteur+"%'" +
                 " AND isbn LIKE "+"'%"+isbn+"%'" +
-                " AND livre.id = livre_unique.livre_id" ;
+                " AND livre.id = livre_unique.livre_id" +
+                " ORDER BY titre" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -61,7 +67,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
     public List<LivreUnique> getListLivreUniqueTitreISBN(String titre, String isbn) {
         String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'%"+titre+"%'" +
                 " AND isbn LIKE "+"'%"+isbn+"%'" +
-                " AND livre.id = livre_unique.livre_id" ;
+                " AND livre.id = livre_unique.livre_id " +
+                " ORDER BY titre" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -70,7 +77,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
     @Override
     public List<LivreUnique> getListLivreUniqueTitre(String titre) {
         String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'%"+titre+"%'" +
-                " AND livre.id = livre_unique.livre_id" ;
+                " AND livre.id = livre_unique.livre_id" +
+                " ORDER BY titre" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -80,7 +88,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
     public List<LivreUnique> getListLivreUniqueAuteur(String auteur) {
         String vSQL = "SELECT * FROM livre_unique,livre WHERE " +
                 " auteur LIKE "+"'%"+auteur+"%'" +
-                " AND livre.id = livre_unique.livre_id" ;
+                " AND livre.id = livre_unique.livre_id" +
+                " ORDER BY titre" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -90,7 +99,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
     public List<LivreUnique> getListLivreUniqueISBN(String isbn) {
         String vSQL = "SELECT * FROM livre_unique,livre WHERE "+
                 " isbn LIKE "+"'%"+isbn+"%'" +
-                " AND livre.id = livre_unique.livre_id" ;
+                " AND livre.id = livre_unique.livre_id " +
+                " ORDER BY titre" ;
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -102,7 +112,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
                 " AND auteur LIKE "+"'%"+auteur+"%'" +
                 " AND isbn LIKE "+"'%"+isbn+"%'" +
                 " AND livre.id = livre_unique.livre_id " +
-                " AND bibliotheque_id = "+ bibliothequeId;
+                " AND bibliotheque_id = "+ bibliothequeId +"" +
+                " ORDER BY titre";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -113,7 +124,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
         String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'%"+titre+"%'" +
                 " AND auteur LIKE "+"'%"+auteur+"%'" +
                 " AND livre.id = livre_unique.livre_id " +
-                " AND bibliotheque_id = "+ bibliothequeId;
+                " AND bibliotheque_id = "+ bibliothequeId +"" +
+                " ORDER BY titre";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -125,7 +137,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
                 " auteur LIKE "+"'%"+auteur+"%'" +
                 " AND isbn LIKE "+"'%"+isbn+"%'" +
                 " AND livre.id = livre_unique.livre_id " +
-                " AND bibliotheque_id = "+ bibliothequeId;
+                " AND bibliotheque_id = "+ bibliothequeId+"" +
+                " ORDER BY titre";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -136,7 +149,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
         String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'%"+titre+"%'" +
                 " AND isbn LIKE "+"'%"+isbn+"%'" +
                 " AND livre.id = livre_unique.livre_id " +
-                " AND bibliotheque_id = "+ bibliothequeId;
+                " AND bibliotheque_id = "+ bibliothequeId+"" +
+                " ORDER BY titre";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -146,7 +160,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
     public List<LivreUnique> getListLivreUniqueTitreBibliotheque(String titre, Integer bibliothequeId) {
         String vSQL = "SELECT * FROM livre_unique,livre WHERE livre.titre LIKE "+"'%"+titre+"%'" +
                 " AND livre.id = livre_unique.livre_id " +
-                " AND bibliotheque_id = "+ bibliothequeId;
+                " AND bibliotheque_id = "+ bibliothequeId+"" +
+                " ORDER BY titre";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -157,7 +172,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
         String vSQL = "SELECT * FROM livre_unique,livre WHERE "+
                 " auteur LIKE "+"'%"+auteur+"%'" +
                 " AND livre.id = livre_unique.livre_id " +
-                " AND bibliotheque_id = "+ bibliothequeId;
+                " AND bibliotheque_id = "+ bibliothequeId+"" +
+                " ORDER BY titre";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -168,7 +184,8 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
         String vSQL = "SELECT * FROM livre_unique,livre WHERE "+
                 " isbn LIKE "+"'%"+isbn+"%'" +
                 " AND livre.id = livre_unique.livre_id " +
-                " AND bibliotheque_id = "+ bibliothequeId;
+                " AND bibliotheque_id = "+ bibliothequeId+"" +
+                " ORDER BY titre";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL, livreUniqueRM);
         return vList;
@@ -182,4 +199,17 @@ public class LivreUniqueDaoImpl extends AbstractDaoImpl implements LivreUniqueDa
         List<LivreUnique> vList = vJdbcTemplate.query(vSQL,livreUniqueRM);
         return vList;
     }
+
+    @Override
+    public void updateDispo(LivreUnique livreUnique) {
+            String vSQL = "UPDATE livre_unique SET disponible = ? WHERE id = ?";
+            Object[] vParams = {
+                    new SqlParameterValue(Types.BOOLEAN, livreUnique.getDisponible()),
+                    new SqlParameterValue(Types.INTEGER, livreUnique.getId()),
+            };
+            JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+            vJdbcTemplate.update(vSQL, vParams);
+    }
+
+
 }

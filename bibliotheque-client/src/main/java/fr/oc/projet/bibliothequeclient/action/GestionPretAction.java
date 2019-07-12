@@ -30,12 +30,12 @@ public class GestionPretAction extends ActionSupport {
     @Autowired
     MicroServiceBibliothequeProxy microServiceBibliothequeProxy;
 
-    private String pseudo;
-    private Abonne abonne;
-    private List<Pret> pretList;
-    private Integer countResultat;
-    private Integer pretId;
-    private Pret    pret;
+    private         String          pseudo;
+    private         Abonne          abonne;
+    private         List<Pret>      pretList;
+    private         Integer         countResultat;
+    private         Integer         pretId;
+    private         Pret            pret;
 
     /**
      * Méthode pour afficher les prêts en cours de l'abonné

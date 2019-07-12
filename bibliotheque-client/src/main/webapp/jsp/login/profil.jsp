@@ -22,8 +22,8 @@
 
         em
         {
-            color : gray;
-            text-align: left;
+            color : white;
+            text-align: right;
         }
         #cadreLogin
         {
@@ -49,9 +49,9 @@
         }
         label
         {
-            text-align: right;
             margin-left: 15px;
             font-weight: 600;
+
         }
         #message
         {
@@ -59,7 +59,11 @@
             font-size: 1.1em;
             margin-top: 15px;
         }
-
+        p
+        {
+            display: flex;
+            justify-content: space-around;
+        }
 
 
     </style>
@@ -73,33 +77,35 @@
 
 <div id="page">
     <div id="bottom" >
-        <div id="cadreLogin" class="col-xl-5 col-lg-8 col-md-10 col-sm-10">
+        <div id="cadreLogin" style="width: 800px">
             <label class="form-check-label" id="labelRecherche"> Mon profil </label>
-            <em id="message"><s:actionmessage/></em>
+            <em id="message" class="text-info"><s:actionmessage/></em>
             <div class="col-12 container bg-light" id="cadreLog">
                 <div class="col-12" style="text-align: center; margin: 10px" ><span> Informations</span></div>
                 <div style="width: 100% ;display: flex;justify-content: space-around;">
                 <div  style="padding: 10px;" class="col-10">
-                    <p><em> Pseudo : </em> <label><s:property value="abonne.pseudo"/></label></p>
-                    <p><em> Adresse électronique : </em> <label><s:property value="abonne.email"/></label> <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#popUpEmail" style="font-size:0.6em; margin-left: 15px">
-                        Modifier
+                    <p><em class="col-6" style="color: gray; width: 500px"> Pseudo : </em> <label class="col-6"><s:property value="abonne.pseudo"/></label></p>
+                    <p><em class="col-6" style="color: gray;"> Adresse électronique : </em> <label class="col-6"><s:property value="abonne.email"/></label></p>
+                    <p><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#popUpEmail" style="font-size:0.6em; margin-left: 15px;">
+                        Modifier l'adresse électronique
                     </button></p>
-                    <p><em> Nom : </em> <label><s:property value="abonne.nom"/></label></p>
-                    <p><em> Prénom : </em> <label><s:property value="abonne.prenom"/></label></p>
-                    <p><em> Numéro de téléphone : </em> <label><s:property value="abonne.numeroTelephone"/></label></p>
-                    <p><em> Bibliothèque favorite : </em> <label><s:property value="abonne.bibliotheque.nom"/></label> <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#popUpBibliotheque" style="font-size:0.6em;margin-left: 15px">
-                        Modifier
+                    <p><em class="col-6" style="color: gray;"> Nom : </em> <label class="col-6"><s:property value="abonne.nom"/></label></p>
+                    <p><em class="col-6" style="color: gray;"> Prénom : </em> <label class="col-6"><s:property value="abonne.prenom"/></label></p>
+                    <p><em class="col-6" style="color: gray;"> Numéro de téléphone : </em> <label class="col-6"><s:property value="abonne.numeroTelephone"/></label></p>
+                    <p><em class="col-6" style="color: gray;"> Bibliothèque favorite : </em> <label class="col-6"><s:property value="abonne.bibliotheque.nom"/></label> </p>
+                    <p><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#popUpBibliotheque" style="font-size:0.6em;margin-left: 15px;">
+                        Modifier la blbiothèque favorite
                     </button></p>
                 </div>
                 </div>
                 <div class="col-12" style="text-align: center;  margin: 10px" ><span class="label label-info">Adresse</span></div>
                 <div  style="width: 100%;display: flex;justify-content: space-around">
                     <div style="padding: 10px;" class="col-10">
-                    <p><em> Numero : </em> <label><s:property value="abonne.adresse.numero"/></label></p>
-                    <p><em> Rue : </em> <label><s:property value="abonne.adresse.rue"/></label></p>
-                    <p><em> Code postal : </em> <label><s:property value="abonne.adresse.codePostal"/></label></p>
-                    <p><em> Ville : </em> <label><s:property value="abonne.adresse.ville"/></label></p>
-                    <p><em> Pays : </em> <label><s:property value="abonne.adresse.pays"/></label></p>
+                    <p><em class="col-6" style="color: gray;"> Numero : </em> <label class="col-6"><s:property value="abonne.adresse.numero"/></label></p>
+                    <p><em class="col-6" style="color: gray;"> Rue : </em> <label class="col-6"><s:property value="abonne.adresse.rue"/></label></p>
+                    <p><em class="col-6" style="color: gray;"> Code postal : </em> <label class="col-6"><s:property value="abonne.adresse.codePostal"/></label></p>
+                    <p><em class="col-6" style="color: gray;"> Ville : </em> <label class="col-6"><s:property value="abonne.adresse.ville"/></label></p>
+                    <p><em class="col-6" style="color: gray;"> Pays : </em> <label class="col-6"><s:property value="abonne.adresse.pays"/></label></p>
                     </div>
                 </div>
                 <div style="display: flex;justify-content: space-around;padding: 20px;">

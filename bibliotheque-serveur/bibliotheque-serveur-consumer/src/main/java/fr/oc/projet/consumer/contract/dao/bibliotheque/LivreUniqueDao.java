@@ -38,4 +38,6 @@ public interface LivreUniqueDao {
     List<LivreUnique> getListLivreUniqueISBNBibliotheque(String isbn, Integer bibliothequeId);
 
     List<LivreUnique> getListLivreUnique();
+
+    void updateDispo(LivreUnique livreUnique);
 }

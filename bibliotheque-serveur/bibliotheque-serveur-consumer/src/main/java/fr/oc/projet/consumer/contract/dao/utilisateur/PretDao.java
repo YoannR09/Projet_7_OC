@@ -30,6 +30,7 @@ public interface PretDao {
 
     List<Pret> getListPretLivreNumInterneBibliotheque(String numInterne,Integer bibliothequeId);
 
+
     void updateProlongation(Pret pret);
 
     void updateDateRestitution(Pret pret);

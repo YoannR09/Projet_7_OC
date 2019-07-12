@@ -129,7 +129,14 @@ public class AjouterPretAction extends ActionSupport {
         pret.setLivreUniqueId(livreUniqueId);
         pret.setAbonneId(abonneId);
 
+        LivreUnique livreUnique = managerFactory.getLivreUniqueManager().getLivreUnique(livreUniqueId);
+        livreUnique.setDisponible(false);
+        managerFactory.getLivreUniqueManager().updateDispo(livreUnique);
         managerFactory.getPretManager().addPret(pret);
+
+        this.addActionMessage("Nouveau prêt ajouté pour l'abonné : "+
+                managerFactory.getAbonneManager().getAbonne(pret.getAbonneId()).getNom()
+                +"  "+managerFactory.getAbonneManager().getAbonne(pret.getAbonneId()).getPrenom());
 
         return ActionSupport.SUCCESS;
         }

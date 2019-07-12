@@ -2,6 +2,7 @@ package fr.oc.projet.webapp.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.business.contract.ManagerFactory;
+import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
 import fr.oc.projet.model.beans.utilisateur.Pret;
 
 import javax.inject.Inject;
@@ -48,7 +49,13 @@ public class RestituerAction extends ActionSupport {
 
     public String doRestitutionPret(){
 
+        pret = managerFactory.getPretManager().getPret(pretId);
+        LivreUnique livreUnique = pret.getLivreUnique();
+        livreUnique.setDisponible(true);
+        managerFactory.getLivreUniqueManager().updateDispo(livreUnique);
         managerFactory.getPretManager().deletePret(pretId);
+
+        this.addActionMessage("Livre restitué, ce livre est maintenant disponible pour un nouveau prêt.");
 
         return ActionSupport.SUCCESS;
     }

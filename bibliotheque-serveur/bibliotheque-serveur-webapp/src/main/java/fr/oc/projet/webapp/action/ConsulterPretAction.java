@@ -126,6 +126,7 @@ public class ConsulterPretAction extends ActionSupport {
             pretList = rechercheViaBibliothequeAbonne(bibliotheque,pret.getAbonne());
         }
         countResultat = pretList.size();
+        this.addActionMessage("Le prêt a été prolongé");
         return ActionSupport.SUCCESS;
     }
 

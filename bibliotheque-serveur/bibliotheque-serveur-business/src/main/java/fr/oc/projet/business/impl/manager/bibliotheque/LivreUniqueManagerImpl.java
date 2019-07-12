@@ -89,4 +89,9 @@ public class LivreUniqueManagerImpl extends AbstractManagerImpl implements Livre
     public List<LivreUnique> getListLivreUnique() {
         return getDaoFactory().getLivreUniqueDao().getListLivreUnique();
     }
+
+    @Override
+    public void updateDispo(LivreUnique livreUnique) {
+        getDaoFactory().getLivreUniqueDao().updateDispo(livreUnique);
+    }
 }

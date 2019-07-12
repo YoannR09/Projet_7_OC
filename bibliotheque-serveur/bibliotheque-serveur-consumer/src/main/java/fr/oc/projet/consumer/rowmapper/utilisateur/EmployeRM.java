@@ -27,8 +27,8 @@ public class EmployeRM implements RowMapper<Employe> {
         employe.setNom(resultSet.getString("nom"));
         employe.setPrenom(resultSet.getString("prenom"));
         employe.setNumeroTelephone(resultSet.getString("numero_telephone"));
-        employe.setDateEntree(resultSet.getDate("date_entree"));
-        employe.setDateSortie(resultSet.getDate("date_sortie"));
+        employe.setDateEntree(resultSet.getDate("dateentree"));
+        employe.setDateSortie(resultSet.getDate("datesortie"));
         employe.setEmail(resultSet.getString("email"));
         employe.setAdresse(adresseDao.getAdresse(resultSet.getInt("adresse_id")));
         employe.setRole(roleDao.getRole(resultSet.getInt("role_id")));

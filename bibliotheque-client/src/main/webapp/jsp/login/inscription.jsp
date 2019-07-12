@@ -28,6 +28,7 @@
         #cadreLogin
         {
             margin-top: 50px;
+            margin-bottom: 20px;
         }
         #bottom
         {
@@ -74,7 +75,7 @@
         <div id="cadreLogin" class="col-xl-4 col-lg-5 col-md-6 col-sm-7">
             <label class="form-check-label" id="labelRecherche"> Inscription </label>
             <div class="col-12 container bg-light" id="cadreLog">
-                <em id="message"><s:actionmessage/></em>
+                <em id="message" class="text-info"><s:actionmessage/></em>
                 <s:form action="doInscription">
                     <div class="form-group" style="margin: 20px;">
                         <label for="inputPseudo">Pseudo</label>

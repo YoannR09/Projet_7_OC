@@ -91,7 +91,7 @@
     <div id="barreDeRecherche" class="bg-light">
         <s:form id="formulaire" action="rechercheRestituerLivre" >
             <div class="input-group">
-                <input id="textNumInterne" name="numeroInterne" type="text" class="form-control" placeholder="Auteur" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                <input id="textNumInterne" name="numeroInterne" type="text" class="form-control" placeholder="Numéro interne" aria-label="Recipient's username" aria-describedby="basic-addon2" >
                 <input id="textCodeISBN" name="isbn" type="text" class="form-control" placeholder="Code ISBN" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <select id="selectBibliotheque" name="bibliotheque" class="form-control ">

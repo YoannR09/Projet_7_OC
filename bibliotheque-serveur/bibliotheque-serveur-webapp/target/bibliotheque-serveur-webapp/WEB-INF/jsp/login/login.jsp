@@ -68,10 +68,12 @@
     <%@ include file="../_include/header.jsp"%>
 </header>
 
+</div>
+
 <div id="page">
     <div id="bottom" >
         <div id="cadreLogin" class="col-4">
-            <label class="form-check-label" id="labelRecherche"> Connectez-vous à votre espace abonné </label>
+            <label class="form-check-label" id="labelRecherche"> Connectez-vous à l'espace administratif </label>
             <em id="message" class="text-info"><s:actionmessage/></em>
             <div class="col-12 container bg-light" id="cadreLog">
                 <s:form action="doLogin">
@@ -83,11 +85,7 @@
                         <label for="inputPassword">Mot de passe</label>
                         <input name="motDePasse" type="password" class="form-control" id="inputPassword" required>
                     </div>
-                    <div style="display: flex;justify-content: space-between">
-                        <s:a action="formInscription" class="btn btn-outline-info">S'inscrire</s:a>
-                        <button type="submit" class="btn btn-outline-info">Connexion</button>
-                    </div>
-
+                    <button type="submit" class="btn btn-outline-info">Connexion</button>
                 </s:form>
             </div>
         </div>

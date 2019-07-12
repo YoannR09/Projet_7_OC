@@ -31,6 +31,7 @@
         #cadrePret
         {
             margin-top: 50px;
+            margin-bottom: 20px;
         }
         #bottom
         {

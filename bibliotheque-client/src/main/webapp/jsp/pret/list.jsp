@@ -52,6 +52,7 @@
         #cadrePret
         {
             margin-top: 50px;
+            margin-bottom: 20px;
         }
         #bottom
         {
@@ -125,7 +126,7 @@
                         </s:if>
                         <s:else>
                             <s:if test="expire">
-                                <td id="tdBtnRenouv"><button type="button" class="btn btn-info" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
+                                <td id="tdBtnRenouv"><button type="button" class="btn btn-secondary" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
                             </s:if>
                             <s:else>
                                 <td id="tdBtnRenouv"><s:a action="doProlongationPret" class="btn btn-info" style="font-size:0.6em;">

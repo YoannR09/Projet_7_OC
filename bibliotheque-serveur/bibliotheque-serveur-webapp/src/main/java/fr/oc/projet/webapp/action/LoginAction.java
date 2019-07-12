@@ -33,7 +33,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
             else {
                 if (motDePasse.equals(employe.getMotDePasse())) {
                     this.session.put("user", employe);
-                    this.session.put("pseudo", employe.getEmail());
+                    this.session.put("email", employe.getEmail());
                     this.session.put("role", employe.getRole());
                     vResult = ActionSupport.SUCCESS;
                 } else {

@@ -34,23 +34,23 @@ public class GestionLivreAction extends ActionSupport {
     @Autowired
     private MicroServiceBibliothequeProxy microServiceBibliothequeProxy;
 
-    private String titre;
-    private String auteur;
-    private String isbn;
-    private String recherche;
-    private String categorieSelect;
-    private String pseudo;
-    private String bibliotheque;
-    private Integer livreId;
-    private Integer countResultat;
-    private Integer categorieId;
-    private List<Livre> livreList;
-    private Livre livre;
-    private Abonne abonne;
-    private Illustration illustration;
-    private Categorie categorie;
-    private List<Categorie> categorieList;
-    private HashMap<Livre,Integer> livreIntegerHashMap;
+    private             String                      titre;
+    private             String                      auteur;
+    private             String                      isbn;
+    private             String                      recherche;
+    private             String                      categorieSelect;
+    private             String                      pseudo;
+    private             String                      bibliotheque;
+    private             Integer                     livreId;
+    private             Integer                     countResultat;
+    private             Integer                     categorieId;
+    private             List<Livre>                 livreList;
+    private             Livre                       livre;
+    private             Abonne                      abonne;
+    private             Illustration                illustration;
+    private             Categorie                   categorie;
+    private             List<Categorie>             categorieList;
+    private             HashMap<Livre,Integer>      livreIntegerHashMap;
 
     /**
      * Méthode qui gère la recherche de livre
