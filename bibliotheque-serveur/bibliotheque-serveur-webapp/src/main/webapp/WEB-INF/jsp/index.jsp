@@ -60,6 +60,12 @@
             font-size: 1.1em;
             margin-top: 15px;
         }
+        #messageInfo
+        {
+            float: right;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
 
 
 
@@ -92,11 +98,9 @@
             </div>
         </div>
         <div id="cadreInfo" class="col-4">
+            <em id="messageInfo" class="text-info"><s:actionmessage/></em>
             <div class="col-12" style="text-align: center">
             <p>Vous êtes connecté  <s:property value="#session.user.prenom" />  <s:property value="#session.user.nom" /> <s:a action="logout" class="nav-link text-info">Changer de compte emploié</s:a></p>
-            </div>
-            <div class="col-12" style="text-align: center;">
-           <s:actionmessage/>
             </div>
         </div>
     </div>

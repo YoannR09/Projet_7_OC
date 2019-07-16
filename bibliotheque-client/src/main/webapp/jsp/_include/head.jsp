@@ -24,10 +24,6 @@
         list-style:none;
         display: flex;
     }
-    #loginText
-    {
-        color:white;
-    }
     html, body {
         width: 100%;
         height: 100%;
