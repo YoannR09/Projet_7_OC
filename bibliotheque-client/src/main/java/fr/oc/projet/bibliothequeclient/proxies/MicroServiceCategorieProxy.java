@@ -18,5 +18,4 @@ public interface MicroServiceCategorieProxy {
 
     @GetMapping(value = "/Categorie")
     List<Categorie> getListCategorie();
-
 }

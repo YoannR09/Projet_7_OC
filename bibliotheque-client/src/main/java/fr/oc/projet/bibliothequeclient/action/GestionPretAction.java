@@ -5,6 +5,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.bibliothequeclient.beans.Abonne;
 import fr.oc.projet.bibliothequeclient.beans.Pret;
 import fr.oc.projet.bibliothequeclient.proxies.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -29,6 +31,8 @@ public class GestionPretAction extends ActionSupport {
     MicroServiceLivreUniqueProxy microServiceLivreUniqueProxy;
     @Autowired
     MicroServiceBibliothequeProxy microServiceBibliothequeProxy;
+
+    private static final Logger logger = LogManager.getLogger();
 
     private         String          pseudo;
     private         Abonne          abonne;
@@ -66,6 +70,8 @@ public class GestionPretAction extends ActionSupport {
         pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
         abonne = microServiceAbonneProxy.getAbonnePseudo(pseudo);
         recupListPret();
+        this.addActionMessage("Prêt prolongé jusqu'au : "+pret.getDateRestitution());
+        logger.info("Prêt prolongé. Pret id : "+ pret.getId());
 
         return ActionSupport.SUCCESS;
     }

@@ -3,6 +3,8 @@ package fr.oc.projet.webapp.action;
 import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.business.contract.ManagerFactory;
 import fr.oc.projet.model.beans.utilisateur.Employe;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.struts2.interceptor.SessionAware;
 
 import javax.inject.Inject;
@@ -10,11 +12,10 @@ import java.util.Map;
 
 public class LoginAction extends ActionSupport implements SessionAware {
 
-    private Map<String, Object> session;
-
-    private String  motDePasse;
-    private Employe employe;
-    private String  identifiant;
+    private         Map<String, Object> session;
+    private         String              motDePasse;
+    private         Employe             employe;
+    private         String              identifiant;
 
     @Inject
     ManagerFactory managerFactory;

@@ -5,6 +5,8 @@ import fr.oc.projet.business.contract.ManagerFactory;
 import fr.oc.projet.model.beans.bibliotheque.Livre;
 import fr.oc.projet.model.beans.utilisateur.Abonne;
 import fr.oc.projet.model.beans.utilisateur.Pret;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -32,6 +34,8 @@ public class ConsulterPretAction extends ActionSupport {
     private         Integer         countResultat;
     private         Pret            pret;
     private         String          recherche;
+
+    private static final Logger logger = LogManager.getLogger();
 
     @Inject
     private ManagerFactory managerFactory;
@@ -127,6 +131,7 @@ public class ConsulterPretAction extends ActionSupport {
         }
         countResultat = pretList.size();
         this.addActionMessage("Le prêt a été prolongé");
+        logger.info("Le prêt à était prolongé");
         return ActionSupport.SUCCESS;
     }
 
@@ -170,8 +175,6 @@ public class ConsulterPretAction extends ActionSupport {
     }
 
     public String doConsulterPret(){
-
-
         return  ActionSupport.SUCCESS;
     }
 

@@ -3,6 +3,8 @@ package fr.oc.projet.bibliothequeclient.action;
 import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.bibliothequeclient.beans.Categorie;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceCategorieProxy;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

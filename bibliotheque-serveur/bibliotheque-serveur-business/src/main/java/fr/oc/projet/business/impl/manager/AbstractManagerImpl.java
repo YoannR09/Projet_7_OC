@@ -6,7 +6,6 @@ public class AbstractManagerImpl {
 
     private static DAOFactory daoFactory;
 
-
     public static DAOFactory getDaoFactory() {
         return daoFactory;
     }
@@ -14,4 +13,5 @@ public class AbstractManagerImpl {
     public static  void setDaoFactory(DAOFactory pDAOFactory){
         daoFactory = pDAOFactory;
     }
+
 }

@@ -2,41 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3c28bc8-ba6b-45f5-8691-7fb5163fd55c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../zuul/src/main/java/fr/oc/projet/zuul/filters/LogFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zuul/src/main/java/fr/oc/projet/zuul/filters/ReponseFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/configuration/FeignConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-abonne/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-abonne/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-abonne/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-abonne/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-adresse/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-adresse/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-adresse/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-adresse/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-bibliotheque/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-bibliotheque/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-bibliotheque/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-bibliotheque/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-categorie/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-categorie/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-categorie/src/main/java/fr/oc/projet/microservicecategorie/MicroserviceCategorieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-categorie/src/main/java/fr/oc/projet/microservicecategorie/MicroserviceCategorieApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-categorie/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-categorie/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-illustration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-illustration/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-illustration/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-illustration/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-livre-unique/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-livre-unique/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-livre-unique/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-livre-unique/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-technical/src/main/java/fr/oc/projet/technical/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/MicroserviceLivreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/MicroserviceLivreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-pret/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-pret/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservice-pret/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../microservice-pret/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionIndexAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionIndexAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionPretAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/_include/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/src/main/webapp/jsp/_include/head.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/target/classes/fr/oc/projet/batch/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-batch/target/classes/fr/oc/projet/batch/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/impl/manager/AbstractManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/impl/manager/AbstractManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/src/main/resources/fr/oc/projet/business/businessContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/src/main/resources/fr/oc/projet/business/businessContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/target/classes/fr/oc/projet/business/businessContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/target/classes/fr/oc/projet/business/businessContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/target/classes/fr/oc/projet/business/impl/manager/AbstractManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-business/target/classes/fr/oc/projet/business/impl/manager/AbstractManagerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-technical/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-technical/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/LoginAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/RestituerAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/RestituerAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/_include/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-business-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-business-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-model-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-technical-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-technical-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/log4j-api-2.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/LoginAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/RestituerAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/RestituerAction.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/MicroserviceLivreApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -171,7 +172,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="493" />
     <option name="width" value="1940" />
     <option name="height" value="1220" />
@@ -182,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,6 +255,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,17 +311,18 @@
       <workItem from="1563035183437" duration="75000" />
       <workItem from="1563035268951" duration="599000" />
       <workItem from="1563181504149" duration="717000" />
+      <workItem from="1563369705043" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20966000" />
+    <option name="totallyTimeSpent" value="21563000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="493" y="0" width="1940" height="1220" extended-state="0" />
+    <frame x="493" y="0" width="1940" height="1220" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18138298" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18297872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -458,7 +460,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/microservicelivre/MicroserviceLivreApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>

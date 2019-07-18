@@ -10,6 +10,8 @@ import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAbonneProxy;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAdresseProxy;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceCategorieProxy;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.struts2.interceptor.SessionAware;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -23,9 +25,9 @@ import java.util.Map;
 @Component
 public class LoginAction extends ActionSupport implements SessionAware {
 
-    // ----- Eléments Struts
-
     private Map<String, Object> session;
+
+    private static final Logger logger = LogManager.getLogger();
 
     @Autowired
     private MicroServiceAbonneProxy microServiceAbonneProxy;
@@ -129,6 +131,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
             abonne.setMotDePasse(newMdp);
             microServiceAbonneProxy.updateAbonne(abonne);
             this.addActionMessage("Mot de passe modifié");
+            logger.info("Mot de passe de l'abonné : "+abonne.getPseudo()+" modifié");
         }
         profilInfo(abonne);
 
@@ -151,6 +154,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
             adresse.setRue(rue);
             adresse.setVille(ville);
             microServiceAdresseProxy.addAdresse(adresse);
+            logger.info("Adresse pour l'abonné : "+abonne.getPseudo()+" ajoutée à la bdd");
         }else {
             adresse = microServiceAdresseProxy.getAdresse(abonne.getAdresseId());
             adresse.setRue(rue);
@@ -159,6 +163,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
             adresse.setNumero(numero);
             adresse.setPays(pays);
             microServiceAdresseProxy.updateAdresse(adresse);
+            logger.info("Adresse de l'abonné : "+abonne.getPseudo()+" modifié");
         }
         adresse = microServiceAdresseProxy.getAdresseAll(codePostal,numero,rue,pays,ville);
         abonne.setAdresseId(adresse.getId());
@@ -182,6 +187,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
                 abonne.setEmail(newEmail);
                 microServiceAbonneProxy.updateAbonne(abonne);
                 this.addActionMessage("Adresse électronique modifié");
+                logger.info("Adresse électronique de l'abonné : "+abonne.getPseudo()+" modifié");
             }else {
                 this.addActionMessage("Adresse électronique déjà utilisée");
             }
@@ -204,6 +210,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
             abonne.setBibliothequeId(bibliothequeId);
             microServiceAbonneProxy.updateAbonne(abonne);
             this.addActionMessage("Bibliothèque favorite modifié");
+            logger.info("Bibliothèque favorite de l'abonné : "+abonne.getPseudo()+" modifié");
         }
         profilInfo(abonne);
 
@@ -263,6 +270,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
                     abonne.setRoleId(1);
                     microServiceAbonneProxy.addAbonne(abonne);
                     categorieList = microServiceCategorieProxy.getListCategorie();
+                    logger.info("Nouveau compte abonné : : "+abonne.getPseudo()+" ajouté à la bdd");
                     vResult = ActionSupport.SUCCESS;
                 }else {
                     vResult = ActionSupport.ERROR;

@@ -23,4 +23,5 @@
         <property name="targetMethod" value="setDaoFactory"/>
         <property name="arguments" ref="daoFactoryImpl"/>
     </bean>
+
 </beans>

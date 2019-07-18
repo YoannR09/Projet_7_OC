@@ -78,6 +78,7 @@
 
 <div id="page">
     <div id="bottom" >
+
         <div id="cadreLogin" class="col-4">
             <label class="form-check-label" id="labelRecherche"> Connectez-vous à l'espace administratif </label>
             <em id="message" class="text-info"><s:actionmessage/></em>
@@ -97,10 +98,12 @@
                 </s:form>
             </div>
         </div>
-        <div id="cadreInfo" class="col-4">
+        <div class="col-4" id="cadreInf">
             <em id="messageInfo" class="text-info"><s:actionmessage/></em>
+            <div class="col-12 container bg-light" id="cadreInfo" >
             <div class="col-12" style="text-align: center">
             <p>Vous êtes connecté  <s:property value="#session.user.prenom" />  <s:property value="#session.user.nom" /> <s:a action="logout" class="nav-link text-info">Changer de compte emploié</s:a></p>
+            </div>
             </div>
         </div>
     </div>
@@ -112,7 +115,7 @@
 
     $(function() {
         if($('#email').text() == ""){
-            $('#cadreInfo').hide();
+            $('#cadreInf').hide();
         }else {
             $('#cadreLogin').hide();
         }

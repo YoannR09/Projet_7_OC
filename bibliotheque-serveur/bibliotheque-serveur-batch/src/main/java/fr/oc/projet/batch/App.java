@@ -10,10 +10,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 
-/**
- * Hello world!
- *
- */
+
+
 @ComponentScan
 @EnableScheduling
 public class App 

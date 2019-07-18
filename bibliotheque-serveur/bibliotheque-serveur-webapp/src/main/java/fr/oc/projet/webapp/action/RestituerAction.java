@@ -4,14 +4,13 @@ import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.business.contract.ManagerFactory;
 import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
 import fr.oc.projet.model.beans.utilisateur.Pret;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.inject.Inject;
 import java.util.List;
 
 public class RestituerAction extends ActionSupport {
-
-    @Inject
-    ManagerFactory managerFactory;
 
     private         Pret        pret;
     private         int         pretId;
@@ -22,7 +21,10 @@ public class RestituerAction extends ActionSupport {
     private         String      numeroInterne;
     private         String      isbn;
 
+    private static final Logger logger = LogManager.getLogger();
 
+    @Inject
+    ManagerFactory managerFactory;
 
     public String doRechercheRestituerPret(){
 
@@ -56,6 +58,7 @@ public class RestituerAction extends ActionSupport {
         managerFactory.getPretManager().deletePret(pretId);
 
         this.addActionMessage("Livre restitué, ce livre est maintenant disponible pour un nouveau prêt.");
+        logger.info("Livre restitué à l'inventaire");
 
         return ActionSupport.SUCCESS;
     }

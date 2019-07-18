@@ -6,13 +6,16 @@ import fr.oc.projet.model.beans.bibliotheque.Livre;
 import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
 import fr.oc.projet.model.beans.utilisateur.Abonne;
 import fr.oc.projet.model.beans.utilisateur.Pret;
+import fr.oc.projet.technical.Log;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.inject.Inject;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class AjouterPretAction extends ActionSupport {
+public class AjouterPretAction extends ActionSupport{
 
     private         String              isbn;
     private         String              auteur;
@@ -30,8 +33,12 @@ public class AjouterPretAction extends ActionSupport {
     private         Abonne              abonne;
     private         List<LivreUnique>   livreUniqueList;
 
+    private static final Logger logger = LogManager.getLogger();
+
     @Inject
     ManagerFactory managerFactory;
+
+
 
 
     public String doListLivre() {
@@ -137,7 +144,7 @@ public class AjouterPretAction extends ActionSupport {
         this.addActionMessage("Nouveau prêt ajouté pour l'abonné : "+
                 managerFactory.getAbonneManager().getAbonne(pret.getAbonneId()).getNom()
                 +"  "+managerFactory.getAbonneManager().getAbonne(pret.getAbonneId()).getPrenom());
-
+        logger.info("Prêt bien ajouté à la bdd");
         return ActionSupport.SUCCESS;
         }
 
