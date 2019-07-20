@@ -20,7 +20,7 @@
                     <s:a action="consulterPret" class="nav-link" style="font-size:1.3em">| Consulter les prêts |</s:a>
                 </s:if>
                 <s:else>
-                    <s:a action="login" class="nav-link" style="font-size:1.3em">|Consulter les prêts |</s:a>
+                    <s:a action="login" class="nav-link" style="font-size:1.3em">| Consulter les prêts |</s:a>
                 </s:else>
 
             </li>

@@ -10,6 +10,9 @@ import org.apache.logging.log4j.Logger;
 import javax.inject.Inject;
 import java.util.List;
 
+/**
+ * Classe qui gère la restitution d'un prêt en cours
+ */
 public class RestituerAction extends ActionSupport {
 
     private         Pret        pret;
@@ -26,8 +29,12 @@ public class RestituerAction extends ActionSupport {
     @Inject
     ManagerFactory managerFactory;
 
+    /**
+     * Méthode pour rechercher des prêt en cours
+     * en fonction du texte entré dans le formulaire.
+     * @return
+     */
     public String doRechercheRestituerPret(){
-
         if(!bibliotheque.equals("Toutes les bibliothèques")) {
             bibliothequeId = managerFactory.getBibliothequeManager().getBibliothequeNom(bibliotheque).getId();
             if (!isbn.equals("") && !numeroInterne.equals("")){
@@ -49,6 +56,10 @@ public class RestituerAction extends ActionSupport {
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Méthode qui gère la réstition d'un prêt en cours.
+     * @return
+     */
     public String doRestitutionPret(){
 
         pret = managerFactory.getPretManager().getPret(pretId);

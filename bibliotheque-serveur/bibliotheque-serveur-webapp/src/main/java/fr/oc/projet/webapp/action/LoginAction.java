@@ -3,13 +3,14 @@ package fr.oc.projet.webapp.action;
 import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.business.contract.ManagerFactory;
 import fr.oc.projet.model.beans.utilisateur.Employe;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.apache.struts2.interceptor.SessionAware;
 
 import javax.inject.Inject;
 import java.util.Map;
 
+/**
+ * Classe qui gère la connexion/déconnexion de l'employé
+ */
 public class LoginAction extends ActionSupport implements SessionAware {
 
     private         Map<String, Object> session;
@@ -25,13 +26,14 @@ public class LoginAction extends ActionSupport implements SessionAware {
             String vResult;
 
             if (identifiant != null) {
-                employe = managerFactory.getEmployeManager().getEmployeEmail(identifiant);
+                this.addActionMessage(" Identifiant null !! ");
             }
-            if (employe == null) {
+            if (managerFactory.getEmployeManager().getEmployeEmail(identifiant) == null) {
                 this.addActionMessage("Identifiant invalide");
                 vResult = ActionSupport.ERROR;
             }
             else {
+                employe = managerFactory.getEmployeManager().getEmployeEmail(identifiant);
                 if (motDePasse.equals(employe.getMotDePasse())) {
                     this.session.put("user", employe);
                     this.session.put("email", employe.getEmail());

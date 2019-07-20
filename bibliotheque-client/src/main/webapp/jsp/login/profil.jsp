@@ -240,8 +240,8 @@
                             <s:iterator value="bibliothequeList" status="list">
                                 <div class="col-12">
                                     <input id="btnBibliotheque" class="form-check-input" type="radio" name="bibliotheque"  value="<s:property value="id"/>">
-                                    <p><em> Nom : </em><span><s:property value="nom"/>    /  </span>
-                                    <em>   Adresse : </em> <span><s:property value="adresse.numero"/> <s:property value="adresse.rue"/> <s:property value="adresse.codePostal"/>  <s:property value="adresse.ville"/></span></p>
+                                    <p><span><s:property value="nom"/> / </span>
+                                    <span><s:property value="adresse.numero"/> <s:property value="adresse.rue"/> <s:property value="adresse.codePostal"/> <s:property value="adresse.ville"/></span></p>
                                 </div>
                             </s:iterator>
                         </div>

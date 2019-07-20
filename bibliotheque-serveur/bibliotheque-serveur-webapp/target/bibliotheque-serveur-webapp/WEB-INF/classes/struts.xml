@@ -55,15 +55,15 @@
             <result name="success">WEB-INF/jsp/index.jsp</result>
             <result name="error">WEB-INF/jsp/login/login.jsp</result>
         </action>
+        <action name="logout" class="fr.oc.projet.webapp.action.LoginAction" method="doLogout">
+            <result name="success">WEB-INF/jsp/index.jsp</result>
+        </action>
+
     </package>
 
 
     <package name="private" extends="base">
         <default-interceptor-ref name="authenticatedStack" />
-
-        <action name="logout" class="fr.oc.projet.webapp.action.LoginAction" method="doLogout">
-            <result name="success">WEB-INF/jsp/index.jsp</result>
-        </action>
 
 
         <action name="consulterPret"

@@ -52,7 +52,15 @@
             height: 435px;
             border: darkgray 1px solid;
         }
-
+        #cadreBtn
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+        span
+        {
+            color: dodgerblue;
+        }
 
     </style>
 </head>
@@ -88,6 +96,35 @@
                     <div class="border border-info" style="overflow:auto;height: 300px;padding: 10px;font-style: italic"><s:property value="livre.resume"/></div>
                 </div>
                 </section>
+            </div>
+            <div class="col-12 container " id="cadreBtn">
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#popUpAdresse" style="font-size:0.7em;margin: 15px">
+                    Voir la disponiblité du livre dans les bibliothèques
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="popUpAdresse" tabindex="-1" role="dialog" aria-labelledby="popUpAdresse" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="col-12 container" id="cadreInfoDispo">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <s:iterator value="livreList" status="list">
+                        <s:if test="%{#list.count == 1}">
+                            <p><em>Bibliothèque de la gare :</em> <span><s:property value="nbreDispo"/></span> livres disponibles</p>
+                        </s:if>
+                        <s:elseif test="%{#list.count == 2}">
+                        <p><em>Bibliothèque du centre ville :</em> <span><s:property value="nbreDispo"/></span> livres disponibles</p>
+                        </s:elseif>
+                        <s:elseif test="%{#list.count == 3}">
+                        <p><em>Bibliothèque du port marchand :</em> <span><s:property value="nbreDispo"/></span> livres disponibles</p>
+                        </s:elseif>
+                    </s:iterator>
+                </div>
             </div>
         </div>
     </div>

@@ -6,7 +6,6 @@ import fr.oc.projet.model.beans.bibliotheque.Livre;
 import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
 import fr.oc.projet.model.beans.utilisateur.Abonne;
 import fr.oc.projet.model.beans.utilisateur.Pret;
-import fr.oc.projet.technical.Log;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,6 +14,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Classe qui gère l'ajout d'un prêt par un employé
+ */
 public class AjouterPretAction extends ActionSupport{
 
     private         String              isbn;
@@ -39,8 +41,11 @@ public class AjouterPretAction extends ActionSupport{
     ManagerFactory managerFactory;
 
 
-
-
+    /**
+     * Méthode qui affiche une liste de livre unique
+     * en fonction du texte entré dans le formulaire.
+     * @return
+     */
     public String doListLivre() {
             if (bibliotheque.equals("Toutes les bibliothèques")) {
                 if (!isbn.equals("") && !auteur.equals("") && !titre.equals("")) {  // Recherche via isbn titre et auteur
@@ -80,14 +85,20 @@ public class AjouterPretAction extends ActionSupport{
             return ActionSupport.SUCCESS;
         }
 
-        public String doSelectionAbonne(){
-
-
+    /**
+     * M&thode pour afficher le formulaire de sélection d'abonné
+     * @return
+     */
+    public String doSelectionAbonne(){
         return ActionSupport.SUCCESS;
         }
 
-        public String doAbonne(){
-
+    /**
+     * Méthode qui affiche une liste d'abonne
+     * en fonction du texte entré dans le formulaire
+     * @return
+     */
+    public String doAbonne(){
             if(!pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via pseudo email nom et prenom
                 abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNomPrenom(pseudo,email,nom,prenom);
             }else if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && prenom.equals("")){ // Recherche via pseudo email et nom
@@ -119,14 +130,16 @@ public class AjouterPretAction extends ActionSupport{
             }else if (!prenom.equals("") && pseudo.equals("") && nom.equals("") && email.equals("")){   // Recherche via prenom
                 abonne = managerFactory.getAbonneManager().getAbonnePrenom(prenom);
             }
-
         return ActionSupport.SUCCESS;
         }
 
-        public String doAjouterPret(){
+    /**
+     * Méthode pour ajouter un prêt pour un abonné
+     * @return
+     */
+    public String doAjouterPret(){
 
         Pret pret = new Pret();
-
         pret.setDateEmprunt(new Date());
         Calendar cal = Calendar.getInstance();
         cal.setTime(pret.getDateEmprunt());
@@ -135,7 +148,6 @@ public class AjouterPretAction extends ActionSupport{
         pret.setProlongation(false);
         pret.setLivreUniqueId(livreUniqueId);
         pret.setAbonneId(abonneId);
-
         LivreUnique livreUnique = managerFactory.getLivreUniqueManager().getLivreUnique(livreUniqueId);
         livreUnique.setDisponible(false);
         managerFactory.getLivreUniqueManager().updateDispo(livreUnique);
@@ -147,7 +159,6 @@ public class AjouterPretAction extends ActionSupport{
         logger.info("Prêt bien ajouté à la bdd");
         return ActionSupport.SUCCESS;
         }
-
 
 
     public String getIsbn() {

@@ -3,14 +3,12 @@ package fr.oc.projet.bibliothequeclient.action;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-import fr.oc.projet.bibliothequeclient.beans.Abonne;
-import fr.oc.projet.bibliothequeclient.beans.Categorie;
-import fr.oc.projet.bibliothequeclient.beans.Illustration;
-import fr.oc.projet.bibliothequeclient.beans.Livre;
+import fr.oc.projet.bibliothequeclient.beans.*;
 import fr.oc.projet.bibliothequeclient.proxies.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -162,6 +160,12 @@ public class GestionLivreAction extends ActionSupport {
         categorie = microServiceCategorieProxy.getCategorie(livre.getCategorieId());
         illustration = microServiceIllustrationProxy.getIllustration(livre.getIllustrationId());
 
+        livreList = new ArrayList<>();
+        for (int i = 1; i<4 ; i++){
+            livreList.add(microServiceLivreProxy.getLivre(livreId));
+            livreList.get(i-1).setNbreDispo(microServiceLivreUniqueProxy.countLivreUniqueBibliothequeDisponible(livre.getId(),i));
+        }
+
         return Action.SUCCESS;
     }
 
@@ -301,4 +305,5 @@ public class GestionLivreAction extends ActionSupport {
     public void setCategorieId(Integer categorieId) {
         this.categorieId = categorieId;
     }
+
 }

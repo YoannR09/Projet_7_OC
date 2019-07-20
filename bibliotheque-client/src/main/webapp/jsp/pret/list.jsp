@@ -87,6 +87,12 @@
             font-size: 1.1em;
             margin-top: 15px;
         }
+        #message
+        {
+            float: right;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -97,6 +103,7 @@
     <div id="bottom">
         <div id="cadrePret" class="col-9" >
             <label class="form-check-label" id="labelRecherche"> Mes prêts en cours</label>
+            <em id="message" class="text-info"><s:actionmessage/></em>
             <s:if test="pretList.empty">
                 <label class="form-check-label" id="labelInfo"><em style="color: darkgray">Aucun prêt en cours</em></label>
             </s:if>
@@ -122,7 +129,7 @@
                         <td><s:property value="dateEmprunt"/></td>
                         <td><s:property value="dateRestitution"/></td>
                         <s:if test="prolongation">
-                            <td id="tdBtnRenouv"><button type="button" class="btn btn-info" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
+                            <td id="tdBtnRenouv"><button type="button" class="btn btn-secondary" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
                         </s:if>
                         <s:else>
                             <s:if test="expire">
