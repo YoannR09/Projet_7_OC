@@ -8,32 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="346a8706-e9f8-4179-8398-7a745e236a9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UML/image_Deploiement.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionLivreAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionLivreAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/catalogueLivre/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/catalogueLivre/detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login/profil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login/profil.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pret/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pret/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/utilisateur/EmployeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/utilisateur/EmployeDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-consumer/target/classes/fr/oc/projet/consumer/impl/dao/utilisateur/EmployeDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-consumer/target/classes/fr/oc/projet/consumer/impl/dao/utilisateur/EmployeDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/interceptor/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/interceptor/AuthInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/resources/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/LoginAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/RestituerAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/RestituerAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/interceptor/AuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/interceptor/AuthInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/_include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/_include/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/LoginAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/RestituerAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/RestituerAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/interceptor/AuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/interceptor/AuthInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/target/classes/struts.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -303,10 +281,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="109" />
-    <option name="width" value="2459" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="493" />
+    <option name="width" value="1940" />
+    <option name="height" value="1220" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -347,73 +325,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bibliothequeclient" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="bibliotheque-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bibliothequeclient" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="_include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="catalogueLivre" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="pret" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -430,7 +341,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563544651765" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mbibliotheque/microservice-livre" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bibliotheque-serveur" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -571,17 +482,17 @@
       <workItem from="1563181482533" duration="1946000" />
       <workItem from="1563369703285" duration="3783000" />
       <workItem from="1563465998485" duration="6760000" />
-      <workItem from="1563602827263" duration="597000" />
+      <workItem from="1563602827263" duration="854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145591000" />
+    <option name="totallyTimeSpent" value="145848000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16176471" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16176471" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
