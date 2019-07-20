@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b3c28bc8-ba6b-45f5-8691-7fb5163fd55c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UML/image_Deploiement.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bibliotheque-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bibliotheque-serveur/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -153,8 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,6 +221,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,16 +281,18 @@
       <workItem from="1563369705043" duration="597000" />
       <workItem from="1563466012559" duration="1789000" />
       <workItem from="1563602857088" duration="596000" />
+      <workItem from="1563652522273" duration="630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23948000" />
+    <option name="totallyTimeSpent" value="24578000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="493" y="0" width="1940" height="1220" extended-state="1" />
+    <frame x="453" y="2" width="1940" height="1220" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18723404" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1893617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
