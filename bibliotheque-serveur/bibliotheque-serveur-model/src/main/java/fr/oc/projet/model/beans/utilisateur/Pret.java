@@ -11,10 +11,12 @@ public class Pret {
     private         Date            dateEmprunt;
     private         Date            dateRestitution;
     private         Boolean         prolongation;
+    private         Boolean         expire;
     private         LivreUnique     livreUnique;
     private         Abonne          abonne;
     private         Integer         abonneId;
     private         Integer         livreUniqueId;
+
 
     public Pret() {
     }
@@ -81,5 +83,13 @@ public class Pret {
 
     public void setLivreUniqueId(Integer livreUniqueId) {
         this.livreUniqueId = livreUniqueId;
+    }
+
+    public Boolean getExpire() {
+        return expire;
+    }
+
+    public void setExpire(Boolean expire) {
+        this.expire = expire;
     }
 }

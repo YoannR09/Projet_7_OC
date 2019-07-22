@@ -26,7 +26,6 @@ public class LoginAction extends ActionSupport implements SessionAware {
             String vResult;
 
             if (identifiant != null) {
-                this.addActionMessage(" Identifiant null !! ");
             }
             if (managerFactory.getEmployeManager().getEmployeEmail(identifiant) == null) {
                 this.addActionMessage("Identifiant invalide");

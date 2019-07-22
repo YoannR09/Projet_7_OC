@@ -57,7 +57,7 @@ public class RestituerAction extends ActionSupport {
     }
 
     /**
-     * Méthode qui gère la réstition d'un prêt en cours.
+     * Méthode qui gère la restition d'un prêt en cours.
      * @return
      */
     public String doRestitutionPret(){

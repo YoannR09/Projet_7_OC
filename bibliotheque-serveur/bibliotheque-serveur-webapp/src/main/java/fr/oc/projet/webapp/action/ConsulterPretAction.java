@@ -11,6 +11,7 @@ import org.apache.logging.log4j.Logger;
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -37,6 +38,7 @@ public class ConsulterPretAction extends ActionSupport {
 
     private static final Logger logger = LogManager.getLogger();
 
+
     @Inject
     private ManagerFactory managerFactory;
 
@@ -46,6 +48,7 @@ public class ConsulterPretAction extends ActionSupport {
      * @return
      */
     public String doListPretRecherche(){
+
         if(!isbn.equals("") || !auteur.equals("") || !titre.equals("")){
             if(!isbn.equals("") &&  !auteur.equals("") &&  !titre.equals("")){  // Recherche via isbn titre et auteur
                 livre = managerFactory.getLivreManager().getLivreTitreAuteurISBN(titre,auteur,isbn);
@@ -101,6 +104,13 @@ public class ConsulterPretAction extends ActionSupport {
             }
             if(abonne!= null) {
                pretList = rechercheViaBibliothequeAbonne(bibliotheque,abonne);
+               for(Pret pret : pretList){
+                   if(pret.getDateRestitution().compareTo(new Date()) > 0) {
+                       pret.setExpire(false);
+                   }else {
+                       pret.setExpire(true);
+                   }
+               }
             }
             recherche = "abonne";
         }

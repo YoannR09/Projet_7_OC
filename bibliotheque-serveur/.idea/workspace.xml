@@ -11,10 +11,24 @@
   <component name="ChangeListManager">
     <list default="true" id="8ba7665d-cdb8-4942-9b92-c5dd26b22a45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UML/image_Deploiement.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UML/MDC.mdj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UML/MDC_P7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UML/MDP.architect" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UML/MPD_P7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UML/image_composant.png" beforeDir="false" afterPath="$PROJECT_DIR$/../UML/image_composant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UML/image_deploiement.png" beforeDir="false" afterPath="$PROJECT_DIR$/../UML/image_deploiement.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93e8fe6b-3228-4233-b20e-d6ab8d06c923.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/93e8fe6b-3228-4233-b20e-d6ab8d06c923.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-model/src/main/java/fr/oc/projet/model/beans/utilisateur/Pret.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-model/src/main/java/fr/oc/projet/model/beans/utilisateur/Pret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/LoginAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/LoginAction.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,51 +94,13 @@
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bibliotheque@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bibliotheque: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="livre: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bibliotheque@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bibliotheque: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="pret: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/interceptor/AuthInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/utilisateur/EmployeDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/bibliotheque">
+        <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/illustration">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -133,52 +109,75 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/bibliotheque/LivreDaoImpl.java">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="39" column="9" selection-start-line="33" selection-start-column="7" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="-1827">
+              <caret line="81" column="16" lean-forward="true" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
-              <caret line="253" column="5" selection-start-line="253" selection-start-column="5" selection-end-line="253" selection-end-column="5" />
+            <state relative-caret-position="593">
+              <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10541#10542#0" expanded="true" />
-                <element signature="e#10568#10569#0" expanded="true" />
-                <element signature="e#12628#12629#0" expanded="true" />
-                <element signature="e#12668#12669#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-model/src/main/java/fr/oc/projet/model/beans/utilisateur/Pret.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+              <folding>
+                <element signature="e#2044#2045#0" expanded="true" />
+                <element signature="e#2089#2090#0" expanded="true" />
+                <element signature="e#2125#2126#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/db-ticket.properties">
+        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="459">
+              <caret line="174" column="37" selection-end-line="222" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/assembly/archive-deploy.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+        <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/livre">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -214,7 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/impl/manager/utilisateur/PretManagerImpl.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-model/src/main/java/fr/oc/projet/model/beans/bibliotheque/Illustration.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/selectionnerAbonne.jsp" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" />
@@ -229,7 +227,6 @@
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/scripts/batch-export-ticket-statut.sh" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/BibliothequeServeurBatchApplication.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/AbstractDaoImpl.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console.sql" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-business/src/assembly/archive-deploy.xml" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-business/pom.xml" />
@@ -249,13 +246,10 @@
         <option value="$PROJECT_DIR$/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/contract/manager/bibliotheque/LivreUniqueManager.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/impl/manager/bibliotheque/LivreUniqueManagerImpl.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/head.jsp" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/bibliotheque/LivreUniqueDaoImpl.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/contract/dao/utilisateur/PretDao.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/restituer/restituerPret.jsp" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/java/fr/oc/projet/technical/Log.java" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-business/src/main/resources/fr/oc/projet/business/businessContext.xml" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/impl/manager/AbstractManagerImpl.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java" />
@@ -263,8 +257,13 @@
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/resources/struts.xml" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/utilisateur/EmployeDaoImpl.java" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console.sql" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-model/src/main/java/fr/oc/projet/model/beans/utilisateur/Pret.java" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp" />
       </list>
     </option>
   </component>
@@ -322,9 +321,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="493" />
-    <option name="width" value="1940" />
-    <option name="height" value="1220" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -332,58 +332,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
-              <item name="fr.oc.projet.business" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
-              <item name="fr.oc.projet.business" type="1f31426a:PackageElementNode" />
-              <item name="contract" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
-              <item name="fr.oc.projet.business" type="1f31426a:PackageElementNode" />
-              <item name="contract" type="1f31426a:PackageElementNode" />
-              <item name="manager" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
-              <item name="fr.oc.projet.business" type="1f31426a:PackageElementNode" />
-              <item name="impl" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
-              <item name="fr.oc.projet.business" type="1f31426a:PackageElementNode" />
-              <item name="impl" type="1f31426a:PackageElementNode" />
-              <item name="manager" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bibliotheque-serveur-model" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bibliotheque-serveur-model" type="616d4139:PackageViewModuleNode" />
-              <item name="fr.oc.projet.model" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -515,6 +463,51 @@
             <path>
               <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
               <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
               <item name="bibliotheque-serveur-webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -605,10 +598,84 @@
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="_include" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="ajouter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque-serveur-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="consulter" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
+              <item name="fr.oc.projet.business" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
+              <item name="fr.oc.projet.business" type="1f31426a:PackageElementNode" />
+              <item name="contract" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
+              <item name="fr.oc.projet.business" type="1f31426a:PackageElementNode" />
+              <item name="contract" type="1f31426a:PackageElementNode" />
+              <item name="manager" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
+              <item name="fr.oc.projet.business" type="1f31426a:PackageElementNode" />
+              <item name="impl" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bibliotheque-serveur-business" type="616d4139:PackageViewModuleNode" />
+              <item name="fr.oc.projet.business" type="1f31426a:PackageElementNode" />
+              <item name="impl" type="1f31426a:PackageElementNode" />
+              <item name="manager" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bibliotheque-serveur-model" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-serveur" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bibliotheque-serveur-model" type="616d4139:PackageViewModuleNode" />
+              <item name="fr.oc.projet.model" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -619,7 +686,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563457744675" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563784121424" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -832,17 +899,20 @@
       <workItem from="1563466007498" duration="4053000" />
       <workItem from="1563602858350" duration="2737000" />
       <workItem from="1563651429940" duration="247000" />
+      <workItem from="1563700564060" duration="1569000" />
+      <workItem from="1563782188436" duration="952000" />
+      <workItem from="1563783506824" duration="563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248584000" />
+    <option name="totallyTimeSpent" value="251668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15143085" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11605723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -852,7 +922,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -873,7 +943,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.2853736" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.20468998" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.1526232" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -920,121 +990,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/bootstrapContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#659#893#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/resources/fr/oc/projet/batch/batchContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="166" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="166" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/contract/dao/utilisateur/EmployeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/contract/manager/utilisateur/EmployeManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-business/src/main/java/fr/oc/projet/business/impl/manager/utilisateur/EmployeManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-          <folding>
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/employe">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="75" column="104" selection-start-line="75" selection-start-column="104" selection-end-line="75" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/contract/dao/bibliotheque/LivreUniqueDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/restituer/restituerPret.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
@@ -1144,18 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9808#9809#0" expanded="true" />
-            <element signature="e#9853#9854#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-business/src/main/resources/fr/oc/projet/business/businessContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1171,13 +1114,6 @@
             <element signature="e#325#326#0" expanded="true" />
             <element signature="e#358#359#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1223,13 +1159,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java">
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/utilisateur/EmployeDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/test/java/fr/oc/projet/batch/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar!/org/apache/logging/log4j/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar!/org/apache/logging/log4j/LogManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1240,12 +1194,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/utilisateur/EmployeDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/bibliotheque/LivreDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="527">
+          <caret line="39" column="9" selection-start-line="33" selection-start-column="7" selection-end-line="39" selection-end-column="9" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3281">
+          <caret line="253" column="5" selection-start-line="253" selection-start-column="5" selection-end-line="253" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10541#10542#0" expanded="true" />
+            <element signature="e#10568#10569#0" expanded="true" />
+            <element signature="e#12628#12629#0" expanded="true" />
+            <element signature="e#12668#12669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/db-ticket.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/assembly/archive-deploy.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/bibliotheque">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -1254,20 +1232,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/impl/dao/bibliotheque/LivreDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="39" column="9" selection-start-line="33" selection-start-column="7" selection-end-line="39" selection-end-column="9" />
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/adresse">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="867">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/abonne">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/categorie">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/employe">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/illustration">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/livre">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1281,27 +1294,56 @@
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="253" column="5" selection-start-line="253" selection-start-column="5" selection-end-line="253" selection-end-column="5" />
+        <state relative-caret-position="-1827">
+          <caret line="81" column="16" lean-forward="true" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10541#10542#0" expanded="true" />
-            <element signature="e#10568#10569#0" expanded="true" />
-            <element signature="e#12628#12629#0" expanded="true" />
-            <element signature="e#12668#12669#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/assembly/archive-deploy.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/data/conf/db-ticket.properties">
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="457">
+          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-model/src/main/java/fr/oc/projet/model/beans/utilisateur/Pret.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+          <folding>
+            <element signature="e#2044#2045#0" expanded="true" />
+            <element signature="e#2089#2090#0" expanded="true" />
+            <element signature="e#2125#2126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="174" column="37" selection-end-line="222" />
         </state>
       </provider>
     </entry>

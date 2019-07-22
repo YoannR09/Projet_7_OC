@@ -133,47 +133,52 @@
         </s:form>
     </div>
     <div id="bottom">
-    <div id="cadrePret" class="col-9" >
-        <label class="form-check-label" id="labelRecherche"> Ma recherche de prêts en cours</label>
-        <em id="message" class="text-info"><s:actionmessage/></em>
-        <table class="table" id="tableau">
-            <thead>
-            <tr>
-                <th scope="col">Pseudo</th>
-                <th scope="col">Titre du livre</th>
-                <th scope="col">ISBN</th>
-                <th scope="col">Numéro interne</th>
-                <th scope="col">Bibliothèque</th>
-                <th scope="col">Date d'emprunt</th>
-                <th scope="col">Date de réstitution</th>
-                <th scope="col" id="thBtnRenouv">Renouveler</th>
-            </tr>
-            </thead>
-            <tbody>
-                <s:iterator value="pretList">
+        <div id="cadrePret" class="col-9" >
+            <label class="form-check-label" id="labelRecherche"> Ma recherche de prêts en cours</label>
+            <em id="message" class="text-info"><s:actionmessage/></em>
+            <table class="table" id="tableau">
+                <thead>
                 <tr>
-                    <td><s:property value="abonne.pseudo"/></td>
-                    <td> <s:property value="livreUnique.livre.titre"/></td>
-                    <td><s:property value="livreUnique.livre.isbn"/></td>
-                    <td><s:property value="livreUnique.numeroInterne"/></td>
-                    <td><s:property value="livreUnique.bibliotheque.nom"/></td>
-                    <td><s:property value="dateEmprunt"/></td>
-                    <td><s:property value="dateRestitution"/></td>
-                    <s:if test="prolonge">
-                        <td id="tdBtnRenouv"><button type="button" class="btn btn-info" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
-                    </s:if>
-                    <s:else>
-                        <td id="tdBtnRenouv"><s:a action="prolongationPret" class="btn btn-info" style="font-size:0.6em;">
-                            <s:param name="pretId" value="id" />
-                            <s:param name="recherche" value="recherche" />
-                            <s:param name="bibliotheque" value="bibliotheque" />
-                            <i class="fas fa-redo-alt"></i></i></s:a></td>
-                    </s:else>
+                    <th scope="col">Pseudo</th>
+                    <th scope="col">Titre du livre</th>
+                    <th scope="col">ISBN</th>
+                    <th scope="col">Numéro interne</th>
+                    <th scope="col">Bibliothèque</th>
+                    <th scope="col">Date d'emprunt</th>
+                    <th scope="col">Date de réstitution</th>
+                    <th scope="col" id="thBtnRenouv">Renouveler</th>
                 </tr>
+                </thead>
+                <tbody>
+                <s:iterator value="pretList">
+                    <tr>
+                        <td><s:property value="abonne.pseudo"/></td>
+                        <td> <s:property value="livreUnique.livre.titre"/></td>
+                        <td><s:property value="livreUnique.livre.isbn"/></td>
+                        <td><s:property value="livreUnique.numeroInterne"/></td>
+                        <td><s:property value="livreUnique.bibliotheque.nom"/></td>
+                        <td><s:property value="dateEmprunt"/></td>
+                        <td><s:property value="dateRestitution"/></td>
+                        <s:if test="prolongation">
+                            <td id="tdBtnRenouv"><button type="button" class="btn btn-secondary" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
+                        </s:if>
+                        <s:else>
+                            <s:if test="expire">
+                                <td id="tdBtnRenouv"><button type="button" class="btn btn-secondary" style="font-size:0.6em;" disabled><i class="fas fa-redo-alt"></i></button></td>
+                            </s:if>
+                            <s:else>
+                                <td id="tdBtnRenouv"><s:a action="prolongationPret" class="btn btn-info" style="font-size:0.6em;">
+                                    <s:param name="pretId" value="id" />
+                                    <s:param name="recherche" value="recherche" />
+                                    <s:param name="bibliotheque" value="bibliotheque" />
+                                    <i class="fas fa-redo-alt"></i></i></s:a></td>
+                            </s:else>
+                        </s:else>
+                    </tr>
                 </s:iterator>
-            </tbody>
-        </table>
-    </div>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
