@@ -56,3 +56,5 @@
    2. Chaques microservices doit-être lancé pour pouvoir lancer le client.
    
    Mot de passe du certificat de SSL : Yocorps17
+   Compte employé : el-rambo-poto@hotmail.fr
+   mot de passe : 123
