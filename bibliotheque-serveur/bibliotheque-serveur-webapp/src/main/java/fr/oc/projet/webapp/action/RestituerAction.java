@@ -53,6 +53,11 @@ public class RestituerAction extends ActionSupport {
                 pretList = managerFactory.getPretManager().getListPretLivreNumInterne(numeroInterne);
             }
         }
+        if(pretList != null){
+
+        }else {
+            this.addActionMessage("Aucun prêt trouvé");
+        }
         return ActionSupport.SUCCESS;
     }
 
@@ -61,7 +66,8 @@ public class RestituerAction extends ActionSupport {
      * @return
      */
     public String doRestitutionPret(){
-
+        String vResult;
+        try {
         pret = managerFactory.getPretManager().getPret(pretId);
         LivreUnique livreUnique = pret.getLivreUnique();
         livreUnique.setDisponible(true);
@@ -70,8 +76,12 @@ public class RestituerAction extends ActionSupport {
 
         this.addActionMessage("Livre restitué, ce livre est maintenant disponible pour un nouveau prêt.");
         logger.info("Livre restitué à l'inventaire");
-
-        return ActionSupport.SUCCESS;
+        vResult = ActionSupport.SUCCESS;
+        }catch (Exception e){
+            vResult = ActionSupport.ERROR;
+            logger.error(e);
+        }
+        return vResult;
     }
 
 

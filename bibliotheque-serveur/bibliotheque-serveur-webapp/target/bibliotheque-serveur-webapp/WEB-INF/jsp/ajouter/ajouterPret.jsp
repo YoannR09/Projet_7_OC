@@ -118,6 +118,7 @@
     <div id="bottom">
         <div id="cadrePret" class="col-9" >
             <label class="form-check-label" id="labelRecherche"> Ma recherche de livre disponible</label>
+
             <label class="form-check-label" id="labelCount" style="margin: 7px">Nombre de résultats : <s:property value="countResultat"/></label>
             <table class="table" id="tableau">
                 <thead>

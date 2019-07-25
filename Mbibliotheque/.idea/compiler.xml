@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka" />
+        <module name="microservice-abonne" />
+        <module name="microservice-adresse" />
+        <module name="microservice-bibliotheque" />
+        <module name="microservice-categorie" />
+        <module name="microservice-illustration" />
+        <module name="microservice-livre" />
+        <module name="microservice-livre-unique" />
+        <module name="microservice-pret" />
+        <module name="microservice-role" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka" target="1.8" />
+      <module name="microservice-abonne" target="1.8" />
+      <module name="microservice-adresse" target="1.8" />
+      <module name="microservice-bibliotheque" target="1.8" />
+      <module name="microservice-categorie" target="1.8" />
+      <module name="microservice-illustration" target="1.8" />
+      <module name="microservice-livre" target="1.8" />
+      <module name="microservice-livre-unique" target="1.8" />
+      <module name="microservice-pret" target="1.8" />
+      <module name="microservice-role" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka" options="-parameters" />
+      <module name="microservice-abonne" options="-parameters" />
+      <module name="microservice-adresse" options="-parameters" />
+      <module name="microservice-bibliotheque" options="-parameters" />
+      <module name="microservice-categorie" options="-parameters" />
+      <module name="microservice-illustration" options="-parameters" />
+      <module name="microservice-livre" options="-parameters" />
+      <module name="microservice-livre-unique" options="-parameters" />
+      <module name="microservice-pret" options="-parameters" />
+      <module name="microservice-role" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/eureka/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/eureka/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-abonne/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-abonne/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-adresse/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-adresse/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-bibliotheque/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-bibliotheque/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-categorie/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-categorie/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-illustration/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-illustration/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-livre/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-livre/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-livre-unique/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-livre-unique/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-pret/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-pret/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-role/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice-role/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

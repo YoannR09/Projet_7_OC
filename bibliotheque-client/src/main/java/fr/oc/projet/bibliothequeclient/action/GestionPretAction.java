@@ -10,9 +10,13 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 /**
  * Classe qui permet la consultation de ses prêts à un abonné.
@@ -41,6 +45,13 @@ public class GestionPretAction extends ActionSupport {
     private         Integer         pretId;
     private         Pret            pret;
 
+    private Properties propConfig = new Properties();
+    private FileInputStream propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
+
+    public GestionPretAction() throws FileNotFoundException {
+        logger.error(" Path du fichier config.properties non retrouvé.");
+    }
+
     /**
      * Méthode pour afficher les prêts en cours de l'abonné
      * @return
@@ -58,12 +69,13 @@ public class GestionPretAction extends ActionSupport {
      * La prolongation est disponible une seule fois.
      * @return
      */
-    public String doProlongationPret(){
+    public String doProlongationPret() throws IOException {
 
+        propConfig.load(propFile);
         pret = microServicePretProxy.getPret(pretId);
         Calendar cal = Calendar.getInstance();
         cal.setTime(pret.getDateRestitution());
-        cal.add(Calendar.DATE,28);
+        cal.add(Calendar.DATE,Integer.parseInt(propConfig.getProperty("prolongation")));
         pret.setDateRestitution(cal.getTime());
         pret.setProlongation(true);
         microServicePretProxy.updatePret(pret);

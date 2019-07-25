@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="info">
-    <Properties>
-        <Property name="filename">target/test.log</Property>
-    </Properties>
-    <ThresholdFilter level="trace"/>
-
-    <Appenders>
-        <Console name="STDOUT">
-            <PatternLayout pattern="%highlight{%-5level} [%t] %c : %m%n"/>
-        </Console>
-    </Appenders>
-
-    <Loggers>
-        <Logger name="org.example.demo.ticket" level="debug" additivity="false">
-            <AppenderRef ref="STDOUT"/>
-        </Logger>
-
-        <Root level="debug">
-            <AppenderRef ref="STDOUT"/>
-        </Root>
-    </Loggers>
-
-</Configuration>
+<configuration status="WARN">
+<appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+        <PatternLayout pattern="%d{HH:mm:ss.SSS} [Projet 7] %-5level %logger{36} - %msg%n"/>
+    </Console>
+    <File name="File" fileName="../logs/applicationLogs.log" immediateFlush="true">
+        <PatternLayout pattern="%d{HH:mm:ss.SSS} [Projet 7] %-5level %logger{36} - %msg%n"/>
+    </File>
+</appenders>
+<loggers>
+    <root level="error">
+        <AppenderRef ref="Console"/>
+        <AppenderRef ref="File"/>
+    </root>
+</loggers>
+</configuration>

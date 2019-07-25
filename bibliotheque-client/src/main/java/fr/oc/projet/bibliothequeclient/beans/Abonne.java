@@ -15,7 +15,6 @@ public class Abonne {
     private         Adresse             adresse;
     private         Role                role;
     private         Bibliotheque        bibliotheque;
-    // private         Date                dateCreationCompte;
 
     public Abonne() {
     }

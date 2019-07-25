@@ -29,7 +29,7 @@ public interface MicroServiceLivreProxy {
     List<Livre> findLivresByTitreContainingAndIsbnContaining(@PathVariable("titre") String titre,@PathVariable("isbn") String isbn );
 
 
-    @GetMapping(value = "/Livre/TitreAuteurISBN/{titre},{auteur}")
+    @GetMapping(value = "/Livre/TitreAuteur/{titre},{auteur}")
     List<Livre> findLivresByTitreContainingAndAuteurContaining(@PathVariable("titre") String titre,@PathVariable("auteur") String auteur);
 
 
@@ -54,7 +54,7 @@ public interface MicroServiceLivreProxy {
     List<Livre> findLivresByTitreContainingAndIsbnContainingAndCategorieId(@PathVariable("titre") String titre,@PathVariable("isbn") String isbn,@PathVariable("categorieId") int categorieId );
 
 
-    @GetMapping(value = "/Livre/TitreAuteurISBNCategorie/{titre},{auteur},{categorieId}")
+    @GetMapping(value = "/Livre/TitreAuteurCategorie/{titre},{auteur},{categorieId}")
     List<Livre> findLivresByTitreContainingAndAuteurContainingAndCategorieId(@PathVariable("titre") String titre,@PathVariable("auteur") String auteur,@PathVariable("categorieId") int categorieId);
 
 

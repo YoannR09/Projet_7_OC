@@ -11,6 +11,17 @@
    1. Mettre l'url de la base de données.
    2. Changer l'username.
    3. Changer le password.
+   
+####   Modifier le path du fichier config.properties :
+    
+   1. Mettre en place le Path du fichier config.properties dans
+    les classes fr.oc.projet.webapp.action.AjouterPretAction fr.oc.projet.webapp.action.ConsulterPretAction.
+     <br/>
+    Modifier la variable propFile.
+    
+   ![automated like clockwork](doc/image/image5.png)
+    
+    
     
 ####   Modifier les variables dans le fichier batch/src/data/conf/db-ticket.properties :
     
@@ -52,9 +63,25 @@
    
    # Mettre en place bibliotheque-client
    
+   
    1. Effectuer les mêmes actions que pour un microservice.
    2. Chaques microservices doit-être lancé pour pouvoir lancer le client.
    
-   Mot de passe du certificat de SSL : Yocorps17
-   Compte employé : el-rambo-poto@hotmail.fr
-   mot de passe : 123
+   ####   Modifier le path du fichier config.properties :
+          
+   1. Mettre en place le Path du fichier config.properties dans
+          la classe
+          fr.oc.projet.bibliothequeclient.action.GestionPretAction
+           <br/>
+          Modifier la variable propFile.
+          
+   ![automated like clockwork](doc/image/image5.png)
+   
+   
+   
+   
+   #Informations supplémentaire
+   
+   Mot de passe du certificat de SSL : Yocorps17  <br/>
+   Compte employé : el-rambo-poto@hotmail.fr  <br/>
+   mot de passe : 123  <br/>

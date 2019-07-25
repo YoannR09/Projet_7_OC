@@ -9,10 +9,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.inject.Inject;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.*;
 
 /**
  * Classe qui gère la page pour consulter les prêts des abonnées.
@@ -38,9 +38,15 @@ public class ConsulterPretAction extends ActionSupport {
 
     private static final Logger logger = LogManager.getLogger();
 
+    private Properties propConfig = new Properties();
+    private FileInputStream propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
 
     @Inject
     private ManagerFactory managerFactory;
+
+    public ConsulterPretAction() throws FileNotFoundException {
+        logger.error(" Path du fichier config.properties non retrouvé.");
+    }
 
     /**
      * Méthode pour la recherche de prêts en cours
@@ -114,7 +120,11 @@ public class ConsulterPretAction extends ActionSupport {
             }
             recherche = "abonne";
         }
-        countResultat = pretList.size();
+        if (pretList != null) {
+            countResultat = pretList.size();
+        }else {
+            this.addActionMessage("Aucun prêt trouvé");
+        }
         return ActionSupport.SUCCESS;
     }
 
@@ -124,12 +134,13 @@ public class ConsulterPretAction extends ActionSupport {
      * Ce prêt ne pourra plus être prolongé.
      * @return
      */
-    public String doProlongationPret(){
+    public String doProlongationPret() throws IOException {
 
+        propConfig.load(propFile);
         pret = managerFactory.getPretManager().getPret(pretId);
         Calendar cal = Calendar.getInstance();
         cal.setTime(pret.getDateRestitution());
-        cal.add(Calendar.DATE,28);
+        cal.add(Calendar.DATE,Integer.parseInt(propConfig.getProperty("prolongation")));
         pret.setDateRestitution(cal.getTime());
         managerFactory.getPretManager().updateDateRestitution(pret);
         pret.setProlongation(true);

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mbibliotheque.iml" filepath="$PROJECT_DIR$/.idea/Mbibliotheque.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-abonne/microservice-abonne.iml" filepath="$PROJECT_DIR$/microservice-abonne/microservice-abonne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-adresse/microservice-adresse.iml" filepath="$PROJECT_DIR$/microservice-adresse/microservice-adresse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-bibliotheque/microservice-bibliotheque.iml" filepath="$PROJECT_DIR$/microservice-bibliotheque/microservice-bibliotheque.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-categorie/microservice-categorie.iml" filepath="$PROJECT_DIR$/microservice-categorie/microservice-categorie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-illustration/microservice-illustration.iml" filepath="$PROJECT_DIR$/microservice-illustration/microservice-illustration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-livre/microservice-livre.iml" filepath="$PROJECT_DIR$/microservice-livre/microservice-livre.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-livre-unique/microservice-livre-unique.iml" filepath="$PROJECT_DIR$/microservice-livre-unique/microservice-livre-unique.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-pret/microservice-pret.iml" filepath="$PROJECT_DIR$/microservice-pret/microservice-pret.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-role/microservice-role.iml" filepath="$PROJECT_DIR$/microservice-role/microservice-role.iml" />
+    </modules>
+  </component>
+</project>

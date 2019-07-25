@@ -10,9 +10,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.inject.Inject;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 /**
  * Classe qui gère l'ajout d'un prêt par un employé
@@ -35,10 +39,17 @@ public class AjouterPretAction extends ActionSupport{
     private         Abonne              abonne;
     private         List<LivreUnique>   livreUniqueList;
 
+    private         Properties propConfig = new Properties();
+    private         FileInputStream propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
+
     private static final Logger logger = LogManager.getLogger();
 
     @Inject
     ManagerFactory managerFactory;
+
+    public AjouterPretAction() throws FileNotFoundException {
+        logger.error(" Path du fichier config.properties non retrouvé.");
+    }
 
 
     /**
@@ -47,6 +58,8 @@ public class AjouterPretAction extends ActionSupport{
      * @return
      */
     public String doListLivre() {
+        String vResult;
+
             if (bibliotheque.equals("Toutes les bibliothèques")) {
                 if (!isbn.equals("") && !auteur.equals("") && !titre.equals("")) {  // Recherche via isbn titre et auteur
                     livreUniqueList = managerFactory.getLivreUniqueManager().getListLivreUniqueTitreAuteurISBN(titre, auteur, isbn);
@@ -81,8 +94,14 @@ public class AjouterPretAction extends ActionSupport{
                     livreUniqueList = managerFactory.getLivreUniqueManager().getListLivreUniqueTitreBibliotheque(titre, bibliothequeId);
                 }
             }
-            countResultat = livreUniqueList.size();
-            return ActionSupport.SUCCESS;
+            if(livreUniqueList != null){
+                vResult = ActionSupport.SUCCESS;
+                countResultat = livreUniqueList.size();
+            }else {
+                this.addActionMessage("Aucun livre trouvé");
+                vResult = ActionSupport.SUCCESS;
+            }
+            return vResult;
         }
 
     /**
@@ -99,8 +118,11 @@ public class AjouterPretAction extends ActionSupport{
      * @return
      */
     public String doAbonne(){
+        String vResult;
             if(!pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via pseudo email nom et prenom
                 abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNomPrenom(pseudo,email,nom,prenom);
+            }else if (!prenom.equals("") && pseudo.equals("") && nom.equals("") && email.equals("")){   // Recherche via prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePrenom(prenom);
             }else if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && prenom.equals("")){ // Recherche via pseudo email et nom
                 abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNom(pseudo,email,nom);
             }else if (!pseudo.equals("") && !email.equals("") && !prenom.equals("") && nom.equals("")){ // Recherche via pseudo email et prenom
@@ -113,8 +135,6 @@ public class AjouterPretAction extends ActionSupport{
                 abonne = managerFactory.getAbonneManager().getAbonnePseudoEmail(pseudo,email);
             }else if (!nom.equals("") && !prenom.equals("") && pseudo.equals("") && email.equals("")){  // Recherche via nom et prenom
                 abonne = managerFactory.getAbonneManager().getAbonneNomPrenom(nom,prenom);
-            }else if (!pseudo.equals("") && !prenom.equals("") && email.equals("") && nom.equals("")){  // Recherche via pseudo et prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoPrenom(pseudo,prenom);
             }else if(!email.equals("") && !nom.equals("") && pseudo.equals("") && prenom.equals("")){   // Recherche via email et nom
                 abonne = managerFactory.getAbonneManager().getAbonneEmailNom(email,nom);
             }else if(!email.equals("") && !prenom.equals("") && nom.equals("") && pseudo.equals("")){   // Recherche via email et prenom
@@ -125,12 +145,18 @@ public class AjouterPretAction extends ActionSupport{
                 abonne = managerFactory.getAbonneManager().getAbonnePseudo(pseudo);
             }else if(!email.equals("") && nom.equals("") && pseudo.equals("") && prenom.equals("")){    // Recherche via email
                 abonne = managerFactory.getAbonneManager().getAbonneEmail(email);
+            }else if (!pseudo.equals("") && !prenom.equals("") && email.equals("") && nom.equals("")){  // Recherche via pseudo et prenom
+                abonne = managerFactory.getAbonneManager().getAbonnePseudoPrenom(pseudo,prenom);
             }else if (!nom.equals("") && pseudo.equals("") && prenom.equals("") && email.equals("")){   // Recherche via nom
                 abonne = managerFactory.getAbonneManager().getAbonneNom(nom);
-            }else if (!prenom.equals("") && pseudo.equals("") && nom.equals("") && email.equals("")){   // Recherche via prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePrenom(prenom);
             }
-        return ActionSupport.SUCCESS;
+            if (abonne != null){
+                vResult = ActionSupport.SUCCESS;
+            }else {
+                vResult = ActionSupport.SUCCESS;
+                this.addActionMessage("Aucun abonné trouvé");
+            }
+        return vResult;
         }
 
     /**
@@ -138,12 +164,14 @@ public class AjouterPretAction extends ActionSupport{
      * @return
      */
     public String doAjouterPret(){
-
+        String vResult;
+        try {
+        propConfig.load(propFile);
         Pret pret = new Pret();
         pret.setDateEmprunt(new Date());
         Calendar cal = Calendar.getInstance();
         cal.setTime(pret.getDateEmprunt());
-        cal.add(Calendar.DATE,28);
+        cal.add(Calendar.DATE,Integer.parseInt(propConfig.getProperty("prolongation")));
         pret.setDateRestitution(cal.getTime());
         pret.setProlongation(false);
         pret.setLivreUniqueId(livreUniqueId);
@@ -157,7 +185,13 @@ public class AjouterPretAction extends ActionSupport{
                 managerFactory.getAbonneManager().getAbonne(pret.getAbonneId()).getNom()
                 +"  "+managerFactory.getAbonneManager().getAbonne(pret.getAbonneId()).getPrenom());
         logger.info("Prêt bien ajouté à la bdd");
-        return ActionSupport.SUCCESS;
+        vResult = ActionSupport.SUCCESS;
+        }catch (Exception e){
+            logger. error(e);
+            this.addActionMessage(" Problème survenu pendant l'ajout du prêt");
+            vResult = ActionSupport.ERROR;
+        }
+        return vResult;
         }
 
 
