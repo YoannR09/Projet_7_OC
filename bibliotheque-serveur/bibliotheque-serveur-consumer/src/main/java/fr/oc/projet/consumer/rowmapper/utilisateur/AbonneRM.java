@@ -27,7 +27,7 @@ public class AbonneRM implements RowMapper<Abonne> {
             abonne.setPrenom(resultSet.getString("prenom"));
             abonne.setEmail(resultSet.getString("email"));
             abonne.setMotDePasse(resultSet.getString("mot_de_passe"));
-            abonne.setNumero(resultSet.getString("numero_telephone"));
+            abonne.setNumeroTelephone(resultSet.getString("numero_telephone"));
             abonne.setRole(roleDao.getRole(resultSet.getInt("role_id")));
             abonne.setBibliotheque(bibliothequeDao.getBibliotheque(resultSet.getInt("bibliotheque_id")));
             return abonne;

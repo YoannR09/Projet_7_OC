@@ -3,7 +3,6 @@ package fr.oc.projet.model.beans.utilisateur;
 import java.util.Date;
 
 public class Employe {
-
     private Integer id;
     private String motDePasse;
     private String email;

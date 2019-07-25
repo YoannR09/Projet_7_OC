@@ -11,5 +11,4 @@ public class FeignConfig {
     public BasicAuthRequestInterceptor mBasicAuthRequestInterceptor(){
         return  new BasicAuthRequestInterceptor("Yocorps", "123");
     }
-
 }

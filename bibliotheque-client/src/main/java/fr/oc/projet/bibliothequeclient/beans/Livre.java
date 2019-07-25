@@ -7,25 +7,15 @@ public class Livre {
 
 
     private int id;
-
     private String titre;
-
     private String auteur;
-
     private String editeur;
-
     private String isbn;
-
     private String langue;
-
     private String resume;
-
     private int categorieId;
-
     private Date dateDeCreation;
-
     private int illustrationId;
-
     private int nbreDispo;
 
     public Livre() {

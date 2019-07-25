@@ -36,7 +36,7 @@ public class ConsulterPretAction extends ActionSupport {
     private         Pret            pret;
     private         String          recherche;
 
-    private static final Logger logger = LogManager.getLogger();
+    private static final Logger logger = LogManager.getLogger(ConsulterPretAction.class);
 
     private Properties propConfig = new Properties();
     private FileInputStream propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
@@ -123,6 +123,7 @@ public class ConsulterPretAction extends ActionSupport {
         if (pretList != null) {
             countResultat = pretList.size();
         }else {
+            logger.error("AUCUN PRET TROUVE !!!!!!!!!!!!!!!!!!!!!!!!!!");
             this.addActionMessage("Aucun prêt trouvé");
         }
         return ActionSupport.SUCCESS;

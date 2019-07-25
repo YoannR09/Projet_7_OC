@@ -11,10 +11,11 @@ import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-
+/**
+ * Class qui gère le passage en https de l'application.
+ */
 @Configuration
 public class ConnectorConfig{
-
 
     @Bean
     public ServletWebServerFactory servletContainer() {

@@ -4,14 +4,20 @@
     <Console name="Console" target="SYSTEM_OUT">
         <PatternLayout pattern="%d{HH:mm:ss.SSS} [Projet 7] %-5level %logger{36} - %msg%n"/>
     </Console>
-    <File name="File" fileName="../logs/applicationLogs.log" immediateFlush="true">
+    <File name="File" fileName="../logs/applicationLogs.log">
         <PatternLayout pattern="%d{HH:mm:ss.SSS} [Projet 7] %-5level %logger{36} - %msg%n"/>
     </File>
 </appenders>
+
+
 <loggers>
     <root level="error">
         <AppenderRef ref="Console"/>
-        <AppenderRef ref="File"/>
     </root>
+    <Logger name="com.foo.Bar" level="TRACE"/>
+    <Root level="ERROR">
+        <AppenderRef ref="STDOUT"/>
+        <AppenderRef ref="File"/>
+    </Root>
 </loggers>
 </configuration>

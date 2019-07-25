@@ -5,13 +5,9 @@ public class LivreUnique {
 
 
     private int id;
-
     private int numeroInterne;
-
     private int bibliothequeId;
-
     private int livreId;
-
     private Boolean disponible;
 
     public LivreUnique() {

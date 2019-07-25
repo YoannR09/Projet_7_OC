@@ -9,12 +9,14 @@ public class Abonne {
     private         String              nom;
     private         String              prenom;
     private         String              email;
-    private         String              numero;
+    private         String              numeroTelephone;
     private         String              motDePasse;
+    private         Integer             adresseId;
+    private         Integer             roleId;
+    private         Integer             bibliothequeId;
     private         Adresse             adresse;
     private         Role                role;
     private         Bibliotheque        bibliotheque;
-    // private         Date                dateCreationCompte;
 
     public Abonne() {
     }
@@ -51,12 +53,12 @@ public class Abonne {
         this.email = email;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getNumeroTelephone() {
+        return numeroTelephone;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setNumeroTelephone(String numeroTelephone) {
+        this.numeroTelephone = numeroTelephone;
     }
 
     public String getMotDePasse() {
@@ -97,5 +99,29 @@ public class Abonne {
 
     public void setBibliotheque(Bibliotheque bibliotheque) {
         this.bibliotheque = bibliotheque;
+    }
+
+    public Integer getAdresseId() {
+        return adresseId;
+    }
+
+    public void setAdresseId(Integer adresseId) {
+        this.adresseId = adresseId;
+    }
+
+    public Integer getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Integer roleId) {
+        this.roleId = roleId;
+    }
+
+    public Integer getBibliothequeId() {
+        return bibliothequeId;
+    }
+
+    public void setBibliothequeId(Integer bibliothequeId) {
+        this.bibliothequeId = bibliothequeId;
     }
 }

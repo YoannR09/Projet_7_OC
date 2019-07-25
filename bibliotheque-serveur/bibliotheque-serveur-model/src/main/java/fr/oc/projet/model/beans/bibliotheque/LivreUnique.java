@@ -6,6 +6,7 @@ public class LivreUnique {
     private Integer id;
     private String numeroInterne;
     private Bibliotheque bibliotheque;
+    private int bibliothequeId;
     private Livre livre;
     private Boolean disponible;
 
@@ -50,5 +51,13 @@ public class LivreUnique {
 
     public void setLivre(Livre livre) {
         this.livre = livre;
+    }
+
+    public int getBibliothequeId() {
+        return bibliothequeId;
+    }
+
+    public void setBibliothequeId(int bibliothequeId) {
+        this.bibliothequeId = bibliothequeId;
     }
 }

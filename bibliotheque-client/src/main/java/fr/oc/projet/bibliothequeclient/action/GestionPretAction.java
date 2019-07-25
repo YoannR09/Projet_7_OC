@@ -69,22 +69,25 @@ public class GestionPretAction extends ActionSupport {
      * La prolongation est disponible une seule fois.
      * @return
      */
-    public String doProlongationPret() throws IOException {
-
-        propConfig.load(propFile);
-        pret = microServicePretProxy.getPret(pretId);
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(pret.getDateRestitution());
-        cal.add(Calendar.DATE,Integer.parseInt(propConfig.getProperty("prolongation")));
-        pret.setDateRestitution(cal.getTime());
-        pret.setProlongation(true);
-        microServicePretProxy.updatePret(pret);
-        pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
-        abonne = microServiceAbonneProxy.getAbonnePseudo(pseudo);
-        recupListPret();
-        this.addActionMessage("Prêt prolongé jusqu'au : "+pret.getDateRestitution());
-        logger.info("Prêt prolongé. Pret id : "+ pret.getId());
-
+    public String doProlongationPret() {
+        try {
+            propConfig.load(propFile);
+            pret = microServicePretProxy.getPret(pretId);
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(pret.getDateRestitution());
+            cal.add(Calendar.DATE, Integer.parseInt(propConfig.getProperty("prolongation")));
+            pret.setDateRestitution(cal.getTime());
+            pret.setProlongation(true);
+            microServicePretProxy.updatePret(pret);
+            pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
+            abonne = microServiceAbonneProxy.getAbonnePseudo(pseudo);
+            recupListPret();
+            this.addActionMessage("Prêt prolongé jusqu'au : " + pret.getDateRestitution());
+            logger.info("Prêt prolongé. Pret id : " + pret.getId());
+        }catch (Exception e){
+            logger.error(e);
+            this.addActionMessage("Porblème survenu pendant la prolongation du prêt");
+        }
         return ActionSupport.SUCCESS;
     }
 

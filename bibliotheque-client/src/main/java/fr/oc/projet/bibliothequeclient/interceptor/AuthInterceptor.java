@@ -3,6 +3,10 @@ package fr.oc.projet.bibliothequeclient.interceptor;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 
+/**
+ * Classe qui consulte si l'user est connecté
+ * pour accèder au page private.
+ */
 public class AuthInterceptor extends AbstractInterceptor {
 
     @Override

@@ -113,6 +113,7 @@ public class GestionLivreAction extends ActionSupport {
             }
             countResultat = livreList.size();
         }else {
+            this.addActionMessage(" Aucun livre trouvé");
             countResultat = 0;
         }
         categorieList = microServiceCategorieProxy.getListCategorie();
