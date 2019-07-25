@@ -26,7 +26,7 @@ public class AbonneController {
         try {
         return abonneDao.findById(id);
         }catch (Exception e){
-            logger.error("Methode getAbonne() erreur : "+e);
+            logger.warn("Methode getAbonne() erreur : "+e);
             return null;
         }
     }

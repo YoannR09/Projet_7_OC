@@ -133,3 +133,145 @@ java.lang.IllegalStateException: EntityManagerFactory is closed
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_211]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.21.jar:9.0.21]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_211]
+18:12:56.331 [Projet 7] INFO  fr.oc.projet.microserviceabonne.MicroserviceAbonneApplication - MicroServiceAbonne est maitenant opérationnel
+18:12:57.157 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec8568e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:12:57.334 [Projet 7] INFO  fr.oc.projet.microserviceabonne.MicroserviceAbonneApplication - No active profile set, falling back to default profiles: default
+18:12:57.866 [Projet 7] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:12:57.914 [Projet 7] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42ms. Found 1 repository interfaces.
+18:12:57.996 [Projet 7] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+18:12:58.137 [Projet 7] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=adc3c743-77cb-32b6-9cd8-3569861cd659
+18:12:58.225 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d06b65e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:12:58.243 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec8568e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:12:58.476 [Projet 7] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9097 (http)
+18:12:58.486 [Projet 7] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9097"]
+18:12:58.493 [Projet 7] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:12:58.494 [Projet 7] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+18:12:58.611 [Projet 7] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:12:58.611 [Projet 7] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1267 ms
+18:12:58.684 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:12:58.684 [Projet 7] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+18:12:58.689 [Projet 7] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@40fa8766
+18:12:59.154 [Projet 7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:12:59.225 [Projet 7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:12:59.263 [Projet 7] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:12:59.307 [Projet 7] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+18:12:59.309 [Projet 7] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:12:59.420 [Projet 7] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:12:59.532 [Projet 7] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+18:12:59.622 [Projet 7] INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+18:12:59.626 [Projet 7] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@62e73ab6
+18:13:00.020 [Projet 7] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:13:00.267 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:13:00.267 [Projet 7] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+18:13:00.422 [Projet 7] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:13:00.447 [Projet 7] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:13:01.053 [Projet 7] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+18:13:01.145 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+18:13:01.178 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+18:13:01.383 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+18:13:01.383 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+18:13:01.472 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+18:13:01.473 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+18:13:01.603 [Projet 7] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:13:01.663 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:13:01.663 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:13:01.663 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:13:01.663 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+18:13:01.664 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:13:01.664 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+18:13:01.664 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:13:01.787 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+18:13:01.789 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+18:13:01.791 [Projet 7] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:13:01.794 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1564071181793 with initial instances count: 8
+18:13:01.796 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application MICROSERVICE-ABONNE with eureka with status UP
+18:13:01.797 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1564071181797, current=UP, previous=STARTING]
+18:13:01.799 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-ABONNE/DESKTOP-G8BLR8A:microservice-abonne:9097: registering service...
+18:13:01.818 [Projet 7] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9097"]
+18:13:01.834 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-ABONNE/DESKTOP-G8BLR8A:microservice-abonne:9097 - registration status: 204
+18:13:01.841 [Projet 7] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9097 (http) with context path ''
+18:13:01.842 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 9097
+18:13:01.844 [Projet 7] INFO  fr.oc.projet.microserviceabonne.MicroserviceAbonneApplication - Started MicroserviceAbonneApplication in 5.42 seconds (JVM running for 6.28)
+18:13:02.381 [Projet 7] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:13:02.381 [Projet 7] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:13:02.389 [Projet 7] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+18:13:26.407 [Projet 7] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:14:56.463 [Projet 7] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+18:14:57.155 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:14:58.703 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:14:58.909 [Projet 7] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:15:50.263 [Projet 7] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+18:15:50.991 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:15:52.741 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:15:52.928 [Projet 7] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:16:05.809 [Projet 7] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+18:16:06.510 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:16:08.105 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:16:08.288 [Projet 7] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:17:01.147 [Projet 7] INFO  fr.oc.projet.microserviceabonne.MicroserviceAbonneApplication - MicroServiceAbonne est maitenant opérationnel
+18:17:01.912 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$451fa7fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:17:02.102 [Projet 7] INFO  fr.oc.projet.microserviceabonne.MicroserviceAbonneApplication - No active profile set, falling back to default profiles: default
+18:17:02.637 [Projet 7] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:17:02.683 [Projet 7] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+18:17:02.768 [Projet 7] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+18:17:02.932 [Projet 7] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=adc3c743-77cb-32b6-9cd8-3569861cd659
+18:17:03.012 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2905a500] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:17:03.028 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$451fa7fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:17:03.245 [Projet 7] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9097 (http)
+18:17:03.255 [Projet 7] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9097"]
+18:17:03.262 [Projet 7] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:17:03.262 [Projet 7] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+18:17:03.382 [Projet 7] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:17:03.382 [Projet 7] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1273 ms
+18:17:03.462 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:17:03.462 [Projet 7] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+18:17:03.467 [Projet 7] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@208f0007
+18:17:03.953 [Projet 7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:17:04.028 [Projet 7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:17:04.066 [Projet 7] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:17:04.111 [Projet 7] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+18:17:04.112 [Projet 7] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:17:04.230 [Projet 7] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:17:04.325 [Projet 7] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+18:17:04.419 [Projet 7] INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+18:17:04.423 [Projet 7] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4f213a2
+18:17:04.808 [Projet 7] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:17:05.015 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:17:05.015 [Projet 7] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+18:17:05.182 [Projet 7] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:17:05.209 [Projet 7] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:17:05.808 [Projet 7] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+18:17:05.884 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+18:17:05.916 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+18:17:06.122 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+18:17:06.122 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+18:17:06.210 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+18:17:06.211 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+18:17:06.344 [Projet 7] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:17:06.409 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:17:06.409 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:17:06.409 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:17:06.409 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+18:17:06.409 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:17:06.409 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+18:17:06.409 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:17:06.536 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+18:17:06.539 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+18:17:06.541 [Projet 7] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:17:06.543 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1564071426542 with initial instances count: 8
+18:17:06.545 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application MICROSERVICE-ABONNE with eureka with status UP
+18:17:06.546 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1564071426546, current=UP, previous=STARTING]
+18:17:06.548 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-ABONNE/DESKTOP-G8BLR8A:microservice-abonne:9097: registering service...
+18:17:06.564 [Projet 7] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9097"]
+18:17:06.581 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-ABONNE/DESKTOP-G8BLR8A:microservice-abonne:9097 - registration status: 204
+18:17:06.590 [Projet 7] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9097 (http) with context path ''
+18:17:06.591 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 9097
+18:17:06.593 [Projet 7] INFO  fr.oc.projet.microserviceabonne.MicroserviceAbonneApplication - Started MicroserviceAbonneApplication in 5.373 seconds (JVM running for 6.299)
+18:17:07.162 [Projet 7] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:17:07.162 [Projet 7] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:17:07.173 [Projet 7] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+18:17:18.010 [Projet 7] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
