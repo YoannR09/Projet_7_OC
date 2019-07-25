@@ -35,28 +35,46 @@ public class RestituerAction extends ActionSupport {
      * @return
      */
     public String doRechercheRestituerPret(){
-        if(!bibliotheque.equals("Toutes les bibliothèques")) {
-            bibliothequeId = managerFactory.getBibliothequeManager().getBibliothequeNom(bibliotheque).getId();
-            if (!isbn.equals("") && !numeroInterne.equals("")){
-                pretList = managerFactory.getPretManager().getListPretLivreISBNNumInterneBibliotheque(isbn,numeroInterne,bibliothequeId);
-            }else if (!isbn.equals("") && numeroInterne.equals("")){
-                pretList = managerFactory.getPretManager().getListPretLivreISBNBibliotheque(isbn,bibliothequeId);
-            }else if(isbn.equals("") && !numeroInterne.equals("")){
-                pretList = managerFactory.getPretManager().getListPretLivreNumInterneBibliotheque(numeroInterne,bibliothequeId);
-            }
-        }else {
-            if (!isbn.equals("") && !numeroInterne.equals("")){
-                pretList = managerFactory.getPretManager().getListPretLivreISBNNumInterne(isbn,numeroInterne);
-            }else if (!isbn.equals("") && numeroInterne.equals("")){
-                pretList = managerFactory.getPretManager().getListPretLivreISBN(isbn);
-            }else if(isbn.equals("") && !numeroInterne.equals("")){
-                pretList = managerFactory.getPretManager().getListPretLivreNumInterne(numeroInterne);
+        Boolean isNumber = null;
+        if (!numeroInterne.equals("")) {
+            try {
+                 int y = (int) Integer.valueOf(numeroInterne);
+                 isNumber = true;
+            } catch (NumberFormatException e) {
+                isNumber = false;
             }
         }
-        if(pretList != null){
-
+        if (isNumber == null){
+            isNumber = true;
+        }
+        if (isNumber != false) {
+            if (!bibliotheque.equals("Toutes les bibliothèques")) {
+                bibliothequeId = managerFactory.getBibliothequeManager().getBibliothequeNom(bibliotheque).getId();
+                if (!isbn.equals("") && !numeroInterne.equals("")) {
+                    pretList = managerFactory.getPretManager().getListPretLivreISBNNumInterneBibliotheque(isbn, numeroInterne, bibliothequeId);
+                } else if (!isbn.equals("") && numeroInterne.equals("")) {
+                    pretList = managerFactory.getPretManager().getListPretLivreISBNBibliotheque(isbn, bibliothequeId);
+                } else if (isbn.equals("") && !numeroInterne.equals("")) {
+                    pretList = managerFactory.getPretManager().getListPretLivreNumInterneBibliotheque(numeroInterne, bibliothequeId);
+                }
+            } else {
+                if (!isbn.equals("") && !numeroInterne.equals("")) {
+                    pretList = managerFactory.getPretManager().getListPretLivreISBNNumInterne(isbn, numeroInterne);
+                } else if (!isbn.equals("") && numeroInterne.equals("")) {
+                    pretList = managerFactory.getPretManager().getListPretLivreISBN(isbn);
+                } else if (isbn.equals("") && !numeroInterne.equals("")) {
+                    pretList = managerFactory.getPretManager().getListPretLivreNumInterne(numeroInterne);
+                }
+            }
+            if (pretList != null) {
+                if (pretList.size() == 0){
+                    this.addActionMessage("Aucun prêt trouvé");
+                }
+            } else {
+                this.addActionMessage("Aucun prêt trouvé");
+            }
         }else {
-            this.addActionMessage("Aucun prêt trouvé");
+            this.addActionMessage("Le numéro interne doit être un nombre");
         }
         return ActionSupport.SUCCESS;
     }

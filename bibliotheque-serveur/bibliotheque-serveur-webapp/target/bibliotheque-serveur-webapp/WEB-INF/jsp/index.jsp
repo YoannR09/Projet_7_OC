@@ -98,11 +98,11 @@
                 </s:form>
             </div>
         </div>
-        <div class="col-4" id="cadreInf">
+        <div class="col-8" id="cadreInf">
             <em id="messageInfo" class="text-info"><s:actionmessage/></em>
             <div class="col-12 container bg-light" id="cadreInfo" >
             <div class="col-12" style="text-align: center">
-            <p>Vous êtes connecté  <s:property value="#session.user.prenom" />  <s:property value="#session.user.nom" /> <s:a action="logout" class="nav-link text-info">Changer de compte emploié</s:a></p>
+            <p>Vous êtes connecté avec le compte employé : <s:property value="#session.user.email" /> <s:a action="logout" class="nav-link text-info">Changer de compte employé</s:a></p>
             </div>
             </div>
         </div>

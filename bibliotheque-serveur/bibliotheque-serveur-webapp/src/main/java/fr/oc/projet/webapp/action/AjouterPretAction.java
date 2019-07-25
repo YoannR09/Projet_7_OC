@@ -51,7 +51,6 @@ public class AjouterPretAction extends ActionSupport{
         logger.error(" Path du fichier config.properties non retrouvé.");
     }
 
-
     /**
      * Méthode qui affiche une liste de livre unique
      * en fonction du texte entré dans le formulaire.
@@ -59,7 +58,6 @@ public class AjouterPretAction extends ActionSupport{
      */
     public String doListLivre() {
         String vResult;
-
             if (bibliotheque.equals("Toutes les bibliothèques")) {
                 if (!isbn.equals("") && !auteur.equals("") && !titre.equals("")) {  // Recherche via isbn titre et auteur
                     livreUniqueList = managerFactory.getLivreUniqueManager().getListLivreUniqueTitreAuteurISBN(titre, auteur, isbn);
@@ -95,6 +93,9 @@ public class AjouterPretAction extends ActionSupport{
                 }
             }
             if(livreUniqueList != null){
+                if (livreUniqueList.size() == 0){
+                    this.addActionMessage("Aucun livre trouvé");
+                }
                 vResult = ActionSupport.SUCCESS;
                 countResultat = livreUniqueList.size();
             }else {

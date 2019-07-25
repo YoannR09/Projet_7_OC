@@ -19,28 +19,16 @@
                 <s:if test="#session.user">
                     <s:a action="consulterPret" class="nav-link" style="font-size:1.3em">| Consulter les prêts |</s:a>
                 </s:if>
-                <s:else>
-                    <s:a action="login" class="nav-link" style="font-size:1.3em">| Consulter les prêts |</s:a>
-                </s:else>
-
             </li>
             <li class="nav-item">
                 <s:if test="#session.user">
                     <s:a action="ajouterPret" class="nav-link" style="font-size:1.3em">| Ajouter un prêt |</s:a>
                 </s:if>
-                <s:else>
-                    <s:a action="login" class="nav-link" style="font-size:1.3em">| Ajouter un prêt |</s:a>
-                </s:else>
-
             </li>
             <li class="nav-item">
                 <s:if test="#session.user">
                     <s:a action="restituerPret" class="nav-link" style="font-size:1.3em">| Restituer un prêt |</s:a>
                 </s:if>
-                <s:else>
-                    <s:a action="login" class="nav-link" style="font-size:1.3em">| Restituer un prêt |</s:a>
-                </s:else>
-
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" style="color: white" >

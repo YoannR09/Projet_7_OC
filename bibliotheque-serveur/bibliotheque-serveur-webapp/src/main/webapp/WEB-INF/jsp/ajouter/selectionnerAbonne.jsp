@@ -63,7 +63,15 @@
         {
             text-align: center;
         }
+        #message
+        {
+            float: right;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+
     </style>
+
 </head>
 <body>
 <header>
@@ -88,6 +96,7 @@
     <div id="bottom">
         <div id="cadrePret" class="col-9" >
             <label class="form-check-label" id="labelRecherche"> Ma recherche d'abonnés </label>
+            <em id="message" class="text-info"><s:actionmessage/></em>
             <table class="table" id="tableau">
                 <thead>
                 <tr>

@@ -15,12 +15,6 @@
         {
             font-family: "Microsoft YaHei UI Light";
         }
-        #bloc
-        {
-            margin: 20px;
-            text-align: center;
-        }
-
         em
         {
             color : white;
@@ -80,6 +74,14 @@
             border-right: 1px solid darkgray;
             background-color: whitesmoke;
         }
+        #message
+        {
+            float: right;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -110,6 +112,7 @@
     <div id="bottom">
         <div id="cadrePret" class="col-9" >
             <label class="form-check-label" id="labelRecherche"> Ma recherche de prêts en cours </label>
+            <em id="message" class="text-info"><s:actionmessage/></em>
             <table class="table" id="tableau">
                 <thead>
                 <tr>
