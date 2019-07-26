@@ -7,30 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="346a8706-e9f8-4179-8398-7a745e236a9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Mbibliotheque/eureka/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_6_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/logs/applicationLogs.logs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/eureka/src/main/java/fr/oc/projet/eureka/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/eureka/src/main/java/fr/oc/projet/eureka/EurekaApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/MicroserviceAbonneApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/MicroserviceAbonneApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/web/controller/AbonneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/web/controller/AbonneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-adresse/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-adresse/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-adresse/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-adresse/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-bibliotheque/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-bibliotheque/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-bibliotheque/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-bibliotheque/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-illustration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-illustration/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-illustration/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-illustration/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-role/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-role/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-role/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-role/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-adresse/src/main/java/fr/oc/projet/microserviceadresse/MicroserviceAdresseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-adresse/src/main/java/fr/oc/projet/microserviceadresse/MicroserviceAdresseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-bibliotheque/src/main/java/fr/oc/projet/microservicebibliotheque/MicroserviceBibliothequeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-bibliotheque/src/main/java/fr/oc/projet/microservicebibliotheque/MicroserviceBibliothequeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/src/main/java/fr/oc/projet/microservicecategorie/MicroserviceCategorieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/src/main/java/fr/oc/projet/microservicecategorie/MicroserviceCategorieApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-illustration/src/main/java/fr/oc/projet/microserviceillustration/MicroserviceIllustrationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-illustration/src/main/java/fr/oc/projet/microserviceillustration/MicroserviceIllustrationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/MicroserviceLivreUniqueApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/MicroserviceLivreUniqueApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/MicroserviceLivreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/MicroserviceLivreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/MicroservicePretApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/MicroservicePretApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-role/src/main/java/fr/oc/projet/microservicerole/MicroserviceRoleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-role/src/main/java/fr/oc/projet/microservicerole/MicroserviceRoleApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/applicationLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/applicationLogs.log" afterDir="false" />
     </list>
@@ -439,7 +433,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564071709805" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564123980467" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../README.md" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -586,12 +580,12 @@
       <workItem from="1563652557569" duration="719000" />
       <workItem from="1563782195740" duration="224000" />
       <workItem from="1563782431663" duration="783000" />
-      <workItem from="1563783380169" duration="15434000" />
+      <workItem from="1563783380169" duration="15601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163008000" />
+    <option name="totallyTimeSpent" value="163175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
