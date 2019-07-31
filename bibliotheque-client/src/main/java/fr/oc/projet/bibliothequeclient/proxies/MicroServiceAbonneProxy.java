@@ -4,6 +4,9 @@ import fr.oc.projet.bibliothequeclient.beans.Abonne;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * Classe pour récupèrer les données du MicroServiceAbonne
+ */
 @FeignClient(value = "microservice-abonne", url = "localhost:9097")
 public interface MicroServiceAbonneProxy {
 

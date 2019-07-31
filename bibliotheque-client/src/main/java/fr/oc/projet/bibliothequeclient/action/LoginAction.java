@@ -10,12 +10,22 @@ import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAbonneProxy;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAdresseProxy;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceCategorieProxy;
+import org.apache.commons.codec.binary.Base64;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.struts2.interceptor.SessionAware;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.spec.SecretKeySpec;
+import java.io.UnsupportedEncodingException;
+import java.security.InvalidKeyException;
+import java.security.Key;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.Map;
 
@@ -28,6 +38,9 @@ public class LoginAction extends ActionSupport implements SessionAware {
     private Map<String, Object> session;
 
     private static final Logger logger = LogManager.getLogger();
+
+    private static String strkey ="Blowfish";
+    private static Base64 base64 = new Base64(true);
 
     @Autowired
     private MicroServiceAbonneProxy microServiceAbonneProxy;
@@ -63,10 +76,9 @@ public class LoginAction extends ActionSupport implements SessionAware {
      * Méthode pour connecter l'abonné.
      * @return
      */
-    public String doLogin() {
+    public String doLogin() throws Exception {
 
         String vResult;
-
         if (identifiant != null) {
             abonne = microServiceAbonneProxy.getAbonnePseudo(identifiant);
             if (abonne == null) {
@@ -78,7 +90,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
             vResult = ActionSupport.ERROR;
         }
         else {
-            if (motDePasse.equals(abonne.getMotDePasse())) {
+            if (motDePasse.equals(abonne.getMotDePasse())){
                 this.session.put("user", abonne);
                 this.session.put("pseudo", abonne.getPseudo());
                 this.session.put("role", abonne.getRole());
@@ -123,7 +135,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
      * Méthode pour changer le mot de passe de l'abonné.
      * @return
      */
-    public String doChangeMdp(){
+    public String doChangeMdp() throws Exception {
 
         pseudo = (String) ActionContext.getContext().getSession().get("pseudo");
         abonne = microServiceAbonneProxy.getAbonnePseudo(pseudo);
@@ -252,7 +264,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
      * Le compte est crée dans la bdd
      * @return
      */
-    public String doInscription(){
+    public String doInscription() throws Exception {
 
         String vResult;
 
@@ -261,6 +273,8 @@ public class LoginAction extends ActionSupport implements SessionAware {
                 if (microServiceAbonneProxy.getAbonnePseudo(pseudo) == null) {
                     Abonne abonne = new Abonne();
                     abonne.setPseudo(pseudo);
+                    abonne.setMotDePasse(newMdp);
+
                     abonne.setMotDePasse(newMdp);
                     abonne.setEmail(newEmail);
                     abonne.setNom(nom);

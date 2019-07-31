@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
+
+/**
+ * Classe pour récupèrer les données du MicroServiceBibliotheque
+ */
 @FeignClient(value = "microservice-bibliotheque", url = "localhost:9096")
 public interface MicroServiceBibliothequeProxy {
 

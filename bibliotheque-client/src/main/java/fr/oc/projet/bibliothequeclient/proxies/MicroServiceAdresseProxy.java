@@ -4,8 +4,12 @@ import fr.oc.projet.bibliothequeclient.beans.Adresse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * Classe pour récupèrer les données du MicroServiceAdresse
+ */
 @FeignClient(value = "microservice-adresse", url = "localhost:9095")
 public interface MicroServiceAdresseProxy {
+
 
     @GetMapping(value = "/Adresse/{id}")
     Adresse getAdresse(@PathVariable int id);

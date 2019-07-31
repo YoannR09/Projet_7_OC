@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
+
+/**
+ * Classe pour récupèrer les données du MicroServicePret
+ */
 @FeignClient(value = "microservice-pret",url = "localhost:9099")
 public interface MicroServicePretProxy {
 

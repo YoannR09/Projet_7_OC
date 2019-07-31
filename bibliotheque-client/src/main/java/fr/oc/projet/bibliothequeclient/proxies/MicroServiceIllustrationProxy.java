@@ -5,6 +5,10 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+
+/**
+ * Classe pour récupèrer les données du MicroServiceIllustration
+ */
 @FeignClient(value = "microservice-illustration", url = "localhost:9093")
 public interface MicroServiceIllustrationProxy {
 

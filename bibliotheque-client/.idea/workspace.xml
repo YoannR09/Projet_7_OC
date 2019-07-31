@@ -7,25 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="346a8706-e9f8-4179-8398-7a745e236a9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Mbibliotheque/eureka/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_6_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/eureka/src/main/java/fr/oc/projet/eureka/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/eureka/src/main/java/fr/oc/projet/eureka/EurekaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/MicroserviceAbonneApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/MicroserviceAbonneApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-adresse/src/main/java/fr/oc/projet/microserviceadresse/MicroserviceAdresseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-adresse/src/main/java/fr/oc/projet/microserviceadresse/MicroserviceAdresseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-bibliotheque/src/main/java/fr/oc/projet/microservicebibliotheque/MicroserviceBibliothequeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-bibliotheque/src/main/java/fr/oc/projet/microservicebibliotheque/MicroserviceBibliothequeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/src/main/java/fr/oc/projet/microservicecategorie/MicroserviceCategorieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-categorie/src/main/java/fr/oc/projet/microservicecategorie/MicroserviceCategorieApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-illustration/src/main/java/fr/oc/projet/microserviceillustration/MicroserviceIllustrationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-illustration/src/main/java/fr/oc/projet/microserviceillustration/MicroserviceIllustrationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/MicroserviceLivreUniqueApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre-unique/src/main/java/fr/oc/projet/microservicelivreunique/MicroserviceLivreUniqueApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/MicroserviceLivreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/MicroserviceLivreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/MicroservicePretApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-pret/src/main/java/fr/oc/projet/microservicepret/MicroservicePretApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-role/src/main/java/fr/oc/projet/microservicerole/MicroserviceRoleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-role/src/main/java/fr/oc/projet/microservicerole/MicroserviceRoleApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreUniqueProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreUniqueProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServicePretProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServicePretProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/applicationLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/applicationLogs.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,60 +46,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionPretAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="717">
-              <caret line="89" column="9" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4373#4374#0" expanded="true" />
-                <element signature="e#4453#4454#0" expanded="true" />
-                <element signature="e#4515#4516#0" expanded="true" />
-                <element signature="e#4595#4596#0" expanded="true" />
-                <element signature="e#4665#4666#0" expanded="true" />
-                <element signature="e#4757#4758#0" expanded="true" />
-                <element signature="e#4834#4835#0" expanded="true" />
-                <element signature="e#4943#4944#0" expanded="true" />
-                <element signature="e#5006#5007#0" expanded="true" />
-                <element signature="e#5087#5088#0" expanded="true" />
-                <element signature="e#5143#5144#0" expanded="true" />
-                <element signature="e#5213#5214#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/configuration/ConnectorConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#737#1357#0" expanded="true" />
-                <element signature="e#1356#1357#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/configuration/FeignConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,121 +58,79 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionLivreAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1697">
-              <caret line="115" column="54" selection-start-line="115" selection-start-column="54" selection-end-line="115" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#8748#8749#0" expanded="true" />
-                <element signature="e#8790#8791#0" expanded="true" />
-                <element signature="e#8971#8972#0" expanded="true" />
-                <element signature="e#8999#9000#0" expanded="true" />
-                <element signature="e#9041#9042#0" expanded="true" />
-                <element signature="e#9075#9076#0" expanded="true" />
-                <element signature="e#9108#9109#0" expanded="true" />
-                <element signature="e#9137#9138#0" expanded="true" />
-                <element signature="e#9181#9182#0" expanded="true" />
-                <element signature="e#9217#9218#0" expanded="true" />
-                <element signature="e#9248#9249#0" expanded="true" />
-                <element signature="e#9275#9276#0" expanded="true" />
-                <element signature="e#9315#9316#0" expanded="true" />
-                <element signature="e#9347#9348#0" expanded="true" />
-                <element signature="e#9388#9389#0" expanded="true" />
-                <element signature="e#9420#9421#0" expanded="true" />
-                <element signature="e#9475#9476#0" expanded="true" />
-                <element signature="e#9517#9518#0" expanded="true" />
-                <element signature="e#9552#9553#0" expanded="true" />
-                <element signature="e#9582#9583#0" expanded="true" />
-                <element signature="e#9629#9630#0" expanded="true" />
-                <element signature="e#9667#9668#0" expanded="true" />
-                <element signature="e#9698#9699#0" expanded="true" />
-                <element signature="e#9726#9727#0" expanded="true" />
-                <element signature="e#9767#9768#0" expanded="true" />
-                <element signature="e#9801#9802#0" expanded="true" />
-                <element signature="e#9846#9847#0" expanded="true" />
-                <element signature="e#9881#9882#0" expanded="true" />
-                <element signature="e#9943#9944#0" expanded="true" />
-                <element signature="e#9991#9992#0" expanded="true" />
-                <element signature="e#10027#10028#0" expanded="true" />
-                <element signature="e#10059#10060#0" expanded="true" />
-                <element signature="e#10109#10110#0" expanded="true" />
-                <element signature="e#10151#10152#0" expanded="true" />
-                <element signature="e#10190#10191#0" expanded="true" />
-                <element signature="e#10222#10223#0" expanded="true" />
-                <element signature="e#10275#10276#0" expanded="true" />
-                <element signature="e#10317#10318#0" expanded="true" />
-                <element signature="e#10358#10359#0" expanded="true" />
-                <element signature="e#10394#10395#0" expanded="true" />
-                <element signature="e#10453#10454#0" expanded="true" />
-                <element signature="e#10503#10504#0" expanded="true" />
-                <element signature="e#10552#10553#0" expanded="true" />
-                <element signature="e#10588#10589#0" expanded="true" />
-                <element signature="e#10655#10656#0" expanded="true" />
-                <element signature="e#10705#10706#0" expanded="true" />
-                <element signature="e#10747#10748#0" expanded="true" />
-                <element signature="e#10785#10786#0" expanded="true" />
-                <element signature="e#10847#10848#0" expanded="true" />
-                <element signature="e#10901#10902#0" expanded="true" />
-                <element signature="e#10934#10935#0" expanded="true" />
-                <element signature="e#10963#10964#0" expanded="true" />
-                <element signature="e#11007#11008#0" expanded="true" />
-                <element signature="e#11043#11044#0" expanded="true" />
-                <element signature="e#11082#11083#0" expanded="true" />
-                <element signature="e#11117#11118#0" expanded="true" />
-                <element signature="e#11173#11174#0" expanded="true" />
-                <element signature="e#11221#11222#0" expanded="true" />
-                <element signature="e#11254#11255#0" expanded="true" />
-                <element signature="e#11283#11284#0" expanded="true" />
-                <element signature="e#11327#11328#0" expanded="true" />
-                <element signature="e#11363#11364#0" expanded="true" />
-                <element signature="e#11402#11403#0" expanded="true" />
-                <element signature="e#11436#11437#0" expanded="true" />
-                <element signature="e#11491#11492#0" expanded="true" />
-                <element signature="e#11537#11538#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="62" column="55" lean-forward="true" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionIndexAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/interceptor/AuthInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-245">
+              <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="59" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreUniqueProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -239,10 +141,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServicePretProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="141" column="39" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#11676#11677#0" expanded="true" />
+                <element signature="e#11750#11751#0" expanded="true" />
+                <element signature="e#11854#11855#0" expanded="true" />
+                <element signature="e#11931#11932#0" expanded="true" />
+                <element signature="e#11991#11992#0" expanded="true" />
+                <element signature="e#12067#12068#0" expanded="true" />
+                <element signature="e#12139#12140#0" expanded="true" />
+                <element signature="e#12239#12240#0" expanded="true" />
+                <element signature="e#12309#12310#0" expanded="true" />
+                <element signature="e#12405#12406#0" expanded="true" />
+                <element signature="e#12467#12468#0" expanded="true" />
+                <element signature="e#12547#12548#0" expanded="true" />
+                <element signature="e#12618#12619#0" expanded="true" />
+                <element signature="e#12713#12714#0" expanded="true" />
+                <element signature="e#12798#12799#0" expanded="true" />
+                <element signature="e#12915#12916#0" expanded="true" />
+                <element signature="e#12985#12986#0" expanded="true" />
+                <element signature="e#13081#13082#0" expanded="true" />
+                <element signature="e#13143#13144#0" expanded="true" />
+                <element signature="e#13223#13224#0" expanded="true" />
+                <element signature="e#13281#13282#0" expanded="true" />
+                <element signature="e#13353#13354#0" expanded="true" />
+                <element signature="e#13409#13410#0" expanded="true" />
+                <element signature="e#13477#13478#0" expanded="true" />
+                <element signature="e#13537#13538#0" expanded="true" />
+                <element signature="e#13613#13614#0" expanded="true" />
+                <element signature="e#13707#13708#0" expanded="true" />
+                <element signature="e#13839#13840#0" expanded="true" />
+                <element signature="e#13901#13902#0" expanded="true" />
+                <element signature="e#13981#13982#0" expanded="true" />
+                <element signature="e#14043#14044#0" expanded="true" />
+                <element signature="e#14123#14124#0" expanded="true" />
+                <element signature="e#14195#14196#0" expanded="true" />
+                <element signature="e#14295#14296#0" expanded="true" />
+                <element signature="e#14361#14362#0" expanded="true" />
+                <element signature="e#14449#14450#0" expanded="true" />
+                <element signature="e#14525#14526#0" expanded="true" />
+                <element signature="e#14633#14634#0" expanded="true" />
+                <element signature="e#14689#14690#0" expanded="true" />
+                <element signature="e#14757#14758#0" expanded="true" />
+                <element signature="e#14819#14820#0" expanded="true" />
+                <element signature="e#14899#14900#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -277,31 +233,31 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/login/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/_include/head.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreUniqueProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/pret/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/catalogueLivre/detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/login/profil.jsp" />
         <option value="$PROJECT_DIR$/../README.md" />
         <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionIndexAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/BibliothequeClientApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/beans/Abonne.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/beans/Livre.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/beans/LivreUnique.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServicePretProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionLivreAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionPretAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/configuration/ConnectorConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/configuration/FeignConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/interceptor/AuthInterceptor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreUniqueProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServicePretProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" />
       </list>
     </option>
   </component>
@@ -404,18 +360,24 @@
               <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bibliothequeclient" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bibliotheque-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bibliothequeclient" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibliotheque-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibliotheque-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -433,7 +395,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564123980467" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564551581647" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../README.md" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -580,18 +542,18 @@
       <workItem from="1563652557569" duration="719000" />
       <workItem from="1563782195740" duration="224000" />
       <workItem from="1563782431663" duration="783000" />
-      <workItem from="1563783380169" duration="15601000" />
+      <workItem from="1563783380169" duration="26814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163175000" />
+    <option name="totallyTimeSpent" value="174388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12400636" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12400636" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -601,7 +563,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -717,27 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logInfo.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -756,13 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
           <caret line="88" column="73" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="59" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -798,16 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -840,16 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="131" column="42" selection-start-line="131" selection-start-column="11" selection-end-line="131" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -994,34 +909,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreUniqueProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/configuration/ConnectorConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        <state relative-caret-position="238">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#737#1357#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/configuration/FeignConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="204">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServicePretProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/interceptor/AuthInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="119">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="62" column="55" lean-forward="true" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionIndexAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1106,7 +1036,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionPretAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
+        <state relative-caret-position="54">
           <caret line="89" column="9" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1126,61 +1056,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/configuration/ConnectorConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#737#1357#0" expanded="true" />
-            <element signature="e#1356#1357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/configuration/FeignConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/interceptor/AuthInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/GestionIndexAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="62" column="55" lean-forward="true" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="119">
+          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreUniqueProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServicePretProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-245">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="59" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="141" column="39" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#11676#11677#0" expanded="true" />
+            <element signature="e#11750#11751#0" expanded="true" />
+            <element signature="e#11854#11855#0" expanded="true" />
+            <element signature="e#11931#11932#0" expanded="true" />
+            <element signature="e#11991#11992#0" expanded="true" />
+            <element signature="e#12067#12068#0" expanded="true" />
+            <element signature="e#12139#12140#0" expanded="true" />
+            <element signature="e#12239#12240#0" expanded="true" />
+            <element signature="e#12309#12310#0" expanded="true" />
+            <element signature="e#12405#12406#0" expanded="true" />
+            <element signature="e#12467#12468#0" expanded="true" />
+            <element signature="e#12547#12548#0" expanded="true" />
+            <element signature="e#12618#12619#0" expanded="true" />
+            <element signature="e#12713#12714#0" expanded="true" />
+            <element signature="e#12798#12799#0" expanded="true" />
+            <element signature="e#12915#12916#0" expanded="true" />
+            <element signature="e#12985#12986#0" expanded="true" />
+            <element signature="e#13081#13082#0" expanded="true" />
+            <element signature="e#13143#13144#0" expanded="true" />
+            <element signature="e#13223#13224#0" expanded="true" />
+            <element signature="e#13281#13282#0" expanded="true" />
+            <element signature="e#13353#13354#0" expanded="true" />
+            <element signature="e#13409#13410#0" expanded="true" />
+            <element signature="e#13477#13478#0" expanded="true" />
+            <element signature="e#13537#13538#0" expanded="true" />
+            <element signature="e#13613#13614#0" expanded="true" />
+            <element signature="e#13707#13708#0" expanded="true" />
+            <element signature="e#13839#13840#0" expanded="true" />
+            <element signature="e#13901#13902#0" expanded="true" />
+            <element signature="e#13981#13982#0" expanded="true" />
+            <element signature="e#14043#14044#0" expanded="true" />
+            <element signature="e#14123#14124#0" expanded="true" />
+            <element signature="e#14195#14196#0" expanded="true" />
+            <element signature="e#14295#14296#0" expanded="true" />
+            <element signature="e#14361#14362#0" expanded="true" />
+            <element signature="e#14449#14450#0" expanded="true" />
+            <element signature="e#14525#14526#0" expanded="true" />
+            <element signature="e#14633#14634#0" expanded="true" />
+            <element signature="e#14689#14690#0" expanded="true" />
+            <element signature="e#14757#14758#0" expanded="true" />
+            <element signature="e#14819#14820#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
           </folding>
         </state>
       </provider>
