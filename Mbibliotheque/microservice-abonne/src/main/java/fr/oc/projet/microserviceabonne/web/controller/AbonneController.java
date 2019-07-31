@@ -8,6 +8,8 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class AbonneController {
 
@@ -85,6 +87,19 @@ public class AbonneController {
             abonneDao.save(abonne);
         }catch (Exception e){
             logger.error("Methode updateAbonne() erreur : "+e);
+        }
+    }
+
+    /**
+     * Méthode pour récupèrer la liste des abonnées.
+     */
+    @GetMapping(value = "/Abonne")
+    public List<Abonne> findALL(){
+        try {
+           return abonneDao.findAll();
+        }catch (Exception e){
+            logger.error("Methode updateAbonne() erreur : "+e);
+            return null;
         }
     }
 }

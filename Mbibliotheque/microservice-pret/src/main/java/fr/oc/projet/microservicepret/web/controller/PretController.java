@@ -48,6 +48,20 @@ public class PretController {
     }
 
     /**
+     * Méthode pour récupèrer la liste des prêts en cours
+     * @return
+     */
+    @GetMapping(value = "/Pret")
+    public List<Pret> findAll(){
+        try {
+            return pretDao.findAll();
+        }catch (Exception e){
+            logger.error("Methode findAll() erreur : "+e);
+            return null;
+        }
+    }
+
+    /**
      * Met à jour un prêt
      * Méthode utilisé pour la prolongation d'un prêt
      * @param pret

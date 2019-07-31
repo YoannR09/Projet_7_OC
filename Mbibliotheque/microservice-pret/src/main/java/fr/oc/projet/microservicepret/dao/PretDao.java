@@ -11,5 +11,7 @@ public interface PretDao extends JpaRepository<Pret,Integer> {
 
     List<Pret> findPretByAbonneId(int abonneId);
 
+    List<Pret> findAll();
+
     Pret findById(int id);
 }

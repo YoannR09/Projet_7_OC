@@ -4,6 +4,8 @@ import fr.oc.projet.bibliothequeclient.beans.Abonne;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * Classe pour récupèrer les données du MicroServiceAbonne
  */
@@ -27,4 +29,6 @@ public interface MicroServiceAbonneProxy {
     @PutMapping(value = "/Abonne")
     void updateAbonne(@RequestBody Abonne abonne);
 
+    @GetMapping(value = "/Abonne")
+    List<Abonne> findALL();
 }

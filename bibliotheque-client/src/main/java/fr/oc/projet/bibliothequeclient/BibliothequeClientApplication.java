@@ -35,5 +35,4 @@ public class BibliothequeClientApplication extends SpringBootServletInitializer 
 		registrationBean.setOrder(1);
 		return registrationBean;
 	}
-
 }

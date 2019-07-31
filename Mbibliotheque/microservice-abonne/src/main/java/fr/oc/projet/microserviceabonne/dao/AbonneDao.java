@@ -4,6 +4,8 @@ import fr.oc.projet.microserviceabonne.model.Abonne;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface AbonneDao extends JpaRepository<Abonne,Integer> {
     Abonne findById(int id);
@@ -11,5 +13,7 @@ public interface AbonneDao extends JpaRepository<Abonne,Integer> {
     Abonne findByPseudo(String pseudo);
 
     Abonne findByEmail(String email);
+
+    List<Abonne> findAll();
 
 }

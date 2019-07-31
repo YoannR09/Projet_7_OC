@@ -23,6 +23,9 @@ public interface MicroServicePretProxy {
     @GetMapping(value = "/Pret/Abonne/{abonneId}")
     List<Pret> getListPretAbonne(@PathVariable("abonneId") int abonneId);
 
+    @GetMapping(value = "/Pret")
+    List<Pret> findAll();
+
     @PutMapping(value = "/Pret")
     void updatePret(@RequestBody Pret pret);
 
