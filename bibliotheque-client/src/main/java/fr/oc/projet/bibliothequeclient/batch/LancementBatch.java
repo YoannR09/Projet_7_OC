@@ -2,11 +2,9 @@ package fr.oc.projet.bibliothequeclient.batch;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 import java.util.Timer;
@@ -32,7 +30,6 @@ public class LancementBatch
 
             Timer timer;
             timer = new Timer();
-            System.out.println(Integer.parseInt(prop.getProperty("timeMail")));
             timer.scheduleAtFixedRate(new ScheduledTasks(logger), 1000, Integer.parseInt(prop.getProperty("timeMail")));
         }catch (Exception e){
             logger.error(e);

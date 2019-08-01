@@ -11,14 +11,14 @@
       <IntrospectionStateNumber>519</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
-      <Relations>sequence|table|18118|18120|1
-sequence|table|18129|18131|1
-sequence|table|18140|18142|1
-sequence|table|18148|18150|1
-sequence|table|18052|18054|1
+      <Relations>sequence|table|18052|18054|1
 sequence|table|18063|18065|1
 sequence|table|18074|18076|1
 sequence|table|18085|18087|1
+sequence|table|18118|18120|1
+sequence|table|18129|18131|1
+sequence|table|18140|18142|1
+sequence|table|18148|18150|1
 sequence|table|18096|18098|1
 sequence|table|18107|18109|1
 </Relations>

@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/microservice-livre-unique/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-pret/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-role/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-employe/pom.xml" />
       </list>
     </option>
   </component>

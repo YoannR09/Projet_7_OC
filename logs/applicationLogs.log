@@ -4204,3 +4204,162 @@ Caused by: org.apache.http.NoHttpResponseException: localhost:9102 failed to res
 17:42:55.419 [Projet 7] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 17:43:13.245 [Projet 7] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 17:43:16.593 [Projet 7] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+13:12:19.471 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8f5fa29a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:12:19.755 [Projet 7] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+13:12:20.840 [Projet 7] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+13:12:20.841 [Projet 7] WARN  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/eureka-server/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+13:12:20.842 [Projet 7] INFO  fr.oc.projet.eureka.EurekaApplication - No active profile set, falling back to default profiles: default
+13:12:21.448 [Projet 7] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+13:12:21.636 [Projet 7] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=30bc94f9-817e-3601-be43-74ab15dd40f2
+13:12:21.714 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8f5fa29a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:12:21.995 [Projet 7] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9102 (http)
+13:12:22.007 [Projet 7] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9102"]
+13:12:22.016 [Projet 7] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+13:12:22.016 [Projet 7] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+13:12:23.303 [Projet 7] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:12:23.303 [Projet 7] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2452 ms
+13:12:23.390 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+13:12:23.391 [Projet 7] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:12:23.404 [Projet 7] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@43aeb5e0
+13:12:24.167 [Projet 7] INFO  com.sun.jersey.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+13:12:24.234 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+13:12:24.235 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+13:12:24.336 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+13:12:24.336 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+13:12:24.714 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+13:12:24.714 [Projet 7] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:12:24.866 [Projet 7] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+13:12:25.426 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+13:12:25.452 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+13:12:25.452 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+13:12:25.458 [Projet 7] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1564657945457 with initial instances count: 0
+13:12:25.500 [Projet 7] INFO  com.netflix.eureka.DefaultEurekaServerContext - Initializing ...
+13:12:25.503 [Projet 7] INFO  com.netflix.eureka.cluster.PeerEurekaNodes - Adding new peer nodes [http://localhost:9102/eureka/]
+13:12:25.771 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+13:12:25.771 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+13:12:25.771 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+13:12:25.772 [Projet 7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+13:12:25.857 [Projet 7] INFO  com.netflix.eureka.cluster.PeerEurekaNodes - Replica node URL:  http://localhost:9102/eureka/
+13:12:25.875 [Projet 7] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+13:12:25.876 [Projet 7] INFO  com.netflix.eureka.DefaultEurekaServerContext - Initialized
+13:12:25.885 [Projet 7] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+13:12:25.950 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application EUREKA-SERVER with eureka with status UP
+13:12:25.953 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - Setting the eureka configuration..
+13:12:25.954 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+13:12:25.954 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+13:12:25.970 [Projet 7] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9102"]
+13:12:25.971 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - isAws returned false
+13:12:25.972 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - Initialized server context
+13:12:25.972 [Projet 7] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+13:12:25.972 [Projet 7] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+13:12:25.972 [Projet 7] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Changing status to UP
+13:12:25.984 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration - Started Eureka Server
+13:12:26.008 [Projet 7] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9102 (http) with context path ''
+13:12:26.009 [Projet 7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 9102
+13:12:26.012 [Projet 7] INFO  fr.oc.projet.eureka.EurekaApplication - Started EurekaApplication in 7.46 seconds (JVM running for 10.969)
+13:12:26.022 [Projet 7] INFO  fr.oc.projet.eureka.EurekaApplication - Eureka lancé
+13:12:26.576 [Projet 7] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:12:26.577 [Projet 7] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:12:26.586 [Projet 7] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+13:12:26.586 [Projet 7] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+13:12:27.609 [Projet 7] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+13:12:27.609 [Projet 7] WARN  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/eureka-server/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+13:12:50.877 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$13246f23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:12:51.131 [Projet 7] INFO  fr.oc.projet.microserviceemploye.MicroserviceEmployeApplication - No active profile set, falling back to default profiles: default
+13:12:51.834 [Projet 7] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+13:12:51.921 [Projet 7] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80ms. Found 1 repository interfaces.
+13:12:52.042 [Projet 7] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+13:12:52.227 [Projet 7] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=c4405500-f573-368d-80fd-e4223c2318b1
+13:12:52.362 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f70a6c26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:12:52.386 [Projet 7] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$13246f23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:12:52.733 [Projet 7] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9087 (http)
+13:12:52.747 [Projet 7] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9087"]
+13:12:52.756 [Projet 7] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+13:12:52.756 [Projet 7] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+13:12:52.980 [Projet 7] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:12:52.981 [Projet 7] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1841 ms
+13:12:53.084 [Projet 7] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+13:12:53.085 [Projet 7] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:12:53.091 [Projet 7] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7c2924d7
+13:12:53.804 [Projet 7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:12:53.979 [Projet 7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:12:54.059 [Projet 7] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13:12:54.167 [Projet 7] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+13:12:54.169 [Projet 7] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+13:12:54.381 [Projet 7] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+13:12:54.573 [Projet 7] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+13:12:54.916 [Projet 7] INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+13:12:54.922 [Projet 7] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4e48462d
+13:12:55.067 [Projet 7] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:12:55.253 [Projet 7] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeControler': Unsatisfied dependency expressed through field 'employeDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class fr.oc.projet.microserviceemploye.model.Employe
+13:12:55.253 [Projet 7] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13:12:55.258 [Projet 7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13:12:55.266 [Projet 7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+13:12:55.267 [Projet 7] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+13:12:55.294 [Projet 7] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:12:55.310 [Projet 7] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeControler': Unsatisfied dependency expressed through field 'employeDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class fr.oc.projet.microserviceemploye.model.Employe
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at fr.oc.projet.microserviceemploye.MicroserviceEmployeApplication.main(MicroserviceEmployeApplication.java:10) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class fr.oc.projet.microserviceemploye.model.Employe
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 19 more
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class fr.oc.projet.microserviceemploye.model.Employe
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:552) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:74) ~[spring-data-jpa-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66) ~[spring-data-jpa-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:201) ~[spring-data-jpa-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:151) ~[spring-data-jpa-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:134) ~[spring-data-jpa-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:65) ~[spring-data-jpa-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:305) ~[spring-data-commons-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) ~[spring-data-commons-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211) ~[spring-data-commons-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:94) ~[spring-data-commons-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) ~[spring-data-commons-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121) ~[spring-data-jpa-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 19 more

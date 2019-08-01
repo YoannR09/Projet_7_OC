@@ -11,6 +11,7 @@
         <module name="microservice-adresse" />
         <module name="microservice-bibliotheque" />
         <module name="microservice-categorie" />
+        <module name="microservice-employe" />
         <module name="microservice-illustration" />
         <module name="microservice-livre" />
         <module name="microservice-livre-unique" />
@@ -24,6 +25,7 @@
       <module name="microservice-adresse" target="1.8" />
       <module name="microservice-bibliotheque" target="1.8" />
       <module name="microservice-categorie" target="1.8" />
+      <module name="microservice-employe" target="1.8" />
       <module name="microservice-illustration" target="1.8" />
       <module name="microservice-livre" target="1.8" />
       <module name="microservice-livre-unique" target="1.8" />
@@ -38,6 +40,7 @@
       <module name="microservice-adresse" options="-parameters" />
       <module name="microservice-bibliotheque" options="-parameters" />
       <module name="microservice-categorie" options="-parameters" />
+      <module name="microservice-employe" options="-parameters" />
       <module name="microservice-illustration" options="-parameters" />
       <module name="microservice-livre" options="-parameters" />
       <module name="microservice-livre-unique" options="-parameters" />

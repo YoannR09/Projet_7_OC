@@ -2,10 +2,7 @@ package fr.oc.projet.bibliothequeclient.action;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-import fr.oc.projet.bibliothequeclient.beans.Abonne;
-import fr.oc.projet.bibliothequeclient.beans.Adresse;
-import fr.oc.projet.bibliothequeclient.beans.Bibliotheque;
-import fr.oc.projet.bibliothequeclient.beans.Categorie;
+import fr.oc.projet.bibliothequeclient.beans.*;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAbonneProxy;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAdresseProxy;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
@@ -39,9 +36,6 @@ public class LoginAction extends ActionSupport implements SessionAware {
 
     private static final Logger logger = LogManager.getLogger();
 
-    private static String strkey ="Blowfish";
-    private static Base64 base64 = new Base64(true);
-
     @Autowired
     private MicroServiceAbonneProxy microServiceAbonneProxy;
     @Autowired
@@ -71,6 +65,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
     private         String              newEmailVerif;
     private         String              pseudo;
     private         Abonne              abonne;
+    private         Employe             employe;
 
     /**
      * Méthode pour connecter l'abonné.
@@ -83,12 +78,16 @@ public class LoginAction extends ActionSupport implements SessionAware {
             abonne = microServiceAbonneProxy.getAbonnePseudo(identifiant);
             if (abonne == null) {
                 abonne = microServiceAbonneProxy.getAbonneEmail(identifiant);
+                if(abonne == null){
+                    employe =
+                }
             }
         }
-        if (abonne == null) {
+        if (abonne == null && employe == null) {
             this.addActionMessage("Identifiant invalide");
             vResult = ActionSupport.ERROR;
         }
+
         else {
             if (motDePasse.equals(abonne.getMotDePasse())){
                 this.session.put("user", abonne);
