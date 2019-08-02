@@ -3,10 +3,7 @@ package fr.oc.projet.bibliothequeclient.action;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.bibliothequeclient.beans.*;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAbonneProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAdresseProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceCategorieProxy;
+import fr.oc.projet.bibliothequeclient.proxies.*;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -44,6 +41,8 @@ public class LoginAction extends ActionSupport implements SessionAware {
     private MicroServiceAdresseProxy microServiceAdresseProxy;
     @Autowired
     private MicroServiceBibliothequeProxy microServiceBibliothequeProxy;
+    @Autowired
+    private MicroServiceEmployeProxy microServiceEmployeProxy;
 
     private         Categorie           categorie;
     private         List<Categorie>     categorieList;
@@ -73,30 +72,41 @@ public class LoginAction extends ActionSupport implements SessionAware {
      */
     public String doLogin() throws Exception {
 
-        String vResult;
+        String vResult = ActionSupport.ERROR;
+
         if (identifiant != null) {
             abonne = microServiceAbonneProxy.getAbonnePseudo(identifiant);
             if (abonne == null) {
                 abonne = microServiceAbonneProxy.getAbonneEmail(identifiant);
                 if(abonne == null){
-                    employe =
+                    employe = microServiceEmployeProxy.findByEmail(identifiant);
                 }
             }
         }
+
         if (abonne == null && employe == null) {
             this.addActionMessage("Identifiant invalide");
             vResult = ActionSupport.ERROR;
-        }
-
-        else {
-            if (motDePasse.equals(abonne.getMotDePasse())){
-                this.session.put("user", abonne);
-                this.session.put("pseudo", abonne.getPseudo());
-                this.session.put("role", abonne.getRole());
-                categorieList = microServiceCategorieProxy.getListCategorie();
-                vResult = ActionSupport.SUCCESS;
-            } else {
-                this.addActionMessage("Mot de passe invalide");
+        } else {
+            if (employe != null){
+                if (motDePasse.equals(abonne.getMotDePasse())) {
+                    this.session.put("admin", employe);
+                    this.session.put("pseudo", employe.getEmail());
+                    this.session.put("role", employe.getRole());
+                    vResult = ActionSupport.SUCCESS;
+                }
+            }else if(abonne != null) {
+                if (motDePasse.equals(abonne.getMotDePasse())) {
+                    this.session.put("user", abonne);
+                    this.session.put("pseudo", abonne.getPseudo());
+                    this.session.put("role", abonne.getRole());
+                    categorieList = microServiceCategorieProxy.getListCategorie();
+                    vResult = ActionSupport.SUCCESS;
+                } else {
+                    this.addActionMessage("Mot de passe invalide");
+                    vResult = ActionSupport.ERROR;
+                }
+            }else {
                 vResult = ActionSupport.ERROR;
             }
         }
@@ -151,6 +161,8 @@ public class LoginAction extends ActionSupport implements SessionAware {
 
     /**
      * Méthode pour changer l'adresse de l'abonné
+     * Si aucune adresse pour cet abonné alors on créé un nouvelle adresse.
+     * Si l'abonné possédait déjà une adresse on modifie celle-ci.
      * @return
      */
     public String doChangeAdresse(){

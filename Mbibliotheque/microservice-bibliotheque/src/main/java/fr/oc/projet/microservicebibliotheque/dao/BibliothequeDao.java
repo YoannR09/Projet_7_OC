@@ -10,5 +10,7 @@ import java.util.List;
 public interface BibliothequeDao extends JpaRepository<Bibliotheque,Integer> {
     Bibliotheque findById(int id);
 
+    Bibliotheque findByNom(String nom);
+
     List<Bibliotheque> findAll();
 }

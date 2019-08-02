@@ -35,6 +35,21 @@ public class BibliothequeControler {
     }
 
     /**
+     * Méthode pour récupèrer une bibliothèque via un nom
+     * @param nom
+     * @return
+     */
+    @GetMapping(value = "/Bibliotheque/{nom}")
+    public Bibliotheque findByNom(@PathVariable String nom){
+        try {
+            return bibliothequeDao.findByNom(nom);
+        }catch (Exception e){
+            logger.error("Methode getBibliothequeByNom() erreur : "+e);
+            return null;
+        }
+    }
+
+    /**
      * Méthode pour récupèrer la liste de toutes les bibliothèques
      * @return
      */

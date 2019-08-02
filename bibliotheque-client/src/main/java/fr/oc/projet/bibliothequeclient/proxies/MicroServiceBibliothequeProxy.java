@@ -17,6 +17,9 @@ public interface MicroServiceBibliothequeProxy {
     @GetMapping(value = "/Bibliotheque/{id}")
     Bibliotheque getBibliotheque(@PathVariable("id") int id);
 
+    @GetMapping(value = "/Bibliotheque/{nom}")
+    Bibliotheque findByNom(@PathVariable("nom") String nom);
+
     @GetMapping(value = "/Bibliotheque")
     List<Bibliotheque> findAll();
 
