@@ -1,14 +1,15 @@
 package fr.oc.projet.bibliothequeclient.action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import fr.oc.projet.bibliothequeclient.beans.LivreUnique;
 import fr.oc.projet.bibliothequeclient.beans.Pret;
-import fr.oc.projet.business.contract.ManagerFactory;
-import fr.oc.projet.model.beans.bibliotheque.LivreUnique;
-import fr.oc.projet.model.beans.utilisateur.Pret;
+import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
+import fr.oc.projet.bibliothequeclient.proxies.MicroServiceLivreUniqueProxy;
+import fr.oc.projet.bibliothequeclient.proxies.MicroServicePretProxy;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.inject.Inject;
 import java.util.List;
 
 /**
@@ -26,6 +27,13 @@ public class RestituerAction extends ActionSupport {
     private         String      isbn;
 
     private static final Logger logger = LogManager.getLogger();
+
+    @Autowired
+    MicroServiceBibliothequeProxy microServiceBibliothequeProxy;
+    @Autowired
+    MicroServicePretProxy microServicePretProxy;
+    @Autowired
+    MicroServiceLivreUniqueProxy microServiceLivreUniqueProxy;
 
 
     /**
@@ -48,21 +56,21 @@ public class RestituerAction extends ActionSupport {
         }
         if (isNumber != false) {
             if (!bibliotheque.equals("Toutes les bibliothèques")) {
-                bibliothequeId = managerFactory.getBibliothequeManager().getBibliothequeNom(bibliotheque).getId();
+                bibliothequeId = microServiceBibliothequeProxy.findByNom(bibliotheque).getId();
                 if (!isbn.equals("") && !numeroInterne.equals("")) {
-                    pretList = managerFactory.getPretManager().getListPretLivreISBNNumInterneBibliotheque(isbn, numeroInterne, bibliothequeId);
+                    pretList = microServicePretProxy.getListPretLivreISBNNumInterneBibliotheque(isbn,numeroInterne,bibliothequeId);
                 } else if (!isbn.equals("") && numeroInterne.equals("")) {
-                    pretList = managerFactory.getPretManager().getListPretLivreISBNBibliotheque(isbn, bibliothequeId);
+                    pretList = microServicePretProxy.getListPretLivreISBNBibliotheque(isbn,bibliothequeId);
                 } else if (isbn.equals("") && !numeroInterne.equals("")) {
-                    pretList = managerFactory.getPretManager().getListPretLivreNumInterneBibliotheque(numeroInterne, bibliothequeId);
+                    pretList = microServicePretProxy.getListPretLivreNumInterneBibliotheque(numeroInterne,bibliothequeId);
                 }
             } else {
                 if (!isbn.equals("") && !numeroInterne.equals("")) {
-                    pretList = managerFactory.getPretManager().getListPretLivreISBNNumInterne(isbn, numeroInterne);
+                    pretList = microServicePretProxy.getListPretLivreISBNNumInterne(isbn,numeroInterne);
                 } else if (!isbn.equals("") && numeroInterne.equals("")) {
-                    pretList = managerFactory.getPretManager().getListPretLivreISBN(isbn);
+                    pretList = microServicePretProxy.getListPretLivreISBN(isbn);
                 } else if (isbn.equals("") && !numeroInterne.equals("")) {
-                    pretList = managerFactory.getPretManager().getListPretLivreNumInterne(numeroInterne);
+                    pretList = microServicePretProxy.getListPretLivreNumInterne(numeroInterne);
                 }
             }
             if (pretList != null) {
@@ -85,11 +93,11 @@ public class RestituerAction extends ActionSupport {
     public String doRestitutionPret(){
         String vResult;
         try {
-        pret = managerFactory.getPretManager().getPret(pretId);
+        pret = microServicePretProxy.getPret(pretId);
         LivreUnique livreUnique = pret.getLivreUnique();
         livreUnique.setDisponible(true);
-        managerFactory.getLivreUniqueManager().updateDispo(livreUnique);
-        managerFactory.getPretManager().deletePret(pretId);
+        microServiceLivreUniqueProxy.updateDispo(livreUnique);
+        microServicePretProxy.delete(pretId);
 
         this.addActionMessage("Livre restitué, ce livre est maintenant disponible pour un nouveau prêt.");
         logger.info("Livre restitué à l'inventaire");

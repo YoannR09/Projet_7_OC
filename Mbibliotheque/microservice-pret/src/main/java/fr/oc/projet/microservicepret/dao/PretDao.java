@@ -24,7 +24,7 @@ public interface PretDao extends JpaRepository<Pret,Integer> {
     List<Pret> getListPretLivre(@Param("livreId") Integer livreId);
 
 
-    @Query(value = "SELECT * FROM pret,livre_unique,livre WHERE livre.id = livreId" +
+    @Query(value = "SELECT * FROM pret,livre_unique,livre WHERE livre.id = :livreId " +
             " AND livre.id = livre_unique.livre_id " +
             " AND bibliotheque_id = :bibliothequeId ",nativeQuery = true)
     List<Pret> getListPretLivreBibliotheque(@Param("livreId") Integer livreId,@Param("bibliothequeId") Integer bibliothequeId);
@@ -178,7 +178,8 @@ public interface PretDao extends JpaRepository<Pret,Integer> {
 
     @Query(value = "SELECT * FROM pret,abonne WHERE " +
             " pseudo LIKE %:pseudo%" +
-            " AND prenom LIKE %:nom% " +
+            " AND nom LIKE %:nom% " +
+            " AND prenom LIKE %:prenom% " +
             " AND pret.abonne_id = abonne.id ",nativeQuery = true)
     List<Pret> getListPretAbonnePseudoNomPrenom(@Param("pseudo") String pseudo,@Param("nom") String nom,@Param("prenom") String prenom);
 
@@ -209,7 +210,7 @@ public interface PretDao extends JpaRepository<Pret,Integer> {
 
     @Query(value = "SELECT * FROM pret,abonne WHERE " +
             " email LIKE %:email% " +
-            " AND prenom LIKE %:prenom% " +
+            " AND nom LIKE %:nom% " +
             " AND pret.abonne_id = abonne.id ",nativeQuery = true)
     List<Pret> getListPretAbonneEmailNom(@Param("email") String email,@Param("nom") String nom);
 
@@ -353,4 +354,6 @@ public interface PretDao extends JpaRepository<Pret,Integer> {
     List<Pret> getListPretAbonnePrenomBibliotheque(@Param("prenom") String prenom,@Param("bibliothequeId") Integer bibliothequeId);
 
     Pret findById(int id);
+
+
 }

@@ -34,20 +34,6 @@ public class PretController {
         }
     }
 
-    /**
-     * Récupère une liste de prêts via l'id d'un abonné
-     * @param abonneId
-     * @return
-     */
-    @GetMapping(value = "/Pret/Abonne/{abonneId}")
-    public List<Pret> getListPretAbonne(@PathVariable int abonneId){
-        try {
-            return pretDao.findPretByAbonneId(abonneId);
-        }catch (Exception e){
-            logger.error("Methode getCategorie() erreur : "+e);
-            return null;
-        }
-    }
 
     /**
      * Méthode pour récupèrer la liste des prêts en cours
@@ -941,5 +927,14 @@ public class PretController {
             logger.error("Methode getListPretAbonnePrenomBibliotheque() erreur : "+e);
             return null;
         }
+    }
+
+    /**
+     * Méthode pour supprimer un prêt en cours
+     * @param id
+     */
+    @DeleteMapping (value = "/Pret/{id}")
+    public void delete(@PathVariable Integer id) {
+        pretDao.deleteById(id);
     }
 }

@@ -4,14 +4,12 @@ import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.bibliothequeclient.beans.Abonne;
 import fr.oc.projet.bibliothequeclient.beans.Livre;
 import fr.oc.projet.bibliothequeclient.beans.Pret;
-import fr.oc.projet.business.contract.ManagerFactory;
-import fr.oc.projet.model.beans.bibliotheque.Livre;
-import fr.oc.projet.model.beans.utilisateur.Abonne;
-import fr.oc.projet.model.beans.utilisateur.Pret;
+import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
+import fr.oc.projet.bibliothequeclient.proxies.MicroServicePretProxy;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.inject.Inject;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -44,7 +42,10 @@ public class ConsulterPretAction extends ActionSupport {
     private Properties propConfig = new Properties();
     private FileInputStream propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
 
-
+    @Autowired
+    MicroServicePretProxy microServicePretProxy;
+    @Autowired
+    MicroServiceBibliothequeProxy microServiceBibliothequeProxy;
 
     public ConsulterPretAction() throws FileNotFoundException {
         logger.error(" Path du fichier config.properties non retrouvé.");
@@ -58,71 +59,117 @@ public class ConsulterPretAction extends ActionSupport {
     public String doListPretRecherche(){
 
         if(!isbn.equals("") || !auteur.equals("") || !titre.equals("")){
-            if(!isbn.equals("") &&  !auteur.equals("") &&  !titre.equals("")){  // Recherche via isbn titre et auteur
-                livre = managerFactory.getLivreManager().getLivreTitreAuteurISBN(titre,auteur,isbn);
-            }else if (!isbn.equals("") &&  !auteur.equals("")  && titre.equals("")){  // Recherche via isbn et editeur
-                livre = managerFactory.getLivreManager().getLivreAuteurISBN(auteur,isbn);
-            }else if (!auteur.equals("") &&  !titre.equals("") && isbn.equals("")){  // Recherche via titre et editeur
-                livre = managerFactory.getLivreManager().getLivreTitreAuteur(titre,auteur);
-            }else if(!isbn.equals("") &&  !titre.equals("") && auteur.equals("")){ // Recherche via titre et isbn
-                livre = managerFactory.getLivreManager().getLivreTitreISBN(titre,isbn);
-            }else if (!isbn.equals("") && titre.equals("") && auteur.equals("")){  // Recherche via isbn
-                livre = managerFactory.getLivreManager().getLivreISBN(isbn);
-            } else if (!auteur.equals("") && titre.equals("") && isbn.equals("")){ // Recherche via auteur
-                livre = managerFactory.getLivreManager().getLivreAuteur(auteur);
-            }else if (!titre.equals("") && auteur.equals("") && isbn.equals("")){ // Recherche via titre
-                livre = managerFactory.getLivreManager().getLivreTitre(titre);
+            if(bibliotheque.equals("Toutes les bibliothèques")){
+                bibliothequeId = microServiceBibliothequeProxy.findByNom(bibliotheque).getId();
+                if(!isbn.equals("") &&  !auteur.equals("") &&  !titre.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreTitreAuteurISBN(titre,auteur,isbn);
+                }else if (!isbn.equals("") &&  !auteur.equals("")  && titre.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreAuteurISBN(auteur,isbn);
+                }else if (!auteur.equals("") &&  !titre.equals("") && isbn.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreTitreAuteur(titre,auteur);
+                }else if(!isbn.equals("") &&  !titre.equals("") && auteur.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreTitreISBN(titre,isbn);
+                }else if (!isbn.equals("") && titre.equals("") && auteur.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreISBN(isbn);
+                } else if (!auteur.equals("") && titre.equals("") && isbn.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreAuteur(auteur);
+                }else if (!titre.equals("") && auteur.equals("") && isbn.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreTitre(titre);
+                }
+            }else {
+                if(!isbn.equals("") &&  !auteur.equals("") &&  !titre.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreTitreAuteurISBNBibliotheque(titre,auteur,isbn,bibliothequeId);
+                }else if (!isbn.equals("") &&  !auteur.equals("")  && titre.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreAuteurISBNBibliotheque(auteur,isbn,bibliothequeId);
+                }else if (!auteur.equals("") &&  !titre.equals("") && isbn.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreTitreAuteurBibliotheque(titre,auteur,bibliothequeId);
+                }else if(!isbn.equals("") &&  !titre.equals("") && auteur.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreTitreISBNBibliotheque(titre,isbn,bibliothequeId);
+                }else if (!isbn.equals("") && titre.equals("") && auteur.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreISBNBibliotheque(isbn,bibliothequeId);
+                } else if (!auteur.equals("") && titre.equals("") && isbn.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreAuteurBibliotheque(auteur,bibliothequeId);
+                }else if (!titre.equals("") && auteur.equals("") && isbn.equals("")){
+                    pretList = microServicePretProxy.getListPretLivreTitreBibliotheque(titre,bibliothequeId);
+                }
             }
-            if(livre != null) {
-               pretList = rechercheViaBibliothequeLivre(bibliotheque,livre);
-            }
-            recherche = "livre";
         }
         if(!pseudo.equals("") || !email.equals("") || !nom.equals("") || !prenom.equals("")){
-            if(!pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via pseudo email nom et prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNomPrenom(pseudo,email,nom,prenom);
-            }else if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && prenom.equals("")){ // Recherche via pseudo email et nom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNom(pseudo,email,nom);
-            }else if (!pseudo.equals("") && !email.equals("") && !prenom.equals("") && nom.equals("")){ // Recherche via pseudo email et prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailPrenom(pseudo,email,prenom);
-            }else if (!pseudo.equals("") && !nom.equals("") && !prenom.equals("") && email.equals("")){ // Recherche via pseudo nom et prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoNomPrenom(pseudo,nom,prenom);
-            }else if (pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via email nom et prenom
-                abonne = managerFactory.getAbonneManager().getAbonneEmailNomPrenom(email,nom,prenom);
-            }else if (!pseudo.equals("") && !email.equals("") && prenom.equals("") && nom.equals("") ){ // Recherche via pseudo et email
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmail(pseudo,email);
-            }else if (!nom.equals("") && !prenom.equals("") && pseudo.equals("") && email.equals("")){  // Recherche via nom et prenom
-                abonne = managerFactory.getAbonneManager().getAbonneNomPrenom(nom,prenom);
-            }else if (!pseudo.equals("") && !prenom.equals("") && email.equals("") && nom.equals("")){  // Recherche via pseudo et prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoPrenom(pseudo,prenom);
-            }else if(!email.equals("") && !nom.equals("") && pseudo.equals("") && prenom.equals("")){   // Recherche via email et nom
-                abonne = managerFactory.getAbonneManager().getAbonneEmailNom(email,nom);
-            }else if(!email.equals("") && !prenom.equals("") && nom.equals("") && pseudo.equals("")){   // Recherche via email et prenom
-                abonne = managerFactory.getAbonneManager().getAbonneEmailPrenom(email,prenom);
-            }else if(!pseudo.equals("") && !nom.equals("") && email.equals("") && prenom.equals("")){   // Recherche via pseudo et nom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoNom(pseudo,nom);
-            }else if(!pseudo.equals("") && nom.equals("") && email.equals("") && prenom.equals("")){    // Recherche via pseudo
-                abonne = managerFactory.getAbonneManager().getAbonnePseudo(pseudo);
-            }else if(!email.equals("") && nom.equals("") && pseudo.equals("") && prenom.equals("")){    // Recherche via email
-                abonne = managerFactory.getAbonneManager().getAbonneEmail(email);
-            }else if (!nom.equals("") && pseudo.equals("") && prenom.equals("") && email.equals("")){   // Recherche via nom
-                abonne = managerFactory.getAbonneManager().getAbonneNom(nom);
-            }else if (!prenom.equals("") && pseudo.equals("") && nom.equals("") && email.equals("")){   // Recherche via prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePrenom(prenom);
+            if(bibliotheque.equals("Toutes les bibliothèques")) {
+                if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoEmailNomPrenom(pseudo,email,nom,prenom);
+                } else if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoEmailNom(pseudo,email,nom);
+                } else if (!pseudo.equals("") && !email.equals("") && !prenom.equals("") && nom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoEmailPrenom(pseudo,email,prenom);
+                } else if (!pseudo.equals("") && !nom.equals("") && !prenom.equals("") && email.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoNomPrenom(pseudo,nom,prenom);
+                } else if (pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneEmailNomPrenom(email,nom,prenom);
+                } else if (!pseudo.equals("") && !email.equals("") && prenom.equals("") && nom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoEmail(pseudo,email);
+                } else if (!nom.equals("") && !prenom.equals("") && pseudo.equals("") && email.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneNomPrenom(nom,prenom);
+                } else if (!pseudo.equals("") && !prenom.equals("") && email.equals("") && nom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoPrenom(pseudo,prenom);
+                } else if (!email.equals("") && !nom.equals("") && pseudo.equals("") && prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneEmailNom(email,nom);
+                } else if (!email.equals("") && !prenom.equals("") && nom.equals("") && pseudo.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneEmailPrenom(email,prenom);
+                } else if (!pseudo.equals("") && !nom.equals("") && email.equals("") && prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoNom(pseudo,nom);
+                } else if (!pseudo.equals("") && nom.equals("") && email.equals("") && prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudo(pseudo);
+                } else if (!email.equals("") && nom.equals("") && pseudo.equals("") && prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneEmail(email);
+                } else if (!nom.equals("") && pseudo.equals("") && prenom.equals("") && email.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneNom(nom);
+                } else if (!prenom.equals("") && pseudo.equals("") && nom.equals("") && email.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePrenom(prenom);
+                }
+            }else {
+                if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")) {
+                    bibliothequeId = microServiceBibliothequeProxy.findByNom(bibliotheque).getId();
+                    pretList = microServicePretProxy.getListPretAbonnePseudoEmailNomPrenomBibliotheque(pseudo,email,nom,prenom,bibliothequeId);
+                } else if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoEmailNomBibliotheque(pseudo,email,nom,bibliothequeId);
+                } else if (!pseudo.equals("") && !email.equals("") && !prenom.equals("") && nom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoEmailPrenomBibliotheque(pseudo,email,prenom,bibliothequeId);
+                } else if (!pseudo.equals("") && !nom.equals("") && !prenom.equals("") && email.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoNomPrenomBibliotheque(pseudo,nom,prenom,bibliothequeId);
+                } else if (pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneEmailNomPrenomBibliotheque(email,nom,prenom,bibliothequeId);
+                } else if (!pseudo.equals("") && !email.equals("") && prenom.equals("") && nom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoEmailBibliotheque(pseudo,email,bibliothequeId);
+                } else if (!nom.equals("") && !prenom.equals("") && pseudo.equals("") && email.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneNomPrenomBibliotheque(nom,prenom,bibliothequeId);
+                } else if (!pseudo.equals("") && !prenom.equals("") && email.equals("") && nom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoPrenomBibliotheque(pseudo,prenom,bibliothequeId);
+                } else if (!email.equals("") && !nom.equals("") && pseudo.equals("") && prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneEmailNomBibliotheque(email,nom,bibliothequeId);
+                } else if (!email.equals("") && !prenom.equals("") && nom.equals("") && pseudo.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneEmailPrenomBibliotheque(email,prenom,bibliothequeId);
+                } else if (!pseudo.equals("") && !nom.equals("") && email.equals("") && prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoNomBibliotheque(pseudo,nom,bibliothequeId);
+                } else if (!pseudo.equals("") && nom.equals("") && email.equals("") && prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePseudoBibliotheque(pseudo,bibliothequeId);
+                } else if (!email.equals("") && nom.equals("") && pseudo.equals("") && prenom.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneEmailBibliotheque(email,bibliothequeId);
+                } else if (!nom.equals("") && pseudo.equals("") && prenom.equals("") && email.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonneNomBibliotheque(nom,bibliothequeId);
+                } else if (!prenom.equals("") && pseudo.equals("") && nom.equals("") && email.equals("")) {
+                    pretList = microServicePretProxy.getListPretAbonnePrenomBibliotheque(prenom,bibliothequeId);
+                }
             }
-            if(abonne!= null) {
-               pretList = rechercheViaBibliothequeAbonne(bibliotheque,abonne);
-               for(Pret pret : pretList){
-                   if(pret.getDateRestitution().compareTo(new Date()) > 0) {
-                       pret.setExpire(false);
-                   }else {
-                       pret.setExpire(true);
-                   }
-               }
-            }
-            recherche = "abonne";
         }
         if (pretList != null) {
+            for(Pret pret : pretList){
+                if(pret.getDateRestitution().compareTo(new Date()) > 0) {
+                    pret.setExpire(false);
+                }else {
+                    pret.setExpire(true);
+                }
+            }
             countResultat = pretList.size();
         }else {
             this.addActionMessage("Aucun prêt trouvé");
@@ -139,19 +186,13 @@ public class ConsulterPretAction extends ActionSupport {
     public String doProlongationPret() throws IOException {
 
         propConfig.load(propFile);
-        pret = managerFactory.getPretManager().getPret(pretId);
+        pret = microServicePretProxy.getPret(pretId);
         Calendar cal = Calendar.getInstance();
         cal.setTime(pret.getDateRestitution());
         cal.add(Calendar.DATE,Integer.parseInt(propConfig.getProperty("prolongation")));
         pret.setDateRestitution(cal.getTime());
-        managerFactory.getPretManager().updateDateRestitution(pret);
         pret.setProlongation(true);
-        managerFactory.getPretManager().updateProlongation(pret);
-        if(recherche.equals("livre")){
-            pretList = rechercheViaBibliothequeLivre(bibliotheque,pret.getLivreUnique().getLivre());
-        }else if (recherche.equals("abonne")){
-            pretList = rechercheViaBibliothequeAbonne(bibliotheque,pret.getAbonne());
-        }
+        microServicePretProxy.updatePret(pret);
         countResultat = pretList.size();
         this.addActionMessage("Le prêt a été prolongé");
         logger.info("Le prêt à était prolongé");
@@ -159,43 +200,6 @@ public class ConsulterPretAction extends ActionSupport {
     }
 
 
-    /**
-     * Méthode pour rechercher une liste de prêts
-     * Si le nom de bibliotheque est "Toutes les bibliothèques"
-     * Alors on cherche dans toutes les bibliotèques
-     * @param bibliotheque
-     * @return
-     */
-    public List<Pret> rechercheViaBibliothequeAbonne(String bibliotheque,Abonne abonne){
-
-        List<Pret> vList;
-        if(!bibliotheque.equals("Toutes les bibliothèques")){
-            bibliothequeId = managerFactory.getBibliothequeManager().getBibliothequeNom(bibliotheque).getId();
-            vList = managerFactory.getPretManager().getListPretAbonneBibliotheque(abonne.getId(),bibliothequeId);
-        }else {
-            vList = managerFactory.getPretManager().getListPretAbonne(abonne.getId());
-        }
-        return vList;
-    }
-
-    /**
-     * Méthode pour rechercher une liste de prêts
-     * Si le nom de bibliotheque est "Toutes les bibliothèques"
-     * Alors on cherche dans toutes les bibliotèques
-     * @param bibliotheque
-     * @return
-     */
-    public List<Pret> rechercheViaBibliothequeLivre(String bibliotheque,Livre livre){
-
-        List<Pret> vList = new ArrayList<>();
-        if(!bibliotheque.equals("Toutes les bibliothèques")){
-            bibliothequeId = managerFactory.getBibliothequeManager().getBibliothequeNom(bibliotheque).getId();
-            vList = managerFactory.getPretManager().getListPretLivreBibliotheque(livre.getId(),bibliothequeId);
-        }else {
-            vList = managerFactory.getPretManager().getListPretLivre(livre.getId());
-        }
-        return vList;
-    }
 
     public String doConsulterPret(){
         return  ActionSupport.SUCCESS;

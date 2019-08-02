@@ -69,7 +69,7 @@ public interface MicroServicePretProxy {
      * @return
      */
     @GetMapping(value = "/Pret/ISBNNumInterne/{isbn],{numInterne}")
-    List<Pret> getListPretLivreISBNNumInterne(@PathVariable("isbn") String isbn,@PathVariable("numInterne") String numInterne).
+    List<Pret> getListPretLivreISBNNumInterne(@PathVariable("isbn") String isbn,@PathVariable("numInterne") String numInterne);
 
     /**
      * Méthode pour récupèrer une liste de prêts via un code isbn, un numéro interne et l'id d'une bibliothèque
@@ -192,7 +192,7 @@ public interface MicroServicePretProxy {
      * @return
      */
     @GetMapping(value = "/Pret/TitreAuteurISBNBibliotheque/{titre},{auteur},{isbn},{bibliothequeId}")
-    List<Pret> getListPretLivreTitreAuteurISBNBibliotheque(@PathVariable("titre") String titre,@PathVariable("auteur") String auteur,@PathVariable("isbn") String isbn,@PathVariable("bibliothequeId") Integer bibliothequeId)
+    List<Pret> getListPretLivreTitreAuteurISBNBibliotheque(@PathVariable("titre") String titre,@PathVariable("auteur") String auteur,@PathVariable("isbn") String isbn,@PathVariable("bibliothequeId") Integer bibliothequeId);
 
     /**
      * Méthode pour récupèrer une liste de prêts via un titre, code isbn et l'id d'une bibliothèque
@@ -261,7 +261,7 @@ public interface MicroServicePretProxy {
      * @return
      */
     @GetMapping(value = "/Pret/PseudoEmailNom/{pseudo},{email},{nom}")
-    List<Pret> getListPretAbonnePseudoEmailNom(@PathVariable("pseudo") String pseudo,@PathVariable("email") String email,@PathVariable("nom") String nom)
+    List<Pret> getListPretAbonnePseudoEmailNom(@PathVariable("pseudo") String pseudo,@PathVariable("email") String email,@PathVariable("nom") String nom);
 
     /**
      * Méthode pour récupèrer une liste de prêts via un pseudo, email et prenom
@@ -401,7 +401,7 @@ public interface MicroServicePretProxy {
      * @return
      */
     @GetMapping(value = "/Pret/PseudoEmailNomBibliotheque/{pseudo},{email},{nom},{bibliothequeId}")
-    List<Pret> getListPretAbonnePseudoEmailNomBibliotheque(@PathVariable("pseudo") String pseudo,@PathVariable("email") String email,@PathVariable("nom") String nom,@PathVariable("bibliothequeId") Integer bibliothequeId)
+    List<Pret> getListPretAbonnePseudoEmailNomBibliotheque(@PathVariable("pseudo") String pseudo,@PathVariable("email") String email,@PathVariable("nom") String nom,@PathVariable("bibliothequeId") Integer bibliothequeId);
 
 
     /**
@@ -533,4 +533,10 @@ public interface MicroServicePretProxy {
     @GetMapping(value = "/Pret/PrenomBibliotheque/{prenom},{bibliothequeId}")
     List<Pret> getListPretAbonnePrenomBibliotheque(@PathVariable("prenom") String prenom,@PathVariable("bibliothequeId") Integer bibliothequeId);
 
+    /**
+     * Méthode pour supprimer un prêt en cours
+     * @param id
+     */
+    @DeleteMapping (value = "/Pret/{id}")
+    void delete(@PathVariable("id") Integer id);
 }
