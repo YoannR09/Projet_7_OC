@@ -5,8 +5,10 @@ import fr.oc.projet.bibliothequeclient.beans.Abonne;
 import fr.oc.projet.bibliothequeclient.beans.Livre;
 import fr.oc.projet.bibliothequeclient.beans.LivreUnique;
 import fr.oc.projet.bibliothequeclient.beans.Pret;
+import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAbonneProxy;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
 import fr.oc.projet.bibliothequeclient.proxies.MicroServiceLivreUniqueProxy;
+import fr.oc.projet.bibliothequeclient.proxies.MicroServicePretProxy;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,9 +37,10 @@ public class AjouterPretAction extends ActionSupport {
     private         Integer             livreUniqueId;
     private         Integer             abonneId;
     private         Integer             countResultat;
-    private         Livre livre;
-    private         Abonne abonne;
+    private         Livre               livre;
+    private         Abonne              abonne;
     private         List<LivreUnique>   livreUniqueList;
+    private         List<Abonne>        abonneList;
 
     private         Properties propConfig = new Properties();
     private         FileInputStream propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
@@ -48,6 +51,10 @@ public class AjouterPretAction extends ActionSupport {
     MicroServiceLivreUniqueProxy microServiceLivreUniqueProxy;
     @Autowired
     MicroServiceBibliothequeProxy microServiceBibliothequeProxy;
+    @Autowired
+    MicroServiceAbonneProxy microServiceAbonneProxy;
+    @Autowired
+    MicroServicePretProxy microServicePretProxy;
 
     public AjouterPretAction() throws FileNotFoundException {
         logger.error(" Path du fichier config.properties non retrouvé.");
@@ -122,36 +129,36 @@ public class AjouterPretAction extends ActionSupport {
      */
     public String doAbonne(){
         String vResult;
-            if(!pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via pseudo email nom et prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNomPrenom(pseudo,email,nom,prenom);
-            }else if (!prenom.equals("") && pseudo.equals("") && nom.equals("") && email.equals("")){   // Recherche via prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePrenom(prenom);
-            }else if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && prenom.equals("")){ // Recherche via pseudo email et nom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailNom(pseudo,email,nom);
-            }else if (!pseudo.equals("") && !email.equals("") && !prenom.equals("") && nom.equals("")){ // Recherche via pseudo email et prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmailPrenom(pseudo,email,prenom);
-            }else if (!pseudo.equals("") && !nom.equals("") && !prenom.equals("") && email.equals("")){ // Recherche via pseudo nom et prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoNomPrenom(pseudo,nom,prenom);
-            }else if (pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){ // Recherche via email nom et prenom
-                abonne = managerFactory.getAbonneManager().getAbonneEmailNomPrenom(email,nom,prenom);
-            }else if (!pseudo.equals("") && !email.equals("") && prenom.equals("") && nom.equals("") ){ // Recherche via pseudo et email
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoEmail(pseudo,email);
-            }else if (!nom.equals("") && !prenom.equals("") && pseudo.equals("") && email.equals("")){  // Recherche via nom et prenom
-                abonne = managerFactory.getAbonneManager().getAbonneNomPrenom(nom,prenom);
-            }else if(!email.equals("") && !nom.equals("") && pseudo.equals("") && prenom.equals("")){   // Recherche via email et nom
-                abonne = managerFactory.getAbonneManager().getAbonneEmailNom(email,nom);
-            }else if(!email.equals("") && !prenom.equals("") && nom.equals("") && pseudo.equals("")){   // Recherche via email et prenom
-                abonne = managerFactory.getAbonneManager().getAbonneEmailPrenom(email,prenom);
-            }else if(!pseudo.equals("") && !nom.equals("") && email.equals("") && prenom.equals("")){   // Recherche via pseudo et nom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoNom(pseudo,nom);
-            }else if(!pseudo.equals("") && nom.equals("") && email.equals("") && prenom.equals("")){    // Recherche via pseudo
-                abonne = managerFactory.getAbonneManager().getAbonnePseudo(pseudo);
-            }else if(!email.equals("") && nom.equals("") && pseudo.equals("") && prenom.equals("")){    // Recherche via email
-                abonne = managerFactory.getAbonneManager().getAbonneEmail(email);
-            }else if (!pseudo.equals("") && !prenom.equals("") && email.equals("") && nom.equals("")){  // Recherche via pseudo et prenom
-                abonne = managerFactory.getAbonneManager().getAbonnePseudoPrenom(pseudo,prenom);
-            }else if (!nom.equals("") && pseudo.equals("") && prenom.equals("") && email.equals("")){   // Recherche via nom
-                abonne = managerFactory.getAbonneManager().getAbonneNom(nom);
+            if(!pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){
+                abonneList = microServiceAbonneProxy.findByPseudoContainingAndEmailContainingAndNomContainingAndPrenomContaining(pseudo,email,nom,prenom);
+            }else if (!prenom.equals("") && pseudo.equals("") && nom.equals("") && email.equals("")){
+                abonneList = microServiceAbonneProxy.findByPrenom(prenom);
+            }else if (!pseudo.equals("") && !email.equals("") && !nom.equals("") && prenom.equals("")){
+                abonneList = microServiceAbonneProxy.findByPseudoContainingAndEmailContainingAndNomContaining(pseudo,email,nom);
+            }else if (!pseudo.equals("") && !email.equals("") && !prenom.equals("") && nom.equals("")){
+                abonneList = microServiceAbonneProxy.findByPseudoContainingAndEmailContainingAndPrenomContaining(pseudo,email,prenom);
+            }else if (!pseudo.equals("") && !nom.equals("") && !prenom.equals("") && email.equals("")){
+                abonneList = microServiceAbonneProxy.findByPseudoContainingAndNomContainingAndPrenomContaining(pseudo,nom,prenom);
+            }else if (pseudo.equals("") && !email.equals("") && !nom.equals("") && !prenom.equals("")){
+                abonneList = microServiceAbonneProxy.findByEmailContainingAndNomContainingAndPrenomContaining(email,nom,prenom);
+            }else if (!pseudo.equals("") && !email.equals("") && prenom.equals("") && nom.equals("") ){
+                abonneList = microServiceAbonneProxy.findByPseudoContainingAndEmailContaining(pseudo,email);
+            }else if (!nom.equals("") && !prenom.equals("") && pseudo.equals("") && email.equals("")){
+                abonneList = microServiceAbonneProxy.findByNomContainingAndPrenomContaining(nom,prenom);
+            }else if(!email.equals("") && !nom.equals("") && pseudo.equals("") && prenom.equals("")){
+                abonneList = microServiceAbonneProxy.findByEmailContainingAndNomContaining(email,nom);
+            }else if(!email.equals("") && !prenom.equals("") && nom.equals("") && pseudo.equals("")){
+                abonneList = microServiceAbonneProxy.findByEmailContainingAndPrenomContaining(email,prenom);
+            }else if(!pseudo.equals("") && !nom.equals("") && email.equals("") && prenom.equals("")){
+                abonneList = microServiceAbonneProxy.findByPseudoContainingAndNomContaining(pseudo,nom);
+            }else if(!pseudo.equals("") && nom.equals("") && email.equals("") && prenom.equals("")){
+                abonneList = microServiceAbonneProxy.getAbonnePseudo(pseudo);
+            }else if(!email.equals("") && nom.equals("") && pseudo.equals("") && prenom.equals("")){
+                abonneList = microServiceAbonneProxy.getAbonneEmail(email);
+            }else if (!pseudo.equals("") && !prenom.equals("") && email.equals("") && nom.equals("")){
+                abonneList = microServiceAbonneProxy.findByPrenom(prenom);
+            }else if (!nom.equals("") && pseudo.equals("") && prenom.equals("") && email.equals("")){
+                abonneList = microServiceAbonneProxy.findByNom(nom);
             }
             if (abonne != null){
                 vResult = ActionSupport.SUCCESS;
@@ -182,7 +189,7 @@ public class AjouterPretAction extends ActionSupport {
         LivreUnique livreUnique = microServiceLivreUniqueProxy.findById(livreUniqueId);
         livreUnique.setDisponible(false);
         microServiceLivreUniqueProxy.updateDispo(livreUnique);
-        managerFactory.getPretManager().addPret(pret);
+        microServicePretProxy.addPret(pret);
 
         this.addActionMessage("Nouveau prêt ajouté ");
         logger.info("Prêt bien ajouté à la bdd");
@@ -314,6 +321,14 @@ public class AjouterPretAction extends ActionSupport {
 
     public void setCountResultat(Integer countResultat) {
         this.countResultat = countResultat;
+    }
+
+    public List<Abonne> getAbonneList() {
+        return abonneList;
+    }
+
+    public void setAbonneList(List<Abonne> abonneList) {
+        this.abonneList = abonneList;
     }
 }
 
