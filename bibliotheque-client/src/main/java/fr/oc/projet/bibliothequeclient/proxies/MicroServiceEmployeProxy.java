@@ -21,7 +21,7 @@ public interface MicroServiceEmployeProxy {
      * @param id
      * @return
      */
-    @GetMapping(value = "/Employe/{id}")
+    @GetMapping(value = "/Employe/Id/{id}")
     Employe findById(@PathVariable int id);
 
     /**
@@ -29,6 +29,6 @@ public interface MicroServiceEmployeProxy {
      * @param email
      * @return
      */
-    @GetMapping(value = "/Employe/{email}")
+    @GetMapping(value = "/Employe/Email/{email}")
     Employe findByEmail(@PathVariable("email") String email);
 }

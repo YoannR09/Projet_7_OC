@@ -24,7 +24,7 @@ public class BibliothequeControler {
      * @param id
      * @return
      */
-    @GetMapping(value = "/Bibliotheque/{id}")
+    @GetMapping(value = "/Bibliotheque/Id/{id}")
     public Bibliotheque getBibliotheque(@PathVariable int id) {
         try {
             return bibliothequeDao.findById(id);
@@ -39,7 +39,7 @@ public class BibliothequeControler {
      * @param nom
      * @return
      */
-    @GetMapping(value = "/Bibliotheque/{nom}")
+    @GetMapping(value = "/Bibliotheque/Nom/{nom}")
     public Bibliotheque findByNom(@PathVariable String nom){
         try {
             return bibliothequeDao.findByNom(nom);

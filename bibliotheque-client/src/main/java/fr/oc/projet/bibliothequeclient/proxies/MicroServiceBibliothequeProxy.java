@@ -14,10 +14,10 @@ import java.util.List;
 @FeignClient(value = "microservice-bibliotheque", url = "localhost:9096")
 public interface MicroServiceBibliothequeProxy {
 
-    @GetMapping(value = "/Bibliotheque/{id}")
+    @GetMapping(value = "/Bibliotheque/Id/{id}")
     Bibliotheque getBibliotheque(@PathVariable("id") int id);
 
-    @GetMapping(value = "/Bibliotheque/{nom}")
+    @GetMapping(value = "/Bibliotheque/Nom/{nom}")
     Bibliotheque findByNom(@PathVariable("nom") String nom);
 
     @GetMapping(value = "/Bibliotheque")

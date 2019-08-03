@@ -70,7 +70,7 @@
 
 <div id="page">
     <div id="bottom" >
-        <div id="cadreLogin" class="col-4">
+        <div id="cadreLogin" class="col-7">
             <label class="form-check-label" id="labelRecherche"> Connectez-vous à votre espace abonné </label>
             <em id="message" class="text-info"><s:actionmessage/></em>
             <div class="col-12 container bg-light" id="cadreLog">

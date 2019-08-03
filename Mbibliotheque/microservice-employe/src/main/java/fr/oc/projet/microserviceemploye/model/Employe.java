@@ -11,14 +11,15 @@ public class Employe {
     @Id
     @GeneratedValue
     private Integer id;
+
     private String motDePasse;
     private String email;
     private String numeroTelephone;
     private String nom;
     private String prenom;
     private String matricule;
-    private Date dateEntree;
-    private Date dateSortie;
+    private Date dateentree;
+    private Date datesortie;
     private Integer roleId;
     private Integer adresseId;
 
@@ -81,20 +82,20 @@ public class Employe {
         this.matricule = matricule;
     }
 
-    public Date getDateEntree() {
-        return dateEntree;
+    public Date getDateentree() {
+        return dateentree;
     }
 
-    public void setDateEntree(Date dateEntree) {
-        this.dateEntree = dateEntree;
+    public void setDateentree(Date dateentree) {
+        this.dateentree = dateentree;
     }
 
-    public Date getDateSortie() {
-        return dateSortie;
+    public Date getDatesortie() {
+        return datesortie;
     }
 
-    public void setDateSortie(Date dateSortie) {
-        this.dateSortie = dateSortie;
+    public void setDatesortie(Date datesortie) {
+        this.datesortie = datesortie;
     }
 
     public Integer getRoleId() {

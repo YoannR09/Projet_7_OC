@@ -23,7 +23,7 @@ public class EmployeControler {
      * @param id
      * @return
      */
-    @GetMapping(value = "/Employe/{id}")
+    @GetMapping(value = "/Employe/Id/{id}")
     public Employe findById(@PathVariable int id){
         try{
             return employeDao.findById(id);
@@ -38,7 +38,7 @@ public class EmployeControler {
      * @param email
      * @return
      */
-    @GetMapping(value = "/Employe/{email}")
+    @GetMapping(value = "/Employe/Email/{email}")
     public Employe findByEmail(@PathVariable String email){
         try{
             return employeDao.findByEmail(email);

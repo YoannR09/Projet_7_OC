@@ -4,14 +4,12 @@ import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.bibliothequeclient.beans.Abonne;
 import fr.oc.projet.bibliothequeclient.beans.Livre;
 import fr.oc.projet.bibliothequeclient.beans.Pret;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServicePretProxy;
+import fr.oc.projet.bibliothequeclient.proxies.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 
@@ -40,16 +38,18 @@ public class ConsulterPretAction extends ActionSupport {
     private static final Logger logger = LogManager.getLogger(ConsulterPretAction.class);
 
     private Properties propConfig = new Properties();
-    private FileInputStream propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
+    private FileInputStream propFile ;
 
     @Autowired
     MicroServicePretProxy microServicePretProxy;
     @Autowired
     MicroServiceBibliothequeProxy microServiceBibliothequeProxy;
-
-    public ConsulterPretAction() throws FileNotFoundException {
-        logger.error(" Path du fichier config.properties non retrouvé.");
-    }
+    @Autowired
+    MicroServiceAbonneProxy microServiceAbonneProxy;
+    @Autowired
+    MicroServiceLivreProxy microServiceLivreProxy;
+    @Autowired
+    MicroServiceLivreUniqueProxy microServiceLivreUniqueProxy;
 
     /**
      * Méthode pour la recherche de prêts en cours
@@ -60,7 +60,6 @@ public class ConsulterPretAction extends ActionSupport {
 
         if(!isbn.equals("") || !auteur.equals("") || !titre.equals("")){
             if(bibliotheque.equals("Toutes les bibliothèques")){
-                bibliothequeId = microServiceBibliothequeProxy.findByNom(bibliotheque).getId();
                 if(!isbn.equals("") &&  !auteur.equals("") &&  !titre.equals("")){
                     pretList = microServicePretProxy.getListPretLivreTitreAuteurISBN(titre,auteur,isbn);
                 }else if (!isbn.equals("") &&  !auteur.equals("")  && titre.equals("")){
@@ -77,6 +76,7 @@ public class ConsulterPretAction extends ActionSupport {
                     pretList = microServicePretProxy.getListPretLivreTitre(titre);
                 }
             }else {
+                bibliothequeId = microServiceBibliothequeProxy.findByNom(bibliotheque).getId();
                 if(!isbn.equals("") &&  !auteur.equals("") &&  !titre.equals("")){
                     pretList = microServicePretProxy.getListPretLivreTitreAuteurISBNBibliotheque(titre,auteur,isbn,bibliothequeId);
                 }else if (!isbn.equals("") &&  !auteur.equals("")  && titre.equals("")){
@@ -164,6 +164,10 @@ public class ConsulterPretAction extends ActionSupport {
         }
         if (pretList != null) {
             for(Pret pret : pretList){
+                pret.setAbonne(microServiceAbonneProxy.getAbonne(pret.getAbonneId()));
+                pret.setLivreUnique(microServiceLivreUniqueProxy.findById(pret.getLivreUniqueId()));
+                pret.getLivreUnique().setLivre(microServiceLivreProxy.getLivre(pret.getLivreUnique().getLivreId()));
+                pret.setBibliotheque(microServiceBibliothequeProxy.getBibliotheque(pret.getLivreUnique().getBibliothequeId()));
                 if(pret.getDateRestitution().compareTo(new Date()) > 0) {
                     pret.setExpire(false);
                 }else {
@@ -184,7 +188,7 @@ public class ConsulterPretAction extends ActionSupport {
      * @return
      */
     public String doProlongationPret() throws IOException {
-
+        propFile = new FileInputStream("C:/Users/El-ra/Documents/Projet_7_OC/resources/config.properties");
         propConfig.load(propFile);
         pret = microServicePretProxy.getPret(pretId);
         Calendar cal = Calendar.getInstance();
@@ -193,7 +197,6 @@ public class ConsulterPretAction extends ActionSupport {
         pret.setDateRestitution(cal.getTime());
         pret.setProlongation(true);
         microServicePretProxy.updatePret(pret);
-        countResultat = pretList.size();
         this.addActionMessage("Le prêt a été prolongé");
         logger.info("Le prêt à était prolongé");
         return ActionSupport.SUCCESS;

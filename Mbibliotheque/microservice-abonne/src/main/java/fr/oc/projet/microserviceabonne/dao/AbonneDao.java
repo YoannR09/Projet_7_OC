@@ -2,6 +2,8 @@ package fr.oc.projet.microserviceabonne.dao;
 
 import fr.oc.projet.microserviceabonne.model.Abonne;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,9 +12,17 @@ import java.util.List;
 public interface AbonneDao extends JpaRepository<Abonne,Integer> {
     Abonne findById(int id);
 
-    List<Abonne> findByPseudo(String pseudo);
+    Abonne findByPseudo(String pseudo);
 
-    List<Abonne> findByEmail(String email);
+    Abonne findByEmail(String email);
+
+    @Query(value = "SELECT * FROM abonne WHERE pseudo LIKE %:pseudo%",
+            nativeQuery = true)
+    List<Abonne> getListByPseudo(@Param("pseudo") String pseudo);
+
+    @Query(value = "SELECT * FROM abonne WHERE email LIKE %:email%",
+            nativeQuery = true)
+    List<Abonne> getListByEmail(@Param("email") String email);
 
     List<Abonne> findByNom(String nom);
 

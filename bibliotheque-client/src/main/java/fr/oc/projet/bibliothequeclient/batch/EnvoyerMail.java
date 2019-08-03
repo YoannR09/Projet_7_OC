@@ -28,7 +28,7 @@ public class EnvoyerMail {
     public void sendMessage(String objet, String contenu, Abonne abonne, Logger logger) throws Exception{
 
         Properties propConfig = new Properties();
-        FileInputStream propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
+        FileInputStream propFile = new FileInputStream("C:/Users/El-ra/Documents/Projet_7_OC/resources/config.properties");
         propConfig.load(propFile);
         final String username = propConfig.getProperty("emailUser");
         final String password = propConfig.getProperty("emailPass");

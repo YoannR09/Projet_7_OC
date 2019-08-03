@@ -3,9 +3,7 @@ package fr.oc.projet.bibliothequeclient.action;
 import com.opensymphony.xwork2.ActionSupport;
 import fr.oc.projet.bibliothequeclient.beans.LivreUnique;
 import fr.oc.projet.bibliothequeclient.beans.Pret;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceLivreUniqueProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServicePretProxy;
+import fr.oc.projet.bibliothequeclient.proxies.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +32,10 @@ public class RestituerAction extends ActionSupport {
     MicroServicePretProxy microServicePretProxy;
     @Autowired
     MicroServiceLivreUniqueProxy microServiceLivreUniqueProxy;
+    @Autowired
+    MicroServiceAbonneProxy microServiceAbonneProxy;
+    @Autowired
+    MicroServiceLivreProxy microServiceLivreProxy;
 
 
     /**
@@ -77,6 +79,12 @@ public class RestituerAction extends ActionSupport {
                 if (pretList.size() == 0){
                     this.addActionMessage("Aucun prêt trouvé");
                 }
+                for(Pret pret : pretList){
+                    pret.setAbonne(microServiceAbonneProxy.getAbonne(pret.getAbonneId()));
+                    pret.setLivreUnique(microServiceLivreUniqueProxy.findById(pret.getLivreUniqueId()));
+                    pret.getLivreUnique().setLivre(microServiceLivreProxy.getLivre(pret.getLivreUnique().getLivreId()));
+                    pret.setBibliotheque(microServiceBibliothequeProxy.getBibliotheque(pret.getLivreUnique().getBibliothequeId()));
+                }
             } else {
                 this.addActionMessage("Aucun prêt trouvé");
             }
@@ -94,16 +102,16 @@ public class RestituerAction extends ActionSupport {
         String vResult;
         try {
         pret = microServicePretProxy.getPret(pretId);
-        LivreUnique livreUnique = pret.getLivreUnique();
+        LivreUnique livreUnique = microServiceLivreUniqueProxy.findById(pret.getLivreUniqueId());
         livreUnique.setDisponible(true);
         microServiceLivreUniqueProxy.updateDispo(livreUnique);
         microServicePretProxy.delete(pretId);
-
         this.addActionMessage("Livre restitué, ce livre est maintenant disponible pour un nouveau prêt.");
         logger.info("Livre restitué à l'inventaire");
         vResult = ActionSupport.SUCCESS;
         }catch (Exception e){
             vResult = ActionSupport.ERROR;
+            this.addActionMessage("Erreur");
             logger.error(e);
         }
         return vResult;

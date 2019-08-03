@@ -89,11 +89,15 @@ public class LoginAction extends ActionSupport implements SessionAware {
             vResult = ActionSupport.ERROR;
         } else {
             if (employe != null){
-                if (motDePasse.equals(abonne.getMotDePasse())) {
+                if (motDePasse.equals(employe.getMotDePasse())) {
                     this.session.put("admin", employe);
                     this.session.put("pseudo", employe.getEmail());
                     this.session.put("role", employe.getRole());
+                    categorieList = microServiceCategorieProxy.getListCategorie();
                     vResult = ActionSupport.SUCCESS;
+                }else {
+                    this.addActionMessage("Mot de passe invalide");
+                    vResult = ActionSupport.ERROR;
                 }
             }else if(abonne != null) {
                 if (motDePasse.equals(abonne.getMotDePasse())) {
@@ -106,11 +110,10 @@ public class LoginAction extends ActionSupport implements SessionAware {
                     this.addActionMessage("Mot de passe invalide");
                     vResult = ActionSupport.ERROR;
                 }
-            }else {
-                vResult = ActionSupport.ERROR;
             }
         }
-        return vResult;
+
+        return vResult ;
     }
 
     /**
@@ -119,6 +122,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
      */
     public String doLogout(){
 
+        this.session.remove("admin");
         this.session.remove("user");
         this.session.remove("pseudo");
         this.session.remove("role");
@@ -483,5 +487,13 @@ public class LoginAction extends ActionSupport implements SessionAware {
 
     public void setPrenom(String prenom) {
         this.prenom = prenom;
+    }
+
+    public Employe getEmploye() {
+        return employe;
+    }
+
+    public void setEmploye(Employe employe) {
+        this.employe = employe;
     }
 }

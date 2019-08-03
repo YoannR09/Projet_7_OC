@@ -27,6 +27,7 @@
                 <param name="error">500</param>
                 <param name="parse">true</param>
                 <param name="errorMessage">%{exception}</param>
+
             </result>
             <result name="TechnicalException" type="httpheader">
                 <param name="error">500</param>
@@ -133,78 +134,79 @@
         </action>
 
         <action name="consulterPret"
-                class="fr.oc.projet.webapp.action.ConsulterPretAction"
+                class="fr.oc.projet.bibliothequeclient.action.ConsulterPretAction"
                 method="doConsulterPret">
-            <result name="success">WEB-INF/jsp/consulter/consulterPret.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
+            <result name="success">/jsp/pret/consulterPret.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
         </action>
 
         <action name="recherchePret"
-                class="fr.oc.projet.webapp.action.ConsulterPretAction"
+                class="fr.oc.projet.bibliothequeclient.action.ConsulterPretAction"
                 method="doListPretRecherche">
-            <result name="success">WEB-INF/jsp/consulter/consulterPret.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
+            <result name="success">/jsp/pret/consulterPret.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
         </action>
 
         <action name="prolongationPret"
-                class="fr.oc.projet.webapp.action.ConsulterPretAction"
+                class="fr.oc.projet.bibliothequeclient.action.ConsulterPretAction"
                 method="doProlongationPret">
-            <result name="success">WEB-INF/jsp/consulter/consulterPret.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
+            <result name="success">/jsp/pret/consulterPret.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
         </action>
 
         <action name="rechercheRestituerLivre"
-                class="fr.oc.projet.webapp.action.RestituerAction"
+                class="fr.oc.projet.bibliothequeclient.action.RestituerAction"
                 method="doRechercheRestituerPret">
-            <result name="success">WEB-INF/jsp/restituer/restituerPret.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
+            <result name="success">/jsp/pret/restituerPret.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
         </action>
 
-        <action name="ajouterPret">
-            <result>WEB-INF/jsp/ajouter/ajouterPret.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
-        </action>
 
 
         <action name="restituerPret">
-            <result>WEB-INF/jsp/restituer/restituerPret.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
+            <result>/jsp/pret/restituerPret.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
         </action>
 
         <action name="selectionnerAbonne"
-                class="fr.oc.projet.webapp.action.AjouterPretAction"
+                class="fr.oc.projet.bibliothequeclient.action.AjouterPretAction"
                 method="doSelectionAbonne">
-            <result name="success">WEB-INF/jsp/ajouter/selectionnerAbonne.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
+            <result name="success">/jsp/pret/selectionnerAbonne.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
         </action>
 
+        <action name="ajouterPret">
+            <result>/jsp/pret/ajouterPret.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
+        </action>
+
+
         <action name="rechercheLivre"
-                class="fr.oc.projet.webapp.action.AjouterPretAction"
+                class="fr.oc.projet.bibliothequeclient.action.AjouterPretAction"
                 method="doListLivre">
-            <result name="success">WEB-INF/jsp/ajouter/ajouterPret.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
+            <result name="success">/jsp/pret/ajouterPret.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
         </action>
 
         <action name="rechercheAbonne"
-                class="fr.oc.projet.webapp.action.AjouterPretAction"
+                class="fr.oc.projet.bibliothequeclient.action.AjouterPretAction"
                 method="doAbonne">
-            <result name="success">WEB-INF/jsp/ajouter/selectionnerAbonne.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
+            <result name="success">/jsp/pret/selectionnerAbonne.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
         </action>
 
         <action name="addPretLivreUnique"
-                class="fr.oc.projet.webapp.action.AjouterPretAction"
+                class="fr.oc.projet.bibliothequeclient.action.AjouterPretAction"
                 method="doAjouterPret">
-            <result name="success">WEB-INF/jsp/index.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
+            <result name="success">/jsp/index.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
         </action>
 
         <action name="doRestitutionLivre"
-                class="fr.oc.projet.webapp.action.RestituerAction"
+                class="fr.oc.projet.bibliothequeclient.action.RestituerAction"
                 method="doRestitutionPret">
-            <result name="success">WEB-INF/jsp/index.jsp</result>
-            <result name="error">WEB-INF/jsp/error/error.jsp</result>
+            <result name="success">/jsp/index.jsp</result>
+            <result name="error">/jsp/error/error.jsp</result>
         </action>
     </package>
-
 </struts>

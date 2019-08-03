@@ -20,13 +20,30 @@ public interface MicroServiceAbonneProxy {
     @GetMapping(value = "/Abonne/{id}")
     Abonne getAbonne(@PathVariable("id") int id);
 
+
+    /**
+     * Méthode pou récuprer une liste d'abonnés via un pseudo
+     * @param pseudo
+     * @return
+     */
+    @GetMapping(value = "/Abonne/ListPseudo/{pseudo}")
+    List<Abonne> getListByPseudo(@PathVariable("pseudo") String pseudo);
+
+    /**
+     * Méthode pour récupèrer une liste d'abonnés via un email
+     * @param email
+     * @return
+     */
+    @GetMapping(value = "/Abonne/ListEmail/{email}")
+    List<Abonne> getListByEmail(@PathVariable("email") String email);
+
     /**
      * Méthode pour récupèrer une liste d'abonnés via un pseudo
      * @param pseudo
      * @return
      */
     @GetMapping(value = "/Abonne/Pseudo/{pseudo}")
-    List<Abonne> getAbonnePseudo(@PathVariable("pseudo") String pseudo);
+    Abonne getAbonnePseudo(@PathVariable("pseudo") String pseudo);
 
     /**
      * Méthode pour récupèrer une liste d'abonnés via un email
@@ -34,7 +51,7 @@ public interface MicroServiceAbonneProxy {
      * @return
      */
     @GetMapping(value = "/Abonne/Email/{email}")
-    List<Abonne> getAbonneEmail(@PathVariable("email") String email);
+    Abonne getAbonneEmail(@PathVariable("email") String email);
 
     /**
      * Méthode pour récupèrer une liste d'abonnés via un nom

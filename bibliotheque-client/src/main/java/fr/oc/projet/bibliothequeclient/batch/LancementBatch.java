@@ -22,7 +22,7 @@ public class LancementBatch
 
         final Logger logger = LogManager.getLogger();
 
-        try (InputStream input = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties")) {
+        try (InputStream input = new FileInputStream("C:/Users/El-ra/Documents/Projet_7_OC/resources/config.properties")) {
 
             Properties prop = new Properties();
             // load a properties file

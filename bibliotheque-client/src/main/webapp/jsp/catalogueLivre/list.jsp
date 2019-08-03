@@ -105,9 +105,9 @@
                         <option><s:property value="nom"/></option>
                     </s:iterator>
                 </select>
-                <input id="textTitre" name="titre" type="text" class="form-control" placeholder="Titre" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <input id="textEditeur" name="auteur" type="text" class="form-control" placeholder="Auteur" aria-label="Recipient's username" aria-describedby="basic-addon2" >
-                <input id="textCodeISBN" name="isbn" type="text" class="form-control" placeholder="Code ISBN" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input id="textTitre" value="titre" name="titre" type="text" class="form-control" placeholder="Titre" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input id="textEditeur" value="auteur" name="auteur" type="text" class="form-control" placeholder="Auteur" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                <input id="textCodeISBN" value="isbn" name="isbn" type="text" class="form-control" placeholder="Code ISBN" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="col-auto" style="margin: 7px" id="checkBibliotheque">
                     <div class="input-group mb-2">
                         <div class="form-check form-check-inline">

@@ -8,6 +8,8 @@ public class LivreUnique {
     private int numeroInterne;
     private int bibliothequeId;
     private int livreId;
+    private Livre livre;
+    private Bibliotheque bibliotheque;
     private Boolean disponible;
 
     public LivreUnique() {
@@ -51,6 +53,22 @@ public class LivreUnique {
 
     public void setDisponible(Boolean disponible) {
         this.disponible = disponible;
+    }
+
+    public Livre getLivre() {
+        return livre;
+    }
+
+    public void setLivre(Livre livre) {
+        this.livre = livre;
+    }
+
+    public Bibliotheque getBibliotheque() {
+        return bibliotheque;
+    }
+
+    public void setBibliotheque(Bibliotheque bibliotheque) {
+        this.bibliotheque = bibliotheque;
     }
 
     @Override

@@ -6,6 +6,8 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -39,7 +41,7 @@ public class AbonneController {
      * @return
      */
     @GetMapping(value = "/Abonne/Pseudo/{pseudo}")
-    public List<Abonne> getAbonnePseudo(@PathVariable String pseudo){
+    public Abonne getAbonnePseudo(@PathVariable String pseudo){
         try {
             return abonneDao.findByPseudo(pseudo);
         }catch (Exception e){
@@ -55,11 +57,41 @@ public class AbonneController {
      * @return
      */
     @GetMapping(value = "/Abonne/Email/{email}")
-    public List<Abonne> getAbonneEmail(@PathVariable String email){
+    public Abonne getAbonneEmail(@PathVariable String email){
         try {
             return abonneDao.findByEmail(email);
         }catch (Exception e){
             logger.error("Methode getAbonneEmail() erreur : "+e);
+            return null;
+        }
+    }
+
+    /**
+     * Méthode pou récuprer une liste d'abonnés via un pseudo
+     * @param pseudo
+     * @return
+     */
+    @GetMapping(value = "/Abonne/ListPseudo/{pseudo}")
+    public List<Abonne> getListByPseudo(@PathVariable String pseudo){
+        try {
+            return abonneDao.getListByPseudo(pseudo);
+        }catch (Exception e){
+            logger.error("Methode getListByPseudo() erreur : "+e);
+            return null;
+        }
+    }
+
+    /**
+     * Méthode pour récupèrer une liste d'abonnés via un email
+     * @param email
+     * @return
+     */
+    @GetMapping(value = "/Abonne/ListEmail/{email}")
+    List<Abonne> getListByEmail(@PathVariable String email){
+        try {
+            return abonneDao.getListByEmail(email);
+        }catch (Exception e){
+            logger.error("Methode getListByEmail() erreur : "+e);
             return null;
         }
     }

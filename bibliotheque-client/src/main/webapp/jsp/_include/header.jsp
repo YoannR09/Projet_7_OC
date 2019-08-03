@@ -16,31 +16,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <s:a action="catalogueLivre" class="nav-link" style="font-size:1.3em">| Livre |</s:a>
+                <s:a action="catalogueLivre" class="nav-link" style="font-size:1.1em;">| Livre |</s:a>
             </li>
             <li class="nav-item">
                 <s:if test="#session.user">
-                <s:a action="doListPret" class="nav-link" style="font-size:1.3em">| Mes prêts |</s:a>
+                <s:a action="doListPret" class="nav-link" style="font-size:1.1em">| Mes prêts |</s:a>
                 </s:if>
-                <s:else>
-                    <s:a action="login" class="nav-link" style="font-size:1.3em">| Mes prêts |</s:a>
-                </s:else>
+            </li>
+            <s:if test="#session.admin">
+            <li class="nav-item">
+                    <s:a action="consulterPret" class="nav-link" style="font-size:1.1em;color: deepskyblue">| Consulter les prêts |</s:a>
             </li>
             <li class="nav-item">
-                <s:if test="#session.employe">
-                    <s:a action="consulterPret" class="nav-link" style="font-size:1.3em">| Consulter les prêts |</s:a>
-                </s:if>
+                    <s:a action="ajouterPret" class="nav-link" style="font-size:1.1em;color: deepskyblue">| Ajouter un prêt |</s:a>
             </li>
             <li class="nav-item">
-                <s:if test="#session.employe">
-                    <s:a action="ajouterPret" class="nav-link" style="font-size:1.3em">| Ajouter un prêt |</s:a>
-                </s:if>
+                    <s:a action="restituerPret" class="nav-link" style="font-size:1.1em;color: deepskyblue">| Restituer un prêt |</s:a>
             </li>
-            <li class="nav-item">
-                <s:if test="#session.employe">
-                    <s:a action="restituerPret" class="nav-link" style="font-size:1.3em">| Restituer un prêt |</s:a>
-                </s:if>
-            </li>
+            </s:if>
         </ul>
         <form class="form-inline my-2 my-lg-0" style="color: white" >
             <s:if test="#session.user">
@@ -49,11 +42,14 @@
                 <s:a action="logout" class="nav-link text-info">Deconnexion</s:a> /
                 <s:a action="doProfil" class="nav-link text-info">Mon profil</s:a>
             </s:if>
+            <s:elseif test="#session.admin">
+                <em id="email"><s:property value="#session.admin.email" /></em> /
+                <s:a action="logout" class="nav-link text-info">Deconnexion</s:a>
+            </s:elseif>
             <s:else>
                 <s:a action="login" style="color:lightgray" class="nav-link">Connexion</s:a> /
                 <s:a action="formInscription" style="color:lightgray" class="nav-link">S'inscrire</s:a>
             </s:else>
-
         </form>
     </div>
 </nav>

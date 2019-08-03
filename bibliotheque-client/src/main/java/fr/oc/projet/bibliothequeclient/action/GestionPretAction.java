@@ -97,9 +97,9 @@ public class GestionPretAction extends ActionSupport {
     public void recupListPret(){
         pretList = microServicePretProxy.getListPretAbonne(abonne.getId());
         for(Pret pret: pretList){
-            pret.setLivre(microServiceLivreProxy.getLivre(microServiceLivreUniqueProxy.findById(pret.getLivreUniqueId()).getLivreId()));
             pret.setLivreUnique(microServiceLivreUniqueProxy.findById(pret.getLivreUniqueId()));
             pret.setBibliotheque(microServiceBibliothequeProxy.getBibliotheque(microServiceLivreUniqueProxy.findById(pret.getLivreUniqueId()).getBibliothequeId()));
+            pret.getLivreUnique().setLivre(microServiceLivreProxy.getLivre(pret.getLivreUnique().getLivreId()));
             if(pret.getDateRestitution().compareTo(new Date()) > 0) {
                 pret.setExpire(false);
             }else {

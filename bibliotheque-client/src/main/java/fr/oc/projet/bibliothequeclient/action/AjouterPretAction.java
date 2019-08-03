@@ -1,14 +1,8 @@
 package fr.oc.projet.bibliothequeclient.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import fr.oc.projet.bibliothequeclient.beans.Abonne;
-import fr.oc.projet.bibliothequeclient.beans.Livre;
-import fr.oc.projet.bibliothequeclient.beans.LivreUnique;
-import fr.oc.projet.bibliothequeclient.beans.Pret;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAbonneProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceLivreUniqueProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServicePretProxy;
+import fr.oc.projet.bibliothequeclient.beans.*;
+import fr.oc.projet.bibliothequeclient.proxies.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,9 +35,10 @@ public class AjouterPretAction extends ActionSupport {
     private         Abonne              abonne;
     private         List<LivreUnique>   livreUniqueList;
     private         List<Abonne>        abonneList;
+    private         List<Categorie>     categorieList;
 
     private         Properties propConfig = new Properties();
-    private         FileInputStream propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
+    private         FileInputStream propFile ;
 
     private static final Logger logger = LogManager.getLogger();
 
@@ -55,10 +50,12 @@ public class AjouterPretAction extends ActionSupport {
     MicroServiceAbonneProxy microServiceAbonneProxy;
     @Autowired
     MicroServicePretProxy microServicePretProxy;
+    @Autowired
+    MicroServiceLivreProxy microServiceLivreProxy;
+    @Autowired
+    MicroServiceCategorieProxy microServiceCategorieProxy;
 
-    public AjouterPretAction() throws FileNotFoundException {
-        logger.error(" Path du fichier config.properties non retrouvé.");
-    }
+
 
     /**
      * Méthode qui affiche une liste de livre unique
@@ -104,6 +101,10 @@ public class AjouterPretAction extends ActionSupport {
             if(livreUniqueList != null){
                 if (livreUniqueList.size() == 0){
                     this.addActionMessage("Aucun livre trouvé");
+                }
+                for (LivreUnique livreUnique:livreUniqueList){
+                    livreUnique.setLivre(microServiceLivreProxy.getLivre(livreUnique.getLivreId()));
+                    livreUnique.setBibliotheque(microServiceBibliothequeProxy.getBibliotheque(livreUnique.getBibliothequeId()));
                 }
                 vResult = ActionSupport.SUCCESS;
                 countResultat = livreUniqueList.size();
@@ -152,15 +153,15 @@ public class AjouterPretAction extends ActionSupport {
             }else if(!pseudo.equals("") && !nom.equals("") && email.equals("") && prenom.equals("")){
                 abonneList = microServiceAbonneProxy.findByPseudoContainingAndNomContaining(pseudo,nom);
             }else if(!pseudo.equals("") && nom.equals("") && email.equals("") && prenom.equals("")){
-                abonneList = microServiceAbonneProxy.getAbonnePseudo(pseudo);
+                abonneList = microServiceAbonneProxy.getListByPseudo(pseudo);
             }else if(!email.equals("") && nom.equals("") && pseudo.equals("") && prenom.equals("")){
-                abonneList = microServiceAbonneProxy.getAbonneEmail(email);
+                abonneList = microServiceAbonneProxy.getListByEmail(email);
             }else if (!pseudo.equals("") && !prenom.equals("") && email.equals("") && nom.equals("")){
                 abonneList = microServiceAbonneProxy.findByPrenom(prenom);
             }else if (!nom.equals("") && pseudo.equals("") && prenom.equals("") && email.equals("")){
                 abonneList = microServiceAbonneProxy.findByNom(nom);
             }
-            if (abonne != null){
+            if (abonneList != null){
                 vResult = ActionSupport.SUCCESS;
             }else {
                 vResult = ActionSupport.SUCCESS;
@@ -176,6 +177,7 @@ public class AjouterPretAction extends ActionSupport {
     public String doAjouterPret(){
         String vResult;
         try {
+        propFile = new FileInputStream("C:/Users/El-ra/Documents/Projet_7_OC/resources/config.properties");
         propConfig.load(propFile);
         Pret pret = new Pret();
         pret.setDateEmprunt(new Date());
@@ -190,6 +192,7 @@ public class AjouterPretAction extends ActionSupport {
         livreUnique.setDisponible(false);
         microServiceLivreUniqueProxy.updateDispo(livreUnique);
         microServicePretProxy.addPret(pret);
+        categorieList = microServiceCategorieProxy.getListCategorie();
 
         this.addActionMessage("Nouveau prêt ajouté ");
         logger.info("Prêt bien ajouté à la bdd");
@@ -329,6 +332,14 @@ public class AjouterPretAction extends ActionSupport {
 
     public void setAbonneList(List<Abonne> abonneList) {
         this.abonneList = abonneList;
+    }
+
+    public List<Categorie> getCategorieList() {
+        return categorieList;
+    }
+
+    public void setCategorieList(List<Categorie> categorieList) {
+        this.categorieList = categorieList;
     }
 }
 

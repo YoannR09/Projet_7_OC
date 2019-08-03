@@ -8,6 +8,7 @@ import org.hibernate.annotations.GeneratorType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.transaction.Transactional;
 import javax.ws.rs.GET;
 import java.util.List;
 
@@ -218,6 +219,8 @@ public class PretController {
             logger.error("Methode addPret() erreur : "+e);
         }
     }
+
+
 
     /**
      * Met à jour un prêt
