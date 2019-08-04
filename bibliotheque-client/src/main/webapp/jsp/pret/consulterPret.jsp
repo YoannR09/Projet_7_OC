@@ -111,13 +111,21 @@
                         </div>
                     </div>
                 </div>
+                <span id="recherche"><s:property value="recherche"/></span>
                 <input id="textTitre" name="titre" type="text" class="form-control" placeholder="Titre" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <input id="textEditeur" name="auteur" type="text" class="form-control" placeholder="Auteur" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                <span id="lastTitre"><s:property value="titre"/></span>
+                <input id="textAuteur" name="auteur" type="text" class="form-control" placeholder="Auteur" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                <span id="lastAuteur"><s:property value="auteur"/></span>
                 <input id="textCodeISBN" name="isbn" type="text" class="form-control" placeholder="Code ISBN" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span id="lastIsbn"><s:property value="isbn"/></span>
                 <input id="textEmail" name="email" type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span id="lastEmail"><s:property value="email"/></span>
                 <input id="textPseudo" name="pseudo" type="text" class="form-control" placeholder="Pseudo" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                <span id="lastPseudo"><s:property value="pseudo"/></span>
                 <input id="textNom" name="nom" type="text" class="form-control" placeholder="Nom" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span id="lastNom"><s:property value="nom"/></span>
                 <input id="textPrenom" name="prenom" type="text" class="form-control" placeholder="Prénom" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span id="lastPrenom"><s:property value="prenom"/></span>
                 <div class="input-group-append">
                     <select id="selectBibliotheque" name="bibliotheque" class="form-control ">
                         <option>Toutes les bibliothèques</option>
@@ -185,11 +193,44 @@
 
 <script>
     $(function() {
+        var lastTitre = $("#lastTitre").text();
+        var lastAuteur = $("#lastAuteur").text();
+        var lastIsbn = $("#lastIsbn").text();
+        var lastEmail = $("#lastEmail").text();
+        var lastPseudo = $("#lastPseudo").text();
+        var lastNom = $("#lastnom").text();
+        var lastPrenom = $("#lastPrenom").text();
+        $("#lastIsbn").hide();
+        $("#lastTitre").hide();
+        $("#lastAuteur").hide();
+        $("#lastEmail").hide();
+        $("#lastPseudo").hide();
+        $("#lastNom").hide();
+        $("#lastPrenom").hide();
+        $("#recherche").hide();
 
-        $('#textEmail').hide();
-        $('#textPseudo').hide();
-        $('#textNom').hide();
-        $('#textPrenom').hide();
+        $('input[id=textTitre]').val(lastTitre);
+        $('input[id=textAuteur]').val(lastAuteur);
+        $('input[id=textCodeISBN]').val(lastIsbn);
+        $('input[id=textEmail]').val(lastEmail);
+        $('input[id=textPseudo]').val(lastPseudo);
+        $('input[id=textPrenom]').val(lastPrenom);
+        $('input[id=textNom]').val(lastNom);
+
+
+
+
+         if ($("#recherche").text() == "abonne") {
+             $('#textTitre').hide();
+             $('#textAuteur').hide();
+             $('#textCodeISBN').hide();
+            $("#btnAbonne").click();
+        }else {
+             $('#textEmail').hide();
+             $('#textPseudo').hide();
+             $('#textNom').hide();
+             $('#textPrenom').hide();
+         }
 
         $("#btnAbonne").click(function() {
             $('#textEmail').show();
@@ -197,10 +238,10 @@
             $('#textNom').show();
             $('#textPrenom').show();
             $('#textTitre').hide();
-            $('#textEditeur').hide();
+            $('#textAuteur').hide();
             $('#textCodeISBN').hide();
             $("input[id=textTitre]").val("");
-            $("input[id=textEditeur]").val("");
+            $("input[id=textAuteur]").val("");
             $("input[id=textCodeISBN]").val("");
         });
         $("#btnLivre").click(function() {
@@ -209,7 +250,7 @@
             $('#textNom').hide();
             $('#textPrenom').hide();
             $('#textTitre').show();
-            $('#textEditeur').show();
+            $('#textAuteur').show();
             $('#textCodeISBN').show();
             $("input[id=textEmail]").val("");
             $("input[id=textPseudo]").val("");
@@ -218,5 +259,6 @@
         });
     });
 </script>
+
 </body>
 </html>

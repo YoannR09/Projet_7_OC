@@ -46,11 +46,7 @@ public class GestionPretAction extends ActionSupport {
     private         Pret            pret;
 
     private Properties propConfig = new Properties();
-    private FileInputStream propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
-
-    public GestionPretAction() throws FileNotFoundException {
-        logger.error(" Path du fichier config.properties non retrouvé.");
-    }
+    private FileInputStream propFile ;
 
     /**
      * Méthode pour afficher les prêts en cours de l'abonné
@@ -71,6 +67,7 @@ public class GestionPretAction extends ActionSupport {
      */
     public String doProlongationPret() {
         try {
+           propFile = new FileInputStream("C:\\Users\\El-ra\\Documents\\Projet_7_OC\\resources\\config.properties");
             propConfig.load(propFile);
             pret = microServicePretProxy.getPret(pretId);
             Calendar cal = Calendar.getInstance();

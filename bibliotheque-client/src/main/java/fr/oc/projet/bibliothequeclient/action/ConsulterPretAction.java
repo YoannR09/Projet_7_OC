@@ -57,7 +57,6 @@ public class ConsulterPretAction extends ActionSupport {
      * @return
      */
     public String doListPretRecherche(){
-
         if(!isbn.equals("") || !auteur.equals("") || !titre.equals("")){
             if(bibliotheque.equals("Toutes les bibliothèques")){
                 if(!isbn.equals("") &&  !auteur.equals("") &&  !titre.equals("")){
@@ -93,6 +92,7 @@ public class ConsulterPretAction extends ActionSupport {
                     pretList = microServicePretProxy.getListPretLivreTitreBibliotheque(titre,bibliothequeId);
                 }
             }
+            recherche = "livre";
         }
         if(!pseudo.equals("") || !email.equals("") || !nom.equals("") || !prenom.equals("")){
             if(bibliotheque.equals("Toutes les bibliothèques")) {
@@ -161,6 +161,7 @@ public class ConsulterPretAction extends ActionSupport {
                     pretList = microServicePretProxy.getListPretAbonnePrenomBibliotheque(prenom,bibliothequeId);
                 }
             }
+            recherche = "abonne";
         }
         if (pretList != null) {
             for(Pret pret : pretList){
@@ -335,4 +336,6 @@ public class ConsulterPretAction extends ActionSupport {
     public void setBibliothequeId(Integer bibliothequeId) {
         this.bibliothequeId = bibliothequeId;
     }
+
+
 }

@@ -174,5 +174,30 @@
         </div>
     </div>
 </div>
+<s:if test="hasActionMessages()">
+<div class="modal fade" id="popUpAdresse" tabindex="-1" role="dialog" aria-labelledby="popUpAdresse" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" >
+        <div class="modal-content" style="border-left: deepskyblue 4px solid ">
+            <div class="modal-body">
+                <div class="col-12 container" id="cadreInfoDispo">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <em id="messageModal" style="color:black;font-weight: 900;"><s:actionmessage/></em>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</s:if>
+<button type="button" id="btnModal" class="btn btn-outline-info" data-toggle="modal" data-target="#popUpAdresse" style="font-size:0.7em;margin: 15px">
+</button>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        $('#btnModal').hide();
+            $('#btnModal').click();
+    });
+</script>
 </html>

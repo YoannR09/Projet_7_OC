@@ -106,8 +106,11 @@
             <div class="input-group">
                 <label class="form-check-label" style="margin: 7px">Rechercher via : </label>
                 <input id="textTitre" name="titre" type="text" class="form-control" placeholder="Titre" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <input id="textEditeur" name="auteur" type="text" class="form-control" placeholder="Auteur" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                <input id="textAuteur" name="auteur" type="text" class="form-control" placeholder="Auteur" aria-label="Recipient's username" aria-describedby="basic-addon2" >
                 <input id="textCodeISBN" name="isbn" type="text" class="form-control" placeholder="Code ISBN" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span id="lastTitre"><s:property value="titre"/></span>
+                <span id="lastAuteur"><s:property value="auteur"/></span>
+                <span id="lastIsbn"><s:property value="isbn"/></span>
                 <div class="input-group-append">
                     <select id="selectBibliotheque" name="bibliotheque" class="form-control ">
                         <option>Toutes les bibliothèques</option>
@@ -158,6 +161,20 @@
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        var lastTitre = $("#lastTitre").text();
+        var lastAuteur = $("#lastAuteur").text();
+        var lastIsbn = $("#lastIsbn").text();
+        $("#lastIsbn").hide();
+        $("#lastTitre").hide();
+        $("#lastAuteur").hide();
 
+        $('input[id=textTitre]').val(lastTitre);
+        $('input[id=textAuteur]').val(lastAuteur);
+        $('input[id=textCodeISBN]').val(lastIsbn);
+    });
+</script>
 </body>
 </html>

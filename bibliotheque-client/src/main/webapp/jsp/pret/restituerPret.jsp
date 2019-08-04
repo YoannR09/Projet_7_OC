@@ -94,7 +94,9 @@
         <s:form id="formulaire" action="rechercheRestituerLivre" >
             <div class="input-group">
                 <input id="textNumInterne" name="numeroInterne" type="text" class="form-control" placeholder="Numéro interne" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                <span id="lastNumInterne"><s:property value="numeroInterne"/></span>
                 <input id="textCodeISBN" name="isbn" type="text" class="form-control" placeholder="Code ISBN" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span id="lastIsbn"><s:property value="isbn"/></span>
                 <div class="input-group-append">
                     <select id="selectBibliotheque" name="bibliotheque" class="form-control ">
                         <option>Toutes les bibliothèques</option>
@@ -140,6 +142,16 @@
         </div>
     </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        var lastNum = $("#lastNumInterne").text();
+        var lastIsbn = $("#lastIsbn").text();
+        $("#lastIsbn").hide();
+        $("#lastNumInterne").hide();
+        $('input[id=textNumInterne]').val(lastNum);
+        $('input[id=textCodeISBN]').val(lastIsbn);
+    });
+</script>
 </body>
 </html>

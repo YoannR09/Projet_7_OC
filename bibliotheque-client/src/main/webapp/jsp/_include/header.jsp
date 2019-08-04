@@ -25,13 +25,13 @@
             </li>
             <s:if test="#session.admin">
             <li class="nav-item">
-                    <s:a action="consulterPret" class="nav-link" style="font-size:1.1em;color: deepskyblue">| Consulter les prêts |</s:a>
+                    <s:a action="consulterPret" class="nav-link text-info" style="font-size:1.1em;">| Consulter les prêts |</s:a>
             </li>
             <li class="nav-item">
-                    <s:a action="ajouterPret" class="nav-link" style="font-size:1.1em;color: deepskyblue">| Ajouter un prêt |</s:a>
+                    <s:a action="ajouterPret" class="nav-link text-info" style="font-size:1.1em;">| Ajouter un prêt |</s:a>
             </li>
             <li class="nav-item">
-                    <s:a action="restituerPret" class="nav-link" style="font-size:1.1em;color: deepskyblue">| Restituer un prêt |</s:a>
+                    <s:a action="restituerPret" class="nav-link text-info" style="font-size:1.1em;">| Restituer un prêt |</s:a>
             </li>
             </s:if>
         </ul>
@@ -43,8 +43,8 @@
                 <s:a action="doProfil" class="nav-link text-info">Mon profil</s:a>
             </s:if>
             <s:elseif test="#session.admin">
-                <em id="email"><s:property value="#session.admin.email" /></em> /
-                <s:a action="logout" class="nav-link text-info">Deconnexion</s:a>
+                <em id="email"><s:property value="#session.admin.email" />   </em>
+                <s:a action="logout" class="nav-link text-info">  Deconnexion</s:a>
             </s:elseif>
             <s:else>
                 <s:a action="login" style="color:lightgray" class="nav-link">Connexion</s:a> /

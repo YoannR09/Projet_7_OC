@@ -122,8 +122,8 @@
                 <tbody>
                 <s:iterator value="pretList">
                     <tr>
-                        <td><s:property value="livre.titre"/></td>
-                        <td><s:property value="livre.isbn"/></td>
+                        <td><s:property value="livreUnique.livre.titre"/></td>
+                        <td><s:property value="livreUnique.livre.isbn"/></td>
                         <td><s:property value="livreUnique.numeroInterne"/></td>
                         <td><s:property value="bibliotheque.nom"/></td>
                         <td><s:property value="dateEmprunt"/></td>

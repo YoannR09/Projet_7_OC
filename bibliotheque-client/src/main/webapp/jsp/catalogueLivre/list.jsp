@@ -105,9 +105,12 @@
                         <option><s:property value="nom"/></option>
                     </s:iterator>
                 </select>
-                <input id="textTitre" value="titre" name="titre" type="text" class="form-control" placeholder="Titre" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <input id="textEditeur" value="auteur" name="auteur" type="text" class="form-control" placeholder="Auteur" aria-label="Recipient's username" aria-describedby="basic-addon2" >
-                <input id="textCodeISBN" value="isbn" name="isbn" type="text" class="form-control" placeholder="Code ISBN" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input id="textTitre"  name="titre" type="text" class="form-control" placeholder="Titre" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input id="textAuteur"  name="auteur" type="text" class="form-control" placeholder="Auteur" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                <input id="textCodeISBN"  name="isbn" type="text" class="form-control" placeholder="Code ISBN" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span id="lastTitre"><s:property value="titre"/></span>
+                <span id="lastAuteur"><s:property value="auteur"/></span>
+                <span id="lastIsbn"><s:property value="isbn"/></span>
                 <div class="col-auto" style="margin: 7px" id="checkBibliotheque">
                     <div class="input-group mb-2">
                         <div class="form-check form-check-inline">
@@ -162,6 +165,16 @@
 <script>
 
     $(function() {
+        var lastTitre = $("#lastTitre").text();
+        var lastAuteur = $("#lastAuteur").text();
+        var lastIsbn = $("#lastIsbn").text();
+        $("#lastIsbn").hide();
+        $("#lastTitre").hide();
+        $("#lastAuteur").hide();
+
+        $('input[id=textTitre]').val(lastTitre);
+        $('input[id=textAuteur]').val(lastAuteur);
+        $('input[id=textCodeISBN]').val(lastIsbn);
         if($('#pseudo').text() == ""){
             $('#checkBibliotheque').hide();
         }

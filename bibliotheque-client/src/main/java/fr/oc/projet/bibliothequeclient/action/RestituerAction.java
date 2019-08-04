@@ -1,6 +1,7 @@
 package fr.oc.projet.bibliothequeclient.action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import fr.oc.projet.bibliothequeclient.beans.Categorie;
 import fr.oc.projet.bibliothequeclient.beans.LivreUnique;
 import fr.oc.projet.bibliothequeclient.beans.Pret;
 import fr.oc.projet.bibliothequeclient.proxies.*;
@@ -15,14 +16,16 @@ import java.util.List;
  */
 public class RestituerAction extends ActionSupport {
 
-    private         Pret        pret;
-    private         int         pretId;
-    private         int         bibliothequeId;
-    private         int         livreUniqueId;
-    private         List<Pret>  pretList;
-    private         String      bibliotheque;
-    private         String      numeroInterne;
-    private         String      isbn;
+    private         Pret            pret;
+    private         int             pretId;
+    private         int             bibliothequeId;
+    private         int             livreUniqueId;
+    private         List<Pret>      pretList;
+    private         List<Categorie> categorieList;
+    private         String          bibliotheque;
+    private         String          numeroInterne;
+    private         String          isbn;
+
 
     private static final Logger logger = LogManager.getLogger();
 
@@ -36,6 +39,8 @@ public class RestituerAction extends ActionSupport {
     MicroServiceAbonneProxy microServiceAbonneProxy;
     @Autowired
     MicroServiceLivreProxy microServiceLivreProxy;
+    @Autowired
+    MicroServiceCategorieProxy microServiceCategorieProxy;
 
 
     /**
@@ -108,6 +113,7 @@ public class RestituerAction extends ActionSupport {
         microServicePretProxy.delete(pretId);
         this.addActionMessage("Livre restitué, ce livre est maintenant disponible pour un nouveau prêt.");
         logger.info("Livre restitué à l'inventaire");
+        categorieList = microServiceCategorieProxy.getListCategorie();
         vResult = ActionSupport.SUCCESS;
         }catch (Exception e){
             vResult = ActionSupport.ERROR;
@@ -182,5 +188,11 @@ public class RestituerAction extends ActionSupport {
         this.livreUniqueId = livreUniqueId;
     }
 
+    public List<Categorie> getCategorieList() {
+        return categorieList;
+    }
 
+    public void setCategorieList(List<Categorie> categorieList) {
+        this.categorieList = categorieList;
+    }
 }
