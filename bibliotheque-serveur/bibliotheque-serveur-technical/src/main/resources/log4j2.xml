@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration status="WARN">
-<appenders>
-    <Console name="Console" target="SYSTEM_OUT">
-        <PatternLayout pattern="%d{HH:mm:ss.SSS} [Projet 7] %-5level %logger{36} - %msg%n"/>
-    </Console>
-    <File name="File" fileName="../logs/applicationLogs.log">
-        <PatternLayout pattern="%d{HH:mm:ss.SSS} [Projet 7] %-5level %logger{36} - %msg%n"/>
-    </File>
-</appenders>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} --- [%15.15t] %-40.40c{1.} : %m%n%ex
+        </Property>
+    </Properties>
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+        <File name="File" fileName="../logs/applicationLogs.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [Projet 7] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.example.log4j2demo" level="debug" additivity="false">
+            <AppenderRef ref="ConsoleAppender" />
+        </Logger>
 
-
-<loggers>
-    <root level="error">
-        <AppenderRef ref="Console"/>
-    </root>
-    <Logger name="com.foo.Bar" level="TRACE"/>
-    <Root level="ERROR">
-        <AppenderRef ref="STDOUT"/>
-        <AppenderRef ref="File"/>
-    </Root>
-</loggers>
-</configuration>
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>

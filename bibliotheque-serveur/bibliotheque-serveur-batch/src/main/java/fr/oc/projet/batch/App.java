@@ -20,7 +20,6 @@ import java.util.Timer;
  * Le délai de répétition est définit dans le config.properties
  */
 @ComponentScan
-@EnableScheduling
 public class App 
 {
     public static void main( String[] args ) throws IOException {

@@ -1,5 +1,6 @@
 package fr.oc.projet.bibliothequeclient;
 
+import fr.oc.projet.bibliothequeclient.batch.LancementBatch;
 import javafx.application.Application;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,7 +20,6 @@ public class BibliothequeClientApplication extends SpringBootServletInitializer 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		final Logger logger = LogManager.getLogger();
-		logger.info("test");
 		return application.sources(BibliothequeClientApplication.class);
 	}
 

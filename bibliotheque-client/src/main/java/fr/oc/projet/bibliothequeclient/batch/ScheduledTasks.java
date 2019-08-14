@@ -1,12 +1,12 @@
 package fr.oc.projet.bibliothequeclient.batch;
 
 import fr.oc.projet.bibliothequeclient.beans.*;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceAbonneProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceBibliothequeProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServiceLivreProxy;
-import fr.oc.projet.bibliothequeclient.proxies.MicroServicePretProxy;
+import fr.oc.projet.bibliothequeclient.proxies.*;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,25 +18,21 @@ import java.util.TimerTask;
  * Classe qui est lancé en répétition.
  * Consulte les abonnés qui n'ont pas rendu leurs livre.
  */
+@EnableBatchProcessing
 public class ScheduledTasks extends TimerTask {
 
-    private Logger logger;
+    final Logger logger = LogManager.getLogger();
 
     @Autowired
     MicroServiceAbonneProxy microServiceAbonneProxy;
-
     @Autowired
     MicroServicePretProxy microServicePretProxy;
-
     @Autowired
     MicroServiceLivreProxy microServiceLivreProxy;
-
     @Autowired
     MicroServiceBibliothequeProxy microServiceBibliothequeProxy;
-
-    public ScheduledTasks(Logger pLogger){
-        this.logger = pLogger;
-    }
+    @Autowired
+    MicroServiceLivreUniqueProxy microServiceLivreUniqueProxy;
 
     /**
      * Méthode pour rechercher les abonnées qui n'ont pas rendu leurs livre
@@ -53,6 +49,7 @@ public class ScheduledTasks extends TimerTask {
             List<Pret> listPret = microServicePretProxy.findAll();
             List<LivreUnique> listLivreUnique = new ArrayList<>();
             for(Pret pret:listPret){
+                pret.setLivreUnique(microServiceLivreUniqueProxy.findById(pret.getLivreUniqueId()));
                 if(pret.getDateRestitution().compareTo(new Date()) < 0){
                     listLivreUnique.add(pret.getLivreUnique());
                 }

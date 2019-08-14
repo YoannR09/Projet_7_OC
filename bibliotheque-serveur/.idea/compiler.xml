@@ -11,9 +11,11 @@
         <module name="bibliotheque-serveur-consumer" />
         <module name="bibliotheque-serveur-model" />
         <module name="bibliotheque-serveur-technical" />
-        <module name="bibliotheque-serveur-webapp" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bibliotheque-serveur-webapp" target="8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
