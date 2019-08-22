@@ -13,7 +13,7 @@ import java.util.List;
 public interface MicroServiceAbonneProxy {
 
     /**
-     * Méthode pour récupèrer un abonné via son id
+     * Méthode pour récupérer un abonné via son id
      * @param id
      * @return
      */
@@ -22,7 +22,7 @@ public interface MicroServiceAbonneProxy {
 
 
     /**
-     * Méthode pou récuprer une liste d'abonnés via un pseudo
+     * Méthode pou récupérer une liste d'abonnés via un pseudo
      * @param pseudo
      * @return
      */
@@ -30,7 +30,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> getListByPseudo(@PathVariable("pseudo") String pseudo);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un email
+     * Méthode pour récupérer une liste d'abonnés via un email
      * @param email
      * @return
      */
@@ -38,7 +38,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> getListByEmail(@PathVariable("email") String email);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un pseudo
+     * Méthode pour récupérer une liste d'abonnés via un pseudo
      * @param pseudo
      * @return
      */
@@ -46,7 +46,7 @@ public interface MicroServiceAbonneProxy {
     Abonne getAbonnePseudo(@PathVariable("pseudo") String pseudo);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un email
+     * Méthode pour récupérer une liste d'abonnés via un email
      * @param email
      * @return
      */
@@ -62,7 +62,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByNom(@PathVariable("nom") String nom);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via son prénom
+     * Méthode pour récupérer une liste d'abonnés via son prénom
      * @param prenom
      * @return
      */
@@ -70,7 +70,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByPrenom(@PathVariable("prenom") String prenom);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un pseudo, email, nom et prénom
+     * Méthode pour récupérer une liste d'abonnés via un pseudo, email, nom et prénom
      * @param pseudo
      * @param email
      * @param nom
@@ -81,7 +81,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByPseudoContainingAndEmailContainingAndNomContainingAndPrenomContaining(@PathVariable("pseudo") String pseudo,@PathVariable("email") String email,@PathVariable("nom") String nom,@PathVariable("prenom") String prenom);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un pseudo, email et nom
+     * Méthode pour récupérer une liste d'abonnés via un pseudo, email et nom
      * @param pseudo
      * @param email
      * @param nom
@@ -91,7 +91,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByPseudoContainingAndEmailContainingAndNomContaining(@PathVariable("pseudo") String pseudo,@PathVariable("email") String email,@PathVariable("nom") String nom);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un pseudo, email et prenom
+     * Méthode pour récupérer une liste d'abonnés via un pseudo, email et prenom
      * @param pseudo
      * @param email
      * @param prenom
@@ -101,7 +101,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByPseudoContainingAndEmailContainingAndPrenomContaining(@PathVariable("pseudo") String pseudo,@PathVariable("email") String email,@PathVariable("prenom") String prenom);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un pseudo, nom et prenom
+     * Méthode pour récupérer une liste d'abonnés via un pseudo, nom et prenom
      * @param pseudo
      * @param nom
      * @param prenom
@@ -111,7 +111,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByPseudoContainingAndNomContainingAndPrenomContaining(@PathVariable("pseudo") String pseudo,@PathVariable("nom") String nom,@PathVariable("prenom") String prenom);
 
     /**
-     * Méthode pour récupèrer une liste d'abonné via un email, nom et prenom
+     * Méthode pour récupérer une liste d'abonné via un email, nom et prenom
      * @param email
      * @param nom
      * @param prenom
@@ -121,7 +121,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByEmailContainingAndNomContainingAndPrenomContaining(@PathVariable("email") String email,@PathVariable("nom") String nom,@PathVariable("prenom") String prenom);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un pseudo et email
+     * Méthode pour récupérer une liste d'abonnés via un pseudo et email
      * @param pseudo
      * @param email
      * @return
@@ -130,7 +130,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByPseudoContainingAndEmailContaining(@PathVariable("pseudo") String pseudo,@PathVariable("email") String email);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un nom et prenom
+     * Méthode pour récupérer une liste d'abonnés via un nom et prenom
      * @param nom
      * @param prenom
      * @return
@@ -148,7 +148,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByPseudoContainingAndPrenomContaining(@PathVariable("pseudo") String pseudo,@PathVariable("prenom") String prenom);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un email et nom
+     * Méthode pour récupérer une liste d'abonnés via un email et nom
      * @param email
      * @param nom
      * @return
@@ -157,7 +157,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByEmailContainingAndNomContaining(@PathVariable("email") String email,@PathVariable("nom") String nom);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un email et prenom
+     * Méthode pour récupérer une liste d'abonnés via un email et prenom
      * @param email
      * @param prenom
      * @return
@@ -166,7 +166,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByEmailContainingAndPrenomContaining(@PathVariable("email") String email,@PathVariable("prenom") String prenom);
 
     /**
-     * Méthode pour récupèrer une liste d'abonnés via un pseudo et nom
+     * Méthode pour récupérer une liste d'abonnés via un pseudo et nom
      * @param pseudo
      * @param nom
      * @return
@@ -175,7 +175,7 @@ public interface MicroServiceAbonneProxy {
     List<Abonne> findByPseudoContainingAndNomContaining(@PathVariable("pseudo") String pseudo,@PathVariable("nom") String nom);
 
     /**
-     * Méthode pour récupèrer la liste des abonnées.
+     * Méthode pour récupérer la liste des abonnées.
      */
     @GetMapping(value = "/Abonne")
     List<Abonne> findALL();

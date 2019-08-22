@@ -83,7 +83,6 @@ public class LoginAction extends ActionSupport implements SessionAware {
                 }
             }
         }
-
         if (abonne == null && employe == null) {
             this.addActionMessage("Identifiant invalide");
             vResult = ActionSupport.ERROR;
@@ -284,12 +283,11 @@ public class LoginAction extends ActionSupport implements SessionAware {
         String vResult;
 
         if(newMdp.equals(newMdpVerif)){
-            if (microServiceAbonneProxy.getAbonneEmail(newEmail) == null) {
+            if (microServiceAbonneProxy.getAbonneEmail(newEmail) == null && microServiceEmployeProxy.findByEmail(newEmail) == null) {
                 if (microServiceAbonneProxy.getAbonnePseudo(pseudo) == null) {
                     Abonne abonne = new Abonne();
                     abonne.setPseudo(pseudo);
                     abonne.setMotDePasse(newMdp);
-
                     abonne.setMotDePasse(newMdp);
                     abonne.setEmail(newEmail);
                     abonne.setNom(nom);

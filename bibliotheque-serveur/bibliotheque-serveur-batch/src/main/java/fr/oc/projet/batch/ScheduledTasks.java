@@ -55,6 +55,7 @@ public class ScheduledTasks extends TimerTask {
      */
     @Override
     public void run() {
+        logger.info("mail pour les livres non réstitués envoyé");
         List<Abonne> vList = managerFactory.getAbonneManager().getListAbonne();
         for(Abonne abonne:vList){
             List<Pret> listPret = managerFactory.getPretManager().getListPretAbonne(abonne.getId());

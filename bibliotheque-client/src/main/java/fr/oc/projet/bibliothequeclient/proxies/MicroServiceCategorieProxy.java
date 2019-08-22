@@ -13,12 +13,26 @@ import java.util.List;
 @FeignClient(value = "microservice-categorie", url = "localhost:9090")
 public interface MicroServiceCategorieProxy {
 
+    /**
+     * MLéthode pour récupérer une catégorie via un id
+     * @param id
+     * @return
+     */
     @GetMapping(value = "/Categorie/{id}")
     Categorie getCategorie(@PathVariable("id") int id);
 
+    /**
+     * Méthode pour récupérer une catégorie via un nom
+     * @param nom
+     * @return
+     */
     @GetMapping(value = "/Categorie/Nom/{nom}")
     Categorie findByNom(@PathVariable("nom") String nom);
 
+    /**
+     * Méthode pour récupérer la liste des catégories
+     * @return
+     */
     @GetMapping(value = "/Categorie")
     List<Categorie> getListCategorie();
 }

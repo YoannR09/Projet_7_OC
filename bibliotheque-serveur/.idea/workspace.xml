@@ -8,210 +8,23 @@
   <component name="ChangeListManager">
     <list default="true" id="8ba7665d-cdb8-4942-9b92-c5dd26b22a45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/logs/applicationLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/logs/applicationLogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/MicroserviceAbonneApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/MicroserviceAbonneApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-employe/src/main/java/fr/oc/projet/microserviceemploye/MicroserviceEmployeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-employe/src/main/java/fr/oc/projet/microserviceemploye/MicroserviceEmployeApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/BibliothequeClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/BibliothequeClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/LancementBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/LancementBatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/ScheduledTasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/EnvoyerMail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/LancementBatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/ScheduledTasks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceEmployeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceEmployeProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93e8fe6b-3228-4233-b20e-d6ab8d06c923.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/93e8fe6b-3228-4233-b20e-d6ab8d06c923.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/target/classes/META-INF/bibliotheque-serveur-batch.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/target/classes/fr/oc/projet/batch/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/target/classes/fr/oc/projet/batch/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/target/test-classes/META-INF/bibliotheque-serveur-batch.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-business/target/bibliotheque-serveur-business-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-business/target/bibliotheque-serveur-business-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-business/target/classes/META-INF/bibliotheque-serveur-business.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-business/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-business/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-business/target/test-classes/META-INF/bibliotheque-serveur-business.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/classes/META-INF/bibliotheque-serveur-consumer.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/surefire-reports/TEST-fr.oc.projet.consumer.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/surefire-reports/TEST-fr.oc.projet.consumer.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/surefire-reports/fr.oc.projet.consumer.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/surefire-reports/fr.oc.projet.consumer.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-model/target/bibliotheque-serveur-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-model/target/bibliotheque-serveur-model-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-model/target/classes/META-INF/bibliotheque-serveur-model.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-model/target/classes/fr/oc/projet/model/bibliotheque/Categorie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-model/target/classes/fr/oc/projet/model/bibliotheque/Image.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-model/target/classes/fr/oc/projet/model/bibliotheque/Livre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-model/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-model/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-model/target/surefire-reports/TEST-fr.oc.projet.model.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-model/target/surefire-reports/TEST-fr.oc.projet.model.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-model/target/surefire-reports/fr.oc.projet.model.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-model/target/surefire-reports/fr.oc.projet.model.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/java/fr/oc/projet/technical/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/java/fr/oc/projet/technical/Log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/bibliotheque-serveur-technical-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/bibliotheque-serveur-technical-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/classes/fr/oc/projet/technical/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/classes/fr/oc/projet/technical/Log.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/classes/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/surefire-reports/TEST-fr.oc.projet.technical.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/surefire-reports/TEST-fr.oc.projet.technical.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/surefire-reports/fr.oc.projet.technical.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-technical/target/surefire-reports/fr.oc.projet.technical.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/bibliotheque-serveur-webapp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/interceptor/AuthInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/resources/bootstrapContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/resources/fr/oc/projet/webapp/webappContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/resources/struts.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/resources/struts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/head.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/selectionnerAbonne.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/error/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/login/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/restituer/restituerPret.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/image/livre9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/bootstrapContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/LoginAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/action/RestituerAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/interceptor/AuthInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/fr/oc/projet/webapp/webappContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/struts.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/classes/struts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/_include/head.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/_include/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/ajouter/selectionnerAbonne.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/consulter/consulterPret.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/error/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/login/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/jsp/restituer/restituerPret.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-business-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-consumer-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-model-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bibliotheque-serveur-technical-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bval-core-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/bval-jsr-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/commons-collections4-4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/commons-dbcp2-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/commons-fileupload-1.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/commons-lang3-3.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/commons-pool2-2.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/freemarker-2.3.26-incubating.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/hibernate-validator-6.0.16.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/jackson-core-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/jackson-databind-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/jackson-datatype-jdk8-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/jackson-datatype-jsr310-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/jackson-module-parameter-names-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/javassist-3.20.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/javax.annotation-api-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/jul-to-slf4j-1.7.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/log4j-api-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/log4j-core-2.9.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/log4j-jcl-2.9.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/log4j-to-slf4j-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/mail-1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/ognl-3.1.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/snakeyaml-1.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-aop-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-beans-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-boot-2.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-boot-autoconfigure-2.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-boot-starter-2.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-boot-starter-json-2.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-boot-starter-logging-2.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-boot-starter-security-2.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-boot-starter-tomcat-2.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-boot-starter-web-2.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-context-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-core-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-expression-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-jcl-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-jdbc-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-security-config-4.2.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-security-core-4.2.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-security-web-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-test-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-tx-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-web-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/spring-webmvc-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/struts2-core-2.5.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/struts2-json-plugin-2.5.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/struts2-spring-plugin-2.5.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/tomcat-embed-core-9.0.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/tomcat-embed-el-9.0.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/tomcat-embed-websocket-9.0.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/bibliotheque-serveur-webapp/image/livre9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/bootstrapContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/AjouterPretAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/ConsulterPretAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/LoginAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/action/RestituerAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/interceptor/AuthInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/fr/oc/projet/webapp/webappContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/struts.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/classes/struts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/bibliotheque-serveur.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/applicationLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/applicationLogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -288,28 +101,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/pret">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="782">
               <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-182">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="459">
+              <caret line="57" column="62" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -317,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="476">
               <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
             </state>
           </provider>
@@ -341,10 +145,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
+            <state relative-caret-position="425">
               <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
             </state>
           </provider>
@@ -398,7 +202,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console_1.sql" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/config.properties" />
         <option value="$PROJECT_DIR$/../resources/config.properties" />
-        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/error/error.jsp" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/restituer/restituerPret.jsp" />
         <option value="$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" />
@@ -423,6 +226,7 @@
         <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93e8fe6b-3228-4233-b20e-d6ab8d06c923/console.sql" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" />
       </list>
     </option>
   </component>
@@ -470,11 +274,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="2577" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-11" />
+    <option name="y" value="1" />
+    <option name="width" value="1934" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -482,17 +286,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bibliotheque-serveur" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibliotheque-serveur" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
@@ -545,6 +338,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -555,7 +349,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565796958202" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565802759657" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -778,18 +572,18 @@
       <workItem from="1564987051667" duration="522000" />
       <workItem from="1565337476277" duration="1099000" />
       <workItem from="1565762424425" duration="76000" />
-      <workItem from="1565794724324" duration="2120000" />
+      <workItem from="1565794724324" duration="3030000" />
+      <workItem from="1566283829935" duration="606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="300250000" />
+    <option name="totallyTimeSpent" value="301766000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="1" width="1289" height="685" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21538462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2196908" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -868,46 +662,9 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/restituer/restituerPret.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="76" column="6" lean-forward="true" selection-start-line="76" selection-start-column="6" selection-end-line="81" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="70" column="63" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4201#4202#0" expanded="true" />
-            <element signature="e#4271#4272#0" expanded="true" />
-            <element signature="e#4330#4331#0" expanded="true" />
-            <element signature="e#4407#4408#0" expanded="true" />
-            <element signature="e#4482#4483#0" expanded="true" />
-            <element signature="e#4591#4592#0" expanded="true" />
-            <element signature="e#4661#4662#0" expanded="true" />
-            <element signature="e#4753#4754#0" expanded="true" />
-            <element signature="e#4827#4828#0" expanded="true" />
-            <element signature="e#4931#4932#0" expanded="true" />
-            <element signature="e#5007#5008#0" expanded="true" />
-            <element signature="e#5115#5116#0" expanded="true" />
-            <element signature="e#5173#5174#0" expanded="true" />
-            <element signature="e#5245#5246#0" expanded="true" />
-            <element signature="e#5318#5319#0" expanded="true" />
-            <element signature="e#5423#5424#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/restituer/restituerPret.jsp" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/RestituerAction.java" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/index.jsp" />
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/rowmapper/utilisateur/AbonneRM.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1031,26 +788,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/LoginAction.java" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/ConsulterPretAction.java" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/pom.xml" />
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-model/src/main/java/fr/oc/projet/model/beans/utilisateur/Pret.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1071,13 +811,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/_include/header.jsp" />
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/contract/dao/bibliotheque/LivreUniqueDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1106,126 +840,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/selectionnerAbonne.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/abonne">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="93" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="122" column="97" selection-start-line="122" selection-start-column="97" selection-end-line="122" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#11979#11980#0" expanded="true" />
-            <element signature="e#12006#12007#0" expanded="true" />
-            <element signature="e#12046#12047#0" expanded="true" />
-            <element signature="e#12078#12079#0" expanded="true" />
-            <element signature="e#12111#12112#0" expanded="true" />
-            <element signature="e#12140#12141#0" expanded="true" />
-            <element signature="e#12184#12185#0" expanded="true" />
-            <element signature="e#12220#12221#0" expanded="true" />
-            <element signature="e#12252#12253#0" expanded="true" />
-            <element signature="e#12280#12281#0" expanded="true" />
-            <element signature="e#12322#12323#0" expanded="true" />
-            <element signature="e#12356#12357#0" expanded="true" />
-            <element signature="e#12395#12396#0" expanded="true" />
-            <element signature="e#12430#12431#0" expanded="true" />
-            <element signature="e#12486#12487#0" expanded="true" />
-            <element signature="e#12534#12535#0" expanded="true" />
-            <element signature="e#12576#12577#0" expanded="true" />
-            <element signature="e#12613#12614#0" expanded="true" />
-            <element signature="e#12674#12675#0" expanded="true" />
-            <element signature="e#12726#12727#0" expanded="true" />
-            <element signature="e#12757#12758#0" expanded="true" />
-            <element signature="e#12785#12786#0" expanded="true" />
-            <element signature="e#12826#12827#0" expanded="true" />
-            <element signature="e#12860#12861#0" expanded="true" />
-            <element signature="e#12913#12914#0" expanded="true" />
-            <element signature="e#12951#12952#0" expanded="true" />
-            <element signature="e#13024#13025#0" expanded="true" />
-            <element signature="e#13078#13079#0" expanded="true" />
-            <element signature="e#13119#13120#0" expanded="true" />
-            <element signature="e#13155#13156#0" expanded="true" />
-            <element signature="e#13214#13215#0" expanded="true" />
-            <element signature="e#13264#13265#0" expanded="true" />
-            <element signature="e#13296#13297#0" expanded="true" />
-            <element signature="e#13324#13325#0" expanded="true" />
-            <element signature="e#13366#13367#0" expanded="true" />
-            <element signature="e#13400#13401#0" expanded="true" />
-            <element signature="e#13433#13434#0" expanded="true" />
-            <element signature="e#13462#13463#0" expanded="true" />
-            <element signature="e#13506#13507#0" expanded="true" />
-            <element signature="e#13542#13543#0" expanded="true" />
-            <element signature="e#13572#13573#0" expanded="true" />
-            <element signature="e#13598#13599#0" expanded="true" />
-            <element signature="e#13636#13637#0" expanded="true" />
-            <element signature="e#13666#13667#0" expanded="true" />
-            <element signature="e#13699#13700#0" expanded="true" />
-            <element signature="e#13728#13729#0" expanded="true" />
-            <element signature="e#13772#13773#0" expanded="true" />
-            <element signature="e#13808#13809#0" expanded="true" />
-            <element signature="e#13841#13842#0" expanded="true" />
-            <element signature="e#13870#13871#0" expanded="true" />
-            <element signature="e#13914#13915#0" expanded="true" />
-            <element signature="e#13950#13951#0" expanded="true" />
-            <element signature="e#13986#13987#0" expanded="true" />
-            <element signature="e#14017#14018#0" expanded="true" />
-            <element signature="e#14066#14067#0" expanded="true" />
-            <element signature="e#14106#14107#0" expanded="true" />
-            <element signature="e#14147#14148#0" expanded="true" />
-            <element signature="e#14183#14184#0" expanded="true" />
-            <element signature="e#14242#14243#0" expanded="true" />
-            <element signature="e#14292#14293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/employe">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/resources/struts.xml">
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/livre_unique">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/selectionnerAbonne.jsp" />
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/abonne" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/ajouter/ajouterPret.jsp" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/java/fr/oc/projet/webapp/action/AjouterPretAction.java" />
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/employe" />
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/role" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/resources/struts.xml" />
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/livre_unique" />
     <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-consumer/src/main/java/fr/oc/projet/consumer/contract/dao/utilisateur/PretDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -1240,24 +862,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp" />
+    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/pret" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/java/fr/oc/projet/technical/App.java" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/java/fr/oc/projet/technical/Log.java" />
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="782">
+          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-webapp/src/main/webapp/WEB-INF/jsp/consulter/consulterPret.jsp">
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://93e8fe6b-3228-4233-b20e-d6ab8d06c923/database/bibliotheque/schema/public/table/pret">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state relative-caret-position="476">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1265,41 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/EnvoyerMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/java/fr/oc/projet/technical/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-technical/src/main/java/fr/oc/projet/technical/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1312,8 +897,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
+        <state relative-caret-position="425">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="57" column="62" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
         </state>
       </provider>
     </entry>
