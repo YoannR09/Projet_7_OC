@@ -1,7 +1,6 @@
 package fr.oc.projet.bibliothequeclient;
 
-import fr.oc.projet.bibliothequeclient.batch.LancementBatch;
-import javafx.application.Application;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter;

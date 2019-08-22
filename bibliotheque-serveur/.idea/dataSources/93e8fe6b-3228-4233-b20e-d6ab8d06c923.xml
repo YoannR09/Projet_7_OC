@@ -11,7 +11,8 @@
       <IntrospectionStateNumber>506</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
-      <Relations>sequence|table|93618|93612|1
+      <Relations>sequence|table|93610|93607|1
+sequence|table|93605|93602|1
 sequence|table|93552|93546|1
 sequence|table|93560|93554|1
 sequence|table|93568|93562|1
@@ -19,8 +20,7 @@ sequence|table|93576|93570|1
 sequence|table|93584|93578|1
 sequence|table|93592|93586|1
 sequence|table|93600|93594|1
-sequence|table|93605|93602|1
-sequence|table|93610|93607|1
+sequence|table|93618|93612|1
 </Relations>
     </database>
     <database id="3" parent="1" name="escalade">

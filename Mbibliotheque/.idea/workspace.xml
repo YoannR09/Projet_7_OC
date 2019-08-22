@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da886dc-049d-4219-961d-ac85c97c7478" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-employe/src/main/java/fr/oc/projet/microserviceemploye/MicroserviceEmployeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-employe/src/main/java/fr/oc/projet/microserviceemploye/MicroserviceEmployeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/EnvoyerMail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/LancementBatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/ScheduledTasks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceEmployeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceEmployeProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/BibliothequeClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/BibliothequeClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/AjouterPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/AjouterPretAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/.idea/dataSources/93e8fe6b-3228-4233-b20e-d6ab8d06c923.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/.idea/dataSources/93e8fe6b-3228-4233-b20e-d6ab8d06c923.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-serveur/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/applicationLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/applicationLogs.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/eureka/target/" />
     <ignored path="$PROJECT_DIR$/microservice-abonne/target/" />
@@ -66,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/web/controller/AbonneController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="347" column="5" lean-forward="true" selection-start-line="347" selection-start-column="5" selection-end-line="347" selection-end-column="5" />
+            <state relative-caret-position="5729">
+              <caret line="347" column="5" selection-start-line="347" selection-start-column="5" selection-end-line="347" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -75,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/web/controller/LivreController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3774">
+            <state relative-caret-position="4386">
               <caret line="267" column="76" selection-start-line="267" selection-start-column="76" selection-end-line="267" selection-end-column="76" />
             </state>
           </provider>
@@ -267,11 +257,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="2577" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-5" />
+    <option name="width" value="1290" />
+    <option name="height" value="686" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -279,8 +268,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -436,16 +425,18 @@
       <workItem from="1565337571486" duration="3538000" />
       <workItem from="1565762451374" duration="2993000" />
       <workItem from="1566283818856" duration="2396000" />
+      <workItem from="1566466603868" duration="897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101207000" />
+    <option name="totallyTimeSpent" value="102104000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22753036" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30931175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -819,6 +810,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/web/controller/AbonneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5729">
+          <caret line="347" column="5" selection-start-line="347" selection-start-column="5" selection-end-line="347" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/web/controller/LivreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4386">
+          <caret line="267" column="76" selection-start-line="267" selection-start-column="76" selection-end-line="267" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-pret/src/main/java/fr/oc/projet/microservicepret/MicroservicePretApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/MicroserviceAbonneApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -840,9 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-abonne/src/main/resources/data.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/microservice-abonne/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -850,29 +862,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-abonne/src/main/java/fr/oc/projet/microserviceabonne/web/controller/AbonneController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="347" column="5" lean-forward="true" selection-start-line="347" selection-start-column="5" selection-end-line="347" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-livre/src/main/java/fr/oc/projet/microservicelivre/web/controller/LivreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3774">
-          <caret line="267" column="76" selection-start-line="267" selection-start-column="76" selection-end-line="267" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-pret/src/main/java/fr/oc/projet/microservicepret/MicroservicePretApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/microservice-abonne/src/main/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-employe/src/main/java/fr/oc/projet/microserviceemploye/MicroserviceEmployeApplication.java">
       <provider selected="true" editor-type-id="text-editor">

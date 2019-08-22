@@ -7,24 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ba7665d-cdb8-4942-9b92-c5dd26b22a45" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Mbibliotheque/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mbibliotheque/microservice-employe/src/main/java/fr/oc/projet/microserviceemploye/MicroserviceEmployeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Mbibliotheque/microservice-employe/src/main/java/fr/oc/projet/microserviceemploye/MicroserviceEmployeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/EnvoyerMail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/LancementBatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/batch/ScheduledTasks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAbonneProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceAdresseProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceBibliothequeProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceCategorieProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceEmployeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceEmployeProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceIllustrationProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/proxies/MicroServiceLivreProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/BibliothequeClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/BibliothequeClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/AjouterPretAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bibliotheque-client/src/main/java/fr/oc/projet/bibliothequeclient/action/AjouterPretAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/93e8fe6b-3228-4233-b20e-d6ab8d06c923.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/93e8fe6b-3228-4233-b20e-d6ab8d06c923.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotheque-serveur-batch/src/main/java/fr/oc/projet/batch/ScheduledTasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/applicationLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/applicationLogs.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bibliotheque-serveur-consumer/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -274,11 +264,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-11" />
-    <option name="y" value="1" />
-    <option name="width" value="1934" />
-    <option name="height" value="1028" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-5" />
+    <option name="width" value="1290" />
+    <option name="height" value="686" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -287,6 +276,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -338,7 +328,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -574,16 +563,18 @@
       <workItem from="1565762424425" duration="76000" />
       <workItem from="1565794724324" duration="3030000" />
       <workItem from="1566283829935" duration="606000" />
+      <workItem from="1566466621062" duration="664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301766000" />
+    <option name="totallyTimeSpent" value="302430000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="1" width="1289" height="685" extended-state="1" />
+    <frame x="-3" y="0" width="1290" height="686" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2196908" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22357723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />

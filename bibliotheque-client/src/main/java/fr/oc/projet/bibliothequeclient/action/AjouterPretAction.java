@@ -116,7 +116,7 @@ public class AjouterPretAction extends ActionSupport {
         }
 
     /**
-     * M&thode pour afficher le formulaire de sélection d'abonné
+     * Méthode pour afficher le formulaire de sélection d'abonné
      * @return
      */
     public String doSelectionAbonne(){
